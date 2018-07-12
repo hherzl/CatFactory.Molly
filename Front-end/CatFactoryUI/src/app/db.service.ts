@@ -11,7 +11,7 @@ export class DbService {
   private baseUrl: string;
 
   constructor(private httpClient: HttpClient) {
-    this.baseUrl = 'http://localhost:54000/api/v1/Db';
+    this.baseUrl = 'http://localhost:8400/api/v1/Db';
   }
 
   public getImportedDatabases(): Observable<Object> {

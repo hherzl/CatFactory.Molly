@@ -5,6 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="DatabaseImportSettings\" />
+    <Folder Include="Databases\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>
 

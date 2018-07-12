@@ -22,15 +22,24 @@ namespace CatFactory.UI.API.Services
             ApiConfig = apiConfig;
         }
 
+        string DatabasesDirectoryName
+            => Path.Combine(HostingEnvironment.ContentRootPath, ApiConfig.DatabasesDirectoryName);
+
         public string GetDbFileName(string name)
-            => Path.Combine(HostingEnvironment.ContentRootPath, ApiConfig.DatabasesDirectoryName, name);
+            => Path.Combine(DatabasesDirectoryName, name);
+
+        string DatabaseImportSettingsDirectoryName
+            => Path.Combine(HostingEnvironment.ContentRootPath, ApiConfig.DatabaseImportSettingsName);
 
         public string GetDatabaseImportSettingsName(string name)
-            => Path.Combine(HostingEnvironment.ContentRootPath, ApiConfig.DatabaseImportSettingsName, name);
+            => Path.Combine(DatabaseImportSettingsDirectoryName, name);
 
         public async Task<IEnumerable<ImportedDatabase>> GetImportedDatabasesAsync()
         {
-            var files = Directory.GetFiles(Path.Combine(HostingEnvironment.ContentRootPath, ApiConfig.DatabasesDirectoryName));
+            if (!Directory.Exists(DatabasesDirectoryName))
+                Directory.CreateDirectory(DatabasesDirectoryName);
+
+            var files = Directory.GetFiles(DatabasesDirectoryName);
 
             var result = new List<ImportedDatabase>();
 
@@ -53,6 +62,9 @@ namespace CatFactory.UI.API.Services
 
         public async Task<Database> GetDatabaseAsync(string name)
         {
+            if (!Directory.Exists(DatabasesDirectoryName))
+                Directory.CreateDirectory(DatabasesDirectoryName);
+
             var objectInString = await File.ReadAllTextAsync(GetDbFileName(name), Encoding.Default);
 
             return JsonConvert.DeserializeObject<Database>(objectInString);
@@ -60,6 +72,9 @@ namespace CatFactory.UI.API.Services
 
         public async Task SerializeAsync(DatabaseImportSettings dbImportSettings)
         {
+            if (!Directory.Exists(DatabaseImportSettingsDirectoryName))
+                Directory.CreateDirectory(DatabaseImportSettingsDirectoryName);
+
             var objectInString = JsonConvert.SerializeObject(dbImportSettings);
 
             await File.WriteAllTextAsync(GetDatabaseImportSettingsName(dbImportSettings.Name), objectInString, Encoding.Default);
@@ -67,6 +82,9 @@ namespace CatFactory.UI.API.Services
 
         public async Task SerializeAsync(Database db)
         {
+            if (!Directory.Exists(DatabasesDirectoryName))
+                Directory.CreateDirectory(DatabasesDirectoryName);
+
             var objectInString = JsonConvert.SerializeObject(db);
 
             await File.WriteAllTextAsync(GetDbFileName(db.Name), objectInString, Encoding.Default);

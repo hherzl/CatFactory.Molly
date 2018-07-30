@@ -75,7 +75,7 @@ namespace CatFactory.UI.API.Services
             if (!Directory.Exists(DatabaseImportSettingsDirectoryName))
                 Directory.CreateDirectory(DatabaseImportSettingsDirectoryName);
 
-            var objectInString = JsonConvert.SerializeObject(dbImportSettings);
+            var objectInString = JsonConvert.SerializeObject(dbImportSettings, Formatting.Indented);
 
             await File.WriteAllTextAsync(GetDatabaseImportSettingsName(dbImportSettings.Name), objectInString, Encoding.Default);
         }
@@ -85,7 +85,7 @@ namespace CatFactory.UI.API.Services
             if (!Directory.Exists(DatabasesDirectoryName))
                 Directory.CreateDirectory(DatabasesDirectoryName);
 
-            var objectInString = JsonConvert.SerializeObject(db);
+            var objectInString = JsonConvert.SerializeObject(db, Formatting.Indented);
 
             await File.WriteAllTextAsync(GetDbFileName(db.Name), objectInString, Encoding.Default);
         }

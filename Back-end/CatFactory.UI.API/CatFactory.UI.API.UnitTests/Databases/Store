@@ -174,7 +174,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "ClassName",
@@ -184,7 +185,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "PropertyName",
@@ -194,7 +196,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "Key",
@@ -204,7 +207,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "OriginalValue",
@@ -214,7 +218,8 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "CurrentValue",
@@ -224,7 +229,8 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "UserName",
@@ -234,7 +240,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "ChangeDate",
@@ -244,9 +251,11 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         }
       ],
+      "ExtendedProperties": [],
       "Identity": {
         "Name": "ChangeLogID",
         "Seed": 1,
@@ -299,7 +308,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "EntityName",
@@ -309,7 +319,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "PropertyName",
@@ -319,9 +330,11 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         }
       ],
+      "ExtendedProperties": [],
       "Identity": {
         "Name": "ChangeLogExclusionID",
         "Seed": 1,
@@ -396,7 +409,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "CountryName",
@@ -406,7 +420,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "CreationUser",
@@ -416,7 +431,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "CreationDateTime",
@@ -426,7 +442,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "LastUpdateUser",
@@ -436,7 +453,8 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "LastUpdateDateTime",
@@ -446,7 +464,8 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "Timestamp",
@@ -456,9 +475,11 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         }
       ],
+      "ExtendedProperties": [],
       "Identity": null,
       "RowGuidCol": {
         "Name": "No rowguidcol column defined."
@@ -511,7 +532,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "CountryID",
@@ -521,7 +543,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "CurrencyID",
@@ -531,7 +554,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "CreationUser",
@@ -541,7 +565,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "CreationDateTime",
@@ -551,7 +576,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "LastUpdateUser",
@@ -561,7 +587,8 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "LastUpdateDateTime",
@@ -571,7 +598,8 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "Timestamp",
@@ -581,9 +609,11 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         }
       ],
+      "ExtendedProperties": [],
       "Identity": {
         "Name": "CountryCurrencyID",
         "Seed": 1,
@@ -711,7 +741,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "CurrencyName",
@@ -721,7 +752,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "CurrencySymbol",
@@ -731,7 +763,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "CreationUser",
@@ -741,7 +774,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "CreationDateTime",
@@ -751,7 +785,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "LastUpdateUser",
@@ -761,7 +796,8 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "LastUpdateDateTime",
@@ -771,7 +807,8 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "Timestamp",
@@ -781,9 +818,11 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         }
       ],
+      "ExtendedProperties": [],
       "Identity": {
         "Name": "CurrencyID",
         "Seed": 1000,
@@ -843,7 +882,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "EventType",
@@ -853,7 +893,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "Key",
@@ -863,7 +904,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "Message",
@@ -873,7 +915,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "EntryDate",
@@ -883,9 +926,11 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         }
       ],
+      "ExtendedProperties": [],
       "Identity": null,
       "RowGuidCol": {
         "Name": "No rowguidcol column defined."
@@ -934,7 +979,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "FirstName",
@@ -944,7 +990,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "MiddleName",
@@ -954,7 +1001,8 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "LastName",
@@ -964,7 +1012,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "BirthDate",
@@ -974,7 +1023,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "CreationUser",
@@ -984,7 +1034,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "CreationDateTime",
@@ -994,7 +1045,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "LastUpdateUser",
@@ -1004,7 +1056,8 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "LastUpdateDateTime",
@@ -1014,7 +1067,8 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "Timestamp",
@@ -1024,9 +1078,11 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         }
       ],
+      "ExtendedProperties": [],
       "Identity": {
         "Name": "EmployeeID",
         "Seed": 1,
@@ -1089,7 +1145,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "EmployeeID",
@@ -1099,7 +1156,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "AddressLine1",
@@ -1109,7 +1167,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "AddressLine2",
@@ -1119,7 +1178,8 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "City",
@@ -1129,7 +1189,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "State",
@@ -1139,7 +1200,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "ZipCode",
@@ -1149,7 +1211,8 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "CountryID",
@@ -1159,7 +1222,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "PhoneNumber",
@@ -1169,7 +1233,8 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "CreationUser",
@@ -1179,7 +1244,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "CreationDateTime",
@@ -1189,7 +1255,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "LastUpdateUser",
@@ -1199,7 +1266,8 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "LastUpdateDateTime",
@@ -1209,7 +1277,8 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "Timestamp",
@@ -1219,9 +1288,11 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         }
       ],
+      "ExtendedProperties": [],
       "Identity": {
         "Name": "EmployeeAddressID",
         "Seed": 1,
@@ -1301,7 +1372,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "EmployeeID",
@@ -1311,7 +1383,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "Email",
@@ -1321,7 +1394,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "CreationUser",
@@ -1331,7 +1405,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "CreationDateTime",
@@ -1341,7 +1416,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "LastUpdateUser",
@@ -1351,7 +1427,8 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "LastUpdateDateTime",
@@ -1361,7 +1438,8 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "Timestamp",
@@ -1371,9 +1449,11 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         }
       ],
+      "ExtendedProperties": [],
       "Identity": {
         "Name": "EmployeeEmailID",
         "Seed": 1,
@@ -1443,7 +1523,7 @@
       "Type": "table"
     },
     {
-      "Description": null,
+      "Description": "Products catalog (unit tests)",
       "Columns": [
         {
           "Name": "ProductID",
@@ -1453,7 +1533,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "ProductName",
@@ -1463,7 +1544,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "ProductCategoryID",
@@ -1473,7 +1555,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "UnitPrice",
@@ -1483,7 +1566,8 @@
           "Scale": 4,
           "Nullable": false,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "Description",
@@ -1493,7 +1577,8 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "Discontinued",
@@ -1503,7 +1588,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "Stocks",
@@ -1513,7 +1599,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "CreationUser",
@@ -1523,7 +1610,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "CreationDateTime",
@@ -1533,7 +1621,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "LastUpdateUser",
@@ -1543,7 +1632,8 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "LastUpdateDateTime",
@@ -1553,7 +1643,8 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "Timestamp",
@@ -1563,9 +1654,11 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         }
       ],
+      "ExtendedProperties": [],
       "Identity": {
         "Name": "ProductID",
         "Seed": 1,
@@ -1673,7 +1766,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "ProductCategoryName",
@@ -1683,7 +1777,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "CreationUser",
@@ -1693,7 +1788,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "CreationDateTime",
@@ -1703,7 +1799,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "LastUpdateUser",
@@ -1713,7 +1810,8 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "LastUpdateDateTime",
@@ -1723,7 +1821,8 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "Timestamp",
@@ -1733,9 +1832,11 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         }
       ],
+      "ExtendedProperties": [],
       "Identity": {
         "Name": "ProductCategoryID",
         "Seed": 1,
@@ -1792,7 +1893,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "ProductID",
@@ -1802,7 +1904,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "WarehouseID",
@@ -1812,7 +1915,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "Quantity",
@@ -1822,7 +1926,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "Stocks",
@@ -1832,7 +1937,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "CreationUser",
@@ -1842,7 +1948,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "CreationDateTime",
@@ -1852,7 +1959,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "LastUpdateUser",
@@ -1862,7 +1970,8 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "LastUpdateDateTime",
@@ -1872,7 +1981,8 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "Timestamp",
@@ -1882,9 +1992,11 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         }
       ],
+      "ExtendedProperties": [],
       "Identity": {
         "Name": "ProductInventoryID",
         "Seed": 1,
@@ -1990,7 +2102,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "WarehouseName",
@@ -2000,7 +2113,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "CreationUser",
@@ -2010,7 +2124,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "CreationDateTime",
@@ -2020,7 +2135,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "LastUpdateUser",
@@ -2030,7 +2146,8 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "LastUpdateDateTime",
@@ -2040,7 +2157,8 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "Timestamp",
@@ -2050,9 +2168,11 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         }
       ],
+      "ExtendedProperties": [],
       "Identity": null,
       "RowGuidCol": {
         "Name": "No rowguidcol column defined."
@@ -2105,7 +2225,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "CompanyName",
@@ -2115,7 +2236,8 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "ContactName",
@@ -2125,7 +2247,8 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "CreationUser",
@@ -2135,7 +2258,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "CreationDateTime",
@@ -2145,7 +2269,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "LastUpdateUser",
@@ -2155,7 +2280,8 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "LastUpdateDateTime",
@@ -2165,7 +2291,8 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "Timestamp",
@@ -2175,9 +2302,11 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         }
       ],
+      "ExtendedProperties": [],
       "Identity": {
         "Name": "CustomerID",
         "Seed": 1,
@@ -2240,7 +2369,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "CustomerID",
@@ -2250,7 +2380,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "AddressLine1",
@@ -2260,7 +2391,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "AddressLine2",
@@ -2270,7 +2402,8 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "City",
@@ -2280,7 +2413,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "State",
@@ -2290,7 +2424,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "ZipCode",
@@ -2300,7 +2435,8 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "CountryID",
@@ -2310,7 +2446,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "PhoneNumber",
@@ -2320,7 +2457,8 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "CreationUser",
@@ -2330,7 +2468,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "CreationDateTime",
@@ -2340,7 +2479,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "LastUpdateUser",
@@ -2350,7 +2490,8 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "LastUpdateDateTime",
@@ -2360,7 +2501,8 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "Timestamp",
@@ -2370,9 +2512,11 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         }
       ],
+      "ExtendedProperties": [],
       "Identity": {
         "Name": "CustomerAddressID",
         "Seed": 1,
@@ -2452,7 +2596,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "CustomerID",
@@ -2462,7 +2607,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "Email",
@@ -2472,7 +2618,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "CreationUser",
@@ -2482,7 +2629,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "CreationDateTime",
@@ -2492,7 +2640,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "LastUpdateUser",
@@ -2502,7 +2651,8 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "LastUpdateDateTime",
@@ -2512,7 +2662,8 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "Timestamp",
@@ -2522,9 +2673,11 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         }
       ],
+      "ExtendedProperties": [],
       "Identity": {
         "Name": "CustomerEmailID",
         "Seed": 1,
@@ -2604,7 +2757,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "OrderStatusID",
@@ -2614,7 +2768,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "CustomerID",
@@ -2624,7 +2779,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "EmployeeID",
@@ -2634,7 +2790,8 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "ShipperID",
@@ -2644,7 +2801,8 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "OrderDate",
@@ -2654,7 +2812,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "Total",
@@ -2664,7 +2823,8 @@
           "Scale": 4,
           "Nullable": false,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "CurrencyID",
@@ -2674,7 +2834,8 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "PaymentMethodID",
@@ -2684,7 +2845,8 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "Comments",
@@ -2694,7 +2856,8 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "CreationUser",
@@ -2704,7 +2867,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "CreationDateTime",
@@ -2714,7 +2878,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "LastUpdateUser",
@@ -2724,7 +2889,8 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "LastUpdateDateTime",
@@ -2734,7 +2900,8 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "Timestamp",
@@ -2744,9 +2911,11 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         }
       ],
+      "ExtendedProperties": [],
       "Identity": {
         "Name": "OrderID",
         "Seed": 1,
@@ -2960,7 +3129,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "OrderID",
@@ -2970,7 +3140,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "ProductID",
@@ -2980,7 +3151,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "ProductName",
@@ -2990,7 +3162,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "UnitPrice",
@@ -3000,7 +3173,8 @@
           "Scale": 4,
           "Nullable": false,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "Quantity",
@@ -3010,7 +3184,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "Total",
@@ -3020,7 +3195,8 @@
           "Scale": 4,
           "Nullable": false,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "CreationUser",
@@ -3030,7 +3206,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "CreationDateTime",
@@ -3040,7 +3217,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "LastUpdateUser",
@@ -3050,7 +3228,8 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "LastUpdateDateTime",
@@ -3060,7 +3239,8 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "Timestamp",
@@ -3070,9 +3250,11 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         }
       ],
+      "ExtendedProperties": [],
       "Identity": {
         "Name": "OrderDetailID",
         "Seed": 1,
@@ -3200,7 +3382,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "Description",
@@ -3210,7 +3393,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "CreationUser",
@@ -3220,7 +3404,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "CreationDateTime",
@@ -3230,7 +3415,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "LastUpdateUser",
@@ -3240,7 +3426,8 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "LastUpdateDateTime",
@@ -3250,7 +3437,8 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "Timestamp",
@@ -3260,9 +3448,11 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         }
       ],
+      "ExtendedProperties": [],
       "Identity": null,
       "RowGuidCol": {
         "Name": "No rowguidcol column defined."
@@ -3315,7 +3505,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "PaymentMethodName",
@@ -3325,7 +3516,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "PaymentMethodDescription",
@@ -3335,7 +3527,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "CreationUser",
@@ -3345,7 +3538,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "CreationDateTime",
@@ -3355,7 +3549,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "LastUpdateUser",
@@ -3365,7 +3560,8 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "LastUpdateDateTime",
@@ -3375,7 +3571,8 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "Timestamp",
@@ -3385,9 +3582,11 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         }
       ],
+      "ExtendedProperties": [],
       "Identity": null,
       "RowGuidCol": {
         "Name": "No rowguidcol column defined."
@@ -3440,7 +3639,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "CompanyName",
@@ -3450,7 +3650,8 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "ContactName",
@@ -3460,7 +3661,8 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "CreationUser",
@@ -3470,7 +3672,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "CreationDateTime",
@@ -3480,7 +3683,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "LastUpdateUser",
@@ -3490,7 +3694,8 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "LastUpdateDateTime",
@@ -3500,7 +3705,8 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "Timestamp",
@@ -3510,9 +3716,11 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         }
       ],
+      "ExtendedProperties": [],
       "Identity": {
         "Name": "ShipperID",
         "Seed": 1,
@@ -3571,7 +3779,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "EmployeeAddresses",
@@ -3581,7 +3790,8 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "EmployeeEmails",
@@ -3591,14 +3801,16 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         }
       ],
+      "Indexes": [],
+      "ExtendedProperties": [],
       "Identity": null,
       "RowGuidCol": {
         "Name": "No rowguidcol column defined."
       },
-      "Indexes": [],
       "Schema": "HumanResources",
       "Name": "EmployeeInfo",
       "FullName": "HumanResources.EmployeeInfo",
@@ -3615,7 +3827,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "CustomerName",
@@ -3625,7 +3838,8 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "EmployeeName",
@@ -3635,7 +3849,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "ShipperName",
@@ -3645,7 +3860,8 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "OrderDate",
@@ -3655,7 +3871,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "Total",
@@ -3665,7 +3882,8 @@
           "Scale": 4,
           "Nullable": false,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "CurrencyName",
@@ -3675,7 +3893,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "PaymentMethodName",
@@ -3685,7 +3904,8 @@
           "Scale": 0,
           "Nullable": false,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         },
         {
           "Name": "OrderLines",
@@ -3695,14 +3915,16 @@
           "Scale": 0,
           "Nullable": true,
           "Collation": "",
-          "Description": null
+          "Description": null,
+          "ExtendedProperties": []
         }
       ],
+      "Indexes": [],
+      "ExtendedProperties": [],
       "Identity": null,
       "RowGuidCol": {
         "Name": "No rowguidcol column defined."
       },
-      "Indexes": [],
       "Schema": "Sales",
       "Name": "OrderSummary",
       "FullName": "Sales.OrderSummary",
@@ -3712,6 +3934,473 @@
   "StoredProcedures": [],
   "ScalarFunctions": [],
   "TableFunctions": [],
+  "DatabaseTypeMaps": [
+    {
+      "DatabaseType": "bigint",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.Int64",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "long",
+      "HasClrAliasType": true,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 12,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null
+    },
+    {
+      "DatabaseType": "binary",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.Byte[]",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "byte[]",
+      "HasClrAliasType": true,
+      "AllowClrNullable": false,
+      "DbTypeEnum": 1,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null
+    },
+    {
+      "DatabaseType": "bit",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.Boolean",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "bool",
+      "HasClrAliasType": true,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 3,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null
+    },
+    {
+      "DatabaseType": "char",
+      "AllowsLengthInDeclaration": true,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.String",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "string",
+      "HasClrAliasType": true,
+      "AllowClrNullable": false,
+      "DbTypeEnum": 16,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null
+    },
+    {
+      "DatabaseType": "date",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.DateTime",
+      "HasClrFullNameType": true,
+      "ClrAliasType": null,
+      "HasClrAliasType": false,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 5,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null
+    },
+    {
+      "DatabaseType": "datetime",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.DateTime",
+      "HasClrFullNameType": true,
+      "ClrAliasType": null,
+      "HasClrAliasType": false,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 6,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null
+    },
+    {
+      "DatabaseType": "datetime2",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.DateTime",
+      "HasClrFullNameType": true,
+      "ClrAliasType": null,
+      "HasClrAliasType": false,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 26,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null
+    },
+    {
+      "DatabaseType": "datetimeoffset",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.DateTimeOffset",
+      "HasClrFullNameType": true,
+      "ClrAliasType": null,
+      "HasClrAliasType": false,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 27,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null
+    },
+    {
+      "DatabaseType": "decimal",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": true,
+      "AllowsScaleInDeclaration": true,
+      "ClrFullNameType": "System.Decimal",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "decimal",
+      "HasClrAliasType": true,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 7,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null
+    },
+    {
+      "DatabaseType": "float",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": true,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.Double",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "double",
+      "HasClrAliasType": true,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 8,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null
+    },
+    {
+      "DatabaseType": "image",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.Byte[]",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "byte[]",
+      "HasClrAliasType": true,
+      "AllowClrNullable": false,
+      "DbTypeEnum": 1,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null
+    },
+    {
+      "DatabaseType": "int",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.Int32",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "int",
+      "HasClrAliasType": true,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 11,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null
+    },
+    {
+      "DatabaseType": "money",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.Decimal",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "decimal",
+      "HasClrAliasType": true,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 7,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null
+    },
+    {
+      "DatabaseType": "nchar",
+      "AllowsLengthInDeclaration": true,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.String",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "string",
+      "HasClrAliasType": true,
+      "AllowClrNullable": false,
+      "DbTypeEnum": 23,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null
+    },
+    {
+      "DatabaseType": "ntext",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.String",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "string",
+      "HasClrAliasType": true,
+      "AllowClrNullable": false,
+      "DbTypeEnum": 16,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null
+    },
+    {
+      "DatabaseType": "numeric",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": true,
+      "AllowsScaleInDeclaration": true,
+      "ClrFullNameType": "System.Decimal",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "decimal",
+      "HasClrAliasType": true,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 7,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null
+    },
+    {
+      "DatabaseType": "nvarchar",
+      "AllowsLengthInDeclaration": true,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.String",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "string",
+      "HasClrAliasType": true,
+      "AllowClrNullable": false,
+      "DbTypeEnum": 16,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null
+    },
+    {
+      "DatabaseType": "real",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.Single",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "float",
+      "HasClrAliasType": true,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 15,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null
+    },
+    {
+      "DatabaseType": "rowversion",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.Byte[]",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "byte[]",
+      "HasClrAliasType": true,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 1,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null
+    },
+    {
+      "DatabaseType": "smalldatetime",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.DateTime",
+      "HasClrFullNameType": true,
+      "ClrAliasType": null,
+      "HasClrAliasType": false,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 6,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null
+    },
+    {
+      "DatabaseType": "smallint",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.Int16",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "short",
+      "HasClrAliasType": true,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 10,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null
+    },
+    {
+      "DatabaseType": "smallmoney",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.Decimal",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "decimal",
+      "HasClrAliasType": true,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 7,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null
+    },
+    {
+      "DatabaseType": "sql_variant",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.Object",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "object",
+      "HasClrAliasType": true,
+      "AllowClrNullable": false,
+      "DbTypeEnum": 13,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null
+    },
+    {
+      "DatabaseType": "text",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.String",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "string",
+      "HasClrAliasType": true,
+      "AllowClrNullable": false,
+      "DbTypeEnum": 16,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null
+    },
+    {
+      "DatabaseType": "time",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.TimeSpan",
+      "HasClrFullNameType": true,
+      "ClrAliasType": null,
+      "HasClrAliasType": false,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 17,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null
+    },
+    {
+      "DatabaseType": "timestamp",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.Byte[]",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "byte[]",
+      "HasClrAliasType": true,
+      "AllowClrNullable": false,
+      "DbTypeEnum": 1,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null
+    },
+    {
+      "DatabaseType": "tinyint",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.Byte",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "byte",
+      "HasClrAliasType": true,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 2,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null
+    },
+    {
+      "DatabaseType": "uniqueidentifier",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.Guid",
+      "HasClrFullNameType": true,
+      "ClrAliasType": null,
+      "HasClrAliasType": false,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 9,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null
+    },
+    {
+      "DatabaseType": "varbinary",
+      "AllowsLengthInDeclaration": true,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.Byte[]",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "byte[]",
+      "HasClrAliasType": true,
+      "AllowClrNullable": false,
+      "DbTypeEnum": 1,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null
+    },
+    {
+      "DatabaseType": "varchar",
+      "AllowsLengthInDeclaration": true,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.String",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "string",
+      "HasClrAliasType": true,
+      "AllowClrNullable": false,
+      "DbTypeEnum": 16,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null
+    },
+    {
+      "DatabaseType": "xml",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": null,
+      "HasClrFullNameType": false,
+      "ClrAliasType": null,
+      "HasClrAliasType": false,
+      "AllowClrNullable": false,
+      "DbTypeEnum": 25,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null
+    }
+  ],
   "Mappings": [
     {
       "DatabaseType": "bigint",
@@ -4178,5 +4867,6 @@
       "ParentDatabaseType": null,
       "Collation": null
     }
-  ]
+  ],
+  "ExtendedProperties": []
 }

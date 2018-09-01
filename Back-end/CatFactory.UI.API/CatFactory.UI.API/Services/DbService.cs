@@ -118,7 +118,7 @@ namespace CatFactory.UI.API.Services
                     ColumnsCount = item.Columns.Count,
                     Identity = item.Identity == null ? "" : item.Identity.Name
                 }).ToList(),
-                Mappings = db.Mappings
+                DatabaseTypeMaps = db.DatabaseTypeMaps
             };
         }
 

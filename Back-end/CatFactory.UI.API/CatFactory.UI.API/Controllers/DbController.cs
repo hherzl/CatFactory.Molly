@@ -52,7 +52,7 @@ namespace CatFactory.UI.API.Controllers
             {
                 var databaseFactory = new SqlServerDatabaseFactory
                 {
-                    ImportSettings = new DatabaseImportSettings
+                    DatabaseImportSettings = new DatabaseImportSettings
                     {
                         Name = request.Name,
                         ConnectionString = request.ConnectionString,
@@ -64,7 +64,7 @@ namespace CatFactory.UI.API.Controllers
 
                 var db = databaseFactory.Import();
 
-                await DbService.SerializeAsync(databaseFactory.ImportSettings);
+                await DbService.SerializeAsync(databaseFactory.DatabaseImportSettings);
 
                 await DbService.SerializeAsync(db);
 
@@ -148,7 +148,7 @@ namespace CatFactory.UI.API.Controllers
 
                 var databaseFactory = new SqlServerDatabaseFactory
                 {
-                    ImportSettings = await DbService.GetDatabaseImportSettingsAsync(request.Name)
+                    DatabaseImportSettings = await DbService.GetDatabaseImportSettingsAsync(request.Name)
                 };
 
                 if (request.Type == Tokens.Table)
@@ -186,7 +186,7 @@ namespace CatFactory.UI.API.Controllers
 
                 await DbService.SerializeAsync(db);
 
-                await DbService.SerializeAsync(databaseFactory.ImportSettings);
+                await DbService.SerializeAsync(databaseFactory.DatabaseImportSettings);
             }
             catch (Exception ex)
             {

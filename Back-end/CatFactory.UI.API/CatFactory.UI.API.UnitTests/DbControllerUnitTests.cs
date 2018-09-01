@@ -12,6 +12,7 @@ namespace CatFactory.UI.API.UnitTests
     {
         public DbControllerUnitTests()
         {
+            // todo: Create files for import settings and database
         }
 
         [Fact]
@@ -138,6 +139,7 @@ namespace CatFactory.UI.API.UnitTests
             {
                 Name = "Store",
                 Table = "Production.Product",
+                Type = "table",
                 Description = "Products catalog (unit tests)"
             };
 

@@ -11,6 +11,6 @@ namespace CatFactory.UI.API.Models
 
         public IEnumerable<ViewDetail> Views { get; set; }
 
-        public IEnumerable<DatabaseTypeMap> Mappings { get; set; }
+        public IEnumerable<DatabaseTypeMap> DatabaseTypeMaps { get; set; }
     }
 }

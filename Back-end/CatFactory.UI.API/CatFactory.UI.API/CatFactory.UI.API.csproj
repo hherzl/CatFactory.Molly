@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="CatFactory.SqlServer" Version="1.0.0-beta-sun-build14" />
+    <PackageReference Include="CatFactory.SqlServer" Version="1.0.0-beta-sun-build16" />
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.6" />
   </ItemGroup>
 

@@ -19,9 +19,9 @@ namespace CatFactory.UI.API.UnitTests
         public async Task TestGetImportedDatabases()
         {
             // Arrange
-            var logger = LoggerMocker.GetLogger<DbController>();
-            var hostingEnvironment = new MockHostingEnvironment();
+            var hostingEnvironment = HostingEnvironmentMocker.GetMockHostingEnvironment();
             var apiConfig = new ApiConfig();
+            var logger = LoggerMocker.GetLogger<DbController>();
             var dbService = new DbService(hostingEnvironment, apiConfig);
             var controller = new DbController(logger, dbService);
 
@@ -37,10 +37,10 @@ namespace CatFactory.UI.API.UnitTests
         public async Task TestImportDatabase()
         {
             // Arrange
-            var logger = LoggerMocker.GetLogger<DbController>();
-            var hostingEnvironment = new MockHostingEnvironment();
+            var hostingEnvironment = HostingEnvironmentMocker.GetMockHostingEnvironment();
             var apiConfig = new ApiConfig();
             var dbService = new DbService(hostingEnvironment, apiConfig);
+            var logger = LoggerMocker.GetLogger<DbController>();
             var controller = new DbController(logger, dbService);
             var request = new ImportDatabaseRequest
             {
@@ -62,9 +62,9 @@ namespace CatFactory.UI.API.UnitTests
         public async Task TestGetDatabaseDetailAsync()
         {
             // Arrange
-            var logger = LoggerMocker.GetLogger<DbController>();
-            var hostingEnvironment = new MockHostingEnvironment();
+            var hostingEnvironment = HostingEnvironmentMocker.GetMockHostingEnvironment();
             var apiConfig = new ApiConfig();
+            var logger = LoggerMocker.GetLogger<DbController>();
             var dbService = new DbService(hostingEnvironment, apiConfig);
             var controller = new DbController(logger, dbService);
             var request = new DbRequest
@@ -84,9 +84,9 @@ namespace CatFactory.UI.API.UnitTests
         public async Task TestGetTableAsync()
         {
             // Arrange
-            var logger = LoggerMocker.GetLogger<DbController>();
-            var hostingEnvironment = new MockHostingEnvironment();
+            var hostingEnvironment = HostingEnvironmentMocker.GetMockHostingEnvironment();
             var apiConfig = new ApiConfig();
+            var logger = LoggerMocker.GetLogger<DbController>();
             var dbService = new DbService(hostingEnvironment, apiConfig);
             var controller = new DbController(logger, dbService);
             var request = new DbRequest
@@ -107,9 +107,9 @@ namespace CatFactory.UI.API.UnitTests
         public async Task TestGetViewAsync()
         {
             // Arrange
-            var logger = LoggerMocker.GetLogger<DbController>();
-            var hostingEnvironment = new MockHostingEnvironment();
+            var hostingEnvironment = HostingEnvironmentMocker.GetMockHostingEnvironment();
             var apiConfig = new ApiConfig();
+            var logger = LoggerMocker.GetLogger<DbController>();
             var dbService = new DbService(hostingEnvironment, apiConfig);
             var controller = new DbController(logger, dbService);
             var request = new DbRequest
@@ -130,9 +130,9 @@ namespace CatFactory.UI.API.UnitTests
         public async Task TestEditDescriptionAsync()
         {
             // Arrange
-            var logger = LoggerMocker.GetLogger<DbController>();
-            var hostingEnvironment = new MockHostingEnvironment();
+            var hostingEnvironment = HostingEnvironmentMocker.GetMockHostingEnvironment();
             var apiConfig = new ApiConfig();
+            var logger = LoggerMocker.GetLogger<DbController>();
             var dbService = new DbService(hostingEnvironment, apiConfig);
             var controller = new DbController(logger, dbService);
             var request = new DbRequest

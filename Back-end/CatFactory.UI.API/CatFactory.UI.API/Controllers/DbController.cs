@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Linq;
 using System.Threading.Tasks;
-using CatFactory.Mapping;
+using CatFactory.ObjectRelationalMapping;
 using CatFactory.SqlServer;
+using CatFactory.SqlServer.Features;
 using CatFactory.UI.API.Models;
 using CatFactory.UI.API.Services;
 using Microsoft.AspNetCore.Mvc;
@@ -13,7 +14,7 @@ namespace CatFactory.UI.API.Controllers
     [Route("api/v1/[controller]")]
     public class DbController : Controller
     {
-        private ILogger Logger;
+        private readonly ILogger Logger;
         private DbService DbService;
 
         public DbController(ILogger<DbController> logger, DbService dbService)
@@ -58,7 +59,10 @@ namespace CatFactory.UI.API.Controllers
                         ConnectionString = request.ConnectionString,
                         ImportTables = request.ImportTables,
                         ImportViews = request.ImportViews,
-                        ExtendedProperties = { Tokens.MsDescription }
+                        ExtendedProperties =
+                        {
+                            Tokens.MsDescription
+                        }
                     }
                 };
 
@@ -158,12 +162,15 @@ namespace CatFactory.UI.API.Controllers
                     if (string.IsNullOrEmpty(request.Column))
                     {
                         databaseFactory.AddOrUpdateExtendedProperty(table, Tokens.MsDescription, request.FixedDescription);
+
                         table.Description = request.Description;
                     }
                     else
                     {
                         var column = table.Columns.First(item => item.Name == request.Column);
+
                         databaseFactory.AddOrUpdateExtendedProperty(table, column, Tokens.MsDescription, request.FixedDescription);
+
                         column.Description = request.Description;
                     }
                 }
@@ -174,12 +181,15 @@ namespace CatFactory.UI.API.Controllers
                     if (string.IsNullOrEmpty(request.Column))
                     {
                         databaseFactory.AddOrUpdateExtendedProperty(view, Tokens.MsDescription, request.FixedDescription);
+
                         view.Description = request.Description;
                     }
                     else
                     {
                         var column = view.Columns.First(item => item.Name == request.Column);
+
                         databaseFactory.AddOrUpdateExtendedProperty(view, view.Columns.First(item => item.Name == request.Column), Tokens.MsDescription, request.FixedDescription);
+
                         column.Description = request.Description;
                     }
                 }

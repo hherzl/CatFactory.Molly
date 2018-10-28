@@ -73,15 +73,19 @@ export class DbRequest {
     public isTable(): boolean {
         return this.type === 'table';
     }
+
     public isView(): boolean {
         return this.type === 'view';
     }
+
     public isColumn(): boolean {
         return this.column ? true : false;
     }
+
     public getTableRoute(): string[] {
         return ['table-details', [this.name, this.type, this.table].join('|')];
     }
+    
     public getViewRoute(): string[] {
         return ['view-details', [this.name, this.type, this.view].join('|')];
     }

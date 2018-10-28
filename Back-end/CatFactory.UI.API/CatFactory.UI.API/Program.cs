@@ -10,7 +10,7 @@ namespace CatFactory.UI.API
             BuildWebHost(args).Run();
         }
 
-        // todo: Set port for API
+        // todo: Set port for API from config
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
             .UseStartup<Startup>()

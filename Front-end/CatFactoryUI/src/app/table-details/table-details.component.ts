@@ -30,6 +30,7 @@ export class TableDetailsComponent implements OnInit {
     this.columnsForColumns = [
       'name',
       'type',
+      'computed',
       'length',
       'prec',
       'scale',

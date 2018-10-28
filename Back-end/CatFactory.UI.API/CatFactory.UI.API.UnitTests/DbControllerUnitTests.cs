@@ -1,5 +1,5 @@
 using System.Threading.Tasks;
-using CatFactory.Mapping;
+using CatFactory.ObjectRelationalMapping;
 using CatFactory.UI.API.Controllers;
 using CatFactory.UI.API.Models;
 using CatFactory.UI.API.Services;

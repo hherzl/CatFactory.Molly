@@ -26,6 +26,7 @@ export class ViewDetailsComponent implements OnInit {
     this.columnsForColumns = [
       'name',
       'type',
+      'computed',
       'length',
       'prec',
       'scale',

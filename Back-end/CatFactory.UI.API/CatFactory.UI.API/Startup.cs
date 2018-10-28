@@ -1,8 +1,10 @@
-﻿using CatFactory.UI.API.Services;
+﻿using CatFactory.UI.API.Controllers;
+using CatFactory.UI.API.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 
 namespace CatFactory.UI.API
 {
@@ -22,15 +24,15 @@ namespace CatFactory.UI.API
 
             services.AddSingleton<DbService>();
             services.AddSingleton<ApiConfig>();
+
+            services.AddScoped<ILogger<DbController>, Logger<DbController>>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             if (env.IsDevelopment())
-            {
                 app.UseDeveloperExceptionPage();
-            }
 
             app.UseCors(policy =>
             {

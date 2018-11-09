@@ -19,7 +19,7 @@ export class DatabaseDetailsComponent implements OnInit {
   response: SingleResponse<DatabaseDetail>;
   columnsForTables: string[];
   columnsForViews: string[];
-  columnsForMappings: string[];
+  columnsForDatabaseTypeMaps: string[];
 
   ngOnInit() {
     this.columnsForTables = [
@@ -37,7 +37,7 @@ export class DatabaseDetailsComponent implements OnInit {
       'identity',
       'details'
     ];
-    this.columnsForMappings = [
+    this.columnsForDatabaseTypeMaps = [
       'databaseType',
       'allowsLengthInDeclaration',
       'allowsPrecInDeclaration',

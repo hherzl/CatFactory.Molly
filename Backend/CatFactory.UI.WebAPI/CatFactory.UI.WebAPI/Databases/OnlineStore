@@ -1,0 +1,5322 @@
+{
+  "Name": "OnlineStore",
+  "DefaultSchema": "dbo",
+  "SupportTransactions": true,
+  "Description": null,
+  "DbObjects": [
+    {
+      "Schema": "HumanResources",
+      "Name": "ufnGetEmployeeFullName",
+      "FullName": "HumanResources.ufnGetEmployeeFullName",
+      "Type": "SQL_SCALAR_FUNCTION"
+    },
+    {
+      "Schema": "Warehouse",
+      "Name": "ufnGetStock",
+      "FullName": "Warehouse.ufnGetStock",
+      "Type": "SQL_SCALAR_FUNCTION"
+    },
+    {
+      "Schema": "Sales",
+      "Name": "ufnGetCustomerContact",
+      "FullName": "Sales.ufnGetCustomerContact",
+      "Type": "SQL_TABLE_VALUED_FUNCTION"
+    },
+    {
+      "Schema": "dbo",
+      "Name": "ChangeLog",
+      "FullName": "dbo.ChangeLog",
+      "Type": "USER_TABLE"
+    },
+    {
+      "Schema": "dbo",
+      "Name": "ChangeLogExclusion",
+      "FullName": "dbo.ChangeLogExclusion",
+      "Type": "USER_TABLE"
+    },
+    {
+      "Schema": "dbo",
+      "Name": "Country",
+      "FullName": "dbo.Country",
+      "Type": "USER_TABLE"
+    },
+    {
+      "Schema": "dbo",
+      "Name": "CountryCurrency",
+      "FullName": "dbo.CountryCurrency",
+      "Type": "USER_TABLE"
+    },
+    {
+      "Schema": "dbo",
+      "Name": "Currency",
+      "FullName": "dbo.Currency",
+      "Type": "USER_TABLE"
+    },
+    {
+      "Schema": "dbo",
+      "Name": "EventLog",
+      "FullName": "dbo.EventLog",
+      "Type": "USER_TABLE"
+    },
+    {
+      "Schema": "HumanResources",
+      "Name": "Employee",
+      "FullName": "HumanResources.Employee",
+      "Type": "USER_TABLE"
+    },
+    {
+      "Schema": "HumanResources",
+      "Name": "EmployeeAddress",
+      "FullName": "HumanResources.EmployeeAddress",
+      "Type": "USER_TABLE"
+    },
+    {
+      "Schema": "HumanResources",
+      "Name": "EmployeeEmail",
+      "FullName": "HumanResources.EmployeeEmail",
+      "Type": "USER_TABLE"
+    },
+    {
+      "Schema": "Sales",
+      "Name": "Customer",
+      "FullName": "Sales.Customer",
+      "Type": "USER_TABLE"
+    },
+    {
+      "Schema": "Sales",
+      "Name": "CustomerAddress",
+      "FullName": "Sales.CustomerAddress",
+      "Type": "USER_TABLE"
+    },
+    {
+      "Schema": "Sales",
+      "Name": "CustomerEmail",
+      "FullName": "Sales.CustomerEmail",
+      "Type": "USER_TABLE"
+    },
+    {
+      "Schema": "Sales",
+      "Name": "OrderDetail",
+      "FullName": "Sales.OrderDetail",
+      "Type": "USER_TABLE"
+    },
+    {
+      "Schema": "Sales",
+      "Name": "OrderHeader",
+      "FullName": "Sales.OrderHeader",
+      "Type": "USER_TABLE"
+    },
+    {
+      "Schema": "Sales",
+      "Name": "OrderStatus",
+      "FullName": "Sales.OrderStatus",
+      "Type": "USER_TABLE"
+    },
+    {
+      "Schema": "Sales",
+      "Name": "PaymentMethod",
+      "FullName": "Sales.PaymentMethod",
+      "Type": "USER_TABLE"
+    },
+    {
+      "Schema": "Sales",
+      "Name": "Shipper",
+      "FullName": "Sales.Shipper",
+      "Type": "USER_TABLE"
+    },
+    {
+      "Schema": "Warehouse",
+      "Name": "Location",
+      "FullName": "Warehouse.Location",
+      "Type": "USER_TABLE"
+    },
+    {
+      "Schema": "Warehouse",
+      "Name": "Product",
+      "FullName": "Warehouse.Product",
+      "Type": "USER_TABLE"
+    },
+    {
+      "Schema": "Warehouse",
+      "Name": "ProductCategory",
+      "FullName": "Warehouse.ProductCategory",
+      "Type": "USER_TABLE"
+    },
+    {
+      "Schema": "Warehouse",
+      "Name": "ProductInventory",
+      "FullName": "Warehouse.ProductInventory",
+      "Type": "USER_TABLE"
+    },
+    {
+      "Schema": "HumanResources",
+      "Name": "EmployeeInfo",
+      "FullName": "HumanResources.EmployeeInfo",
+      "Type": "VIEW"
+    },
+    {
+      "Schema": "Sales",
+      "Name": "OrderSummary",
+      "FullName": "Sales.OrderSummary",
+      "Type": "VIEW"
+    }
+  ],
+  "NamingConvention": {},
+  "DatabaseTypeMaps": [
+    {
+      "DatabaseType": "bigint",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.Int64",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "long",
+      "HasClrAliasType": true,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 12,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null
+    },
+    {
+      "DatabaseType": "binary",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.Byte[]",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "byte[]",
+      "HasClrAliasType": true,
+      "AllowClrNullable": false,
+      "DbTypeEnum": 1,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null
+    },
+    {
+      "DatabaseType": "bit",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.Boolean",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "bool",
+      "HasClrAliasType": true,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 3,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null
+    },
+    {
+      "DatabaseType": "char",
+      "AllowsLengthInDeclaration": true,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.String",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "string",
+      "HasClrAliasType": true,
+      "AllowClrNullable": false,
+      "DbTypeEnum": 16,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null
+    },
+    {
+      "DatabaseType": "date",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.DateTime",
+      "HasClrFullNameType": true,
+      "ClrAliasType": null,
+      "HasClrAliasType": false,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 5,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null
+    },
+    {
+      "DatabaseType": "datetime",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.DateTime",
+      "HasClrFullNameType": true,
+      "ClrAliasType": null,
+      "HasClrAliasType": false,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 6,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null
+    },
+    {
+      "DatabaseType": "datetime2",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.DateTime",
+      "HasClrFullNameType": true,
+      "ClrAliasType": null,
+      "HasClrAliasType": false,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 26,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null
+    },
+    {
+      "DatabaseType": "datetimeoffset",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.DateTimeOffset",
+      "HasClrFullNameType": true,
+      "ClrAliasType": null,
+      "HasClrAliasType": false,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 27,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null
+    },
+    {
+      "DatabaseType": "decimal",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": true,
+      "AllowsScaleInDeclaration": true,
+      "ClrFullNameType": "System.Decimal",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "decimal",
+      "HasClrAliasType": true,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 7,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null
+    },
+    {
+      "DatabaseType": "float",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": true,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.Double",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "double",
+      "HasClrAliasType": true,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 8,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null
+    },
+    {
+      "DatabaseType": "image",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.Byte[]",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "byte[]",
+      "HasClrAliasType": true,
+      "AllowClrNullable": false,
+      "DbTypeEnum": 1,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null
+    },
+    {
+      "DatabaseType": "int",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.Int32",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "int",
+      "HasClrAliasType": true,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 11,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null
+    },
+    {
+      "DatabaseType": "money",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.Decimal",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "decimal",
+      "HasClrAliasType": true,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 7,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null
+    },
+    {
+      "DatabaseType": "nchar",
+      "AllowsLengthInDeclaration": true,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.String",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "string",
+      "HasClrAliasType": true,
+      "AllowClrNullable": false,
+      "DbTypeEnum": 23,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null
+    },
+    {
+      "DatabaseType": "ntext",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.String",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "string",
+      "HasClrAliasType": true,
+      "AllowClrNullable": false,
+      "DbTypeEnum": 16,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null
+    },
+    {
+      "DatabaseType": "numeric",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": true,
+      "AllowsScaleInDeclaration": true,
+      "ClrFullNameType": "System.Decimal",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "decimal",
+      "HasClrAliasType": true,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 7,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null
+    },
+    {
+      "DatabaseType": "nvarchar",
+      "AllowsLengthInDeclaration": true,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.String",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "string",
+      "HasClrAliasType": true,
+      "AllowClrNullable": false,
+      "DbTypeEnum": 16,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null
+    },
+    {
+      "DatabaseType": "real",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.Single",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "float",
+      "HasClrAliasType": true,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 15,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null
+    },
+    {
+      "DatabaseType": "rowversion",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.Byte[]",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "byte[]",
+      "HasClrAliasType": true,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 1,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null
+    },
+    {
+      "DatabaseType": "smalldatetime",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.DateTime",
+      "HasClrFullNameType": true,
+      "ClrAliasType": null,
+      "HasClrAliasType": false,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 6,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null
+    },
+    {
+      "DatabaseType": "smallint",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.Int16",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "short",
+      "HasClrAliasType": true,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 10,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null
+    },
+    {
+      "DatabaseType": "smallmoney",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.Decimal",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "decimal",
+      "HasClrAliasType": true,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 7,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null
+    },
+    {
+      "DatabaseType": "sql_variant",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.Object",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "object",
+      "HasClrAliasType": true,
+      "AllowClrNullable": false,
+      "DbTypeEnum": 13,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null
+    },
+    {
+      "DatabaseType": "text",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.String",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "string",
+      "HasClrAliasType": true,
+      "AllowClrNullable": false,
+      "DbTypeEnum": 16,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null
+    },
+    {
+      "DatabaseType": "time",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.TimeSpan",
+      "HasClrFullNameType": true,
+      "ClrAliasType": null,
+      "HasClrAliasType": false,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 17,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null
+    },
+    {
+      "DatabaseType": "timestamp",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.Byte[]",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "byte[]",
+      "HasClrAliasType": true,
+      "AllowClrNullable": false,
+      "DbTypeEnum": 1,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null
+    },
+    {
+      "DatabaseType": "tinyint",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.Byte",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "byte",
+      "HasClrAliasType": true,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 2,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null
+    },
+    {
+      "DatabaseType": "uniqueidentifier",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.Guid",
+      "HasClrFullNameType": true,
+      "ClrAliasType": null,
+      "HasClrAliasType": false,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 9,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null
+    },
+    {
+      "DatabaseType": "varbinary",
+      "AllowsLengthInDeclaration": true,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.Byte[]",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "byte[]",
+      "HasClrAliasType": true,
+      "AllowClrNullable": false,
+      "DbTypeEnum": 1,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null
+    },
+    {
+      "DatabaseType": "varchar",
+      "AllowsLengthInDeclaration": true,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.String",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "string",
+      "HasClrAliasType": true,
+      "AllowClrNullable": false,
+      "DbTypeEnum": 16,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null
+    },
+    {
+      "DatabaseType": "xml",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": null,
+      "HasClrFullNameType": false,
+      "ClrAliasType": null,
+      "HasClrAliasType": false,
+      "AllowClrNullable": false,
+      "DbTypeEnum": 25,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null
+    }
+  ],
+  "ExtendedProperties": [
+    {
+      "Name": "MS_Description",
+      "Value": "Online store (Update)",
+      "Level0Type": null,
+      "Level0Name": null,
+      "Level1Type": null,
+      "Level1Name": null,
+      "Level2Type": null,
+      "Level2Name": null
+    }
+  ],
+  "Tables": [
+    {
+      "Description": null,
+      "Columns": [
+        {
+          "Name": "ChangeLogID",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "ClassName",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 255,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "no",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "PropertyName",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 255,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "no",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "Key",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 255,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "no",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "OriginalValue",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": -1,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "yes",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "CurrentValue",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": -1,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "yes",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "UserName",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 25,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "no",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "ChangeDate",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        }
+      ],
+      "Identity": {
+        "Name": "ChangeLogID",
+        "Seed": 1,
+        "Increment": 1
+      },
+      "RowGuidCol": {
+        "Name": "No rowguidcol column defined."
+      },
+      "Indexes": [
+        {
+          "IndexName": "PK_ChangeLog",
+          "IndexDescription": "clustered, unique, primary key located on PRIMARY",
+          "IndexKeys": "ChangeLogID"
+        }
+      ],
+      "PrimaryKey": {
+        "ConstraintName": "PK_ChangeLog",
+        "Key": [
+          "ChangeLogID"
+        ]
+      },
+      "ForeignKeys": [],
+      "Uniques": [],
+      "Checks": [],
+      "Defaults": [],
+      "ExtendedProperties": [],
+      "ConstraintDetails": [
+        {
+          "ConstraintType": "PRIMARY KEY (clustered)",
+          "ConstraintName": "PK_ChangeLog",
+          "DeleteAction": "(n/a)",
+          "UpdateAction": "(n/a)",
+          "StatusEnabled": "(n/a)",
+          "StatusForReplication": "(n/a)",
+          "ConstraintKeys": "ChangeLogID"
+        }
+      ],
+      "TableReferences": [],
+      "Schema": "dbo",
+      "Name": "ChangeLog",
+      "FullName": "dbo.ChangeLog",
+      "Type": "table"
+    },
+    {
+      "Description": null,
+      "Columns": [
+        {
+          "Name": "ChangeLogExclusionID",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "EntityName",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 128,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "no",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "PropertyName",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 128,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "no",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        }
+      ],
+      "Identity": {
+        "Name": "ChangeLogExclusionID",
+        "Seed": 1,
+        "Increment": 1
+      },
+      "RowGuidCol": {
+        "Name": "No rowguidcol column defined."
+      },
+      "Indexes": [
+        {
+          "IndexName": "PK_ChangeLogExclusion",
+          "IndexDescription": "clustered, unique, primary key located on PRIMARY",
+          "IndexKeys": "ChangeLogExclusionID"
+        },
+        {
+          "IndexName": "U_ChangeLogExclusion",
+          "IndexDescription": "nonclustered, unique, unique key located on PRIMARY",
+          "IndexKeys": "EntityName, PropertyName"
+        }
+      ],
+      "PrimaryKey": {
+        "ConstraintName": "PK_ChangeLogExclusion",
+        "Key": [
+          "ChangeLogExclusionID"
+        ]
+      },
+      "ForeignKeys": [],
+      "Uniques": [
+        {
+          "ConstraintName": "U_ChangeLogExclusion",
+          "Key": [
+            "EntityName",
+            "PropertyName"
+          ]
+        }
+      ],
+      "Checks": [],
+      "Defaults": [],
+      "ExtendedProperties": [],
+      "ConstraintDetails": [
+        {
+          "ConstraintType": "PRIMARY KEY (clustered)",
+          "ConstraintName": "PK_ChangeLogExclusion",
+          "DeleteAction": "(n/a)",
+          "UpdateAction": "(n/a)",
+          "StatusEnabled": "(n/a)",
+          "StatusForReplication": "(n/a)",
+          "ConstraintKeys": "ChangeLogExclusionID"
+        },
+        {
+          "ConstraintType": "UNIQUE (non-clustered)",
+          "ConstraintName": "U_ChangeLogExclusion",
+          "DeleteAction": "(n/a)",
+          "UpdateAction": "(n/a)",
+          "StatusEnabled": "(n/a)",
+          "StatusForReplication": "(n/a)",
+          "ConstraintKeys": "EntityName, PropertyName"
+        }
+      ],
+      "TableReferences": [],
+      "Schema": "dbo",
+      "Name": "ChangeLogExclusion",
+      "FullName": "dbo.ChangeLogExclusion",
+      "Type": "table"
+    },
+    {
+      "Description": null,
+      "Columns": [
+        {
+          "Name": "CountryID",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "CountryName",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 100,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "no",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "CreationUser",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 25,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "no",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "CreationDateTime",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "LastUpdateUser",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 25,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "yes",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "LastUpdateDateTime",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "Timestamp",
+          "Type": "timestamp",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        }
+      ],
+      "Identity": null,
+      "RowGuidCol": {
+        "Name": "No rowguidcol column defined."
+      },
+      "Indexes": [
+        {
+          "IndexName": "PK_Country",
+          "IndexDescription": "clustered, unique, primary key located on PRIMARY",
+          "IndexKeys": "CountryID"
+        }
+      ],
+      "PrimaryKey": {
+        "ConstraintName": "PK_Country",
+        "Key": [
+          "CountryID"
+        ]
+      },
+      "ForeignKeys": [],
+      "Uniques": [],
+      "Checks": [],
+      "Defaults": [],
+      "ExtendedProperties": [],
+      "ConstraintDetails": [
+        {
+          "ConstraintType": "PRIMARY KEY (clustered)",
+          "ConstraintName": "PK_Country",
+          "DeleteAction": "(n/a)",
+          "UpdateAction": "(n/a)",
+          "StatusEnabled": "(n/a)",
+          "StatusForReplication": "(n/a)",
+          "ConstraintKeys": "CountryID"
+        }
+      ],
+      "TableReferences": [
+        {
+          "ReferenceDescription": "OnlineStore.dbo.CountryCurrency: FK_CountryCurrency_Country"
+        }
+      ],
+      "Schema": "dbo",
+      "Name": "Country",
+      "FullName": "dbo.Country",
+      "Type": "table"
+    },
+    {
+      "Description": null,
+      "Columns": [
+        {
+          "Name": "CountryCurrencyID",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "CountryID",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "CurrencyID",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 10,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "no",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "CreationUser",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 25,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "no",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "CreationDateTime",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "LastUpdateUser",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 25,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "yes",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "LastUpdateDateTime",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "Timestamp",
+          "Type": "timestamp",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        }
+      ],
+      "Identity": {
+        "Name": "CountryCurrencyID",
+        "Seed": 1,
+        "Increment": 1
+      },
+      "RowGuidCol": {
+        "Name": "No rowguidcol column defined."
+      },
+      "Indexes": [
+        {
+          "IndexName": "PK_CountryCurrency",
+          "IndexDescription": "clustered, unique, primary key located on PRIMARY",
+          "IndexKeys": "CountryCurrencyID"
+        },
+        {
+          "IndexName": "U_CountryCurrency",
+          "IndexDescription": "nonclustered, unique, unique key located on PRIMARY",
+          "IndexKeys": "CountryID, CurrencyID"
+        }
+      ],
+      "PrimaryKey": {
+        "ConstraintName": "PK_CountryCurrency",
+        "Key": [
+          "CountryCurrencyID"
+        ]
+      },
+      "ForeignKeys": [
+        {
+          "References": "OnlineStore.dbo.Country",
+          "Child": null,
+          "ConstraintName": "FK_CountryCurrency_Country",
+          "Key": [
+            "CountryID"
+          ]
+        },
+        {
+          "References": "OnlineStore.dbo.Currency",
+          "Child": null,
+          "ConstraintName": "FK_CountryCurrency_Currency",
+          "Key": [
+            "CurrencyID"
+          ]
+        }
+      ],
+      "Uniques": [
+        {
+          "ConstraintName": "U_CountryCurrency",
+          "Key": [
+            "CountryID",
+            "CurrencyID"
+          ]
+        }
+      ],
+      "Checks": [],
+      "Defaults": [],
+      "ExtendedProperties": [],
+      "ConstraintDetails": [
+        {
+          "ConstraintType": "FOREIGN KEY",
+          "ConstraintName": "FK_CountryCurrency_Country",
+          "DeleteAction": "No Action",
+          "UpdateAction": "No Action",
+          "StatusEnabled": "Enabled",
+          "StatusForReplication": "Is_For_Replication",
+          "ConstraintKeys": "CountryID"
+        },
+        {
+          "ConstraintType": " ",
+          "ConstraintName": " ",
+          "DeleteAction": " ",
+          "UpdateAction": " ",
+          "StatusEnabled": " ",
+          "StatusForReplication": " ",
+          "ConstraintKeys": "REFERENCES OnlineStore.dbo.Country (CountryID)"
+        },
+        {
+          "ConstraintType": "FOREIGN KEY",
+          "ConstraintName": "FK_CountryCurrency_Currency",
+          "DeleteAction": "No Action",
+          "UpdateAction": "No Action",
+          "StatusEnabled": "Enabled",
+          "StatusForReplication": "Is_For_Replication",
+          "ConstraintKeys": "CurrencyID"
+        },
+        {
+          "ConstraintType": " ",
+          "ConstraintName": " ",
+          "DeleteAction": " ",
+          "UpdateAction": " ",
+          "StatusEnabled": " ",
+          "StatusForReplication": " ",
+          "ConstraintKeys": "REFERENCES OnlineStore.dbo.Currency (CurrencyID)"
+        },
+        {
+          "ConstraintType": "PRIMARY KEY (clustered)",
+          "ConstraintName": "PK_CountryCurrency",
+          "DeleteAction": "(n/a)",
+          "UpdateAction": "(n/a)",
+          "StatusEnabled": "(n/a)",
+          "StatusForReplication": "(n/a)",
+          "ConstraintKeys": "CountryCurrencyID"
+        },
+        {
+          "ConstraintType": "UNIQUE (non-clustered)",
+          "ConstraintName": "U_CountryCurrency",
+          "DeleteAction": "(n/a)",
+          "UpdateAction": "(n/a)",
+          "StatusEnabled": "(n/a)",
+          "StatusForReplication": "(n/a)",
+          "ConstraintKeys": "CountryID, CurrencyID"
+        }
+      ],
+      "TableReferences": [],
+      "Schema": "dbo",
+      "Name": "CountryCurrency",
+      "FullName": "dbo.CountryCurrency",
+      "Type": "table"
+    },
+    {
+      "Description": null,
+      "Columns": [
+        {
+          "Name": "CurrencyID",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 10,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "no",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "CurrencyName",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 50,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "no",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "CurrencySymbol",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 1,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "no",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "CreationUser",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 25,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "no",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "CreationDateTime",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "LastUpdateUser",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 25,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "yes",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "LastUpdateDateTime",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "Timestamp",
+          "Type": "timestamp",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        }
+      ],
+      "Identity": null,
+      "RowGuidCol": {
+        "Name": "No rowguidcol column defined."
+      },
+      "Indexes": [
+        {
+          "IndexName": "PK_Currency",
+          "IndexDescription": "clustered, unique, primary key located on PRIMARY",
+          "IndexKeys": "CurrencyID"
+        }
+      ],
+      "PrimaryKey": {
+        "ConstraintName": "PK_Currency",
+        "Key": [
+          "CurrencyID"
+        ]
+      },
+      "ForeignKeys": [],
+      "Uniques": [],
+      "Checks": [],
+      "Defaults": [],
+      "ExtendedProperties": [],
+      "ConstraintDetails": [
+        {
+          "ConstraintType": "PRIMARY KEY (clustered)",
+          "ConstraintName": "PK_Currency",
+          "DeleteAction": "(n/a)",
+          "UpdateAction": "(n/a)",
+          "StatusEnabled": "(n/a)",
+          "StatusForReplication": "(n/a)",
+          "ConstraintKeys": "CurrencyID"
+        }
+      ],
+      "TableReferences": [
+        {
+          "ReferenceDescription": "OnlineStore.dbo.CountryCurrency: FK_CountryCurrency_Currency"
+        },
+        {
+          "ReferenceDescription": "OnlineStore.Sales.OrderHeader: FK_Sales_OrderHeader_Currency"
+        }
+      ],
+      "Schema": "dbo",
+      "Name": "Currency",
+      "FullName": "dbo.Currency",
+      "Type": "table"
+    },
+    {
+      "Description": null,
+      "Columns": [
+        {
+          "Name": "EventLogID",
+          "Type": "uniqueidentifier",
+          "Computed": "no",
+          "Length": 16,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "EventType",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "Key",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 255,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "no",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "Message",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": -1,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "no",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "EntryDate",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        }
+      ],
+      "Identity": null,
+      "RowGuidCol": {
+        "Name": "No rowguidcol column defined."
+      },
+      "Indexes": [
+        {
+          "IndexName": "PK_EventLog",
+          "IndexDescription": "clustered, unique, primary key located on PRIMARY",
+          "IndexKeys": "EventLogID"
+        }
+      ],
+      "PrimaryKey": {
+        "ConstraintName": "PK_EventLog",
+        "Key": [
+          "EventLogID"
+        ]
+      },
+      "ForeignKeys": [],
+      "Uniques": [],
+      "Checks": [],
+      "Defaults": [],
+      "ExtendedProperties": [],
+      "ConstraintDetails": [
+        {
+          "ConstraintType": "PRIMARY KEY (clustered)",
+          "ConstraintName": "PK_EventLog",
+          "DeleteAction": "(n/a)",
+          "UpdateAction": "(n/a)",
+          "StatusEnabled": "(n/a)",
+          "StatusForReplication": "(n/a)",
+          "ConstraintKeys": "EventLogID"
+        }
+      ],
+      "TableReferences": [],
+      "Schema": "dbo",
+      "Name": "EventLog",
+      "FullName": "dbo.EventLog",
+      "Type": "table"
+    },
+    {
+      "Description": null,
+      "Columns": [
+        {
+          "Name": "EmployeeID",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "FirstName",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 25,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "no",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "MiddleName",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 25,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "yes",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "LastName",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 25,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "no",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "BirthDate",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "CreationUser",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 25,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "no",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "CreationDateTime",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "LastUpdateUser",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 25,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "yes",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "LastUpdateDateTime",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "Timestamp",
+          "Type": "timestamp",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        }
+      ],
+      "Identity": {
+        "Name": "EmployeeID",
+        "Seed": 1,
+        "Increment": 1
+      },
+      "RowGuidCol": {
+        "Name": "No rowguidcol column defined."
+      },
+      "Indexes": [
+        {
+          "IndexName": "PK_HumanResources_Employee",
+          "IndexDescription": "clustered, unique, primary key located on PRIMARY",
+          "IndexKeys": "EmployeeID"
+        }
+      ],
+      "PrimaryKey": {
+        "ConstraintName": "PK_HumanResources_Employee",
+        "Key": [
+          "EmployeeID"
+        ]
+      },
+      "ForeignKeys": [],
+      "Uniques": [],
+      "Checks": [],
+      "Defaults": [],
+      "ExtendedProperties": [],
+      "ConstraintDetails": [
+        {
+          "ConstraintType": "PRIMARY KEY (clustered)",
+          "ConstraintName": "PK_HumanResources_Employee",
+          "DeleteAction": "(n/a)",
+          "UpdateAction": "(n/a)",
+          "StatusEnabled": "(n/a)",
+          "StatusForReplication": "(n/a)",
+          "ConstraintKeys": "EmployeeID"
+        }
+      ],
+      "TableReferences": [
+        {
+          "ReferenceDescription": "OnlineStore.HumanResources.EmployeeAddress: FK_HumanResources_EmployeeAddress"
+        },
+        {
+          "ReferenceDescription": "OnlineStore.HumanResources.EmployeeEmail: FK_HumanResources_EmployeeEmail"
+        },
+        {
+          "ReferenceDescription": "OnlineStore.Sales.OrderHeader: FK_Sales_OrderHeader_Employee"
+        }
+      ],
+      "Schema": "HumanResources",
+      "Name": "Employee",
+      "FullName": "HumanResources.Employee",
+      "Type": "table"
+    },
+    {
+      "Description": null,
+      "Columns": [
+        {
+          "Name": "EmployeeAddressID",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "EmployeeID",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "AddressLine1",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 50,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "no",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "AddressLine2",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 50,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "yes",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "City",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 25,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "no",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "State",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 25,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "no",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "ZipCode",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 5,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "yes",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "CountryID",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "PhoneNumber",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 25,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "yes",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "CreationUser",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 25,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "no",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "CreationDateTime",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "LastUpdateUser",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 25,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "yes",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "LastUpdateDateTime",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "Timestamp",
+          "Type": "timestamp",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        }
+      ],
+      "Identity": {
+        "Name": "EmployeeAddressID",
+        "Seed": 1,
+        "Increment": 1
+      },
+      "RowGuidCol": {
+        "Name": "No rowguidcol column defined."
+      },
+      "Indexes": [
+        {
+          "IndexName": "PK_HumanResources_EmployeeAddress",
+          "IndexDescription": "clustered, unique, primary key located on PRIMARY",
+          "IndexKeys": "EmployeeAddressID"
+        }
+      ],
+      "PrimaryKey": {
+        "ConstraintName": "PK_HumanResources_EmployeeAddress",
+        "Key": [
+          "EmployeeAddressID"
+        ]
+      },
+      "ForeignKeys": [
+        {
+          "References": "OnlineStore.HumanResources.Employee",
+          "Child": null,
+          "ConstraintName": "FK_HumanResources_EmployeeAddress",
+          "Key": [
+            "EmployeeID"
+          ]
+        }
+      ],
+      "Uniques": [],
+      "Checks": [],
+      "Defaults": [],
+      "ExtendedProperties": [],
+      "ConstraintDetails": [
+        {
+          "ConstraintType": "FOREIGN KEY",
+          "ConstraintName": "FK_HumanResources_EmployeeAddress",
+          "DeleteAction": "No Action",
+          "UpdateAction": "No Action",
+          "StatusEnabled": "Enabled",
+          "StatusForReplication": "Is_For_Replication",
+          "ConstraintKeys": "EmployeeID"
+        },
+        {
+          "ConstraintType": " ",
+          "ConstraintName": " ",
+          "DeleteAction": " ",
+          "UpdateAction": " ",
+          "StatusEnabled": " ",
+          "StatusForReplication": " ",
+          "ConstraintKeys": "REFERENCES OnlineStore.HumanResources.Employee (EmployeeID)"
+        },
+        {
+          "ConstraintType": "PRIMARY KEY (clustered)",
+          "ConstraintName": "PK_HumanResources_EmployeeAddress",
+          "DeleteAction": "(n/a)",
+          "UpdateAction": "(n/a)",
+          "StatusEnabled": "(n/a)",
+          "StatusForReplication": "(n/a)",
+          "ConstraintKeys": "EmployeeAddressID"
+        }
+      ],
+      "TableReferences": [],
+      "Schema": "HumanResources",
+      "Name": "EmployeeAddress",
+      "FullName": "HumanResources.EmployeeAddress",
+      "Type": "table"
+    },
+    {
+      "Description": null,
+      "Columns": [
+        {
+          "Name": "EmployeeEmailID",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "EmployeeID",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "Email",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 50,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "no",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "CreationUser",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 25,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "no",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "CreationDateTime",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "LastUpdateUser",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 25,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "yes",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "LastUpdateDateTime",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "Timestamp",
+          "Type": "timestamp",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        }
+      ],
+      "Identity": {
+        "Name": "EmployeeEmailID",
+        "Seed": 1,
+        "Increment": 1
+      },
+      "RowGuidCol": {
+        "Name": "No rowguidcol column defined."
+      },
+      "Indexes": [
+        {
+          "IndexName": "PK_HumanResources_EmployeeEmail",
+          "IndexDescription": "clustered, unique, primary key located on PRIMARY",
+          "IndexKeys": "EmployeeEmailID"
+        }
+      ],
+      "PrimaryKey": {
+        "ConstraintName": "PK_HumanResources_EmployeeEmail",
+        "Key": [
+          "EmployeeEmailID"
+        ]
+      },
+      "ForeignKeys": [
+        {
+          "References": "OnlineStore.HumanResources.Employee",
+          "Child": null,
+          "ConstraintName": "FK_HumanResources_EmployeeEmail",
+          "Key": [
+            "EmployeeID"
+          ]
+        }
+      ],
+      "Uniques": [],
+      "Checks": [],
+      "Defaults": [],
+      "ExtendedProperties": [],
+      "ConstraintDetails": [
+        {
+          "ConstraintType": "FOREIGN KEY",
+          "ConstraintName": "FK_HumanResources_EmployeeEmail",
+          "DeleteAction": "No Action",
+          "UpdateAction": "No Action",
+          "StatusEnabled": "Enabled",
+          "StatusForReplication": "Is_For_Replication",
+          "ConstraintKeys": "EmployeeID"
+        },
+        {
+          "ConstraintType": " ",
+          "ConstraintName": " ",
+          "DeleteAction": " ",
+          "UpdateAction": " ",
+          "StatusEnabled": " ",
+          "StatusForReplication": " ",
+          "ConstraintKeys": "REFERENCES OnlineStore.HumanResources.Employee (EmployeeID)"
+        },
+        {
+          "ConstraintType": "PRIMARY KEY (clustered)",
+          "ConstraintName": "PK_HumanResources_EmployeeEmail",
+          "DeleteAction": "(n/a)",
+          "UpdateAction": "(n/a)",
+          "StatusEnabled": "(n/a)",
+          "StatusForReplication": "(n/a)",
+          "ConstraintKeys": "EmployeeEmailID"
+        }
+      ],
+      "TableReferences": [],
+      "Schema": "HumanResources",
+      "Name": "EmployeeEmail",
+      "FullName": "HumanResources.EmployeeEmail",
+      "Type": "table"
+    },
+    {
+      "Description": null,
+      "Columns": [
+        {
+          "Name": "CustomerID",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "CompanyName",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 100,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "yes",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "ContactName",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 100,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "yes",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "CreationUser",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 25,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "no",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "CreationDateTime",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "LastUpdateUser",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 25,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "yes",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "LastUpdateDateTime",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "Timestamp",
+          "Type": "timestamp",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        }
+      ],
+      "Identity": {
+        "Name": "CustomerID",
+        "Seed": 1,
+        "Increment": 1
+      },
+      "RowGuidCol": {
+        "Name": "No rowguidcol column defined."
+      },
+      "Indexes": [
+        {
+          "IndexName": "PK_Sales_Customer",
+          "IndexDescription": "clustered, unique, primary key located on PRIMARY",
+          "IndexKeys": "CustomerID"
+        }
+      ],
+      "PrimaryKey": {
+        "ConstraintName": "PK_Sales_Customer",
+        "Key": [
+          "CustomerID"
+        ]
+      },
+      "ForeignKeys": [],
+      "Uniques": [],
+      "Checks": [],
+      "Defaults": [],
+      "ExtendedProperties": [],
+      "ConstraintDetails": [
+        {
+          "ConstraintType": "PRIMARY KEY (clustered)",
+          "ConstraintName": "PK_Sales_Customer",
+          "DeleteAction": "(n/a)",
+          "UpdateAction": "(n/a)",
+          "StatusEnabled": "(n/a)",
+          "StatusForReplication": "(n/a)",
+          "ConstraintKeys": "CustomerID"
+        }
+      ],
+      "TableReferences": [
+        {
+          "ReferenceDescription": "OnlineStore.Sales.CustomerAddress: FK_Sales_CustomerAddress"
+        },
+        {
+          "ReferenceDescription": "OnlineStore.Sales.CustomerEmail: FK_Sales_CustomerEmail"
+        },
+        {
+          "ReferenceDescription": "OnlineStore.Sales.OrderHeader: FK_Sales_OrderHeader_Customer"
+        }
+      ],
+      "Schema": "Sales",
+      "Name": "Customer",
+      "FullName": "Sales.Customer",
+      "Type": "table"
+    },
+    {
+      "Description": null,
+      "Columns": [
+        {
+          "Name": "CustomerAddressID",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "CustomerID",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "AddressLine1",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 50,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "no",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "AddressLine2",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 50,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "yes",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "City",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 25,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "no",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "State",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 25,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "no",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "ZipCode",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 5,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "yes",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "CountryID",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "PhoneNumber",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 25,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "yes",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "CreationUser",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 25,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "no",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "CreationDateTime",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "LastUpdateUser",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 25,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "yes",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "LastUpdateDateTime",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "Timestamp",
+          "Type": "timestamp",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        }
+      ],
+      "Identity": {
+        "Name": "CustomerAddressID",
+        "Seed": 1,
+        "Increment": 1
+      },
+      "RowGuidCol": {
+        "Name": "No rowguidcol column defined."
+      },
+      "Indexes": [
+        {
+          "IndexName": "PK_Sales_CustomerAddress",
+          "IndexDescription": "clustered, unique, primary key located on PRIMARY",
+          "IndexKeys": "CustomerAddressID"
+        }
+      ],
+      "PrimaryKey": {
+        "ConstraintName": "PK_Sales_CustomerAddress",
+        "Key": [
+          "CustomerAddressID"
+        ]
+      },
+      "ForeignKeys": [
+        {
+          "References": "OnlineStore.Sales.Customer",
+          "Child": null,
+          "ConstraintName": "FK_Sales_CustomerAddress",
+          "Key": [
+            "CustomerID"
+          ]
+        }
+      ],
+      "Uniques": [],
+      "Checks": [],
+      "Defaults": [],
+      "ExtendedProperties": [],
+      "ConstraintDetails": [
+        {
+          "ConstraintType": "FOREIGN KEY",
+          "ConstraintName": "FK_Sales_CustomerAddress",
+          "DeleteAction": "No Action",
+          "UpdateAction": "No Action",
+          "StatusEnabled": "Enabled",
+          "StatusForReplication": "Is_For_Replication",
+          "ConstraintKeys": "CustomerID"
+        },
+        {
+          "ConstraintType": " ",
+          "ConstraintName": " ",
+          "DeleteAction": " ",
+          "UpdateAction": " ",
+          "StatusEnabled": " ",
+          "StatusForReplication": " ",
+          "ConstraintKeys": "REFERENCES OnlineStore.Sales.Customer (CustomerID)"
+        },
+        {
+          "ConstraintType": "PRIMARY KEY (clustered)",
+          "ConstraintName": "PK_Sales_CustomerAddress",
+          "DeleteAction": "(n/a)",
+          "UpdateAction": "(n/a)",
+          "StatusEnabled": "(n/a)",
+          "StatusForReplication": "(n/a)",
+          "ConstraintKeys": "CustomerAddressID"
+        }
+      ],
+      "TableReferences": [],
+      "Schema": "Sales",
+      "Name": "CustomerAddress",
+      "FullName": "Sales.CustomerAddress",
+      "Type": "table"
+    },
+    {
+      "Description": null,
+      "Columns": [
+        {
+          "Name": "CustomerEmailID",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "CustomerID",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "Email",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 50,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "no",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "CreationUser",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 25,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "no",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "CreationDateTime",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "LastUpdateUser",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 25,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "yes",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "LastUpdateDateTime",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "Timestamp",
+          "Type": "timestamp",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        }
+      ],
+      "Identity": {
+        "Name": "CustomerEmailID",
+        "Seed": 1,
+        "Increment": 1
+      },
+      "RowGuidCol": {
+        "Name": "No rowguidcol column defined."
+      },
+      "Indexes": [
+        {
+          "IndexName": "PK_Sales_CustomerEmail",
+          "IndexDescription": "clustered, unique, primary key located on PRIMARY",
+          "IndexKeys": "CustomerEmailID"
+        }
+      ],
+      "PrimaryKey": {
+        "ConstraintName": "PK_Sales_CustomerEmail",
+        "Key": [
+          "CustomerEmailID"
+        ]
+      },
+      "ForeignKeys": [
+        {
+          "References": "OnlineStore.Sales.Customer",
+          "Child": null,
+          "ConstraintName": "FK_Sales_CustomerEmail",
+          "Key": [
+            "CustomerID"
+          ]
+        }
+      ],
+      "Uniques": [],
+      "Checks": [],
+      "Defaults": [],
+      "ExtendedProperties": [],
+      "ConstraintDetails": [
+        {
+          "ConstraintType": "FOREIGN KEY",
+          "ConstraintName": "FK_Sales_CustomerEmail",
+          "DeleteAction": "No Action",
+          "UpdateAction": "No Action",
+          "StatusEnabled": "Enabled",
+          "StatusForReplication": "Is_For_Replication",
+          "ConstraintKeys": "CustomerID"
+        },
+        {
+          "ConstraintType": " ",
+          "ConstraintName": " ",
+          "DeleteAction": " ",
+          "UpdateAction": " ",
+          "StatusEnabled": " ",
+          "StatusForReplication": " ",
+          "ConstraintKeys": "REFERENCES OnlineStore.Sales.Customer (CustomerID)"
+        },
+        {
+          "ConstraintType": "PRIMARY KEY (clustered)",
+          "ConstraintName": "PK_Sales_CustomerEmail",
+          "DeleteAction": "(n/a)",
+          "UpdateAction": "(n/a)",
+          "StatusEnabled": "(n/a)",
+          "StatusForReplication": "(n/a)",
+          "ConstraintKeys": "CustomerEmailID"
+        }
+      ],
+      "TableReferences": [],
+      "Schema": "Sales",
+      "Name": "CustomerEmail",
+      "FullName": "Sales.CustomerEmail",
+      "Type": "table"
+    },
+    {
+      "Description": null,
+      "Columns": [
+        {
+          "Name": "OrderDetailID",
+          "Type": "bigint",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 19,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "OrderHeaderID",
+          "Type": "bigint",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 19,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "ProductID",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "ProductName",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 255,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "no",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "UnitPrice",
+          "Type": "decimal",
+          "Computed": "no",
+          "Length": 5,
+          "Prec": 8,
+          "Scale": 4,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "Quantity",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "Total",
+          "Type": "decimal",
+          "Computed": "no",
+          "Length": 5,
+          "Prec": 8,
+          "Scale": 4,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "CreationUser",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 25,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "no",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "CreationDateTime",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "LastUpdateUser",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 25,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "yes",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "LastUpdateDateTime",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "Timestamp",
+          "Type": "timestamp",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        }
+      ],
+      "Identity": {
+        "Name": "OrderDetailID",
+        "Seed": 1,
+        "Increment": 1
+      },
+      "RowGuidCol": {
+        "Name": "No rowguidcol column defined."
+      },
+      "Indexes": [
+        {
+          "IndexName": "PK_Sales_OrderDetail",
+          "IndexDescription": "clustered, unique, primary key located on PRIMARY",
+          "IndexKeys": "OrderDetailID"
+        },
+        {
+          "IndexName": "U_Sales_OrderDetail",
+          "IndexDescription": "nonclustered, unique, unique key located on PRIMARY",
+          "IndexKeys": "OrderHeaderID, ProductID"
+        }
+      ],
+      "PrimaryKey": {
+        "ConstraintName": "PK_Sales_OrderDetail",
+        "Key": [
+          "OrderDetailID"
+        ]
+      },
+      "ForeignKeys": [
+        {
+          "References": "OnlineStore.Sales.OrderHeader",
+          "Child": null,
+          "ConstraintName": "FK_Sales_OrderDetail_Order",
+          "Key": [
+            "OrderHeaderID"
+          ]
+        },
+        {
+          "References": "OnlineStore.Warehouse.Product",
+          "Child": null,
+          "ConstraintName": "FK_Sales_OrderDetail_Product",
+          "Key": [
+            "ProductID"
+          ]
+        }
+      ],
+      "Uniques": [
+        {
+          "ConstraintName": "U_Sales_OrderDetail",
+          "Key": [
+            "OrderHeaderID",
+            "ProductID"
+          ]
+        }
+      ],
+      "Checks": [],
+      "Defaults": [],
+      "ExtendedProperties": [],
+      "ConstraintDetails": [
+        {
+          "ConstraintType": "FOREIGN KEY",
+          "ConstraintName": "FK_Sales_OrderDetail_Order",
+          "DeleteAction": "No Action",
+          "UpdateAction": "No Action",
+          "StatusEnabled": "Enabled",
+          "StatusForReplication": "Is_For_Replication",
+          "ConstraintKeys": "OrderHeaderID"
+        },
+        {
+          "ConstraintType": " ",
+          "ConstraintName": " ",
+          "DeleteAction": " ",
+          "UpdateAction": " ",
+          "StatusEnabled": " ",
+          "StatusForReplication": " ",
+          "ConstraintKeys": "REFERENCES OnlineStore.Sales.OrderHeader (OrderHeaderID)"
+        },
+        {
+          "ConstraintType": "FOREIGN KEY",
+          "ConstraintName": "FK_Sales_OrderDetail_Product",
+          "DeleteAction": "No Action",
+          "UpdateAction": "No Action",
+          "StatusEnabled": "Enabled",
+          "StatusForReplication": "Is_For_Replication",
+          "ConstraintKeys": "ProductID"
+        },
+        {
+          "ConstraintType": " ",
+          "ConstraintName": " ",
+          "DeleteAction": " ",
+          "UpdateAction": " ",
+          "StatusEnabled": " ",
+          "StatusForReplication": " ",
+          "ConstraintKeys": "REFERENCES OnlineStore.Warehouse.Product (ProductID)"
+        },
+        {
+          "ConstraintType": "PRIMARY KEY (clustered)",
+          "ConstraintName": "PK_Sales_OrderDetail",
+          "DeleteAction": "(n/a)",
+          "UpdateAction": "(n/a)",
+          "StatusEnabled": "(n/a)",
+          "StatusForReplication": "(n/a)",
+          "ConstraintKeys": "OrderDetailID"
+        },
+        {
+          "ConstraintType": "UNIQUE (non-clustered)",
+          "ConstraintName": "U_Sales_OrderDetail",
+          "DeleteAction": "(n/a)",
+          "UpdateAction": "(n/a)",
+          "StatusEnabled": "(n/a)",
+          "StatusForReplication": "(n/a)",
+          "ConstraintKeys": "OrderHeaderID, ProductID"
+        }
+      ],
+      "TableReferences": [
+        {
+          "ReferenceDescription": "OnlineStore.Warehouse.ProductInventory: FK_Warehouse_ProductInventory_Sales_OrderDetail"
+        }
+      ],
+      "Schema": "Sales",
+      "Name": "OrderDetail",
+      "FullName": "Sales.OrderDetail",
+      "Type": "table"
+    },
+    {
+      "Description": null,
+      "Columns": [
+        {
+          "Name": "OrderHeaderID",
+          "Type": "bigint",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 19,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "OrderStatusID",
+          "Type": "smallint",
+          "Computed": "no",
+          "Length": 2,
+          "Prec": 5,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "CustomerID",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "EmployeeID",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "ShipperID",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "OrderDate",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "Total",
+          "Type": "decimal",
+          "Computed": "no",
+          "Length": 9,
+          "Prec": 12,
+          "Scale": 4,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "CurrencyID",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 10,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "yes",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "PaymentMethodID",
+          "Type": "uniqueidentifier",
+          "Computed": "no",
+          "Length": 16,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "DetailsCount",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "ReferenceOrderID",
+          "Type": "bigint",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 19,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "Comments",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": -1,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "yes",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "CreationUser",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 25,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "no",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "CreationDateTime",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "LastUpdateUser",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 25,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "yes",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "LastUpdateDateTime",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "Timestamp",
+          "Type": "timestamp",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        }
+      ],
+      "Identity": {
+        "Name": "OrderHeaderID",
+        "Seed": 1,
+        "Increment": 1
+      },
+      "RowGuidCol": {
+        "Name": "No rowguidcol column defined."
+      },
+      "Indexes": [
+        {
+          "IndexName": "PK_Sales_OrderHeader",
+          "IndexDescription": "clustered, unique, primary key located on PRIMARY",
+          "IndexKeys": "OrderHeaderID"
+        }
+      ],
+      "PrimaryKey": {
+        "ConstraintName": "PK_Sales_OrderHeader",
+        "Key": [
+          "OrderHeaderID"
+        ]
+      },
+      "ForeignKeys": [
+        {
+          "References": "OnlineStore.dbo.Currency",
+          "Child": null,
+          "ConstraintName": "FK_Sales_OrderHeader_Currency",
+          "Key": [
+            "CurrencyID"
+          ]
+        },
+        {
+          "References": "OnlineStore.Sales.Customer",
+          "Child": null,
+          "ConstraintName": "FK_Sales_OrderHeader_Customer",
+          "Key": [
+            "CustomerID"
+          ]
+        },
+        {
+          "References": "OnlineStore.HumanResources.Employee",
+          "Child": null,
+          "ConstraintName": "FK_Sales_OrderHeader_Employee",
+          "Key": [
+            "EmployeeID"
+          ]
+        },
+        {
+          "References": "OnlineStore.Sales.OrderStatus",
+          "Child": null,
+          "ConstraintName": "FK_Sales_OrderHeader_OrderStatus",
+          "Key": [
+            "OrderStatusID"
+          ]
+        },
+        {
+          "References": "OnlineStore.Sales.PaymentMethod",
+          "Child": null,
+          "ConstraintName": "FK_Sales_OrderHeader_PaymentMethod",
+          "Key": [
+            "PaymentMethodID"
+          ]
+        },
+        {
+          "References": "OnlineStore.Sales.Shipper",
+          "Child": null,
+          "ConstraintName": "FK_Sales_OrderHeader_Shipper",
+          "Key": [
+            "ShipperID"
+          ]
+        }
+      ],
+      "Uniques": [],
+      "Checks": [],
+      "Defaults": [],
+      "ExtendedProperties": [],
+      "ConstraintDetails": [
+        {
+          "ConstraintType": "FOREIGN KEY",
+          "ConstraintName": "FK_Sales_OrderHeader_Currency",
+          "DeleteAction": "No Action",
+          "UpdateAction": "No Action",
+          "StatusEnabled": "Enabled",
+          "StatusForReplication": "Is_For_Replication",
+          "ConstraintKeys": "CurrencyID"
+        },
+        {
+          "ConstraintType": " ",
+          "ConstraintName": " ",
+          "DeleteAction": " ",
+          "UpdateAction": " ",
+          "StatusEnabled": " ",
+          "StatusForReplication": " ",
+          "ConstraintKeys": "REFERENCES OnlineStore.dbo.Currency (CurrencyID)"
+        },
+        {
+          "ConstraintType": "FOREIGN KEY",
+          "ConstraintName": "FK_Sales_OrderHeader_Customer",
+          "DeleteAction": "No Action",
+          "UpdateAction": "No Action",
+          "StatusEnabled": "Enabled",
+          "StatusForReplication": "Is_For_Replication",
+          "ConstraintKeys": "CustomerID"
+        },
+        {
+          "ConstraintType": " ",
+          "ConstraintName": " ",
+          "DeleteAction": " ",
+          "UpdateAction": " ",
+          "StatusEnabled": " ",
+          "StatusForReplication": " ",
+          "ConstraintKeys": "REFERENCES OnlineStore.Sales.Customer (CustomerID)"
+        },
+        {
+          "ConstraintType": "FOREIGN KEY",
+          "ConstraintName": "FK_Sales_OrderHeader_Employee",
+          "DeleteAction": "No Action",
+          "UpdateAction": "No Action",
+          "StatusEnabled": "Enabled",
+          "StatusForReplication": "Is_For_Replication",
+          "ConstraintKeys": "EmployeeID"
+        },
+        {
+          "ConstraintType": " ",
+          "ConstraintName": " ",
+          "DeleteAction": " ",
+          "UpdateAction": " ",
+          "StatusEnabled": " ",
+          "StatusForReplication": " ",
+          "ConstraintKeys": "REFERENCES OnlineStore.HumanResources.Employee (EmployeeID)"
+        },
+        {
+          "ConstraintType": "FOREIGN KEY",
+          "ConstraintName": "FK_Sales_OrderHeader_OrderStatus",
+          "DeleteAction": "No Action",
+          "UpdateAction": "No Action",
+          "StatusEnabled": "Enabled",
+          "StatusForReplication": "Is_For_Replication",
+          "ConstraintKeys": "OrderStatusID"
+        },
+        {
+          "ConstraintType": " ",
+          "ConstraintName": " ",
+          "DeleteAction": " ",
+          "UpdateAction": " ",
+          "StatusEnabled": " ",
+          "StatusForReplication": " ",
+          "ConstraintKeys": "REFERENCES OnlineStore.Sales.OrderStatus (OrderStatusID)"
+        },
+        {
+          "ConstraintType": "FOREIGN KEY",
+          "ConstraintName": "FK_Sales_OrderHeader_PaymentMethod",
+          "DeleteAction": "No Action",
+          "UpdateAction": "No Action",
+          "StatusEnabled": "Enabled",
+          "StatusForReplication": "Is_For_Replication",
+          "ConstraintKeys": "PaymentMethodID"
+        },
+        {
+          "ConstraintType": " ",
+          "ConstraintName": " ",
+          "DeleteAction": " ",
+          "UpdateAction": " ",
+          "StatusEnabled": " ",
+          "StatusForReplication": " ",
+          "ConstraintKeys": "REFERENCES OnlineStore.Sales.PaymentMethod (PaymentMethodID)"
+        },
+        {
+          "ConstraintType": "FOREIGN KEY",
+          "ConstraintName": "FK_Sales_OrderHeader_Shipper",
+          "DeleteAction": "No Action",
+          "UpdateAction": "No Action",
+          "StatusEnabled": "Enabled",
+          "StatusForReplication": "Is_For_Replication",
+          "ConstraintKeys": "ShipperID"
+        },
+        {
+          "ConstraintType": " ",
+          "ConstraintName": " ",
+          "DeleteAction": " ",
+          "UpdateAction": " ",
+          "StatusEnabled": " ",
+          "StatusForReplication": " ",
+          "ConstraintKeys": "REFERENCES OnlineStore.Sales.Shipper (ShipperID)"
+        },
+        {
+          "ConstraintType": "PRIMARY KEY (clustered)",
+          "ConstraintName": "PK_Sales_OrderHeader",
+          "DeleteAction": "(n/a)",
+          "UpdateAction": "(n/a)",
+          "StatusEnabled": "(n/a)",
+          "StatusForReplication": "(n/a)",
+          "ConstraintKeys": "OrderHeaderID"
+        }
+      ],
+      "TableReferences": [
+        {
+          "ReferenceDescription": "OnlineStore.Sales.OrderDetail: FK_Sales_OrderDetail_Order"
+        }
+      ],
+      "Schema": "Sales",
+      "Name": "OrderHeader",
+      "FullName": "Sales.OrderHeader",
+      "Type": "table"
+    },
+    {
+      "Description": null,
+      "Columns": [
+        {
+          "Name": "OrderStatusID",
+          "Type": "smallint",
+          "Computed": "no",
+          "Length": 2,
+          "Prec": 5,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "Description",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 100,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "no",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "CreationUser",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 25,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "no",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "CreationDateTime",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "LastUpdateUser",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 25,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "yes",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "LastUpdateDateTime",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "Timestamp",
+          "Type": "timestamp",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        }
+      ],
+      "Identity": null,
+      "RowGuidCol": {
+        "Name": "No rowguidcol column defined."
+      },
+      "Indexes": [
+        {
+          "IndexName": "PK_Sales_OrderStatus",
+          "IndexDescription": "clustered, unique, primary key located on PRIMARY",
+          "IndexKeys": "OrderStatusID"
+        }
+      ],
+      "PrimaryKey": {
+        "ConstraintName": "PK_Sales_OrderStatus",
+        "Key": [
+          "OrderStatusID"
+        ]
+      },
+      "ForeignKeys": [],
+      "Uniques": [],
+      "Checks": [],
+      "Defaults": [],
+      "ExtendedProperties": [],
+      "ConstraintDetails": [
+        {
+          "ConstraintType": "PRIMARY KEY (clustered)",
+          "ConstraintName": "PK_Sales_OrderStatus",
+          "DeleteAction": "(n/a)",
+          "UpdateAction": "(n/a)",
+          "StatusEnabled": "(n/a)",
+          "StatusForReplication": "(n/a)",
+          "ConstraintKeys": "OrderStatusID"
+        }
+      ],
+      "TableReferences": [
+        {
+          "ReferenceDescription": "OnlineStore.Sales.OrderHeader: FK_Sales_OrderHeader_OrderStatus"
+        }
+      ],
+      "Schema": "Sales",
+      "Name": "OrderStatus",
+      "FullName": "Sales.OrderStatus",
+      "Type": "table"
+    },
+    {
+      "Description": null,
+      "Columns": [
+        {
+          "Name": "PaymentMethodID",
+          "Type": "uniqueidentifier",
+          "Computed": "no",
+          "Length": 16,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "PaymentMethodName",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 50,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "no",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "PaymentMethodDescription",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 255,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "no",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "CreationUser",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 25,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "no",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "CreationDateTime",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "LastUpdateUser",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 25,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "yes",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "LastUpdateDateTime",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "Timestamp",
+          "Type": "timestamp",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        }
+      ],
+      "Identity": null,
+      "RowGuidCol": {
+        "Name": "No rowguidcol column defined."
+      },
+      "Indexes": [
+        {
+          "IndexName": "PK_Sales_PaymentMethod",
+          "IndexDescription": "clustered, unique, primary key located on PRIMARY",
+          "IndexKeys": "PaymentMethodID"
+        }
+      ],
+      "PrimaryKey": {
+        "ConstraintName": "PK_Sales_PaymentMethod",
+        "Key": [
+          "PaymentMethodID"
+        ]
+      },
+      "ForeignKeys": [],
+      "Uniques": [],
+      "Checks": [],
+      "Defaults": [],
+      "ExtendedProperties": [],
+      "ConstraintDetails": [
+        {
+          "ConstraintType": "PRIMARY KEY (clustered)",
+          "ConstraintName": "PK_Sales_PaymentMethod",
+          "DeleteAction": "(n/a)",
+          "UpdateAction": "(n/a)",
+          "StatusEnabled": "(n/a)",
+          "StatusForReplication": "(n/a)",
+          "ConstraintKeys": "PaymentMethodID"
+        }
+      ],
+      "TableReferences": [
+        {
+          "ReferenceDescription": "OnlineStore.Sales.OrderHeader: FK_Sales_OrderHeader_PaymentMethod"
+        }
+      ],
+      "Schema": "Sales",
+      "Name": "PaymentMethod",
+      "FullName": "Sales.PaymentMethod",
+      "Type": "table"
+    },
+    {
+      "Description": null,
+      "Columns": [
+        {
+          "Name": "ShipperID",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "CompanyName",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 100,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "yes",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "ContactName",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 100,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "yes",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "CreationUser",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 25,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "no",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "CreationDateTime",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "LastUpdateUser",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 25,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "yes",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "LastUpdateDateTime",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "Timestamp",
+          "Type": "timestamp",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        }
+      ],
+      "Identity": {
+        "Name": "ShipperID",
+        "Seed": 1,
+        "Increment": 1
+      },
+      "RowGuidCol": {
+        "Name": "No rowguidcol column defined."
+      },
+      "Indexes": [
+        {
+          "IndexName": "PK_Sales_Shipper",
+          "IndexDescription": "clustered, unique, primary key located on PRIMARY",
+          "IndexKeys": "ShipperID"
+        }
+      ],
+      "PrimaryKey": {
+        "ConstraintName": "PK_Sales_Shipper",
+        "Key": [
+          "ShipperID"
+        ]
+      },
+      "ForeignKeys": [],
+      "Uniques": [],
+      "Checks": [],
+      "Defaults": [],
+      "ExtendedProperties": [],
+      "ConstraintDetails": [
+        {
+          "ConstraintType": "PRIMARY KEY (clustered)",
+          "ConstraintName": "PK_Sales_Shipper",
+          "DeleteAction": "(n/a)",
+          "UpdateAction": "(n/a)",
+          "StatusEnabled": "(n/a)",
+          "StatusForReplication": "(n/a)",
+          "ConstraintKeys": "ShipperID"
+        }
+      ],
+      "TableReferences": [
+        {
+          "ReferenceDescription": "OnlineStore.Sales.OrderHeader: FK_Sales_OrderHeader_Shipper"
+        }
+      ],
+      "Schema": "Sales",
+      "Name": "Shipper",
+      "FullName": "Sales.Shipper",
+      "Type": "table"
+    },
+    {
+      "Description": null,
+      "Columns": [
+        {
+          "Name": "LocationID",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 5,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "no",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "LocationName",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 100,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "no",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "CreationUser",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 25,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "no",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "CreationDateTime",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "LastUpdateUser",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 25,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "yes",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "LastUpdateDateTime",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "Timestamp",
+          "Type": "timestamp",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        }
+      ],
+      "Identity": null,
+      "RowGuidCol": {
+        "Name": "No rowguidcol column defined."
+      },
+      "Indexes": [
+        {
+          "IndexName": "PK_Warehouse_Location",
+          "IndexDescription": "clustered, unique, primary key located on PRIMARY",
+          "IndexKeys": "LocationID"
+        }
+      ],
+      "PrimaryKey": {
+        "ConstraintName": "PK_Warehouse_Location",
+        "Key": [
+          "LocationID"
+        ]
+      },
+      "ForeignKeys": [],
+      "Uniques": [],
+      "Checks": [],
+      "Defaults": [],
+      "ExtendedProperties": [],
+      "ConstraintDetails": [
+        {
+          "ConstraintType": "PRIMARY KEY (clustered)",
+          "ConstraintName": "PK_Warehouse_Location",
+          "DeleteAction": "(n/a)",
+          "UpdateAction": "(n/a)",
+          "StatusEnabled": "(n/a)",
+          "StatusForReplication": "(n/a)",
+          "ConstraintKeys": "LocationID"
+        }
+      ],
+      "TableReferences": [
+        {
+          "ReferenceDescription": "OnlineStore.Warehouse.ProductInventory: FK_Warehouse_ProductInventory_Warehouse_Location"
+        }
+      ],
+      "Schema": "Warehouse",
+      "Name": "Location",
+      "FullName": "Warehouse.Location",
+      "Type": "table"
+    },
+    {
+      "Description": "Products catalog (Update) II",
+      "Columns": [
+        {
+          "Name": "ProductID",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "ProductName",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 100,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "no",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "ProductCategoryID",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "UnitPrice",
+          "Type": "decimal",
+          "Computed": "no",
+          "Length": 5,
+          "Prec": 8,
+          "Scale": 4,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "Description",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 255,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "yes",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "Discontinued",
+          "Type": "bit",
+          "Computed": "no",
+          "Length": 1,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "Stocks",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "CreationUser",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 25,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "no",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "CreationDateTime",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "LastUpdateUser",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 25,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "yes",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "LastUpdateDateTime",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "Timestamp",
+          "Type": "timestamp",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        }
+      ],
+      "Identity": {
+        "Name": "ProductID",
+        "Seed": 1,
+        "Increment": 1
+      },
+      "RowGuidCol": {
+        "Name": "No rowguidcol column defined."
+      },
+      "Indexes": [
+        {
+          "IndexName": "PK_Production_Product",
+          "IndexDescription": "clustered, unique, primary key located on PRIMARY",
+          "IndexKeys": "ProductID"
+        },
+        {
+          "IndexName": "U_Production_Product_ProductName",
+          "IndexDescription": "nonclustered, unique, unique key located on PRIMARY",
+          "IndexKeys": "ProductName"
+        }
+      ],
+      "PrimaryKey": {
+        "ConstraintName": "PK_Production_Product",
+        "Key": [
+          "ProductID"
+        ]
+      },
+      "ForeignKeys": [
+        {
+          "References": "OnlineStore.Warehouse.ProductCategory",
+          "Child": null,
+          "ConstraintName": "FK_Warehouse_Product_ProductCategory",
+          "Key": [
+            "ProductCategoryID"
+          ]
+        }
+      ],
+      "Uniques": [
+        {
+          "ConstraintName": "U_Production_Product_ProductName",
+          "Key": [
+            "ProductName"
+          ]
+        }
+      ],
+      "Checks": [],
+      "Defaults": [],
+      "ExtendedProperties": [
+        {
+          "Name": "MS_Description",
+          "Value": "Products catalog (Update)",
+          "Level0Type": null,
+          "Level0Name": null,
+          "Level1Type": null,
+          "Level1Name": null,
+          "Level2Type": null,
+          "Level2Name": null
+        }
+      ],
+      "ConstraintDetails": [
+        {
+          "ConstraintType": "FOREIGN KEY",
+          "ConstraintName": "FK_Warehouse_Product_ProductCategory",
+          "DeleteAction": "No Action",
+          "UpdateAction": "No Action",
+          "StatusEnabled": "Enabled",
+          "StatusForReplication": "Is_For_Replication",
+          "ConstraintKeys": "ProductCategoryID"
+        },
+        {
+          "ConstraintType": " ",
+          "ConstraintName": " ",
+          "DeleteAction": " ",
+          "UpdateAction": " ",
+          "StatusEnabled": " ",
+          "StatusForReplication": " ",
+          "ConstraintKeys": "REFERENCES OnlineStore.Warehouse.ProductCategory (ProductCategoryID)"
+        },
+        {
+          "ConstraintType": "PRIMARY KEY (clustered)",
+          "ConstraintName": "PK_Production_Product",
+          "DeleteAction": "(n/a)",
+          "UpdateAction": "(n/a)",
+          "StatusEnabled": "(n/a)",
+          "StatusForReplication": "(n/a)",
+          "ConstraintKeys": "ProductID"
+        },
+        {
+          "ConstraintType": "UNIQUE (non-clustered)",
+          "ConstraintName": "U_Production_Product_ProductName",
+          "DeleteAction": "(n/a)",
+          "UpdateAction": "(n/a)",
+          "StatusEnabled": "(n/a)",
+          "StatusForReplication": "(n/a)",
+          "ConstraintKeys": "ProductName"
+        }
+      ],
+      "TableReferences": [
+        {
+          "ReferenceDescription": "OnlineStore.Sales.OrderDetail: FK_Sales_OrderDetail_Product"
+        },
+        {
+          "ReferenceDescription": "OnlineStore.Warehouse.ProductInventory: FK_Warehouse_ProductInventory_Product"
+        }
+      ],
+      "Schema": "Warehouse",
+      "Name": "Product",
+      "FullName": "Warehouse.Product",
+      "Type": "table"
+    },
+    {
+      "Description": null,
+      "Columns": [
+        {
+          "Name": "ProductCategoryID",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "ProductCategoryName",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 100,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "no",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "CreationUser",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 25,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "no",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "CreationDateTime",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "LastUpdateUser",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 25,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "yes",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "LastUpdateDateTime",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "Timestamp",
+          "Type": "timestamp",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        }
+      ],
+      "Identity": {
+        "Name": "ProductCategoryID",
+        "Seed": 1,
+        "Increment": 1
+      },
+      "RowGuidCol": {
+        "Name": "No rowguidcol column defined."
+      },
+      "Indexes": [
+        {
+          "IndexName": "PK_Production_ProductCategory",
+          "IndexDescription": "clustered, unique, primary key located on PRIMARY",
+          "IndexKeys": "ProductCategoryID"
+        }
+      ],
+      "PrimaryKey": {
+        "ConstraintName": "PK_Production_ProductCategory",
+        "Key": [
+          "ProductCategoryID"
+        ]
+      },
+      "ForeignKeys": [],
+      "Uniques": [],
+      "Checks": [],
+      "Defaults": [],
+      "ExtendedProperties": [],
+      "ConstraintDetails": [
+        {
+          "ConstraintType": "PRIMARY KEY (clustered)",
+          "ConstraintName": "PK_Production_ProductCategory",
+          "DeleteAction": "(n/a)",
+          "UpdateAction": "(n/a)",
+          "StatusEnabled": "(n/a)",
+          "StatusForReplication": "(n/a)",
+          "ConstraintKeys": "ProductCategoryID"
+        }
+      ],
+      "TableReferences": [
+        {
+          "ReferenceDescription": "OnlineStore.Warehouse.Product: FK_Warehouse_Product_ProductCategory"
+        }
+      ],
+      "Schema": "Warehouse",
+      "Name": "ProductCategory",
+      "FullName": "Warehouse.ProductCategory",
+      "Type": "table"
+    },
+    {
+      "Description": null,
+      "Columns": [
+        {
+          "Name": "ProductInventoryID",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "ProductID",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "LocationID",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 5,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "no",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "OrderDetailID",
+          "Type": "bigint",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 19,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "Quantity",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "CreationUser",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 25,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "no",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "CreationDateTime",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "LastUpdateUser",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 25,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "yes",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "LastUpdateDateTime",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "Timestamp",
+          "Type": "timestamp",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        }
+      ],
+      "Identity": {
+        "Name": "ProductInventoryID",
+        "Seed": 1,
+        "Increment": 1
+      },
+      "RowGuidCol": {
+        "Name": "No rowguidcol column defined."
+      },
+      "Indexes": [
+        {
+          "IndexName": "PK_Production_ProductInventory",
+          "IndexDescription": "clustered, unique, primary key located on PRIMARY",
+          "IndexKeys": "ProductInventoryID"
+        }
+      ],
+      "PrimaryKey": {
+        "ConstraintName": "PK_Production_ProductInventory",
+        "Key": [
+          "ProductInventoryID"
+        ]
+      },
+      "ForeignKeys": [
+        {
+          "References": "OnlineStore.Warehouse.Product",
+          "Child": null,
+          "ConstraintName": "FK_Warehouse_ProductInventory_Product",
+          "Key": [
+            "ProductID"
+          ]
+        },
+        {
+          "References": "OnlineStore.Sales.OrderDetail",
+          "Child": null,
+          "ConstraintName": "FK_Warehouse_ProductInventory_Sales_OrderDetail",
+          "Key": [
+            "OrderDetailID"
+          ]
+        },
+        {
+          "References": "OnlineStore.Warehouse.Location",
+          "Child": null,
+          "ConstraintName": "FK_Warehouse_ProductInventory_Warehouse_Location",
+          "Key": [
+            "LocationID"
+          ]
+        }
+      ],
+      "Uniques": [],
+      "Checks": [],
+      "Defaults": [],
+      "ExtendedProperties": [],
+      "ConstraintDetails": [
+        {
+          "ConstraintType": "FOREIGN KEY",
+          "ConstraintName": "FK_Warehouse_ProductInventory_Product",
+          "DeleteAction": "No Action",
+          "UpdateAction": "No Action",
+          "StatusEnabled": "Enabled",
+          "StatusForReplication": "Is_For_Replication",
+          "ConstraintKeys": "ProductID"
+        },
+        {
+          "ConstraintType": " ",
+          "ConstraintName": " ",
+          "DeleteAction": " ",
+          "UpdateAction": " ",
+          "StatusEnabled": " ",
+          "StatusForReplication": " ",
+          "ConstraintKeys": "REFERENCES OnlineStore.Warehouse.Product (ProductID)"
+        },
+        {
+          "ConstraintType": "FOREIGN KEY",
+          "ConstraintName": "FK_Warehouse_ProductInventory_Sales_OrderDetail",
+          "DeleteAction": "No Action",
+          "UpdateAction": "No Action",
+          "StatusEnabled": "Enabled",
+          "StatusForReplication": "Is_For_Replication",
+          "ConstraintKeys": "OrderDetailID"
+        },
+        {
+          "ConstraintType": " ",
+          "ConstraintName": " ",
+          "DeleteAction": " ",
+          "UpdateAction": " ",
+          "StatusEnabled": " ",
+          "StatusForReplication": " ",
+          "ConstraintKeys": "REFERENCES OnlineStore.Sales.OrderDetail (OrderDetailID)"
+        },
+        {
+          "ConstraintType": "FOREIGN KEY",
+          "ConstraintName": "FK_Warehouse_ProductInventory_Warehouse_Location",
+          "DeleteAction": "No Action",
+          "UpdateAction": "No Action",
+          "StatusEnabled": "Enabled",
+          "StatusForReplication": "Is_For_Replication",
+          "ConstraintKeys": "LocationID"
+        },
+        {
+          "ConstraintType": " ",
+          "ConstraintName": " ",
+          "DeleteAction": " ",
+          "UpdateAction": " ",
+          "StatusEnabled": " ",
+          "StatusForReplication": " ",
+          "ConstraintKeys": "REFERENCES OnlineStore.Warehouse.Location (LocationID)"
+        },
+        {
+          "ConstraintType": "PRIMARY KEY (clustered)",
+          "ConstraintName": "PK_Production_ProductInventory",
+          "DeleteAction": "(n/a)",
+          "UpdateAction": "(n/a)",
+          "StatusEnabled": "(n/a)",
+          "StatusForReplication": "(n/a)",
+          "ConstraintKeys": "ProductInventoryID"
+        }
+      ],
+      "TableReferences": [],
+      "Schema": "Warehouse",
+      "Name": "ProductInventory",
+      "FullName": "Warehouse.ProductInventory",
+      "Type": "table"
+    }
+  ],
+  "Views": [
+    {
+      "Description": null,
+      "Columns": [
+        {
+          "Name": "EmployeeName",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 77,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "no",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "EmployeeAddresses",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "EmployeeEmails",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        }
+      ],
+      "Identity": null,
+      "RowGuidCol": {
+        "Name": "No rowguidcol column defined."
+      },
+      "Indexes": [],
+      "ExtendedProperties": [],
+      "Schema": "HumanResources",
+      "Name": "EmployeeInfo",
+      "FullName": "HumanResources.EmployeeInfo",
+      "Type": "view"
+    },
+    {
+      "Description": "Summary for orders",
+      "Columns": [
+        {
+          "Name": "OrderHeaderID",
+          "Type": "bigint",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 19,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "CustomerName",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 100,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "yes",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": "Name for customer (CompanyName)",
+          "ExtendedProperties": [
+            {
+              "Name": "MS_Description",
+              "Value": "Name for customer (CompanyName)",
+              "Level0Type": null,
+              "Level0Name": null,
+              "Level1Type": null,
+              "Level1Name": null,
+              "Level2Type": null,
+              "Level2Name": null
+            }
+          ],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "EmployeeName",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 75,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "yes",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "ShipperName",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 100,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "yes",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "OrderDate",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "Total",
+          "Type": "decimal",
+          "Computed": "no",
+          "Length": 9,
+          "Prec": 12,
+          "Scale": 4,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "CurrencyName",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 50,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "no",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "PaymentMethodName",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 50,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "no",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "DetailsCount",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        }
+      ],
+      "Identity": null,
+      "RowGuidCol": {
+        "Name": "No rowguidcol column defined."
+      },
+      "Indexes": [],
+      "ExtendedProperties": [
+        {
+          "Name": "MS_Description",
+          "Value": "Summary for orders",
+          "Level0Type": null,
+          "Level0Name": null,
+          "Level1Type": null,
+          "Level1Name": null,
+          "Level2Type": null,
+          "Level2Name": null
+        }
+      ],
+      "Schema": "Sales",
+      "Name": "OrderSummary",
+      "FullName": "Sales.OrderSummary",
+      "Type": "view"
+    }
+  ],
+  "ScalarFunctions": [],
+  "TableFunctions": [],
+  "StoredProcedures": []
+}

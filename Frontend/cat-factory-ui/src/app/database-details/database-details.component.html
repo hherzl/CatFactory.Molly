@@ -1,0 +1,124 @@
+<h1>{{ title }}</h1>
+
+<h2>Tables ({{ response?.model?.tables.length }})</h2>
+
+<table mat-table [dataSource]="response?.model?.tables">
+  <ng-container matColumnDef="schema">
+    <th mat-header-cell *matHeaderCellDef>Schema</th>
+    <td mat-cell *matCellDef="let element">{{ element.schema }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="name">
+    <th mat-header-cell *matHeaderCellDef>Name</th>
+    <td mat-cell *matCellDef="let element">{{ element.name }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="columnsCount">
+    <th mat-header-cell *matHeaderCellDef>Columns</th>
+    <td mat-cell *matCellDef="let element">{{ element.columnsCount }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="primaryKey">
+    <th mat-header-cell *matHeaderCellDef>Primary Key</th>
+    <td mat-cell *matCellDef="let element">{{ element.primaryKey }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="identity">
+    <th mat-header-cell *matHeaderCellDef>Identity</th>
+    <td mat-cell *matCellDef="let element">{{ element.identity }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="details">
+    <th mat-header-cell *matHeaderCellDef></th>
+    <td mat-cell *matCellDef="let element">
+      <button type="button" mat-button color="primary" (click)="showTable(element)">{{ element.details }}</button>
+    </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="columnsForTables"></tr>
+  <tr mat-row *matRowDef="let row; columns: columnsForTables;" class="element-row"></tr>
+</table>
+
+<br>
+
+<h2>Views ({{ response?.model?.views.length }})</h2>
+
+<table mat-table [dataSource]="response?.model?.views">
+  <ng-container matColumnDef="schema">
+    <th mat-header-cell *matHeaderCellDef>Schema</th>
+    <td mat-cell *matCellDef="let element">{{ element.schema }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="name">
+    <th mat-header-cell *matHeaderCellDef>Name</th>
+    <td mat-cell *matCellDef="let element">{{ element.name }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="columnsCount">
+    <th mat-header-cell *matHeaderCellDef>Columns</th>
+    <td mat-cell *matCellDef="let element">{{ element.columnsCount }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="identity">
+    <th mat-header-cell *matHeaderCellDef>Identity</th>
+    <td mat-cell *matCellDef="let element">{{ element.identity }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="details">
+    <th mat-header-cell *matHeaderCellDef></th>
+    <td mat-cell *matCellDef="let element">
+      <button type="button" mat-button color="primary" (click)="showView(element)">{{ element.details }}</button>
+    </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="columnsForViews"></tr>
+  <tr mat-row *matRowDef="let row; columns: columnsForViews;" class="element-row"></tr>
+</table>
+
+<br>
+
+<h2>Mappings ({{ response?.model?.databaseTypeMaps?.length }})</h2>
+
+<table mat-table [dataSource]="response?.model?.databaseTypeMaps">
+  <ng-container matColumnDef="databaseType">
+    <th mat-header-cell *matHeaderCellDef>Database Type</th>
+    <td mat-cell *matCellDef="let element">{{ element.databaseType }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="allowsLengthInDeclaration">
+    <th mat-header-cell *matHeaderCellDef>Allows Length In Declaration</th>
+    <td mat-cell *matCellDef="let element">{{ element.allowsLengthInDeclaration }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="allowsPrecInDeclaration">
+    <th mat-header-cell *matHeaderCellDef>Allows Prec In Declaration</th>
+    <td mat-cell *matCellDef="let element">{{ element.allowsPrecInDeclaration }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="clrFullNameType">
+    <th mat-header-cell *matHeaderCellDef>CLR Full Name Type</th>
+    <td mat-cell *matCellDef="let element">{{ element.clrFullNameType }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="clrAliasType">
+    <th mat-header-cell *matHeaderCellDef>CLR Alias Type</th>
+    <td mat-cell *matCellDef="let element">{{ element.clrAliasType }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="isUserDefined">
+    <th mat-header-cell *matHeaderCellDef>Is User Defined</th>
+    <td mat-cell *matCellDef="let element">{{ element.isUserDefined }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="parentDatabaseType">
+    <th mat-header-cell *matHeaderCellDef>Parent Database Type</th>
+    <td mat-cell *matCellDef="let element">{{ element.parentDatabaseType }}</td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="columnsForDatabaseTypeMaps"></tr>
+  <tr mat-row *matRowDef="let row; columns: columnsForDatabaseTypeMaps;" class="element-row"></tr>
+</table>
+
+<br>
+
+<i class="material-icons" (click)="back()">arrow_back_ios</i>

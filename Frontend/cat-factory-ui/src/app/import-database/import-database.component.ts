@@ -2,8 +2,9 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { FormControl, FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
 import { Router } from '@angular/router';
-import { ImportDatabaseRequest, ImportDatabaseResponse } from '../models';
 import { DocumentationService } from '../documentation.service';
+import { ImportDatabaseResponse } from '../responses';
+import { ImportDatabaseRequest } from '../requests';
 
 @Component({
   selector: 'app-import-database',
@@ -14,8 +15,8 @@ export class ImportDatabaseComponent implements OnInit {
   constructor(
     private router: Router,
     private formBuilder: FormBuilder,
-    public dialog: MatDialog,
-    private documentationService: DocumentationService) {
+    private documentationService: DocumentationService,
+    public dialog: MatDialog) {
   }
 
   title: string;

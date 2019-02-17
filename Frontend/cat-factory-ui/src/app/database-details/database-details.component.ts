@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params, Router } from '@angular/router';
 import { DocumentationService } from '../documentation.service';
-import { DatabaseDetail, DbRequest, SingleResponse } from '../models';
+import { SingleResponse, DatabaseDetail } from '../responses';
+import { DbRequest } from '../requests';
 
 @Component({
   selector: 'app-database-details',

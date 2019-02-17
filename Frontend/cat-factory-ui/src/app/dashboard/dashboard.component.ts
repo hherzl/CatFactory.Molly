@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { ImportedDatabase, ListResponse } from '../models';
+import { ListResponse, ImportedDatabase } from '../responses';
 import { DocumentationService } from '../documentation.service';
 
 @Component({

@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params, Router } from '@angular/router';
 import { DocumentationService } from '../documentation.service';
-import { DbRequestHelper, SingleResponse } from '../models';
+import { SingleResponse } from '../responses';
+import { DbRequestHelper } from '../requests';
 
 @Component({
   selector: 'app-table-details',

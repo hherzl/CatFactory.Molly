@@ -10,19 +10,19 @@
     <input type="text" placeholder="Connection String" required matInput formControlName="connectionString">
     <mat-error *ngIf="!form.get('connectionString').valid">{{ getRequiredErrorMessage('connectionString') }}</mat-error>
   </mat-form-field>
-
+  
   <mat-checkbox matInput formControlName="importTables">Import tables</mat-checkbox>
-  &nbsp;
+  <br/>
   <mat-checkbox matInput formControlName="importViews">Import views</mat-checkbox>
 </form>
 
-<br>
+<br/>
 
 <button type="button" mat-raised-button color="primary" [disabled]="!form.valid" (click)="import()">
   Import
 </button>
 
-<br>
-<br>
+<br/>
+<br/>
 
 <mat-progress-bar mode="indeterminate" *ngIf="importing"></mat-progress-bar>

@@ -3,7 +3,8 @@ import { ActivatedRoute, Params, Router } from '@angular/router';
 import { FormControl, FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
 import { DocumentationService } from '../documentation.service';
-import { DbRequestHelper, SingleResponse } from '../models';
+import { SingleResponse } from '../responses';
+import { DbRequestHelper } from '../requests';
 
 @Component({
   selector: 'app-edit-description',

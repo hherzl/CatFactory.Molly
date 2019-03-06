@@ -13,8 +13,8 @@ namespace CatFactory.UI.WebAPI.Services
 {
     public class DbService
     {
-        private IHostingEnvironment HostingEnvironment;
-        private ApiConfig ApiConfig;
+        private readonly IHostingEnvironment HostingEnvironment;
+        private readonly ApiConfig ApiConfig;
 
         public DbService(IHostingEnvironment hostingEnvironment, ApiConfig apiConfig)
         {

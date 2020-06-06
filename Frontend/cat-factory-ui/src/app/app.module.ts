@@ -13,12 +13,14 @@ import { HomeComponent } from './home/home.component';
 
 import { DocumentationService } from './documentation.service';
 import { DatabaseDetailsComponent } from './database-details/database-details.component';
+import { TableDetailsComponent } from './table-details/table-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    DatabaseDetailsComponent
+    DatabaseDetailsComponent,
+    TableDetailsComponent
   ],
   imports: [
     BrowserModule,

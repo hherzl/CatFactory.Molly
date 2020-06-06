@@ -6,6 +6,7 @@ import { DatabaseDetailsComponent } from './database-details/database-details.co
 import { TableDetailsComponent } from './table-details/table-details.component';
 import { ViewDetailsComponent } from './view-details/view-details.component';
 import { ImportDatabaseComponent } from './import-database/import-database.component';
+import { EditDescriptionComponent } from './edit-description/edit-description.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -13,7 +14,8 @@ const routes: Routes = [
   { path: 'database-details/:id', component: DatabaseDetailsComponent },
   { path: 'table-details/:id', component: TableDetailsComponent },
   { path: 'view-details/:id', component: ViewDetailsComponent },
-  { path: 'import-database', component: ImportDatabaseComponent }
+  { path: 'import-database', component: ImportDatabaseComponent },
+  { path: 'edit-description/:id', component: EditDescriptionComponent }
 ];
 
 @NgModule({

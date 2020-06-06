@@ -18,6 +18,7 @@ import { DatabaseDetailsComponent } from './database-details/database-details.co
 import { TableDetailsComponent } from './table-details/table-details.component';
 import { ViewDetailsComponent } from './view-details/view-details.component';
 import { ImportDatabaseComponent } from './import-database/import-database.component';
+import { EditDescriptionComponent } from './edit-description/edit-description.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ImportDatabaseComponent } from './import-database/import-database.compo
     DatabaseDetailsComponent,
     TableDetailsComponent,
     ViewDetailsComponent,
-    ImportDatabaseComponent
+    ImportDatabaseComponent,
+    EditDescriptionComponent
   ],
   imports: [
     BrowserModule,

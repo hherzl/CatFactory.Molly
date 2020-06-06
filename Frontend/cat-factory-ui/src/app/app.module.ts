@@ -12,11 +12,13 @@ import { AngularMaterialModule } from './angular-material/angular-material.modul
 import { HomeComponent } from './home/home.component';
 
 import { DocumentationService } from './documentation.service';
+import { DatabaseDetailsComponent } from './database-details/database-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    DatabaseDetailsComponent
   ],
   imports: [
     BrowserModule,

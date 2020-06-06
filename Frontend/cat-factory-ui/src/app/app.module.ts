@@ -14,13 +14,15 @@ import { HomeComponent } from './home/home.component';
 import { DocumentationService } from './documentation.service';
 import { DatabaseDetailsComponent } from './database-details/database-details.component';
 import { TableDetailsComponent } from './table-details/table-details.component';
+import { ViewDetailsComponent } from './view-details/view-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     DatabaseDetailsComponent,
-    TableDetailsComponent
+    TableDetailsComponent,
+    ViewDetailsComponent
   ],
   imports: [
     BrowserModule,

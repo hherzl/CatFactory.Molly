@@ -1,6 +1,6 @@
 # CatFactory.UI
 
-**CatFactory UI** is the graphic interface *CatFactory*.
+**CatFactory UI** is the GUI for *CatFactory*.
 
 ## Instructions
 
@@ -34,7 +34,9 @@ Prerequisites: *NodeJS*, *Angular CLI*
 
 ## How It Works
 
-Basically UI works in the same way that **CatFactory.SqlServer**, We need to import an existing database from SQL Server instance.
+Basically GUI works in the same way that **CatFactory.SqlServer** package, We need to import an existing database from SQL Server instance in order to add comments for Database objects.
+
+You can read more about this in [Document SQL Server Databases with CatFactory.UI](https://www.codeproject.com/Articles/1252491/Document-SQL-Server-Databases-with-CatFactory-UI).
 
 ### Dashboard
 

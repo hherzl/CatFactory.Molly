@@ -42,17 +42,17 @@ You can read more about this in [Document SQL Server Databases with CatFactory.U
 
 This view show all imported databases:
 
-![Dashboard](Images/00-Dashboard.jpg)
+![Dashboard](img/00-Dashboard.jpg)
 
 ### Import
 
 This view allows to import an existing database:
 
-![Import](Images/10-Import.jpg)
+![Import](img/10-Import.jpg)
 
 Set values for database name and connnection string:
 
-![Import Existing Database](Images/15-Import.jpg)
+![Import Existing Database](img/15-Import.jpg)
 
 Click import button to complete import process.
 
@@ -60,42 +60,42 @@ Click import button to complete import process.
 
 Once we have import a database, Dashboard view shows the imported database:
 
-![Dashboard with Databases](Images/20-DashboardWithDatabases.jpg)
+![Dashboard with Databases](img/20-DashboardWithDatabases.jpg)
 
 ### Database Details
 
 We can select a database from dashboard to see database's details:
 
-![Database Details](Images/30-DatabaseDetails.jpg)
+![Database Details](img/30-DatabaseDetails.jpg)
 
 ### Table Details
 
 Inside of database details we can select a row to see table's details:
 
-![Table Details](Images/40-TableDetails.jpg)
+![Table Details](img/40-TableDetails.jpg)
 
 ### Edit Table Description
 
 We can edit description for table:
 
-![Edit Table Description](Images/41-EditTableDescription.jpg)
+![Edit Table Description](img/41-EditTableDescription.jpg)
 
 Set description for table:
 
-![Save Table Description](Images/42-SaveTableDescription.jpg)
+![Save Table Description](img/42-SaveTableDescription.jpg)
 
 ### Columns Descriptions
 
 In table details, we can see all descriptions for table columns:
 
-![Columns Descriptions](Images/50-DescriptionForColumns.jpg)
+![Columns Descriptions](img/50-DescriptionForColumns.jpg)
 
 ### Edit Table Columns
 
 We can edit description for column:
 
-![Edit Table Columns](Images/51-EditColumnDescription.jpg)
+![Edit Table Columns](img/51-EditColumnDescription.jpg)
 
 Set description for column:
 
-![Save Column Description](Images/52-SaveColumnDescription.jpg)
+![Save Column Description](img/52-SaveColumnDescription.jpg)

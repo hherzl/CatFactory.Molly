@@ -1,10 +1,8 @@
-import { Component, Inject, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
 import { ActivatedRoute, Params, Router } from '@angular/router';
 import { FormControl, FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
-import { DocumentationService } from '../documentation.service';
-import { SingleResponse } from '../responses';
-import { DbRequestHelper } from '../requests';
+import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { DbRequestHelper, DocumentationService, SingleResponse } from '../documentation.service';
 
 @Component({
   selector: 'app-edit-description',

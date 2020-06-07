@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params, Router } from '@angular/router';
-import { DocumentationService } from '../documentation.service';
-import { SingleResponse, DatabaseDetail } from '../responses';
-import { DbRequest } from '../requests';
+import { DatabaseDetail, DbRequest, DocumentationService, SingleResponse } from '../documentation.service';
 
 @Component({
   selector: 'app-database-details',
@@ -70,6 +68,6 @@ export class DatabaseDetailsComponent implements OnInit {
   }
 
   back(): void {
-    this.router.navigate(['dashboard']);
+    this.router.navigate(['home']);
   }
 }

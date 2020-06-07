@@ -6,28 +6,29 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { HttpClientModule } from '@angular/common/http';
+
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
-import { AppMaterialModule } from './app-material/app-material.module';
+import { AngularMaterialModule } from './angular-material/angular-material.module';
 
-import { DashboardComponent } from './dashboard/dashboard.component';
+import { HomeComponent } from './home/home.component';
+
+import { DocumentationService } from './documentation.service';
 import { DatabaseDetailsComponent } from './database-details/database-details.component';
-import { ImportDatabaseComponent } from './import-database/import-database.component';
 import { TableDetailsComponent } from './table-details/table-details.component';
 import { ViewDetailsComponent } from './view-details/view-details.component';
+import { ImportDatabaseComponent } from './import-database/import-database.component';
 import { EditDescriptionComponent } from './edit-description/edit-description.component';
-import { NavigationComponent } from './navigation/navigation.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardComponent,
+    HomeComponent,
     DatabaseDetailsComponent,
-    ImportDatabaseComponent,
     TableDetailsComponent,
     ViewDetailsComponent,
-    EditDescriptionComponent,
-    NavigationComponent
+    ImportDatabaseComponent,
+    EditDescriptionComponent
   ],
   imports: [
     BrowserModule,
@@ -36,12 +37,11 @@ import { NavigationComponent } from './navigation/navigation.component';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    AppMaterialModule
+    AngularMaterialModule
   ],
-  exports: [
-    AppMaterialModule
+  providers: [
+    DocumentationService
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

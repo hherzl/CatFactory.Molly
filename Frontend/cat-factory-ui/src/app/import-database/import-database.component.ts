@@ -1,10 +1,8 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { FormControl, FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
+import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { Router } from '@angular/router';
-import { DocumentationService } from '../documentation.service';
-import { ImportDatabaseResponse } from '../responses';
-import { ImportDatabaseRequest } from '../requests';
+import { DocumentationService , ImportDatabaseRequest, ImportDatabaseResponse} from '../documentation.service';
 
 @Component({
   selector: 'app-import-database',
@@ -52,7 +50,7 @@ export class ImportDatabaseComponent implements OnInit {
 
     this.documentationService.importDatabase(request).subscribe((data: ImportDatabaseResponse) => {
       this.response = data;
-      this.router.navigate(['dashboard']);
+      this.router.navigate(['home']);
     }, data => {
       this.importing = false;
       const dialogRef = this.dialog.open(ImportDialogComponent, {

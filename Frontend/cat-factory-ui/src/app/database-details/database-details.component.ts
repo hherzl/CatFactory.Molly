@@ -50,7 +50,7 @@ export class DatabaseDetailsComponent implements OnInit {
       const model = new DbRequest();
       model.name = params['id'];
 
-      this.documentationService.getDatabaseDetail(model).subscribe((data: SingleResponse<DatabaseDetail>) => {
+      this.documentationService.getDatabaseDetail(model).subscribe((data) => {
         this.response = data;
         this.title = 'Details for \'' + this.response.model.name + '\' database';
       });

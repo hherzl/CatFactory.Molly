@@ -36,7 +36,7 @@ export class ViewDetailsComponent implements OnInit {
     this.activatedRoute.params.forEach((params: Params) => {
       this.id = params['id'];
       const request = DbRequestHelper.createFromId(this.id);
-      this.documentationService.getView(request).subscribe((data: SingleResponse<any>) => {
+      this.documentationService.getView(request).subscribe((data) => {
         this.response = data;
         this.title = 'Details for ' + this.response.model.fullName + ' view';
         this.response.model.columns.forEach(column => {

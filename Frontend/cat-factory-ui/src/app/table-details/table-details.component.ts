@@ -46,7 +46,7 @@ export class TableDetailsComponent implements OnInit {
       this.id = params['id'];
       const request = DbRequestHelper.createFromId(this.id);
 
-      this.documentationService.getTable(request).subscribe((data: SingleResponse<any>) => {
+      this.documentationService.getTable(request).subscribe((data) => {
         this.response = data;
         this.title = 'Details for \'' + this.response.model.fullName + '\' table';
         this.response.model.columns.forEach(column => {

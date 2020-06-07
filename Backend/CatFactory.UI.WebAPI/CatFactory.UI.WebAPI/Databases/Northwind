@@ -2114,7 +2114,7 @@
           "TrimTrailingBlanks": "(n/a)",
           "FixedLenNullInSource": "(n/a)",
           "Collation": "",
-          "Description": null,
+          "Description": "Order ID (modified from CF UI ==^^==)",
           "ExtendedProperties": [],
           "ComputedExpression": null
         },

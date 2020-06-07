@@ -48,7 +48,7 @@ export class ImportDatabaseComponent implements OnInit {
     request.importTables = this.form.get('importTables').value;
     request.importViews = this.form.get('importViews').value;
 
-    this.documentationService.importDatabase(request).subscribe((data: ImportDatabaseResponse) => {
+    this.documentationService.importDatabase(request).subscribe((data) => {
       this.response = data;
       this.router.navigate(['home']);
     }, data => {

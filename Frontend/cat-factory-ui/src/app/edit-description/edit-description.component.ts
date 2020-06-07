@@ -32,7 +32,7 @@ export class EditDescriptionComponent implements OnInit {
       this.id = params['id'];
       const request = DbRequestHelper.createFromId(this.id);
       if (request.isTable()) {
-        this.documentationService.getTable(request).subscribe((data: SingleResponse<any>) => {
+        this.documentationService.getTable(request).subscribe((data) => {
           this.response = data;
           if (request.isColumn()) {
             const name = [this.response.model.schema, this.response.model.name, request.column].join('.');
@@ -48,7 +48,7 @@ export class EditDescriptionComponent implements OnInit {
           }
         });
       } else if (request.isView()) {
-        this.documentationService.getView(request).subscribe((data: SingleResponse<any>) => {
+        this.documentationService.getView(request).subscribe((data) => {
           this.response = data;
           if (request.isColumn()) {
             const name = [this.response.model.schema, this.response.model.name, request.column].join('.');
@@ -71,7 +71,7 @@ export class EditDescriptionComponent implements OnInit {
     this.working = true;
     const request = DbRequestHelper.createFromId(this.id);
     request.description = this.form.get('description').value;
-    this.documentationService.editDescription(request).subscribe((data: SingleResponse<any>) => {
+    this.documentationService.editDescription(request).subscribe((data) => {
       if (request.isTable()) {
         this.router.navigate(request.getTableRoute());
       } else if (request.isView()) {

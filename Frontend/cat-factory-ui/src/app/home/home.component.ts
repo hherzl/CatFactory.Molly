@@ -26,7 +26,7 @@ export class HomeComponent implements OnInit {
       'viewsCount',
       'details'
     ];
-    this.documentationService.getImportedDatabases().subscribe((data: ListResponse<ImportedDatabase>) => {
+    this.documentationService.getImportedDatabases().subscribe((data) => {
       this.response = data;
     });
   }

@@ -1,10 +1,7 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using CatFactory.UI.API.Controllers;
+using CatFactory.UI.API.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -25,6 +22,11 @@ namespace CatFactory.UI.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            services.AddSingleton<DbService>();
+            services.AddSingleton<UISettings>();
+
+            services.AddScoped<ILogger<DocumentationController>, Logger<DocumentationController>>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -34,6 +36,16 @@ namespace CatFactory.UI.API
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseCors(builder =>
+            {
+                // Add client origin in CORS policy
+                // todo: Set port number for client app
+
+                builder.WithOrigins("http://localhost:4200");
+                builder.AllowAnyHeader();
+                builder.AllowAnyMethod();
+            });
 
             app.UseRouting();
 

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params, Router } from '@angular/router';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { DatabaseDetail, DbRequest, DocumentationService, SingleResponse } from '../documentation.service';
 
 @Component({
@@ -11,6 +12,7 @@ export class DatabaseDetailsComponent implements OnInit {
   constructor(
     private activatedRoute: ActivatedRoute,
     private router: Router,
+    private snackBar: MatSnackBar,
     private documentationService: DocumentationService) {
   }
 
@@ -53,6 +55,12 @@ export class DatabaseDetailsComponent implements OnInit {
       this.documentationService.getDatabaseDetail(model).subscribe((data) => {
         this.response = data;
         this.title = 'Details for \'' + this.response.model.name + '\' database';
+      }, err => {
+        const msg = 'There was an error retrieving database details.';
+        this.snackBar.open(msg, 'Error', {
+          duration: 5000,
+          horizontalPosition: 'left'
+        });
       });
     });
   }

@@ -2115,7 +2115,18 @@
           "FixedLenNullInSource": "(n/a)",
           "Collation": "",
           "Description": "Order ID (modified from CF UI ==^^==)",
-          "ExtendedProperties": [],
+          "ExtendedProperties": [
+            {
+              "Name": "MS_Description",
+              "Value": "Order ID (modified from CF UI ==^^==)",
+              "Level0Type": null,
+              "Level0Name": null,
+              "Level1Type": null,
+              "Level1Name": null,
+              "Level2Type": null,
+              "Level2Name": null
+            }
+          ],
           "ComputedExpression": null
         },
         {

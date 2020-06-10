@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params, Router } from '@angular/router';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { DbRequestHelper, DocumentationService, SingleResponse } from '../documentation.service';
 
 @Component({
@@ -11,6 +12,7 @@ export class TableDetailsComponent implements OnInit {
   constructor(
     private activatedRoute: ActivatedRoute,
     private router: Router,
+    private snackBar: MatSnackBar,
     private documentationService: DocumentationService) {
   }
 
@@ -53,6 +55,12 @@ export class TableDetailsComponent implements OnInit {
           if (this.response.model.rowGuidCol.name === column.name) {
             this.rowGuidColumn = column;
           }
+        });
+      }, errr => {
+        const msg = 'There was an error retrieving table details.';
+        this.snackBar.open(msg, 'Error', {
+          duration: 5000,
+          horizontalPosition: 'left'
         });
       });
     });

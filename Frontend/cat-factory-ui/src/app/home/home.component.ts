@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { DocumentationService, ImportedDatabase, ListResponse } from '../documentation.service';
 
 @Component({
@@ -10,6 +11,7 @@ import { DocumentationService, ImportedDatabase, ListResponse } from '../documen
 export class HomeComponent implements OnInit {
   constructor(
     private router: Router,
+    private snackBar: MatSnackBar,
     private documentationService: DocumentationService) {
   }
 
@@ -28,6 +30,12 @@ export class HomeComponent implements OnInit {
     ];
     this.documentationService.getImportedDatabases().subscribe((data) => {
       this.response = data;
+    }, err => {
+      const msg = 'There was an error retrieving databases.';
+      this.snackBar.open(msg, 'Error', {
+        duration: 5000,
+        horizontalPosition: 'left'
+      });
     });
   }
 

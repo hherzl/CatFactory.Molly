@@ -17,6 +17,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatTableModule } from '@angular/material/table';
 import { MatDialogModule } from '@angular/material/dialog';
 import { LayoutModule } from '@angular/cdk/layout';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [],
@@ -37,6 +38,7 @@ import { LayoutModule } from '@angular/cdk/layout';
     MatIconModule,
     MatTableModule,
     MatDialogModule,
+    MatSnackBarModule,
     LayoutModule
   ],
   exports: [
@@ -55,6 +57,7 @@ import { LayoutModule } from '@angular/cdk/layout';
     MatIconModule,
     MatTableModule,
     MatDialogModule,
+    MatSnackBarModule,
     LayoutModule
   ]
 })

@@ -1,8 +1,8 @@
-﻿namespace CatFactory.UI.WebAPI
+﻿namespace CatFactory.UI.API
 {
-    public class ApiConfig
+    public class UISettings
     {
-        public ApiConfig()
+        public UISettings()
         {
             // todo: Load these values from appsettings.json file
 

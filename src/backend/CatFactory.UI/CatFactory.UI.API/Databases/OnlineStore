@@ -149,6 +149,12 @@
       "Type": "USER_TABLE"
     },
     {
+      "Schema": "Warehouse",
+      "Name": "ProductUnitPriceHistory",
+      "FullName": "Warehouse.ProductUnitPriceHistory",
+      "Type": "USER_TABLE"
+    },
+    {
       "Schema": "HumanResources",
       "Name": "EmployeeInfo",
       "FullName": "HumanResources.EmployeeInfo",
@@ -646,7 +652,7 @@
       "Description": null,
       "Columns": [
         {
-          "Name": "ChangeLogID",
+          "Name": "ID",
           "Type": "int",
           "Computed": "no",
           "Length": 4,
@@ -767,7 +773,7 @@
         }
       ],
       "Identity": {
-        "Name": "ChangeLogID",
+        "Name": "ID",
         "Seed": 1,
         "Increment": 1
       },
@@ -778,13 +784,13 @@
         {
           "IndexName": "PK_ChangeLog",
           "IndexDescription": "clustered, unique, primary key located on PRIMARY",
-          "IndexKeys": "ChangeLogID"
+          "IndexKeys": "ID"
         }
       ],
       "PrimaryKey": {
         "ConstraintName": "PK_ChangeLog",
         "Key": [
-          "ChangeLogID"
+          "ID"
         ]
       },
       "ForeignKeys": [],
@@ -800,7 +806,7 @@
           "UpdateAction": "(n/a)",
           "StatusEnabled": "(n/a)",
           "StatusForReplication": "(n/a)",
-          "ConstraintKeys": "ChangeLogID"
+          "ConstraintKeys": "ID"
         }
       ],
       "TableReferences": [],
@@ -813,7 +819,7 @@
       "Description": null,
       "Columns": [
         {
-          "Name": "ChangeLogExclusionID",
+          "Name": "ID",
           "Type": "int",
           "Computed": "no",
           "Length": 4,
@@ -859,7 +865,7 @@
         }
       ],
       "Identity": {
-        "Name": "ChangeLogExclusionID",
+        "Name": "ID",
         "Seed": 1,
         "Increment": 1
       },
@@ -870,7 +876,7 @@
         {
           "IndexName": "PK_ChangeLogExclusion",
           "IndexDescription": "clustered, unique, primary key located on PRIMARY",
-          "IndexKeys": "ChangeLogExclusionID"
+          "IndexKeys": "ID"
         },
         {
           "IndexName": "U_ChangeLogExclusion",
@@ -881,7 +887,7 @@
       "PrimaryKey": {
         "ConstraintName": "PK_ChangeLogExclusion",
         "Key": [
-          "ChangeLogExclusionID"
+          "ID"
         ]
       },
       "ForeignKeys": [],
@@ -905,7 +911,7 @@
           "UpdateAction": "(n/a)",
           "StatusEnabled": "(n/a)",
           "StatusForReplication": "(n/a)",
-          "ConstraintKeys": "ChangeLogExclusionID"
+          "ConstraintKeys": "ID"
         },
         {
           "ConstraintType": "UNIQUE (non-clustered)",
@@ -927,7 +933,7 @@
       "Description": null,
       "Columns": [
         {
-          "Name": "CountryID",
+          "Name": "ID",
           "Type": "int",
           "Computed": "no",
           "Length": 4,
@@ -1040,13 +1046,13 @@
         {
           "IndexName": "PK_Country",
           "IndexDescription": "clustered, unique, primary key located on PRIMARY",
-          "IndexKeys": "CountryID"
+          "IndexKeys": "ID"
         }
       ],
       "PrimaryKey": {
         "ConstraintName": "PK_Country",
         "Key": [
-          "CountryID"
+          "ID"
         ]
       },
       "ForeignKeys": [],
@@ -1062,7 +1068,7 @@
           "UpdateAction": "(n/a)",
           "StatusEnabled": "(n/a)",
           "StatusForReplication": "(n/a)",
-          "ConstraintKeys": "CountryID"
+          "ConstraintKeys": "ID"
         }
       ],
       "TableReferences": [
@@ -1079,7 +1085,7 @@
       "Description": null,
       "Columns": [
         {
-          "Name": "CountryCurrencyID",
+          "Name": "ID",
           "Type": "int",
           "Computed": "no",
           "Length": 4,
@@ -1200,7 +1206,7 @@
         }
       ],
       "Identity": {
-        "Name": "CountryCurrencyID",
+        "Name": "ID",
         "Seed": 1,
         "Increment": 1
       },
@@ -1211,7 +1217,7 @@
         {
           "IndexName": "PK_CountryCurrency",
           "IndexDescription": "clustered, unique, primary key located on PRIMARY",
-          "IndexKeys": "CountryCurrencyID"
+          "IndexKeys": "ID"
         },
         {
           "IndexName": "U_CountryCurrency",
@@ -1222,7 +1228,7 @@
       "PrimaryKey": {
         "ConstraintName": "PK_CountryCurrency",
         "Key": [
-          "CountryCurrencyID"
+          "ID"
         ]
       },
       "ForeignKeys": [
@@ -1272,7 +1278,7 @@
           "UpdateAction": " ",
           "StatusEnabled": " ",
           "StatusForReplication": " ",
-          "ConstraintKeys": "REFERENCES OnlineStore.dbo.Country (CountryID)"
+          "ConstraintKeys": "REFERENCES OnlineStore.dbo.Country (ID)"
         },
         {
           "ConstraintType": "FOREIGN KEY",
@@ -1290,7 +1296,7 @@
           "UpdateAction": " ",
           "StatusEnabled": " ",
           "StatusForReplication": " ",
-          "ConstraintKeys": "REFERENCES OnlineStore.dbo.Currency (CurrencyID)"
+          "ConstraintKeys": "REFERENCES OnlineStore.dbo.Currency (ID)"
         },
         {
           "ConstraintType": "PRIMARY KEY (clustered)",
@@ -1299,7 +1305,7 @@
           "UpdateAction": "(n/a)",
           "StatusEnabled": "(n/a)",
           "StatusForReplication": "(n/a)",
-          "ConstraintKeys": "CountryCurrencyID"
+          "ConstraintKeys": "ID"
         },
         {
           "ConstraintType": "UNIQUE (non-clustered)",
@@ -1321,7 +1327,7 @@
       "Description": null,
       "Columns": [
         {
-          "Name": "CurrencyID",
+          "Name": "ID",
           "Type": "varchar",
           "Computed": "no",
           "Length": 10,
@@ -1449,13 +1455,13 @@
         {
           "IndexName": "PK_Currency",
           "IndexDescription": "clustered, unique, primary key located on PRIMARY",
-          "IndexKeys": "CurrencyID"
+          "IndexKeys": "ID"
         }
       ],
       "PrimaryKey": {
         "ConstraintName": "PK_Currency",
         "Key": [
-          "CurrencyID"
+          "ID"
         ]
       },
       "ForeignKeys": [],
@@ -1471,7 +1477,7 @@
           "UpdateAction": "(n/a)",
           "StatusEnabled": "(n/a)",
           "StatusForReplication": "(n/a)",
-          "ConstraintKeys": "CurrencyID"
+          "ConstraintKeys": "ID"
         }
       ],
       "TableReferences": [
@@ -1491,7 +1497,7 @@
       "Description": null,
       "Columns": [
         {
-          "Name": "EventLogID",
+          "Name": "ID",
           "Type": "uniqueidentifier",
           "Computed": "no",
           "Length": 16,
@@ -1574,13 +1580,13 @@
         {
           "IndexName": "PK_EventLog",
           "IndexDescription": "clustered, unique, primary key located on PRIMARY",
-          "IndexKeys": "EventLogID"
+          "IndexKeys": "ID"
         }
       ],
       "PrimaryKey": {
         "ConstraintName": "PK_EventLog",
         "Key": [
-          "EventLogID"
+          "ID"
         ]
       },
       "ForeignKeys": [],
@@ -1596,7 +1602,7 @@
           "UpdateAction": "(n/a)",
           "StatusEnabled": "(n/a)",
           "StatusForReplication": "(n/a)",
-          "ConstraintKeys": "EventLogID"
+          "ConstraintKeys": "ID"
         }
       ],
       "TableReferences": [],
@@ -1609,7 +1615,7 @@
       "Description": null,
       "Columns": [
         {
-          "Name": "EmployeeID",
+          "Name": "ID",
           "Type": "int",
           "Computed": "no",
           "Length": 4,
@@ -1760,7 +1766,7 @@
         }
       ],
       "Identity": {
-        "Name": "EmployeeID",
+        "Name": "ID",
         "Seed": 1,
         "Increment": 1
       },
@@ -1771,13 +1777,13 @@
         {
           "IndexName": "PK_HumanResources_Employee",
           "IndexDescription": "clustered, unique, primary key located on PRIMARY",
-          "IndexKeys": "EmployeeID"
+          "IndexKeys": "ID"
         }
       ],
       "PrimaryKey": {
         "ConstraintName": "PK_HumanResources_Employee",
         "Key": [
-          "EmployeeID"
+          "ID"
         ]
       },
       "ForeignKeys": [],
@@ -1793,7 +1799,7 @@
           "UpdateAction": "(n/a)",
           "StatusEnabled": "(n/a)",
           "StatusForReplication": "(n/a)",
-          "ConstraintKeys": "EmployeeID"
+          "ConstraintKeys": "ID"
         }
       ],
       "TableReferences": [
@@ -1816,7 +1822,7 @@
       "Description": null,
       "Columns": [
         {
-          "Name": "EmployeeAddressID",
+          "Name": "ID",
           "Type": "int",
           "Computed": "no",
           "Length": 4,
@@ -2027,7 +2033,7 @@
         }
       ],
       "Identity": {
-        "Name": "EmployeeAddressID",
+        "Name": "ID",
         "Seed": 1,
         "Increment": 1
       },
@@ -2038,13 +2044,13 @@
         {
           "IndexName": "PK_HumanResources_EmployeeAddress",
           "IndexDescription": "clustered, unique, primary key located on PRIMARY",
-          "IndexKeys": "EmployeeAddressID"
+          "IndexKeys": "ID"
         }
       ],
       "PrimaryKey": {
         "ConstraintName": "PK_HumanResources_EmployeeAddress",
         "Key": [
-          "EmployeeAddressID"
+          "ID"
         ]
       },
       "ForeignKeys": [
@@ -2078,7 +2084,7 @@
           "UpdateAction": " ",
           "StatusEnabled": " ",
           "StatusForReplication": " ",
-          "ConstraintKeys": "REFERENCES OnlineStore.HumanResources.Employee (EmployeeID)"
+          "ConstraintKeys": "REFERENCES OnlineStore.HumanResources.Employee (ID)"
         },
         {
           "ConstraintType": "PRIMARY KEY (clustered)",
@@ -2087,7 +2093,7 @@
           "UpdateAction": "(n/a)",
           "StatusEnabled": "(n/a)",
           "StatusForReplication": "(n/a)",
-          "ConstraintKeys": "EmployeeAddressID"
+          "ConstraintKeys": "ID"
         }
       ],
       "TableReferences": [],
@@ -2100,7 +2106,7 @@
       "Description": null,
       "Columns": [
         {
-          "Name": "EmployeeEmailID",
+          "Name": "ID",
           "Type": "int",
           "Computed": "no",
           "Length": 4,
@@ -2221,7 +2227,7 @@
         }
       ],
       "Identity": {
-        "Name": "EmployeeEmailID",
+        "Name": "ID",
         "Seed": 1,
         "Increment": 1
       },
@@ -2232,13 +2238,13 @@
         {
           "IndexName": "PK_HumanResources_EmployeeEmail",
           "IndexDescription": "clustered, unique, primary key located on PRIMARY",
-          "IndexKeys": "EmployeeEmailID"
+          "IndexKeys": "ID"
         }
       ],
       "PrimaryKey": {
         "ConstraintName": "PK_HumanResources_EmployeeEmail",
         "Key": [
-          "EmployeeEmailID"
+          "ID"
         ]
       },
       "ForeignKeys": [
@@ -2272,7 +2278,7 @@
           "UpdateAction": " ",
           "StatusEnabled": " ",
           "StatusForReplication": " ",
-          "ConstraintKeys": "REFERENCES OnlineStore.HumanResources.Employee (EmployeeID)"
+          "ConstraintKeys": "REFERENCES OnlineStore.HumanResources.Employee (ID)"
         },
         {
           "ConstraintType": "PRIMARY KEY (clustered)",
@@ -2281,7 +2287,7 @@
           "UpdateAction": "(n/a)",
           "StatusEnabled": "(n/a)",
           "StatusForReplication": "(n/a)",
-          "ConstraintKeys": "EmployeeEmailID"
+          "ConstraintKeys": "ID"
         }
       ],
       "TableReferences": [],
@@ -2294,7 +2300,7 @@
       "Description": null,
       "Columns": [
         {
-          "Name": "CustomerID",
+          "Name": "ID",
           "Type": "int",
           "Computed": "no",
           "Length": 4,
@@ -2415,7 +2421,7 @@
         }
       ],
       "Identity": {
-        "Name": "CustomerID",
+        "Name": "ID",
         "Seed": 1,
         "Increment": 1
       },
@@ -2426,13 +2432,13 @@
         {
           "IndexName": "PK_Sales_Customer",
           "IndexDescription": "clustered, unique, primary key located on PRIMARY",
-          "IndexKeys": "CustomerID"
+          "IndexKeys": "ID"
         }
       ],
       "PrimaryKey": {
         "ConstraintName": "PK_Sales_Customer",
         "Key": [
-          "CustomerID"
+          "ID"
         ]
       },
       "ForeignKeys": [],
@@ -2448,7 +2454,7 @@
           "UpdateAction": "(n/a)",
           "StatusEnabled": "(n/a)",
           "StatusForReplication": "(n/a)",
-          "ConstraintKeys": "CustomerID"
+          "ConstraintKeys": "ID"
         }
       ],
       "TableReferences": [
@@ -2471,7 +2477,7 @@
       "Description": null,
       "Columns": [
         {
-          "Name": "CustomerAddressID",
+          "Name": "ID",
           "Type": "int",
           "Computed": "no",
           "Length": 4,
@@ -2682,7 +2688,7 @@
         }
       ],
       "Identity": {
-        "Name": "CustomerAddressID",
+        "Name": "ID",
         "Seed": 1,
         "Increment": 1
       },
@@ -2693,13 +2699,13 @@
         {
           "IndexName": "PK_Sales_CustomerAddress",
           "IndexDescription": "clustered, unique, primary key located on PRIMARY",
-          "IndexKeys": "CustomerAddressID"
+          "IndexKeys": "ID"
         }
       ],
       "PrimaryKey": {
         "ConstraintName": "PK_Sales_CustomerAddress",
         "Key": [
-          "CustomerAddressID"
+          "ID"
         ]
       },
       "ForeignKeys": [
@@ -2733,7 +2739,7 @@
           "UpdateAction": " ",
           "StatusEnabled": " ",
           "StatusForReplication": " ",
-          "ConstraintKeys": "REFERENCES OnlineStore.Sales.Customer (CustomerID)"
+          "ConstraintKeys": "REFERENCES OnlineStore.Sales.Customer (ID)"
         },
         {
           "ConstraintType": "PRIMARY KEY (clustered)",
@@ -2742,7 +2748,7 @@
           "UpdateAction": "(n/a)",
           "StatusEnabled": "(n/a)",
           "StatusForReplication": "(n/a)",
-          "ConstraintKeys": "CustomerAddressID"
+          "ConstraintKeys": "ID"
         }
       ],
       "TableReferences": [],
@@ -2755,7 +2761,7 @@
       "Description": null,
       "Columns": [
         {
-          "Name": "CustomerEmailID",
+          "Name": "ID",
           "Type": "int",
           "Computed": "no",
           "Length": 4,
@@ -2876,7 +2882,7 @@
         }
       ],
       "Identity": {
-        "Name": "CustomerEmailID",
+        "Name": "ID",
         "Seed": 1,
         "Increment": 1
       },
@@ -2887,13 +2893,13 @@
         {
           "IndexName": "PK_Sales_CustomerEmail",
           "IndexDescription": "clustered, unique, primary key located on PRIMARY",
-          "IndexKeys": "CustomerEmailID"
+          "IndexKeys": "ID"
         }
       ],
       "PrimaryKey": {
         "ConstraintName": "PK_Sales_CustomerEmail",
         "Key": [
-          "CustomerEmailID"
+          "ID"
         ]
       },
       "ForeignKeys": [
@@ -2927,7 +2933,7 @@
           "UpdateAction": " ",
           "StatusEnabled": " ",
           "StatusForReplication": " ",
-          "ConstraintKeys": "REFERENCES OnlineStore.Sales.Customer (CustomerID)"
+          "ConstraintKeys": "REFERENCES OnlineStore.Sales.Customer (ID)"
         },
         {
           "ConstraintType": "PRIMARY KEY (clustered)",
@@ -2936,7 +2942,7 @@
           "UpdateAction": "(n/a)",
           "StatusEnabled": "(n/a)",
           "StatusForReplication": "(n/a)",
-          "ConstraintKeys": "CustomerEmailID"
+          "ConstraintKeys": "ID"
         }
       ],
       "TableReferences": [],
@@ -2949,7 +2955,7 @@
       "Description": null,
       "Columns": [
         {
-          "Name": "OrderDetailID",
+          "Name": "ID",
           "Type": "bigint",
           "Computed": "no",
           "Length": 8,
@@ -3130,7 +3136,7 @@
         }
       ],
       "Identity": {
-        "Name": "OrderDetailID",
+        "Name": "ID",
         "Seed": 1,
         "Increment": 1
       },
@@ -3141,7 +3147,7 @@
         {
           "IndexName": "PK_Sales_OrderDetail",
           "IndexDescription": "clustered, unique, primary key located on PRIMARY",
-          "IndexKeys": "OrderDetailID"
+          "IndexKeys": "ID"
         },
         {
           "IndexName": "U_Sales_OrderDetail",
@@ -3152,7 +3158,7 @@
       "PrimaryKey": {
         "ConstraintName": "PK_Sales_OrderDetail",
         "Key": [
-          "OrderDetailID"
+          "ID"
         ]
       },
       "ForeignKeys": [
@@ -3202,7 +3208,7 @@
           "UpdateAction": " ",
           "StatusEnabled": " ",
           "StatusForReplication": " ",
-          "ConstraintKeys": "REFERENCES OnlineStore.Sales.OrderHeader (OrderHeaderID)"
+          "ConstraintKeys": "REFERENCES OnlineStore.Sales.OrderHeader (ID)"
         },
         {
           "ConstraintType": "FOREIGN KEY",
@@ -3220,7 +3226,7 @@
           "UpdateAction": " ",
           "StatusEnabled": " ",
           "StatusForReplication": " ",
-          "ConstraintKeys": "REFERENCES OnlineStore.Warehouse.Product (ProductID)"
+          "ConstraintKeys": "REFERENCES OnlineStore.Warehouse.Product (ID)"
         },
         {
           "ConstraintType": "PRIMARY KEY (clustered)",
@@ -3229,7 +3235,7 @@
           "UpdateAction": "(n/a)",
           "StatusEnabled": "(n/a)",
           "StatusForReplication": "(n/a)",
-          "ConstraintKeys": "OrderDetailID"
+          "ConstraintKeys": "ID"
         },
         {
           "ConstraintType": "UNIQUE (non-clustered)",
@@ -3255,7 +3261,7 @@
       "Description": null,
       "Columns": [
         {
-          "Name": "OrderHeaderID",
+          "Name": "ID",
           "Type": "bigint",
           "Computed": "no",
           "Length": 8,
@@ -3511,7 +3517,7 @@
         }
       ],
       "Identity": {
-        "Name": "OrderHeaderID",
+        "Name": "ID",
         "Seed": 1,
         "Increment": 1
       },
@@ -3522,13 +3528,13 @@
         {
           "IndexName": "PK_Sales_OrderHeader",
           "IndexDescription": "clustered, unique, primary key located on PRIMARY",
-          "IndexKeys": "OrderHeaderID"
+          "IndexKeys": "ID"
         }
       ],
       "PrimaryKey": {
         "ConstraintName": "PK_Sales_OrderHeader",
         "Key": [
-          "OrderHeaderID"
+          "ID"
         ]
       },
       "ForeignKeys": [
@@ -3602,7 +3608,7 @@
           "UpdateAction": " ",
           "StatusEnabled": " ",
           "StatusForReplication": " ",
-          "ConstraintKeys": "REFERENCES OnlineStore.dbo.Currency (CurrencyID)"
+          "ConstraintKeys": "REFERENCES OnlineStore.dbo.Currency (ID)"
         },
         {
           "ConstraintType": "FOREIGN KEY",
@@ -3620,7 +3626,7 @@
           "UpdateAction": " ",
           "StatusEnabled": " ",
           "StatusForReplication": " ",
-          "ConstraintKeys": "REFERENCES OnlineStore.Sales.Customer (CustomerID)"
+          "ConstraintKeys": "REFERENCES OnlineStore.Sales.Customer (ID)"
         },
         {
           "ConstraintType": "FOREIGN KEY",
@@ -3638,7 +3644,7 @@
           "UpdateAction": " ",
           "StatusEnabled": " ",
           "StatusForReplication": " ",
-          "ConstraintKeys": "REFERENCES OnlineStore.HumanResources.Employee (EmployeeID)"
+          "ConstraintKeys": "REFERENCES OnlineStore.HumanResources.Employee (ID)"
         },
         {
           "ConstraintType": "FOREIGN KEY",
@@ -3656,7 +3662,7 @@
           "UpdateAction": " ",
           "StatusEnabled": " ",
           "StatusForReplication": " ",
-          "ConstraintKeys": "REFERENCES OnlineStore.Sales.OrderStatus (OrderStatusID)"
+          "ConstraintKeys": "REFERENCES OnlineStore.Sales.OrderStatus (ID)"
         },
         {
           "ConstraintType": "FOREIGN KEY",
@@ -3674,7 +3680,7 @@
           "UpdateAction": " ",
           "StatusEnabled": " ",
           "StatusForReplication": " ",
-          "ConstraintKeys": "REFERENCES OnlineStore.Sales.PaymentMethod (PaymentMethodID)"
+          "ConstraintKeys": "REFERENCES OnlineStore.Sales.PaymentMethod (ID)"
         },
         {
           "ConstraintType": "FOREIGN KEY",
@@ -3692,7 +3698,7 @@
           "UpdateAction": " ",
           "StatusEnabled": " ",
           "StatusForReplication": " ",
-          "ConstraintKeys": "REFERENCES OnlineStore.Sales.Shipper (ShipperID)"
+          "ConstraintKeys": "REFERENCES OnlineStore.Sales.Shipper (ID)"
         },
         {
           "ConstraintType": "PRIMARY KEY (clustered)",
@@ -3701,7 +3707,7 @@
           "UpdateAction": "(n/a)",
           "StatusEnabled": "(n/a)",
           "StatusForReplication": "(n/a)",
-          "ConstraintKeys": "OrderHeaderID"
+          "ConstraintKeys": "ID"
         }
       ],
       "TableReferences": [
@@ -3718,7 +3724,7 @@
       "Description": null,
       "Columns": [
         {
-          "Name": "OrderStatusID",
+          "Name": "ID",
           "Type": "smallint",
           "Computed": "no",
           "Length": 2,
@@ -3831,13 +3837,13 @@
         {
           "IndexName": "PK_Sales_OrderStatus",
           "IndexDescription": "clustered, unique, primary key located on PRIMARY",
-          "IndexKeys": "OrderStatusID"
+          "IndexKeys": "ID"
         }
       ],
       "PrimaryKey": {
         "ConstraintName": "PK_Sales_OrderStatus",
         "Key": [
-          "OrderStatusID"
+          "ID"
         ]
       },
       "ForeignKeys": [],
@@ -3853,7 +3859,7 @@
           "UpdateAction": "(n/a)",
           "StatusEnabled": "(n/a)",
           "StatusForReplication": "(n/a)",
-          "ConstraintKeys": "OrderStatusID"
+          "ConstraintKeys": "ID"
         }
       ],
       "TableReferences": [
@@ -3870,7 +3876,7 @@
       "Description": null,
       "Columns": [
         {
-          "Name": "PaymentMethodID",
+          "Name": "ID",
           "Type": "uniqueidentifier",
           "Computed": "no",
           "Length": 16,
@@ -3998,13 +4004,13 @@
         {
           "IndexName": "PK_Sales_PaymentMethod",
           "IndexDescription": "clustered, unique, primary key located on PRIMARY",
-          "IndexKeys": "PaymentMethodID"
+          "IndexKeys": "ID"
         }
       ],
       "PrimaryKey": {
         "ConstraintName": "PK_Sales_PaymentMethod",
         "Key": [
-          "PaymentMethodID"
+          "ID"
         ]
       },
       "ForeignKeys": [],
@@ -4020,7 +4026,7 @@
           "UpdateAction": "(n/a)",
           "StatusEnabled": "(n/a)",
           "StatusForReplication": "(n/a)",
-          "ConstraintKeys": "PaymentMethodID"
+          "ConstraintKeys": "ID"
         }
       ],
       "TableReferences": [
@@ -4037,7 +4043,7 @@
       "Description": null,
       "Columns": [
         {
-          "Name": "ShipperID",
+          "Name": "ID",
           "Type": "int",
           "Computed": "no",
           "Length": 4,
@@ -4158,7 +4164,7 @@
         }
       ],
       "Identity": {
-        "Name": "ShipperID",
+        "Name": "ID",
         "Seed": 1,
         "Increment": 1
       },
@@ -4169,13 +4175,13 @@
         {
           "IndexName": "PK_Sales_Shipper",
           "IndexDescription": "clustered, unique, primary key located on PRIMARY",
-          "IndexKeys": "ShipperID"
+          "IndexKeys": "ID"
         }
       ],
       "PrimaryKey": {
         "ConstraintName": "PK_Sales_Shipper",
         "Key": [
-          "ShipperID"
+          "ID"
         ]
       },
       "ForeignKeys": [],
@@ -4191,7 +4197,7 @@
           "UpdateAction": "(n/a)",
           "StatusEnabled": "(n/a)",
           "StatusForReplication": "(n/a)",
-          "ConstraintKeys": "ShipperID"
+          "ConstraintKeys": "ID"
         }
       ],
       "TableReferences": [
@@ -4208,7 +4214,7 @@
       "Description": null,
       "Columns": [
         {
-          "Name": "LocationID",
+          "Name": "ID",
           "Type": "varchar",
           "Computed": "no",
           "Length": 5,
@@ -4321,13 +4327,13 @@
         {
           "IndexName": "PK_Warehouse_Location",
           "IndexDescription": "clustered, unique, primary key located on PRIMARY",
-          "IndexKeys": "LocationID"
+          "IndexKeys": "ID"
         }
       ],
       "PrimaryKey": {
         "ConstraintName": "PK_Warehouse_Location",
         "Key": [
-          "LocationID"
+          "ID"
         ]
       },
       "ForeignKeys": [],
@@ -4343,7 +4349,7 @@
           "UpdateAction": "(n/a)",
           "StatusEnabled": "(n/a)",
           "StatusForReplication": "(n/a)",
-          "ConstraintKeys": "LocationID"
+          "ConstraintKeys": "ID"
         }
       ],
       "TableReferences": [
@@ -4357,10 +4363,10 @@
       "Type": "table"
     },
     {
-      "Description": "Products catalog (Update) II",
+      "Description": "Products catalog (Update)",
       "Columns": [
         {
-          "Name": "ProductID",
+          "Name": "ID",
           "Type": "int",
           "Computed": "no",
           "Length": 4,
@@ -4541,7 +4547,7 @@
         }
       ],
       "Identity": {
-        "Name": "ProductID",
+        "Name": "ID",
         "Seed": 1,
         "Increment": 1
       },
@@ -4552,7 +4558,7 @@
         {
           "IndexName": "PK_Production_Product",
           "IndexDescription": "clustered, unique, primary key located on PRIMARY",
-          "IndexKeys": "ProductID"
+          "IndexKeys": "ID"
         },
         {
           "IndexName": "U_Production_Product_ProductName",
@@ -4563,7 +4569,7 @@
       "PrimaryKey": {
         "ConstraintName": "PK_Production_Product",
         "Key": [
-          "ProductID"
+          "ID"
         ]
       },
       "ForeignKeys": [
@@ -4615,7 +4621,7 @@
           "UpdateAction": " ",
           "StatusEnabled": " ",
           "StatusForReplication": " ",
-          "ConstraintKeys": "REFERENCES OnlineStore.Warehouse.ProductCategory (ProductCategoryID)"
+          "ConstraintKeys": "REFERENCES OnlineStore.Warehouse.ProductCategory (ID)"
         },
         {
           "ConstraintType": "PRIMARY KEY (clustered)",
@@ -4624,7 +4630,7 @@
           "UpdateAction": "(n/a)",
           "StatusEnabled": "(n/a)",
           "StatusForReplication": "(n/a)",
-          "ConstraintKeys": "ProductID"
+          "ConstraintKeys": "ID"
         },
         {
           "ConstraintType": "UNIQUE (non-clustered)",
@@ -4642,6 +4648,9 @@
         },
         {
           "ReferenceDescription": "OnlineStore.Warehouse.ProductInventory: FK_Warehouse_ProductInventory_Product"
+        },
+        {
+          "ReferenceDescription": "OnlineStore.Warehouse.ProductUnitPriceHistory: FK_Warehouse_ProductUnitPriceHistory_Product"
         }
       ],
       "Schema": "Warehouse",
@@ -4653,7 +4662,7 @@
       "Description": null,
       "Columns": [
         {
-          "Name": "ProductCategoryID",
+          "Name": "ID",
           "Type": "int",
           "Computed": "no",
           "Length": 4,
@@ -4759,7 +4768,7 @@
         }
       ],
       "Identity": {
-        "Name": "ProductCategoryID",
+        "Name": "ID",
         "Seed": 1,
         "Increment": 1
       },
@@ -4770,13 +4779,13 @@
         {
           "IndexName": "PK_Production_ProductCategory",
           "IndexDescription": "clustered, unique, primary key located on PRIMARY",
-          "IndexKeys": "ProductCategoryID"
+          "IndexKeys": "ID"
         }
       ],
       "PrimaryKey": {
         "ConstraintName": "PK_Production_ProductCategory",
         "Key": [
-          "ProductCategoryID"
+          "ID"
         ]
       },
       "ForeignKeys": [],
@@ -4792,7 +4801,7 @@
           "UpdateAction": "(n/a)",
           "StatusEnabled": "(n/a)",
           "StatusForReplication": "(n/a)",
-          "ConstraintKeys": "ProductCategoryID"
+          "ConstraintKeys": "ID"
         }
       ],
       "TableReferences": [
@@ -4809,7 +4818,7 @@
       "Description": null,
       "Columns": [
         {
-          "Name": "ProductInventoryID",
+          "Name": "ID",
           "Type": "int",
           "Computed": "no",
           "Length": 4,
@@ -4960,7 +4969,7 @@
         }
       ],
       "Identity": {
-        "Name": "ProductInventoryID",
+        "Name": "ID",
         "Seed": 1,
         "Increment": 1
       },
@@ -4971,13 +4980,13 @@
         {
           "IndexName": "PK_Production_ProductInventory",
           "IndexDescription": "clustered, unique, primary key located on PRIMARY",
-          "IndexKeys": "ProductInventoryID"
+          "IndexKeys": "ID"
         }
       ],
       "PrimaryKey": {
         "ConstraintName": "PK_Production_ProductInventory",
         "Key": [
-          "ProductInventoryID"
+          "ID"
         ]
       },
       "ForeignKeys": [
@@ -5027,7 +5036,7 @@
           "UpdateAction": " ",
           "StatusEnabled": " ",
           "StatusForReplication": " ",
-          "ConstraintKeys": "REFERENCES OnlineStore.Warehouse.Product (ProductID)"
+          "ConstraintKeys": "REFERENCES OnlineStore.Warehouse.Product (ID)"
         },
         {
           "ConstraintType": "FOREIGN KEY",
@@ -5045,7 +5054,7 @@
           "UpdateAction": " ",
           "StatusEnabled": " ",
           "StatusForReplication": " ",
-          "ConstraintKeys": "REFERENCES OnlineStore.Sales.OrderDetail (OrderDetailID)"
+          "ConstraintKeys": "REFERENCES OnlineStore.Sales.OrderDetail (ID)"
         },
         {
           "ConstraintType": "FOREIGN KEY",
@@ -5063,7 +5072,7 @@
           "UpdateAction": " ",
           "StatusEnabled": " ",
           "StatusForReplication": " ",
-          "ConstraintKeys": "REFERENCES OnlineStore.Warehouse.Location (LocationID)"
+          "ConstraintKeys": "REFERENCES OnlineStore.Warehouse.Location (ID)"
         },
         {
           "ConstraintType": "PRIMARY KEY (clustered)",
@@ -5072,13 +5081,207 @@
           "UpdateAction": "(n/a)",
           "StatusEnabled": "(n/a)",
           "StatusForReplication": "(n/a)",
-          "ConstraintKeys": "ProductInventoryID"
+          "ConstraintKeys": "ID"
         }
       ],
       "TableReferences": [],
       "Schema": "Warehouse",
       "Name": "ProductInventory",
       "FullName": "Warehouse.ProductInventory",
+      "Type": "table"
+    },
+    {
+      "Description": null,
+      "Columns": [
+        {
+          "Name": "ID",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "ProductID",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "UnitPrice",
+          "Type": "decimal",
+          "Computed": "no",
+          "Length": 5,
+          "Prec": 8,
+          "Scale": 4,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "CreationUser",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 25,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "no",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "CreationDateTime",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "LastUpdateUser",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 25,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "no",
+          "FixedLenNullInSource": "yes",
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "LastUpdateDateTime",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "Timestamp",
+          "Type": "timestamp",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        }
+      ],
+      "Identity": {
+        "Name": "ID",
+        "Seed": 1,
+        "Increment": 1
+      },
+      "RowGuidCol": {
+        "Name": "No rowguidcol column defined."
+      },
+      "Indexes": [
+        {
+          "IndexName": "U_Production_ProductUnitPriceHistory",
+          "IndexDescription": "clustered, unique, primary key located on PRIMARY",
+          "IndexKeys": "ID"
+        }
+      ],
+      "PrimaryKey": {
+        "ConstraintName": "U_Production_ProductUnitPriceHistory",
+        "Key": [
+          "ID"
+        ]
+      },
+      "ForeignKeys": [
+        {
+          "References": "OnlineStore.Warehouse.Product",
+          "Child": null,
+          "ConstraintName": "FK_Warehouse_ProductUnitPriceHistory_Product",
+          "Key": [
+            "ProductID"
+          ]
+        }
+      ],
+      "Uniques": [],
+      "Checks": [],
+      "Defaults": [],
+      "ExtendedProperties": [],
+      "ConstraintDetails": [
+        {
+          "ConstraintType": "FOREIGN KEY",
+          "ConstraintName": "FK_Warehouse_ProductUnitPriceHistory_Product",
+          "DeleteAction": "No Action",
+          "UpdateAction": "No Action",
+          "StatusEnabled": "Enabled",
+          "StatusForReplication": "Is_For_Replication",
+          "ConstraintKeys": "ProductID"
+        },
+        {
+          "ConstraintType": " ",
+          "ConstraintName": " ",
+          "DeleteAction": " ",
+          "UpdateAction": " ",
+          "StatusEnabled": " ",
+          "StatusForReplication": " ",
+          "ConstraintKeys": "REFERENCES OnlineStore.Warehouse.Product (ID)"
+        },
+        {
+          "ConstraintType": "PRIMARY KEY (clustered)",
+          "ConstraintName": "U_Production_ProductUnitPriceHistory",
+          "DeleteAction": "(n/a)",
+          "UpdateAction": "(n/a)",
+          "StatusEnabled": "(n/a)",
+          "StatusForReplication": "(n/a)",
+          "ConstraintKeys": "ID"
+        }
+      ],
+      "TableReferences": [],
+      "Schema": "Warehouse",
+      "Name": "ProductUnitPriceHistory",
+      "FullName": "Warehouse.ProductUnitPriceHistory",
       "Type": "table"
     }
   ],
@@ -5087,15 +5290,30 @@
       "Description": null,
       "Columns": [
         {
+          "Name": "ID",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
           "Name": "EmployeeName",
           "Type": "varchar",
           "Computed": "no",
-          "Length": 77,
+          "Length": 75,
           "Prec": 0,
           "Scale": 0,
-          "Nullable": false,
+          "Nullable": true,
           "TrimTrailingBlanks": "no",
-          "FixedLenNullInSource": "no",
+          "FixedLenNullInSource": "yes",
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
           "Description": null,
           "ExtendedProperties": [],
@@ -5132,7 +5350,11 @@
           "ComputedExpression": null
         }
       ],
-      "Identity": null,
+      "Identity": {
+        "Name": "ID",
+        "Seed": 1,
+        "Increment": 1
+      },
       "RowGuidCol": {
         "Name": "No rowguidcol column defined."
       },
@@ -5147,11 +5369,41 @@
       "Description": "Summary for orders",
       "Columns": [
         {
-          "Name": "OrderHeaderID",
+          "Name": "OrderID",
           "Type": "bigint",
           "Computed": "no",
           "Length": 8,
           "Prec": 19,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "OrderStatusID",
+          "Type": "smallint",
+          "Computed": "no",
+          "Length": 2,
+          "Prec": 5,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "CustomerID",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
           "Scale": 0,
           "Nullable": false,
           "TrimTrailingBlanks": "(n/a)",
@@ -5188,6 +5440,21 @@
           "ComputedExpression": null
         },
         {
+          "Name": "EmployeeID",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
           "Name": "EmployeeName",
           "Type": "varchar",
           "Computed": "no",
@@ -5198,6 +5465,21 @@
           "TrimTrailingBlanks": "no",
           "FixedLenNullInSource": "yes",
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "Description": null,
+          "ExtendedProperties": [],
+          "ComputedExpression": null
+        },
+        {
+          "Name": "ShipperID",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": false,
+          "TrimTrailingBlanks": "(n/a)",
+          "FixedLenNullInSource": "(n/a)",
+          "Collation": "",
           "Description": null,
           "ExtendedProperties": [],
           "ComputedExpression": null

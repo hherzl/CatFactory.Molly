@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.FileProviders;
 
-namespace CatFactory.UI.WebAPI.UnitTests
+namespace CatFactory.UI.API.UnitTests
 {
-    public class HostingEnvironment : IHostingEnvironment
+    class HostingEnvironment : IHostingEnvironment
     {
         public string EnvironmentName { get; set; }
 

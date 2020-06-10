@@ -2,9 +2,9 @@
 using System.IO;
 using Microsoft.AspNetCore.Hosting;
 
-namespace CatFactory.UI.WebAPI.UnitTests
+namespace CatFactory.UI.API.UnitTests.Mocks
 {
-    public static class HostingEnvironmentMocker
+    static class HostingEnvironmentMocker
     {
         public static IHostingEnvironment GetHostingEnvironment()
             => new HostingEnvironment

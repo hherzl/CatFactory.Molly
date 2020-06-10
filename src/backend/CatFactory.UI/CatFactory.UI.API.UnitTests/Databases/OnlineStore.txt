@@ -1,4 +1,4 @@
-{
+﻿{
   "Name": "OnlineStore",
   "DefaultSchema": "dbo",
   "SupportTransactions": true,

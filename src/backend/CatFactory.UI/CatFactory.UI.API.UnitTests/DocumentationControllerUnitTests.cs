@@ -1,12 +1,13 @@
 ﻿using System.Threading.Tasks;
 using CatFactory.ObjectRelationalMapping;
-using CatFactory.UI.WebAPI.Controllers;
-using CatFactory.UI.WebAPI.Models;
-using CatFactory.UI.WebAPI.Services;
+using CatFactory.UI.API.Controllers;
+using CatFactory.UI.API.Models;
+using CatFactory.UI.API.Services;
+using CatFactory.UI.API.UnitTests.Mocks;
 using Microsoft.AspNetCore.Mvc;
 using Xunit;
 
-namespace CatFactory.UI.WebAPI.UnitTests
+namespace CatFactory.UI.API.UnitTests
 {
     public class DocumentationControllerUnitTests
     {
@@ -20,7 +21,7 @@ namespace CatFactory.UI.WebAPI.UnitTests
             // Arrange
             var logger = LoggingHelper.GetLogger<DocumentationController>();
             var hostingEnvironment = HostingEnvironmentMocker.GetHostingEnvironment();
-            var apiConfig = new ApiConfig();
+            var apiConfig = new UISettings();
             var dbService = new DbService(hostingEnvironment, apiConfig);
             var controller = new DocumentationController(logger, dbService);
 
@@ -38,7 +39,7 @@ namespace CatFactory.UI.WebAPI.UnitTests
             // Arrange
             var logger = LoggingHelper.GetLogger<DocumentationController>();
             var hostingEnvironment = HostingEnvironmentMocker.GetHostingEnvironment();
-            var apiConfig = new ApiConfig();
+            var apiConfig = new UISettings();
             var dbService = new DbService(hostingEnvironment, apiConfig);
             var controller = new DocumentationController(logger, dbService);
             var request = new ImportDatabaseRequest
@@ -63,7 +64,7 @@ namespace CatFactory.UI.WebAPI.UnitTests
             // Arrange
             var logger = LoggingHelper.GetLogger<DocumentationController>();
             var hostingEnvironment = HostingEnvironmentMocker.GetHostingEnvironment();
-            var apiConfig = new ApiConfig();
+            var apiConfig = new UISettings();
             var dbService = new DbService(hostingEnvironment, apiConfig);
             var controller = new DocumentationController(logger, dbService);
             var request = new DbRequest
@@ -85,7 +86,7 @@ namespace CatFactory.UI.WebAPI.UnitTests
             // Arrange
             var logger = LoggingHelper.GetLogger<DocumentationController>();
             var hostingEnvironment = HostingEnvironmentMocker.GetHostingEnvironment();
-            var apiConfig = new ApiConfig();
+            var apiConfig = new UISettings();
             var dbService = new DbService(hostingEnvironment, apiConfig);
             var controller = new DocumentationController(logger, dbService);
             var request = new DbRequest
@@ -107,7 +108,7 @@ namespace CatFactory.UI.WebAPI.UnitTests
         {
             // Arrange
             var hostingEnvironment = HostingEnvironmentMocker.GetHostingEnvironment();
-            var apiConfig = new ApiConfig();
+            var apiConfig = new UISettings();
             var dbService = new DbService(hostingEnvironment, apiConfig);
             var logger = LoggingHelper.GetLogger<DocumentationController>();
             var controller = new DocumentationController(logger, dbService);
@@ -130,7 +131,7 @@ namespace CatFactory.UI.WebAPI.UnitTests
         {
             // Arrange
             var hostingEnvironment = HostingEnvironmentMocker.GetHostingEnvironment();
-            var apiConfig = new ApiConfig();
+            var apiConfig = new UISettings();
             var dbService = new DbService(hostingEnvironment, apiConfig);
             var logger = LoggingHelper.GetLogger<DocumentationController>();
             var controller = new DocumentationController(logger, dbService);

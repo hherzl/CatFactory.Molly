@@ -4,15 +4,15 @@ using System.Threading.Tasks;
 using CatFactory.ObjectRelationalMapping;
 using CatFactory.SqlServer;
 using CatFactory.SqlServer.Features;
-using CatFactory.UI.WebAPI.Models;
-using CatFactory.UI.WebAPI.Services;
+using CatFactory.UI.API.Models;
+using CatFactory.UI.API.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
-namespace CatFactory.UI.WebAPI.Controllers
+namespace CatFactory.UI.API.Controllers
 {
-    [Route("api/v1/[controller]")]
     [ApiController]
+    [Route("api/v1/[controller]")]
     public class DocumentationController : ControllerBase
     {
         private readonly ILogger Logger;
@@ -62,7 +62,7 @@ namespace CatFactory.UI.WebAPI.Controllers
                         ImportViews = request.ImportViews,
                         ExtendedProperties =
                         {
-                            Tokens.MsDescription
+                            Tokens.MS_DESCRIPTION
                         }
                     }
                 };
@@ -156,13 +156,13 @@ namespace CatFactory.UI.WebAPI.Controllers
                     DatabaseImportSettings = await DbService.GetDatabaseImportSettingsAsync(request.Name)
                 };
 
-                if (request.Type == Tokens.Table)
+                if (request.Type == Tokens.TABLE)
                 {
                     var table = db.FindTable(request.Table);
 
                     if (string.IsNullOrEmpty(request.Column))
                     {
-                        databaseFactory.AddOrUpdateExtendedProperty(table, Tokens.MsDescription, request.FixedDescription);
+                        databaseFactory.AddOrUpdateExtendedProperty(table, Tokens.MS_DESCRIPTION, request.FixedDescription);
 
                         table.Description = request.Description;
                     }
@@ -170,18 +170,18 @@ namespace CatFactory.UI.WebAPI.Controllers
                     {
                         var column = table.Columns.First(item => item.Name == request.Column);
 
-                        databaseFactory.AddOrUpdateExtendedProperty(table, column, Tokens.MsDescription, request.FixedDescription);
+                        databaseFactory.AddOrUpdateExtendedProperty(table, column, Tokens.MS_DESCRIPTION, request.FixedDescription);
 
                         column.Description = request.Description;
                     }
                 }
-                else if (request.Type == Tokens.View)
+                else if (request.Type == Tokens.VIEW)
                 {
                     var view = db.FindView(request.View);
 
                     if (string.IsNullOrEmpty(request.Column))
                     {
-                        databaseFactory.AddOrUpdateExtendedProperty(view, Tokens.MsDescription, request.FixedDescription);
+                        databaseFactory.AddOrUpdateExtendedProperty(view, Tokens.MS_DESCRIPTION, request.FixedDescription);
 
                         view.Description = request.Description;
                     }
@@ -189,7 +189,7 @@ namespace CatFactory.UI.WebAPI.Controllers
                     {
                         var column = view.Columns.First(item => item.Name == request.Column);
 
-                        databaseFactory.AddOrUpdateExtendedProperty(view, view.Columns.First(item => item.Name == request.Column), Tokens.MsDescription, request.FixedDescription);
+                        databaseFactory.AddOrUpdateExtendedProperty(view, view.Columns.First(item => item.Name == request.Column), Tokens.MS_DESCRIPTION, request.FixedDescription);
 
                         column.Description = request.Description;
                     }

@@ -1,13 +1,13 @@
-﻿using CatFactory.UI.WebAPI.Controllers;
-using CatFactory.UI.WebAPI.Services;
+using CatFactory.UI.API.Controllers;
+using CatFactory.UI.API.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace CatFactory.UI.WebAPI
+namespace CatFactory.UI.API
 {
     public class Startup
     {
@@ -21,19 +21,21 @@ namespace CatFactory.UI.WebAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddControllers();
 
             services.AddSingleton<DbService>();
-            services.AddSingleton<ApiConfig>();
+            services.AddSingleton<UISettings>();
 
             services.AddScoped<ILogger<DocumentationController>, Logger<DocumentationController>>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
+            {
                 app.UseDeveloperExceptionPage();
+            }
 
             app.UseCors(builder =>
             {
@@ -45,7 +47,14 @@ namespace CatFactory.UI.WebAPI
                 builder.AllowAnyMethod();
             });
 
-            app.UseMvc();
+            app.UseRouting();
+
+            app.UseAuthorization();
+
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllers();
+            });
         }
     }
 }

@@ -4,7 +4,7 @@ using System.Net;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
-namespace CatFactory.UI.WebAPI.Models
+namespace CatFactory.UI.API.Models
 {
     public interface IResponse
     {

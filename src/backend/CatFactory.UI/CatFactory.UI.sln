@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatFactory.UI.API", "CatFactory.UI.API\CatFactory.UI.API.csproj", "{9708C6F5-60F9-4D99-AF85-4D91EBD61429}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatFactory.UI.API.UnitTests", "CatFactory.UI.API.UnitTests\CatFactory.UI.API.UnitTests.csproj", "{8A8C5DDC-3DD5-4701-9010-FB99DCDF77A5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9708C6F5-60F9-4D99-AF85-4D91EBD61429}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9708C6F5-60F9-4D99-AF85-4D91EBD61429}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9708C6F5-60F9-4D99-AF85-4D91EBD61429}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9708C6F5-60F9-4D99-AF85-4D91EBD61429}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A8C5DDC-3DD5-4701-9010-FB99DCDF77A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A8C5DDC-3DD5-4701-9010-FB99DCDF77A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A8C5DDC-3DD5-4701-9010-FB99DCDF77A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A8C5DDC-3DD5-4701-9010-FB99DCDF77A5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {090507C6-8C10-4674-9CA2-A63BB6F55C4D}
+	EndGlobalSection
+EndGlobal

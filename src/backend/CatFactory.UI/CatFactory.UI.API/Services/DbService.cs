@@ -5,21 +5,21 @@ using System.Text;
 using System.Threading.Tasks;
 using CatFactory.ObjectRelationalMapping;
 using CatFactory.SqlServer;
-using CatFactory.UI.WebAPI.Models;
+using CatFactory.UI.API.Models;
 using Microsoft.AspNetCore.Hosting;
 using Newtonsoft.Json;
 
-namespace CatFactory.UI.WebAPI.Services
+namespace CatFactory.UI.API.Services
 {
     public class DbService
     {
         private readonly IHostingEnvironment HostingEnvironment;
-        private readonly ApiConfig ApiConfig;
+        private readonly UISettings ApiConfig;
 
-        public DbService(IHostingEnvironment hostingEnvironment, ApiConfig apiConfig)
+        public DbService(IHostingEnvironment hostingEnvironment, UISettings uiSettings)
         {
             HostingEnvironment = hostingEnvironment;
-            ApiConfig = apiConfig;
+            ApiConfig = uiSettings;
         }
 
         string DatabasesDirectoryName

@@ -1,8 +1,19 @@
 ﻿using System.Collections.Generic;
 using CatFactory.ObjectRelationalMapping;
 
-namespace CatFactory.UI.WebAPI.Services
+namespace CatFactory.UI.API.Services
 {
+    public class DatabaseDetail
+    {
+        public string Name { get; set; }
+
+        public IEnumerable<TableDetail> Tables { get; set; }
+
+        public IEnumerable<ViewDetail> Views { get; set; }
+
+        public IEnumerable<DatabaseTypeMap> DatabaseTypeMaps { get; set; }
+    }
+
     public class TableDetail
     {
         public string Schema { get; set; }
@@ -37,16 +48,5 @@ namespace CatFactory.UI.WebAPI.Services
         public string Identity { get; set; }
 
         public string Details { get; } = "Details";
-    }
-
-    public class DatabaseDetail
-    {
-        public string Name { get; set; }
-
-        public IEnumerable<TableDetail> Tables { get; set; }
-
-        public IEnumerable<ViewDetail> Views { get; set; }
-
-        public IEnumerable<DatabaseTypeMap> DatabaseTypeMaps { get; set; }
     }
 }

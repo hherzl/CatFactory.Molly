@@ -1,4 +1,4 @@
-﻿namespace CatFactory.UI.WebAPI.Models
+﻿namespace CatFactory.UI.API.Models
 {
     public class ImportDatabaseRequest
     {

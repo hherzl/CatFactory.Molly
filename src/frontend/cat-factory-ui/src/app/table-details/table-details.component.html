@@ -2,7 +2,7 @@
 
 <h1>{{ title }}</h1>
 
-<mat-card>
+<mat-card class="description-card">
   <span>
     Description: <strong>{{ response?.model?.description }}</strong>
     <i class="material-icons" (click)="editTableDescription()">edit</i>
@@ -80,8 +80,8 @@
 
 <h2>Identity</h2>
 
-<mat-card *ngIf="response?.model?.identity == null">
-  <span><i class="material-icons">warning</i> There isn't identity definition for this table!</span>
+<mat-card class="identity-card" *ngIf="response?.model?.identity == null">
+  <span><i class="material-icons">warning</i> There is no identity definition for this table!</span>
 </mat-card>
 
 <mat-card *ngIf="response?.model?.identity != null">
@@ -92,8 +92,8 @@
 
 <h2>Row Guid Column</h2>
 
-<mat-card *ngIf="rowGuidColumn == null">
-  <span><i class="material-icons">warning</i> There isn't row guid column definition for this table!</span>
+<mat-card class="row-guid-column-card" *ngIf="rowGuidColumn == null">
+  <span><i class="material-icons">warning</i> There is no row guid column definition for this table!</span>
 </mat-card>
 
 <mat-card *ngIf="rowGuidColumn != null">
@@ -102,7 +102,7 @@
 
 <h2>Indexes ({{ response?.model?.indexes.length }})</h2>
 
-<mat-card *ngIf="response?.model?.indexes?.length == 0">
+<mat-card class="indexes-card" *ngIf="response?.model?.indexes?.length == 0">
   <i class="material-icons">warning</i>
   <strong>There aren't indexes for this table!</strong>
 </mat-card>
@@ -129,9 +129,9 @@
 
 <h2>Primary Key</h2>
 
-<mat-card *ngIf="response?.model?.primaryKey == null">
+<mat-card class="primary-key-card" *ngIf="response?.model?.primaryKey == null">
   <i class="material-icons">warning</i>
-  <strong>There is not identity definition for this table!</strong>
+  <strong>There is no identity definition for this table!</strong>
 </mat-card>
 
 <mat-card *ngIf="response?.model?.primaryKey != null">
@@ -142,7 +142,7 @@
 
 <mat-card *ngIf="response?.model?.foreignKeys?.length == 0">
   <i class="material-icons">warning</i>
-  <strong>There aren't foreign keys constraints for this table!</strong>
+  <strong>There are no foreign key constraints for this table!</strong>
 </mat-card>
 
 <table mat-table [dataSource]="response?.model?.foreignKeys" *ngIf="response?.model?.foreignKeys?.length > 0">
@@ -169,7 +169,7 @@
 
 <mat-card *ngIf="response?.model?.uniques?.length == 0">
   <i class="material-icons">warning</i>
-  <strong>There aren't unique constraints for this table!</strong>
+  <strong>There are no unique constraints for this table!</strong>
 </mat-card>
 
 <table mat-table [dataSource]="response?.model?.uniques" *ngIf="response?.model?.uniques?.length > 0">
@@ -196,7 +196,7 @@
 
 <mat-card *ngIf="response?.model?.tableReferences?.length == 0">
   <i class="material-icons">warning</i>
-  <strong>There aren't references for this table!</strong>
+  <strong>There are no references for this table!</strong>
 </mat-card>
 
 <table mat-table [dataSource]="response?.model?.tableReferences" *ngIf="response?.model?.tableReferences?.length > 0">

@@ -2,7 +2,7 @@
 
 <h1>{{ title }}</h1>
 
-<mat-card>
+<mat-card class="description-card">
   <span>
     Description: <strong>{{ response?.model?.description }}</strong>
     <i class="material-icons" (click)="editViewDescription()">edit</i>
@@ -80,9 +80,9 @@
 
 <h2>Identity</h2>
 
-<mat-card *ngIf="response?.model?.identity == null">
+<mat-card class="identity-card" *ngIf="response?.model?.identity == null">
   <i class="material-icons">warning</i>
-  <strong>There is not identity definition for this view!</strong>
+  <strong>There is no identity definition for this view!</strong>
 </mat-card>
 
 <mat-card *ngIf="response?.model?.identity != null">
@@ -93,8 +93,8 @@
 
 <h2>Row Guid Column</h2>
 
-<mat-card *ngIf="rowGuidColumn == null">
-  <span><i class="material-icons">warning</i> There isn't row guid column definition for this table!</span>
+<mat-card class="description-card" *ngIf="rowGuidColumn == null">
+  <span><i class="material-icons">warning</i> There is no row guid column definition for this view!</span>
 </mat-card>
 
 <mat-card *ngIf="rowGuidColumn != null">

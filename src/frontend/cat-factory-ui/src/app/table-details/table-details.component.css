@@ -1,3 +1,33 @@
 table {
     width: 100%;
 }
+
+.description-card {
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+}
+
+.row-guid-column-card {
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+}
+
+.identity-card {
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+}
+
+.indexes-card {
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+}
+
+.primary-key-card {
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+}

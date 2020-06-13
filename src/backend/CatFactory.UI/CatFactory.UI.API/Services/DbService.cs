@@ -140,7 +140,7 @@ namespace CatFactory.UI.API.Services
             return db.FindTable(table);
         }
 
-        public async Task<IView> GetViewAsync(string dbName, string view)
+        public async Task<View> GetViewAsync(string dbName, string view)
         {
             var objectInString = await File.ReadAllTextAsync(GetDbFileName(dbName), Encoding.Default);
 

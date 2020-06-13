@@ -107,7 +107,7 @@ namespace CatFactory.UI.API.Controllers
         {
             Logger?.LogDebug("'{0}' has been invoked", nameof(GetTableAsync));
 
-            var response = new SingleResponse<ITable>();
+            var response = new SingleResponse<Table>();
 
             try
             {

@@ -9,7 +9,7 @@
   </span>
 </mat-card>
 
-<h2>Columns ({{ response?.model?.columns.length }})</h2>
+<h2>Columns ({{ response?.model?.columns?.length }})</h2>
 
 <table mat-table [dataSource]="response?.model?.columns">
   <ng-container matColumnDef="name">

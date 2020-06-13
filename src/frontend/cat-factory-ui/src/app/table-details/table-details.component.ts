@@ -46,6 +46,8 @@ export class TableDetailsComponent implements OnInit {
 
     this.activatedRoute.params.forEach((params: Params) => {
       this.id = params['id'];
+      console.log(this.id);
+      
       const request = DbRequestHelper.createFromId(this.id);
 
       this.documentationService.getTable(request).subscribe((data) => {

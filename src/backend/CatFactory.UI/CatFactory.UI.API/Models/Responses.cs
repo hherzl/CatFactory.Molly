@@ -6,6 +6,7 @@ using Microsoft.Extensions.Logging;
 
 namespace CatFactory.UI.API.Models
 {
+#pragma warning disable CS1591
     public interface IResponse
     {
         string Message { get; set; }
@@ -96,4 +97,5 @@ namespace CatFactory.UI.API.Models
 
         public string Details { get; } = "Details";
     }
+#pragma warning restore CS1591
 }

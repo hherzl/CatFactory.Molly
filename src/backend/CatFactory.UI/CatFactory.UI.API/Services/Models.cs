@@ -3,6 +3,7 @@ using CatFactory.ObjectRelationalMapping;
 
 namespace CatFactory.UI.API.Services
 {
+#pragma warning disable CS1591
     public class DatabaseDetail
     {
         public string Name { get; set; }
@@ -49,4 +50,5 @@ namespace CatFactory.UI.API.Services
 
         public string Details { get; } = "Details";
     }
+#pragma warning restore CS1591
 }

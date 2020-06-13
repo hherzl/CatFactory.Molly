@@ -11,6 +11,7 @@ using Newtonsoft.Json;
 
 namespace CatFactory.UI.API.Services
 {
+#pragma warning disable CS1591
     public class DbService
     {
         private readonly IHostingEnvironment HostingEnvironment;
@@ -149,4 +150,5 @@ namespace CatFactory.UI.API.Services
             return db.FindView(view);
         }
     }
+#pragma warning restore CS1591
 }

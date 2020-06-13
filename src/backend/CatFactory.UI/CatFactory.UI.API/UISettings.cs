@@ -1,5 +1,6 @@
 ﻿namespace CatFactory.UI.API
 {
+#pragma warning disable CS1591
     public class UISettings
     {
         public UISettings()
@@ -14,4 +15,5 @@
 
         public string DatabaseImportSettingsName { get; set; }
     }
+#pragma warning restore CS1591
 }

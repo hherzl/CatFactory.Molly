@@ -6,6 +6,7 @@ using Serilog.Events;
 
 namespace CatFactory.UI.API
 {
+#pragma warning disable CS1591
     public class Program
     {
         public static int Main(string[] args)
@@ -46,4 +47,5 @@ namespace CatFactory.UI.API
                         .UseStartup<Startup>();
                 });
     }
+#pragma warning restore CS1591
 }

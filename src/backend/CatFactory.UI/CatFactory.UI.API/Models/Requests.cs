@@ -1,5 +1,6 @@
 ﻿namespace CatFactory.UI.API.Models
 {
+#pragma warning disable CS1591
     public class ImportDatabaseRequest
     {
         public string Name { get; set; }
@@ -30,4 +31,5 @@
         public string FixedDescription
             => string.IsNullOrEmpty(Description) ? string.Empty : Description.Contains("'") ? Description.Replace("'", "''").Trim() : Description.Trim();
     }
+#pragma warning restore CS1591
 }

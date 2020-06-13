@@ -6,9 +6,11 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.OpenApi.Models;
 
 namespace CatFactory.UI.API
 {
+#pragma warning disable CS1591
     public class Startup
     {
         public Startup(IConfiguration configuration)
@@ -27,6 +29,11 @@ namespace CatFactory.UI.API
             services.AddSingleton<UISettings>();
 
             services.AddScoped<ILogger<DocumentationController>, Logger<DocumentationController>>();
+
+            services.AddSwaggerGen(options =>
+            {
+                options.SwaggerDoc("v1", new OpenApiInfo { Title = "CatFactory UI API", Version = "v1" });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -47,6 +54,16 @@ namespace CatFactory.UI.API
                 builder.AllowAnyMethod();
             });
 
+            // Enable middleware to serve generated Swagger as a JSON endpoint.
+            app.UseSwagger();
+
+            // Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.),
+            // specifying the Swagger JSON endpoint.
+            app.UseSwaggerUI(options =>
+            {
+                options.SwaggerEndpoint("/swagger/v1/swagger.json", "CatFactory UI API V1");
+            });
+
             app.UseRouting();
 
             app.UseAuthorization();
@@ -57,4 +74,5 @@ namespace CatFactory.UI.API
             });
         }
     }
+#pragma warning restore CS1591
 }

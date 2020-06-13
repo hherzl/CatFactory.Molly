@@ -11,6 +11,7 @@ using Microsoft.Extensions.Logging;
 
 namespace CatFactory.UI.API.Controllers
 {
+#pragma warning disable CS1591
     [ApiController]
     [Route("api/v1/[controller]")]
     public class DocumentationController : ControllerBase
@@ -25,6 +26,8 @@ namespace CatFactory.UI.API.Controllers
         }
 
         [HttpGet("ImportedDatabases")]
+        [ProducesResponseType(200, Type = typeof(ListResponse<ImportedDatabase>))]
+        [ProducesResponseType(500)]
         public async Task<IActionResult> GetImportedDatabasesAsync()
         {
             Logger?.LogDebug("'{0}' has been invoked", nameof(GetImportedDatabasesAsync));
@@ -44,6 +47,8 @@ namespace CatFactory.UI.API.Controllers
         }
 
         [HttpPost("ImportDatabase")]
+        [ProducesResponseType(200, Type = typeof(ImportDatabaseResponse))]
+        [ProducesResponseType(500)]
         public async Task<IActionResult> ImportDatabaseAsync([FromBody] ImportDatabaseRequest request)
         {
             Logger?.LogDebug("'{0}' has been invoked", nameof(ImportDatabaseAsync));
@@ -84,6 +89,8 @@ namespace CatFactory.UI.API.Controllers
         }
 
         [HttpPost("DatabaseDetail")]
+        [ProducesResponseType(200, Type = typeof(SingleResponse<DatabaseDetail>))]
+        [ProducesResponseType(500)]
         public async Task<IActionResult> GetDatabaseDetailAsync([FromBody] DbRequest request)
         {
             Logger?.LogDebug("'{0}' has been invoked", nameof(GetDatabaseDetailAsync));
@@ -103,6 +110,8 @@ namespace CatFactory.UI.API.Controllers
         }
 
         [HttpPost("Table")]
+        [ProducesResponseType(200, Type = typeof(SingleResponse<Table>))]
+        [ProducesResponseType(500)]
         public async Task<IActionResult> GetTableAsync([FromBody] DbRequest request)
         {
             Logger?.LogDebug("'{0}' has been invoked", nameof(GetTableAsync));
@@ -122,6 +131,8 @@ namespace CatFactory.UI.API.Controllers
         }
 
         [HttpPost("View")]
+        [ProducesResponseType(200, Type = typeof(SingleResponse<View>))]
+        [ProducesResponseType(500)]
         public async Task<IActionResult> GetViewAsync([FromBody] DbRequest request)
         {
             Logger?.LogDebug("'{0}' has been invoked", nameof(GetViewAsync));
@@ -141,6 +152,8 @@ namespace CatFactory.UI.API.Controllers
         }
 
         [HttpPost("EditDescription")]
+        [ProducesResponseType(200, Type = typeof(SingleResponse<View>))]
+        [ProducesResponseType(500)]
         public async Task<IActionResult> EditDescriptionAsync([FromBody] DbRequest request)
         {
             Logger?.LogDebug("'{0}' has been invoked", nameof(EditDescriptionAsync));
@@ -207,4 +220,5 @@ namespace CatFactory.UI.API.Controllers
             return response.ToHttpResponse();
         }
     }
+#pragma warning restore CS1591
 }

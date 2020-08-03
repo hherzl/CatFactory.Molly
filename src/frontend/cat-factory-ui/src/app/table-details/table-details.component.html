@@ -192,7 +192,7 @@
   <tr mat-row *matRowDef="let row; columns: columnsForUniques;" class="element-row"></tr>
 </table>
 
-<h2>References ({{ response?.model?.tableReferences.length }})</h2>
+<h2>References ({{ response?.model?.tableReferences?.length }})</h2>
 
 <mat-card *ngIf="response?.model?.tableReferences?.length == 0">
   <i class="material-icons">warning</i>

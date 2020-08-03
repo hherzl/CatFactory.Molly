@@ -53,7 +53,7 @@ export class TableDetailsComponent implements OnInit {
         this.response = data;
         this.title = 'Details for \'' + this.response.model.fullName + '\' table';
         this.response.model.columns.forEach(column => {
-          if (this.response.model.rowGuidCol.name === column.name) {
+          if (this.response.model.rowGuidCol?.name === column.name) {
             this.rowGuidColumn = column;
           }
         });

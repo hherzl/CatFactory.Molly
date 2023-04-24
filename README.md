@@ -1,6 +1,6 @@
-# CatFactory.UI
+# CatFactory.GUI
 
-**CatFactory UI** is the GUI for *CatFactory*.
+**CatFactory GUI** is the GUI for *CatFactory*.
 
 ## Prerequisites
 
@@ -25,4 +25,4 @@ This script runs back-end and front-end projects.
 
 Basically GUI works in the same way that **CatFactory.SqlServer** package, We need to import an existing database from SQL Server instance in order to add comments for Database objects.
 
-You can read more about this in [Document SQL Server Databases with CatFactory.UI](https://www.codeproject.com/Articles/1252491/Document-SQL-Server-Databases-with-CatFactory-UI).
+You can read more about this in [Document SQL Server Databases with CatFactory.GUI](https://www.codeproject.com/Articles/1252491/Document-SQL-Server-Databases-with-CatFactory-UI).

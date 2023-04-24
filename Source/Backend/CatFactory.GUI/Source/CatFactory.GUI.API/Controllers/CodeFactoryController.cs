@@ -28,8 +28,8 @@ namespace CatFactory.GUI.API.Controllers
 
             request = new ImportDatabaseRequest();
 
-            request.Name = "Northwind";
-            request.ConnectionString = "server=(local); database=Northwind; integrated security=yes; TrustServerCertificate=True;";
+            request.Name = "RothschildHouse";
+            request.ConnectionString = "server=(local); database=RothschildHouse; integrated security=yes; TrustServerCertificate=True;";
             request.ImportTables = true;
             request.ImportViews = true;
 
@@ -45,11 +45,11 @@ namespace CatFactory.GUI.API.Controllers
                 }
             };
 
-            var db = await databaseFactory.ImportAsync();
+            var database = await databaseFactory.ImportAsync();
 
             await _codeFactoryService.SerializeAsync(databaseFactory.DatabaseImportSettings);
 
-            await _codeFactoryService.SerializeAsync(db);
+            await _codeFactoryService.SerializeAsync(database);
 
             return Ok();
         }
@@ -59,17 +59,27 @@ namespace CatFactory.GUI.API.Controllers
         [ProducesResponseType(500)]
         public async Task<IActionResult> GetDatabasesAsync()
         {
-            var response = new ListResponse<ImportedDatabase>(await _codeFactoryService.GetImportedDatabasesAsync());
+            var databases = await _codeFactoryService.GetImportedDatabasesAsync();
+
+            var response = new ListResponse<ImportedDatabase>(databases);
 
             return Ok(response);
         }
 
         [HttpGet("database/{id}")]
-        [ProducesResponseType(200)]
+        [ProducesResponseType(200, Type = typeof(ISingleResponse<DatabaseDetails>))]
+        [ProducesResponseType(404)]
         [ProducesResponseType(500)]
-        public IActionResult GetDatabase(string id)
+        public async Task<IActionResult> GetDatabaseAsync(string id)
         {
-            return Ok();
+            var database = await _codeFactoryService.GetDatabaseDetailsAsync(id);
+
+            if (database == null)
+                return NotFound();
+
+            var response = new SingleResponse<DatabaseDetails>(database);
+
+            return Ok(response);
         }
     }
 }

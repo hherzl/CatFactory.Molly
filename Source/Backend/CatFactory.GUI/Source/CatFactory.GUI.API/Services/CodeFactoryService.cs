@@ -3,6 +3,7 @@ using System.Text.Json;
 using CatFactory.GUI.API.Models;
 using CatFactory.ObjectRelationalMapping;
 using CatFactory.SqlServer;
+using Microsoft.Extensions.Logging.Abstractions;
 
 namespace CatFactory.GUI.API.Services
 {
@@ -80,6 +81,43 @@ namespace CatFactory.GUI.API.Services
             }
 
             return result;
+        }
+
+        public async Task<DatabaseDetails> GetDatabaseDetailsAsync(string name)
+        {
+            var fileName = GetDbFileName(name);
+
+            if (!File.Exists(fileName))
+                return null;
+
+            var serializedDb = await File.ReadAllTextAsync(fileName, Encoding.Default);
+
+            var db = JsonSerializer.Deserialize<Database>(serializedDb);
+
+            return new DatabaseDetails
+            {
+                Name = db.Name,
+                Tables = db.Tables.Select(item => new TableDetails
+                {
+                    Schema = item.Schema,
+                    Name = item.Name,
+                    Type = item.Type,
+                    FullName = item.FullName,
+                    ColumnsCount = item.Columns.Count,
+                    PrimaryKey = item.PrimaryKey == null ? "" : string.Join(",", item.PrimaryKey.Key),
+                    Identity = item.Identity == null ? "" : item.Identity.Name
+                }).ToList(),
+                Views = db.Views.Select(item => new ViewDetails
+                {
+                    Schema = item.Schema,
+                    Name = item.Name,
+                    Type = item.Type,
+                    FullName = item.FullName,
+                    ColumnsCount = item.Columns.Count,
+                    Identity = item.Identity == null ? "" : item.Identity.Name
+                }).ToList(),
+                DatabaseTypeMaps = db.DatabaseTypeMaps
+            };
         }
     }
 }

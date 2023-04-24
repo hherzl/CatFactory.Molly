@@ -1,4 +1,5 @@
 ﻿using CatFactory.GUI.API.Models;
+using CatFactory.GUI.API.Models.Common;
 using CatFactory.GUI.API.Services;
 using CatFactory.SqlServer;
 using Microsoft.AspNetCore.Mvc;
@@ -21,7 +22,7 @@ namespace CatFactory.GUI.API.Controllers
         [HttpPost("import-database")]
         [ProducesResponseType(200)]
         [ProducesResponseType(500)]
-        public async Task<IActionResult> ImportDatabase([FromBody] ImportDatabaseRequest request)
+        public async Task<IActionResult> ImportDatabaseAsync([FromBody] ImportDatabaseRequest request)
         {
             // todo: Add testing and remove this code
 
@@ -54,11 +55,13 @@ namespace CatFactory.GUI.API.Controllers
         }
 
         [HttpGet("database")]
-        [ProducesResponseType(200)]
+        [ProducesResponseType(200, Type = typeof(IListResponse<ImportedDatabase>))]
         [ProducesResponseType(500)]
-        public IActionResult GetDatabases()
+        public async Task<IActionResult> GetDatabasesAsync()
         {
-            return Ok();
+            var response = new ListResponse<ImportedDatabase>(await _codeFactoryService.GetImportedDatabasesAsync());
+
+            return Ok(response);
         }
 
         [HttpGet("database/{id}")]

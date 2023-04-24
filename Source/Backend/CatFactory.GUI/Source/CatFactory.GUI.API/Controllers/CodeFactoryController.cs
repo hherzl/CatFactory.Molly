@@ -12,5 +12,29 @@ namespace CatFactory.GUI.API.Controllers
         {
             _logger = logger;
         }
+
+        [HttpPost("import-database")]
+        [ProducesResponseType(200)]
+        [ProducesResponseType(500)]
+        public IActionResult ImportDatabase()
+        {
+            return Ok();
+        }
+
+        [HttpGet("database")]
+        [ProducesResponseType(200)]
+        [ProducesResponseType(500)]
+        public IActionResult GetDatabases()
+        {
+            return Ok();
+        }
+
+        [HttpGet("database/{id}")]
+        [ProducesResponseType(200)]
+        [ProducesResponseType(500)]
+        public IActionResult GetDatabase(string id)
+        {
+            return Ok();
+        }
     }
 }

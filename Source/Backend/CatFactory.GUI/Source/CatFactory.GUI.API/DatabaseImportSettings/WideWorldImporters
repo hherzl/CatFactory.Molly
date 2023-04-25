@@ -1,0 +1,16 @@
+{
+  "Name": "WideWorldImporters",
+  "ConnectionString": "server=(local); database=WideWorldImporters; integrated security=yes; TrustServerCertificate=True;",
+  "ImportCommandText": "\r\n\t\t\t\tSELECT\r\n\t\t\t\t\t[schemas].[name] AS [schema_name],\r\n\t\t\t\t\t[objects].[name] AS [object_name],\r\n\t\t\t\t\t[type_desc] AS [object_type]\r\n\t\t\t\tFROM\r\n\t\t\t\t\t[sys].[objects] objects\r\n\t\t\t\t\tINNER JOIN [sys].[schemas] schemas ON [objects].[schema_id] = [schemas].[schema_id]\r\n\t\t\t\tWHERE\r\n\t\t\t\t\t[type] IN (\u0027FN\u0027, \u0027IF\u0027, \u0027TF\u0027, \u0027U\u0027, \u0027V\u0027, \u0027T\u0027, \u0027P\u0027, \u0027SO\u0027)\r\n\t\t\t\tORDER BY\r\n\t\t\t\t\t[object_type],\r\n\t\t\t\t\t[schema_name],\r\n\t\t\t\t\t[object_name]\r\n\t\t\t",
+  "ImportTables": true,
+  "ImportViews": true,
+  "ImportScalarFunctions": false,
+  "ImportTableFunctions": false,
+  "ImportStoredProcedures": false,
+  "ImportSequences": false,
+  "Exclusions": [],
+  "ExclusionTypes": [],
+  "ExtendedProperties": [
+    "MS_Description"
+  ]
+}

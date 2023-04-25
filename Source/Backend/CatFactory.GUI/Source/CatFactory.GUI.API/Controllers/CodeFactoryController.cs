@@ -1,6 +1,7 @@
 ﻿using CatFactory.GUI.API.Models;
 using CatFactory.GUI.API.Models.Common;
 using CatFactory.GUI.API.Services;
+using CatFactory.ObjectRelationalMapping;
 using CatFactory.SqlServer;
 using Microsoft.AspNetCore.Mvc;
 
@@ -24,15 +25,6 @@ namespace CatFactory.GUI.API.Controllers
         [ProducesResponseType(500)]
         public async Task<IActionResult> ImportDatabaseAsync([FromBody] ImportDatabaseRequest request)
         {
-            // todo: Add testing and remove this code
-
-            request = new ImportDatabaseRequest();
-
-            request.Name = "RothschildHouse";
-            request.ConnectionString = "server=(local); database=RothschildHouse; integrated security=yes; TrustServerCertificate=True;";
-            request.ImportTables = true;
-            request.ImportViews = true;
-
             var databaseFactory = new SqlServerDatabaseFactory
             {
                 DatabaseImportSettings = new DatabaseImportSettings
@@ -41,7 +33,10 @@ namespace CatFactory.GUI.API.Controllers
                     ConnectionString = request.ConnectionString,
                     ImportTables = request.ImportTables,
                     ImportViews = request.ImportViews,
-                    ExtendedProperties = { Tokens.MS_DESCRIPTION }
+                    ExtendedProperties =
+                    {
+                        Tokens.MS_DESCRIPTION
+                    }
                 }
             };
 
@@ -55,29 +50,45 @@ namespace CatFactory.GUI.API.Controllers
         }
 
         [HttpGet("database")]
-        [ProducesResponseType(200, Type = typeof(IListResponse<ImportedDatabase>))]
+        [ProducesResponseType(200, Type = typeof(IListResponse<DatabaseItemModel>))]
         [ProducesResponseType(500)]
         public async Task<IActionResult> GetDatabasesAsync()
         {
-            var databases = await _codeFactoryService.GetImportedDatabasesAsync();
+            var databases = await _codeFactoryService.GetDatabasesAsync();
 
-            var response = new ListResponse<ImportedDatabase>(databases);
+            var response = new ListResponse<DatabaseItemModel>(databases);
 
             return Ok(response);
         }
 
         [HttpGet("database/{id}")]
-        [ProducesResponseType(200, Type = typeof(ISingleResponse<DatabaseDetails>))]
+        [ProducesResponseType(200, Type = typeof(ISingleResponse<DatabaseDetailsModel>))]
         [ProducesResponseType(404)]
         [ProducesResponseType(500)]
         public async Task<IActionResult> GetDatabaseAsync(string id)
         {
-            var database = await _codeFactoryService.GetDatabaseDetailsAsync(id);
+            var database = await _codeFactoryService.GetDatabaseAsync(id);
 
             if (database == null)
                 return NotFound();
 
-            var response = new SingleResponse<DatabaseDetails>(database);
+            var response = new SingleResponse<DatabaseDetailsModel>(database);
+
+            return Ok(response);
+        }
+
+        [HttpGet("database/{databaseName}/table/{tableName}")]
+        [ProducesResponseType(200, Type = typeof(ISingleResponse<Table>))]
+        [ProducesResponseType(404)]
+        [ProducesResponseType(500)]
+        public async Task<IActionResult> GetTableAsync(string databaseName, string tableName)
+        {
+            var table = await _codeFactoryService.GetTableAsync(databaseName, tableName);
+
+            if (table == null)
+                return NotFound();
+
+            var response = new SingleResponse<Table>(table);
 
             return Ok(response);
         }

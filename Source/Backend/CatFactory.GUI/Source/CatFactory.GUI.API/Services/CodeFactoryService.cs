@@ -3,7 +3,6 @@ using System.Text.Json;
 using CatFactory.GUI.API.Models;
 using CatFactory.ObjectRelationalMapping;
 using CatFactory.SqlServer;
-using Microsoft.Extensions.Logging.Abstractions;
 
 namespace CatFactory.GUI.API.Services
 {
@@ -42,9 +41,9 @@ namespace CatFactory.GUI.API.Services
             if (!Directory.Exists(DatabaseImportSettingsDirectoryName))
                 Directory.CreateDirectory(DatabaseImportSettingsDirectoryName);
 
-            var objectInString = JsonSerializer.Serialize(dbImportSettings, options: DefaultJsonSerializerOptions);
+            var json = JsonSerializer.Serialize(dbImportSettings, options: DefaultJsonSerializerOptions);
 
-            await File.WriteAllTextAsync(GetDatabaseImportSettingsName(dbImportSettings.Name), objectInString, Encoding.Default);
+            await File.WriteAllTextAsync(GetDatabaseImportSettingsName(dbImportSettings.Name), json, Encoding.Default);
         }
 
         public async Task SerializeAsync(Database db)
@@ -52,27 +51,27 @@ namespace CatFactory.GUI.API.Services
             if (!Directory.Exists(DatabasesDirectoryName))
                 Directory.CreateDirectory(DatabasesDirectoryName);
 
-            var objectInString = JsonSerializer.Serialize(db, options: DefaultJsonSerializerOptions);
+            var json = JsonSerializer.Serialize(db, options: DefaultJsonSerializerOptions);
 
-            await File.WriteAllTextAsync(GetDbFileName(db.Name), objectInString, Encoding.Default);
+            await File.WriteAllTextAsync(GetDbFileName(db.Name), json, Encoding.Default);
         }
 
-        public async Task<IEnumerable<ImportedDatabase>> GetImportedDatabasesAsync()
+        public async Task<IEnumerable<DatabaseItemModel>> GetDatabasesAsync()
         {
             if (!Directory.Exists(DatabasesDirectoryName))
                 Directory.CreateDirectory(DatabasesDirectoryName);
 
             var files = Directory.GetFiles(DatabasesDirectoryName);
 
-            var result = new List<ImportedDatabase>();
+            var result = new List<DatabaseItemModel>();
 
             foreach (var item in files)
             {
-                var objectInString = await File.ReadAllTextAsync(item, Encoding.Default);
+                var dbInJson = await File.ReadAllTextAsync(item, Encoding.Default);
 
-                var db = JsonSerializer.Deserialize<Database>(objectInString);
+                var db = JsonSerializer.Deserialize<Database>(dbInJson);
 
-                result.Add(new ImportedDatabase
+                result.Add(new DatabaseItemModel
                 {
                     Name = db.Name,
                     TablesCount = db.Tables.Count,
@@ -83,21 +82,21 @@ namespace CatFactory.GUI.API.Services
             return result;
         }
 
-        public async Task<DatabaseDetails> GetDatabaseDetailsAsync(string name)
+        public async Task<DatabaseDetailsModel> GetDatabaseAsync(string name)
         {
             var fileName = GetDbFileName(name);
 
             if (!File.Exists(fileName))
                 return null;
 
-            var serializedDb = await File.ReadAllTextAsync(fileName, Encoding.Default);
+            var dbInJson = await File.ReadAllTextAsync(fileName, Encoding.Default);
 
-            var db = JsonSerializer.Deserialize<Database>(serializedDb);
+            var db = JsonSerializer.Deserialize<Database>(dbInJson);
 
-            return new DatabaseDetails
+            return new DatabaseDetailsModel
             {
                 Name = db.Name,
-                Tables = db.Tables.Select(item => new TableDetails
+                Tables = db.Tables.Select(item => new TableItemModel
                 {
                     Schema = item.Schema,
                     Name = item.Name,
@@ -107,7 +106,7 @@ namespace CatFactory.GUI.API.Services
                     PrimaryKey = item.PrimaryKey == null ? "" : string.Join(",", item.PrimaryKey.Key),
                     Identity = item.Identity == null ? "" : item.Identity.Name
                 }).ToList(),
-                Views = db.Views.Select(item => new ViewDetails
+                Views = db.Views.Select(item => new ViewItemModel
                 {
                     Schema = item.Schema,
                     Name = item.Name,
@@ -118,6 +117,20 @@ namespace CatFactory.GUI.API.Services
                 }).ToList(),
                 DatabaseTypeMaps = db.DatabaseTypeMaps
             };
+        }
+
+        public async Task<Table> GetTableAsync(string databaseName, string tableName)
+        {
+            var fileName = GetDbFileName(databaseName);
+
+            if (!File.Exists(fileName))
+                return null;
+
+            var dbInJson = await File.ReadAllTextAsync(fileName, Encoding.Default);
+
+            var db = JsonSerializer.Deserialize<Database>(dbInJson);
+
+            return db.FindTable(tableName);
         }
     }
 }

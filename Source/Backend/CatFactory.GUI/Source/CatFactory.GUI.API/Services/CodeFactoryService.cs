@@ -27,13 +27,13 @@ namespace CatFactory.GUI.API.Services
         string DatabasesDirectoryName
             => Path.Combine(_webHostingEnvironment.ContentRootPath, _guiSettings.DatabasesDirectoryName);
 
-        public string GetDbFileName(string name)
+        public string GetDatabaseFileName(string name)
             => Path.Combine(DatabasesDirectoryName, name);
 
         string DatabaseImportSettingsDirectoryName
             => Path.Combine(_webHostingEnvironment.ContentRootPath, _guiSettings.DatabaseImportSettingsName);
 
-        public string GetDatabaseImportSettingsName(string name)
+        public string GetDatabaseImportSettingsFileName(string name)
             => Path.Combine(DatabaseImportSettingsDirectoryName, name);
 
         public async Task SerializeAsync(DatabaseImportSettings dbImportSettings)
@@ -43,7 +43,7 @@ namespace CatFactory.GUI.API.Services
 
             var json = JsonSerializer.Serialize(dbImportSettings, options: DefaultJsonSerializerOptions);
 
-            await File.WriteAllTextAsync(GetDatabaseImportSettingsName(dbImportSettings.Name), json, Encoding.Default);
+            await File.WriteAllTextAsync(GetDatabaseImportSettingsFileName(dbImportSettings.Name), json, Encoding.Default);
         }
 
         public async Task SerializeAsync(Database db)
@@ -53,7 +53,7 @@ namespace CatFactory.GUI.API.Services
 
             var json = JsonSerializer.Serialize(db, options: DefaultJsonSerializerOptions);
 
-            await File.WriteAllTextAsync(GetDbFileName(db.Name), json, Encoding.Default);
+            await File.WriteAllTextAsync(GetDatabaseFileName(db.Name), json, Encoding.Default);
         }
 
         public async Task<IEnumerable<DatabaseItemModel>> GetDatabasesAsync()
@@ -82,16 +82,47 @@ namespace CatFactory.GUI.API.Services
             return result;
         }
 
-        public async Task<DatabaseDetailsModel> GetDatabaseAsync(string name)
+        public async Task<DatabaseImportSettings> GetDatabaseImportSettingsAsync(string name)
         {
-            var fileName = GetDbFileName(name);
+            var fileName = GetDatabaseImportSettingsFileName(name);
 
             if (!File.Exists(fileName))
                 return null;
 
             var dbInJson = await File.ReadAllTextAsync(fileName, Encoding.Default);
 
-            var db = JsonSerializer.Deserialize<Database>(dbInJson);
+            return JsonSerializer.Deserialize<DatabaseImportSettings>(dbInJson);
+        }
+
+        public async Task<Database> GetDatabaseAsync(string name)
+        {
+            var fileName = GetDatabaseFileName(name);
+
+            if (!File.Exists(fileName))
+                return null;
+
+            var dbInJson = await File.ReadAllTextAsync(fileName, Encoding.Default);
+
+            return JsonSerializer.Deserialize<Database>(dbInJson);
+        }
+
+        public async Task<Table> GetTableAsync(string databaseName, string tableName)
+        {
+            var db = await GetDatabaseAsync(databaseName);
+
+            return db.FindTable(tableName);
+        }
+
+        public async Task<View> GetViewAsync(string databaseName, string viewName)
+        {
+            var db = await GetDatabaseAsync(databaseName);
+
+            return db.FindView(viewName);
+        }
+
+        public async Task<DatabaseDetailsModel> GetDatabaseDetailsAsync(string name)
+        {
+            var db = await GetDatabaseAsync(name);
 
             return new DatabaseDetailsModel
             {
@@ -117,34 +148,6 @@ namespace CatFactory.GUI.API.Services
                 }).ToList(),
                 DatabaseTypeMaps = db.DatabaseTypeMaps
             };
-        }
-
-        public async Task<Table> GetTableAsync(string databaseName, string tableName)
-        {
-            var fileName = GetDbFileName(databaseName);
-
-            if (!File.Exists(fileName))
-                return null;
-
-            var dbInJson = await File.ReadAllTextAsync(fileName, Encoding.Default);
-
-            var db = JsonSerializer.Deserialize<Database>(dbInJson);
-
-            return db.FindTable(tableName);
-        }
-
-        public async Task<View> GetViewAsync(string databaseName, string viewName)
-        {
-            var fileName = GetDbFileName(databaseName);
-
-            if (!File.Exists(fileName))
-                return null;
-
-            var dbInJson = await File.ReadAllTextAsync(fileName, Encoding.Default);
-
-            var db = JsonSerializer.Deserialize<Database>(dbInJson);
-
-            return db.FindView(viewName);
         }
     }
 }

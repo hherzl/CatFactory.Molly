@@ -2724,7 +2724,7 @@
           "Nullable": false,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
           "DefaultValue": null,
-          "Description": null,
+          "Description": "Name of the product (test 0)",
           "ImportBag": {
             "TrimTrailingBlanks": "(n/a)",
             "FixedLenNullInSource": "(n/a)",
@@ -2873,7 +2873,7 @@
           }
         }
       ],
-      "Description": null,
+      "Description": "Catalog of products (test 1)",
       "Identity": {
         "Name": "ProductID",
         "Seed": 1,

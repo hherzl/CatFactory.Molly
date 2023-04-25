@@ -3,6 +3,7 @@ using CatFactory.GUI.API.Models.Common;
 using CatFactory.GUI.API.Services;
 using CatFactory.ObjectRelationalMapping;
 using CatFactory.SqlServer;
+using CatFactory.SqlServer.Features;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CatFactory.GUI.API.Controllers
@@ -67,7 +68,7 @@ namespace CatFactory.GUI.API.Controllers
         [ProducesResponseType(500)]
         public async Task<IActionResult> GetDatabaseAsync(string id)
         {
-            var database = await _codeFactoryService.GetDatabaseAsync(id);
+            var database = await _codeFactoryService.GetDatabaseDetailsAsync(id);
 
             if (database == null)
                 return NotFound();
@@ -105,6 +106,68 @@ namespace CatFactory.GUI.API.Controllers
                 return NotFound();
 
             var response = new SingleResponse<View>(view);
+
+            return Ok(response);
+        }
+
+        [HttpPost("edit-description")]
+        [ProducesResponseType(200, Type = typeof(IResponse))]
+        [ProducesResponseType(500)]
+        public async Task<IActionResult> EditDescriptionAsync([FromBody] EditDescriptionRequest request)
+        {
+            var response = new Response();
+
+            if (!request.HasDescription)
+                return Ok(response);
+
+            var database = await _codeFactoryService.GetDatabaseAsync(request.Database);
+
+            var databaseFactory = new SqlServerDatabaseFactory
+            {
+                DatabaseImportSettings = await _codeFactoryService.GetDatabaseImportSettingsAsync(request.Database)
+            };
+
+            if (request.IsTable)
+            {
+                var table = database.FindTable(request.Table);
+
+                if (request.IsColumn)
+                {
+                    databaseFactory.AddOrUpdateExtendedProperty(table, table[request.Column], Tokens.MS_DESCRIPTION, request.FixedDescription);
+                }
+                else
+                {
+                    databaseFactory.AddOrUpdateExtendedProperty(table, Tokens.MS_DESCRIPTION, request.FixedDescription);
+
+                    table.Description = request.Description;
+                }
+            }
+            else if (request.IsView)
+            {
+                var view = database.FindView(request.View);
+
+                if (request.IsColumn)
+                {
+                    databaseFactory.AddOrUpdateExtendedProperty(view, view[request.Column], Tokens.MS_DESCRIPTION, request.FixedDescription);
+                }
+                else
+                {
+                    databaseFactory.AddOrUpdateExtendedProperty(view, Tokens.MS_DESCRIPTION, request.FixedDescription);
+
+                    view.Description = request.Description;
+                }
+            }
+            else
+            {
+                // TODO: enable in next release
+                // databaseFactory.AddOrUpdateExtendedProperty(database, Tokens.MS_DESCRIPTION, request.FixedDescription);
+            }
+
+            await _codeFactoryService.SerializeAsync(databaseFactory.DatabaseImportSettings);
+
+            await _codeFactoryService.SerializeAsync(database);
+
+            response.Message = "The description was updated successfully";
 
             return Ok(response);
         }

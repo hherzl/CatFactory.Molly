@@ -92,5 +92,21 @@ namespace CatFactory.GUI.API.Controllers
 
             return Ok(response);
         }
+
+        [HttpGet("database/{databaseName}/view/{viewName}")]
+        [ProducesResponseType(200, Type = typeof(ISingleResponse<View>))]
+        [ProducesResponseType(404)]
+        [ProducesResponseType(500)]
+        public async Task<IActionResult> GetViewAsync(string databaseName, string viewName)
+        {
+            var view = await _codeFactoryService.GetViewAsync(databaseName, viewName);
+
+            if (view == null)
+                return NotFound();
+
+            var response = new SingleResponse<View>(view);
+
+            return Ok(response);
+        }
     }
 }

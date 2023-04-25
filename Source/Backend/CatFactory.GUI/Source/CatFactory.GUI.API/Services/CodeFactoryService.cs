@@ -132,5 +132,19 @@ namespace CatFactory.GUI.API.Services
 
             return db.FindTable(tableName);
         }
+
+        public async Task<View> GetViewAsync(string databaseName, string viewName)
+        {
+            var fileName = GetDbFileName(databaseName);
+
+            if (!File.Exists(fileName))
+                return null;
+
+            var dbInJson = await File.ReadAllTextAsync(fileName, Encoding.Default);
+
+            var db = JsonSerializer.Deserialize<Database>(dbInJson);
+
+            return db.FindView(viewName);
+        }
     }
 }

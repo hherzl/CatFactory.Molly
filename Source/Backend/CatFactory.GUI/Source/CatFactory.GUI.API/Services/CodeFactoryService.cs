@@ -69,11 +69,12 @@ namespace CatFactory.GUI.API.Services
             {
                 var dbInJson = await File.ReadAllTextAsync(item, Encoding.Default);
 
-                var db = JsonSerializer.Deserialize<Database>(dbInJson);
+                var db = (SqlServerDatabase)JsonSerializer.Deserialize<Database>(dbInJson);
 
                 result.Add(new DatabaseItemModel
                 {
                     Name = db.Name,
+                    Dbms = db.Dbms,
                     TablesCount = db.Tables.Count,
                     ViewsCount = db.Views.Count
                 });
@@ -122,11 +123,12 @@ namespace CatFactory.GUI.API.Services
 
         public async Task<DatabaseDetailsModel> GetDatabaseDetailsAsync(string name)
         {
-            var db = await GetDatabaseAsync(name);
+            var db = (SqlServerDatabase)await GetDatabaseAsync(name);
 
             return new DatabaseDetailsModel
             {
                 Name = db.Name,
+                Dbms = db.Dbms,
                 Tables = db.Tables.Select(item => new TableItemModel
                 {
                     Schema = item.Schema,

@@ -1,4 +1,6 @@
-﻿namespace CatFactory.GUI.API.Models
+﻿using CatFactory.SqlServer.Features;
+
+namespace CatFactory.GUI.API.Models
 {
     public class EditDescriptionRequest
     {
@@ -16,10 +18,10 @@
             => Description.Replace("'", "\'").Trim();
 
         public bool IsTable
-            => Type == Tokens.TABLE;
+            => Type == SqlServerDatabaseFactoryExtensions.TABLE;
 
         public bool IsView
-            => Type == Tokens.VIEW;
+            => Type == SqlServerDatabaseFactoryExtensions.VIEW;
 
         public bool IsColumn
             => !string.IsNullOrEmpty(Column);

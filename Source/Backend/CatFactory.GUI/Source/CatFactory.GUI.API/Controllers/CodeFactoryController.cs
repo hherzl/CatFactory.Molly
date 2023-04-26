@@ -28,18 +28,10 @@ namespace CatFactory.GUI.API.Controllers
         {
             var databaseFactory = new SqlServerDatabaseFactory
             {
-                DatabaseImportSettings = new DatabaseImportSettings
-                {
-                    Name = request.Name,
-                    ConnectionString = request.ConnectionString,
-                    ImportTables = request.ImportTables,
-                    ImportViews = request.ImportViews,
-                    ExtendedProperties =
-                    {
-                        Tokens.MS_DESCRIPTION
-                    }
-                }
+                DatabaseImportSettings = DatabaseImportSettings.Create(request.ConnectionString, request.ImportTables, request.ImportViews, Tokens.MS_DESCRIPTION)
             };
+
+            databaseFactory.DatabaseImportSettings.Name = request.Name;
 
             var database = await databaseFactory.ImportAsync();
 
@@ -159,8 +151,7 @@ namespace CatFactory.GUI.API.Controllers
             }
             else
             {
-                // TODO: enable in next release
-                // databaseFactory.AddOrUpdateExtendedProperty(database, Tokens.MS_DESCRIPTION, request.FixedDescription);
+                databaseFactory.AddOrUpdateExtendedProperty(database, Tokens.MS_DESCRIPTION, request.FixedDescription);
             }
 
             await _codeFactoryService.SerializeAsync(databaseFactory.DatabaseImportSettings);

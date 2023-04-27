@@ -69,12 +69,12 @@ namespace CatFactory.GUI.API.Services
             {
                 var dbInJson = await File.ReadAllTextAsync(item, Encoding.Default);
 
-                var db = (SqlServerDatabase)JsonSerializer.Deserialize<Database>(dbInJson);
+                var db = JsonSerializer.Deserialize<Database>(dbInJson);
 
                 result.Add(new DatabaseItemModel
                 {
                     Name = db.Name,
-                    Dbms = db.Dbms,
+                    Dbms = "SQL Server",
                     TablesCount = db.Tables.Count,
                     ViewsCount = db.Views.Count
                 });

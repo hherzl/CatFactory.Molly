@@ -58,6 +58,9 @@
           "defaultConfiguration": "production"
         },
         "serve": {
+          "options": {
+            "port": 7441
+          },
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {

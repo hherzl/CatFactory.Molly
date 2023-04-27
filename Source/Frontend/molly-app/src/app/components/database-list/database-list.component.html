@@ -1,0 +1,35 @@
+<h1>Databases</h1>
+
+<div class="mat-elevation-z8">
+    <table mat-table class="full-width-table" matSort aria-label="Elements">
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Name</th>
+      <td mat-cell *matCellDef="let row">{{row.name}}</td>
+    </ng-container>
+
+    <!-- Dbms Column -->
+    <ng-container matColumnDef="dbms">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Dbms</th>
+      <td mat-cell *matCellDef="let row">{{row.dbms}}</td>
+    </ng-container>
+
+    <!-- Tables count Column -->
+    <ng-container matColumnDef="tablesCount">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Tables</th>
+      <td mat-cell *matCellDef="let row">{{row.tablesCount}}</td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+
+  <mat-paginator #paginator
+      [length]="dataSource?.data?.length"
+      [pageIndex]="0"
+      [pageSize]="10"
+      [pageSizeOptions]="[5, 10, 20]"
+      aria-label="Select page">
+  </mat-paginator>
+</div>

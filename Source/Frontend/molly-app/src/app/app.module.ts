@@ -30,6 +30,7 @@ import { HomeComponent } from './components/home/home.component';
 import { DatabaseListComponent } from './components/database-list/database-list.component';
 import { DatabaseDetailsComponent } from './components/database-details/database-details.component';
 import { ImportDatabaseComponent } from './components/import-database/import-database.component';
+import { TableDetailsComponent } from './components/table-details/table-details.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { ImportDatabaseComponent } from './components/import-database/import-dat
     HomeComponent,
     DatabaseListComponent,
     DatabaseDetailsComponent,
-    ImportDatabaseComponent
+    ImportDatabaseComponent,
+    TableDetailsComponent
   ],
   imports: [
     BrowserModule,

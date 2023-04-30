@@ -1,0 +1,5814 @@
+{
+  "ServerName": "(local)",
+  "Name": "Northwind",
+  "Description": null,
+  "DefaultSchema": "dbo",
+  "SupportTransactions": true,
+  "DbObjects": [
+    {
+      "DataSource": "(local)",
+      "DatabaseName": "Northwind",
+      "Schema": "dbo",
+      "Name": "CustOrderHist",
+      "FullName": "dbo.CustOrderHist",
+      "Type": "SQL_STORED_PROCEDURE"
+    },
+    {
+      "DataSource": "(local)",
+      "DatabaseName": "Northwind",
+      "Schema": "dbo",
+      "Name": "CustOrdersDetail",
+      "FullName": "dbo.CustOrdersDetail",
+      "Type": "SQL_STORED_PROCEDURE"
+    },
+    {
+      "DataSource": "(local)",
+      "DatabaseName": "Northwind",
+      "Schema": "dbo",
+      "Name": "CustOrdersOrders",
+      "FullName": "dbo.CustOrdersOrders",
+      "Type": "SQL_STORED_PROCEDURE"
+    },
+    {
+      "DataSource": "(local)",
+      "DatabaseName": "Northwind",
+      "Schema": "dbo",
+      "Name": "Employee Sales by Country",
+      "FullName": "dbo.Employee Sales by Country",
+      "Type": "SQL_STORED_PROCEDURE"
+    },
+    {
+      "DataSource": "(local)",
+      "DatabaseName": "Northwind",
+      "Schema": "dbo",
+      "Name": "Sales by Year",
+      "FullName": "dbo.Sales by Year",
+      "Type": "SQL_STORED_PROCEDURE"
+    },
+    {
+      "DataSource": "(local)",
+      "DatabaseName": "Northwind",
+      "Schema": "dbo",
+      "Name": "SalesByCategory",
+      "FullName": "dbo.SalesByCategory",
+      "Type": "SQL_STORED_PROCEDURE"
+    },
+    {
+      "DataSource": "(local)",
+      "DatabaseName": "Northwind",
+      "Schema": "dbo",
+      "Name": "Ten Most Expensive Products",
+      "FullName": "dbo.Ten Most Expensive Products",
+      "Type": "SQL_STORED_PROCEDURE"
+    },
+    {
+      "DataSource": "(local)",
+      "DatabaseName": "Northwind",
+      "Schema": "dbo",
+      "Name": "Categories",
+      "FullName": "dbo.Categories",
+      "Type": "USER_TABLE"
+    },
+    {
+      "DataSource": "(local)",
+      "DatabaseName": "Northwind",
+      "Schema": "dbo",
+      "Name": "CustomerCustomerDemo",
+      "FullName": "dbo.CustomerCustomerDemo",
+      "Type": "USER_TABLE"
+    },
+    {
+      "DataSource": "(local)",
+      "DatabaseName": "Northwind",
+      "Schema": "dbo",
+      "Name": "CustomerDemographics",
+      "FullName": "dbo.CustomerDemographics",
+      "Type": "USER_TABLE"
+    },
+    {
+      "DataSource": "(local)",
+      "DatabaseName": "Northwind",
+      "Schema": "dbo",
+      "Name": "Customers",
+      "FullName": "dbo.Customers",
+      "Type": "USER_TABLE"
+    },
+    {
+      "DataSource": "(local)",
+      "DatabaseName": "Northwind",
+      "Schema": "dbo",
+      "Name": "Employees",
+      "FullName": "dbo.Employees",
+      "Type": "USER_TABLE"
+    },
+    {
+      "DataSource": "(local)",
+      "DatabaseName": "Northwind",
+      "Schema": "dbo",
+      "Name": "EmployeeTerritories",
+      "FullName": "dbo.EmployeeTerritories",
+      "Type": "USER_TABLE"
+    },
+    {
+      "DataSource": "(local)",
+      "DatabaseName": "Northwind",
+      "Schema": "dbo",
+      "Name": "Order Details",
+      "FullName": "dbo.Order Details",
+      "Type": "USER_TABLE"
+    },
+    {
+      "DataSource": "(local)",
+      "DatabaseName": "Northwind",
+      "Schema": "dbo",
+      "Name": "Orders",
+      "FullName": "dbo.Orders",
+      "Type": "USER_TABLE"
+    },
+    {
+      "DataSource": "(local)",
+      "DatabaseName": "Northwind",
+      "Schema": "dbo",
+      "Name": "Products",
+      "FullName": "dbo.Products",
+      "Type": "USER_TABLE"
+    },
+    {
+      "DataSource": "(local)",
+      "DatabaseName": "Northwind",
+      "Schema": "dbo",
+      "Name": "Region",
+      "FullName": "dbo.Region",
+      "Type": "USER_TABLE"
+    },
+    {
+      "DataSource": "(local)",
+      "DatabaseName": "Northwind",
+      "Schema": "dbo",
+      "Name": "Shippers",
+      "FullName": "dbo.Shippers",
+      "Type": "USER_TABLE"
+    },
+    {
+      "DataSource": "(local)",
+      "DatabaseName": "Northwind",
+      "Schema": "dbo",
+      "Name": "Suppliers",
+      "FullName": "dbo.Suppliers",
+      "Type": "USER_TABLE"
+    },
+    {
+      "DataSource": "(local)",
+      "DatabaseName": "Northwind",
+      "Schema": "dbo",
+      "Name": "Territories",
+      "FullName": "dbo.Territories",
+      "Type": "USER_TABLE"
+    },
+    {
+      "DataSource": "(local)",
+      "DatabaseName": "Northwind",
+      "Schema": "dbo",
+      "Name": "Alphabetical list of products",
+      "FullName": "dbo.Alphabetical list of products",
+      "Type": "VIEW"
+    },
+    {
+      "DataSource": "(local)",
+      "DatabaseName": "Northwind",
+      "Schema": "dbo",
+      "Name": "Category Sales for 1997",
+      "FullName": "dbo.Category Sales for 1997",
+      "Type": "VIEW"
+    },
+    {
+      "DataSource": "(local)",
+      "DatabaseName": "Northwind",
+      "Schema": "dbo",
+      "Name": "Current Product List",
+      "FullName": "dbo.Current Product List",
+      "Type": "VIEW"
+    },
+    {
+      "DataSource": "(local)",
+      "DatabaseName": "Northwind",
+      "Schema": "dbo",
+      "Name": "Customer and Suppliers by City",
+      "FullName": "dbo.Customer and Suppliers by City",
+      "Type": "VIEW"
+    },
+    {
+      "DataSource": "(local)",
+      "DatabaseName": "Northwind",
+      "Schema": "dbo",
+      "Name": "Invoices",
+      "FullName": "dbo.Invoices",
+      "Type": "VIEW"
+    },
+    {
+      "DataSource": "(local)",
+      "DatabaseName": "Northwind",
+      "Schema": "dbo",
+      "Name": "Order Details Extended",
+      "FullName": "dbo.Order Details Extended",
+      "Type": "VIEW"
+    },
+    {
+      "DataSource": "(local)",
+      "DatabaseName": "Northwind",
+      "Schema": "dbo",
+      "Name": "Order Subtotals",
+      "FullName": "dbo.Order Subtotals",
+      "Type": "VIEW"
+    },
+    {
+      "DataSource": "(local)",
+      "DatabaseName": "Northwind",
+      "Schema": "dbo",
+      "Name": "Orders Qry",
+      "FullName": "dbo.Orders Qry",
+      "Type": "VIEW"
+    },
+    {
+      "DataSource": "(local)",
+      "DatabaseName": "Northwind",
+      "Schema": "dbo",
+      "Name": "Product Sales for 1997",
+      "FullName": "dbo.Product Sales for 1997",
+      "Type": "VIEW"
+    },
+    {
+      "DataSource": "(local)",
+      "DatabaseName": "Northwind",
+      "Schema": "dbo",
+      "Name": "Products Above Average Price",
+      "FullName": "dbo.Products Above Average Price",
+      "Type": "VIEW"
+    },
+    {
+      "DataSource": "(local)",
+      "DatabaseName": "Northwind",
+      "Schema": "dbo",
+      "Name": "Products by Category",
+      "FullName": "dbo.Products by Category",
+      "Type": "VIEW"
+    },
+    {
+      "DataSource": "(local)",
+      "DatabaseName": "Northwind",
+      "Schema": "dbo",
+      "Name": "Quarterly Orders",
+      "FullName": "dbo.Quarterly Orders",
+      "Type": "VIEW"
+    },
+    {
+      "DataSource": "(local)",
+      "DatabaseName": "Northwind",
+      "Schema": "dbo",
+      "Name": "Sales by Category",
+      "FullName": "dbo.Sales by Category",
+      "Type": "VIEW"
+    },
+    {
+      "DataSource": "(local)",
+      "DatabaseName": "Northwind",
+      "Schema": "dbo",
+      "Name": "Sales Totals by Amount",
+      "FullName": "dbo.Sales Totals by Amount",
+      "Type": "VIEW"
+    },
+    {
+      "DataSource": "(local)",
+      "DatabaseName": "Northwind",
+      "Schema": "dbo",
+      "Name": "Summary of Sales by Quarter",
+      "FullName": "dbo.Summary of Sales by Quarter",
+      "Type": "VIEW"
+    },
+    {
+      "DataSource": "(local)",
+      "DatabaseName": "Northwind",
+      "Schema": "dbo",
+      "Name": "Summary of Sales by Year",
+      "FullName": "dbo.Summary of Sales by Year",
+      "Type": "VIEW"
+    }
+  ],
+  "DatabaseTypeMaps": [
+    {
+      "DatabaseType": "bigint",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.Int64",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "long",
+      "HasClrAliasType": true,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 12,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null,
+      "ImportBag": {}
+    },
+    {
+      "DatabaseType": "binary",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.Byte[]",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "byte[]",
+      "HasClrAliasType": true,
+      "AllowClrNullable": false,
+      "DbTypeEnum": 1,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null,
+      "ImportBag": {}
+    },
+    {
+      "DatabaseType": "bit",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.Boolean",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "bool",
+      "HasClrAliasType": true,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 3,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null,
+      "ImportBag": {}
+    },
+    {
+      "DatabaseType": "char",
+      "AllowsLengthInDeclaration": true,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.String",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "string",
+      "HasClrAliasType": true,
+      "AllowClrNullable": false,
+      "DbTypeEnum": 16,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null,
+      "ImportBag": {}
+    },
+    {
+      "DatabaseType": "date",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.DateTime",
+      "HasClrFullNameType": true,
+      "ClrAliasType": null,
+      "HasClrAliasType": false,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 5,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null,
+      "ImportBag": {}
+    },
+    {
+      "DatabaseType": "datetime",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.DateTime",
+      "HasClrFullNameType": true,
+      "ClrAliasType": null,
+      "HasClrAliasType": false,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 6,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null,
+      "ImportBag": {}
+    },
+    {
+      "DatabaseType": "datetime2",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.DateTime",
+      "HasClrFullNameType": true,
+      "ClrAliasType": null,
+      "HasClrAliasType": false,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 26,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null,
+      "ImportBag": {}
+    },
+    {
+      "DatabaseType": "datetimeoffset",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.DateTimeOffset",
+      "HasClrFullNameType": true,
+      "ClrAliasType": null,
+      "HasClrAliasType": false,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 27,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null,
+      "ImportBag": {}
+    },
+    {
+      "DatabaseType": "decimal",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": true,
+      "AllowsScaleInDeclaration": true,
+      "ClrFullNameType": "System.Decimal",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "decimal",
+      "HasClrAliasType": true,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 7,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null,
+      "ImportBag": {}
+    },
+    {
+      "DatabaseType": "float",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": true,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.Double",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "double",
+      "HasClrAliasType": true,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 8,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null,
+      "ImportBag": {}
+    },
+    {
+      "DatabaseType": "image",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.Byte[]",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "byte[]",
+      "HasClrAliasType": true,
+      "AllowClrNullable": false,
+      "DbTypeEnum": 1,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null,
+      "ImportBag": {}
+    },
+    {
+      "DatabaseType": "int",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.Int32",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "int",
+      "HasClrAliasType": true,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 11,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null,
+      "ImportBag": {}
+    },
+    {
+      "DatabaseType": "money",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.Decimal",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "decimal",
+      "HasClrAliasType": true,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 7,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null,
+      "ImportBag": {}
+    },
+    {
+      "DatabaseType": "nchar",
+      "AllowsLengthInDeclaration": true,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.String",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "string",
+      "HasClrAliasType": true,
+      "AllowClrNullable": false,
+      "DbTypeEnum": 23,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null,
+      "ImportBag": {}
+    },
+    {
+      "DatabaseType": "ntext",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.String",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "string",
+      "HasClrAliasType": true,
+      "AllowClrNullable": false,
+      "DbTypeEnum": 16,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null,
+      "ImportBag": {}
+    },
+    {
+      "DatabaseType": "numeric",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": true,
+      "AllowsScaleInDeclaration": true,
+      "ClrFullNameType": "System.Decimal",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "decimal",
+      "HasClrAliasType": true,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 7,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null,
+      "ImportBag": {}
+    },
+    {
+      "DatabaseType": "nvarchar",
+      "AllowsLengthInDeclaration": true,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.String",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "string",
+      "HasClrAliasType": true,
+      "AllowClrNullable": false,
+      "DbTypeEnum": 16,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null,
+      "ImportBag": {}
+    },
+    {
+      "DatabaseType": "real",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.Single",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "float",
+      "HasClrAliasType": true,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 15,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null,
+      "ImportBag": {}
+    },
+    {
+      "DatabaseType": "rowversion",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.Byte[]",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "byte[]",
+      "HasClrAliasType": true,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 1,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null,
+      "ImportBag": {}
+    },
+    {
+      "DatabaseType": "smalldatetime",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.DateTime",
+      "HasClrFullNameType": true,
+      "ClrAliasType": null,
+      "HasClrAliasType": false,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 6,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null,
+      "ImportBag": {}
+    },
+    {
+      "DatabaseType": "smallint",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.Int16",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "short",
+      "HasClrAliasType": true,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 10,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null,
+      "ImportBag": {}
+    },
+    {
+      "DatabaseType": "smallmoney",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.Decimal",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "decimal",
+      "HasClrAliasType": true,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 7,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null,
+      "ImportBag": {}
+    },
+    {
+      "DatabaseType": "sql_variant",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.Object",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "object",
+      "HasClrAliasType": true,
+      "AllowClrNullable": false,
+      "DbTypeEnum": 13,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null,
+      "ImportBag": {}
+    },
+    {
+      "DatabaseType": "text",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.String",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "string",
+      "HasClrAliasType": true,
+      "AllowClrNullable": false,
+      "DbTypeEnum": 16,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null,
+      "ImportBag": {}
+    },
+    {
+      "DatabaseType": "time",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.TimeSpan",
+      "HasClrFullNameType": true,
+      "ClrAliasType": null,
+      "HasClrAliasType": false,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 17,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null,
+      "ImportBag": {}
+    },
+    {
+      "DatabaseType": "timestamp",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.Byte[]",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "byte[]",
+      "HasClrAliasType": true,
+      "AllowClrNullable": false,
+      "DbTypeEnum": 1,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null,
+      "ImportBag": {}
+    },
+    {
+      "DatabaseType": "tinyint",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.Byte",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "byte",
+      "HasClrAliasType": true,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 2,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null,
+      "ImportBag": {}
+    },
+    {
+      "DatabaseType": "uniqueidentifier",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.Guid",
+      "HasClrFullNameType": true,
+      "ClrAliasType": null,
+      "HasClrAliasType": false,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 9,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null,
+      "ImportBag": {}
+    },
+    {
+      "DatabaseType": "varbinary",
+      "AllowsLengthInDeclaration": true,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.Byte[]",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "byte[]",
+      "HasClrAliasType": true,
+      "AllowClrNullable": false,
+      "DbTypeEnum": 1,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null,
+      "ImportBag": {}
+    },
+    {
+      "DatabaseType": "varchar",
+      "AllowsLengthInDeclaration": true,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.String",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "string",
+      "HasClrAliasType": true,
+      "AllowClrNullable": false,
+      "DbTypeEnum": 16,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null,
+      "ImportBag": {}
+    },
+    {
+      "DatabaseType": "xml",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": null,
+      "HasClrFullNameType": false,
+      "ClrAliasType": null,
+      "HasClrAliasType": false,
+      "AllowClrNullable": false,
+      "DbTypeEnum": 25,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null,
+      "ImportBag": {}
+    }
+  ],
+  "Tables": [
+    {
+      "Columns": [
+        {
+          "Name": "CategoryID",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "CategoryName",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 30,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Description",
+          "Type": "ntext",
+          "Computed": "no",
+          "Length": 16,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Picture",
+          "Type": "image",
+          "Computed": "no",
+          "Length": 16,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        }
+      ],
+      "Description": null,
+      "Identity": {
+        "Name": "CategoryID",
+        "Seed": 1,
+        "Increment": 1
+      },
+      "Indexes": [
+        {
+          "IndexName": "CategoryName",
+          "IndexDescription": "nonclustered located on PRIMARY",
+          "IndexKeys": "CategoryName"
+        },
+        {
+          "IndexName": "PK_Categories",
+          "IndexDescription": "clustered, unique, primary key located on PRIMARY",
+          "IndexKeys": "CategoryID"
+        }
+      ],
+      "PrimaryKey": {
+        "ConstraintName": "PK_Categories",
+        "Key": [
+          "CategoryID"
+        ]
+      },
+      "ForeignKeys": [],
+      "Uniques": [],
+      "Checks": [],
+      "Defaults": [],
+      "ImportBag": {
+        "ConstraintDetails": [
+          {
+            "ConstraintType": "PRIMARY KEY (clustered)",
+            "ConstraintName": "PK_Categories",
+            "DeleteAction": "(n/a)",
+            "UpdateAction": "(n/a)",
+            "StatusEnabled": "(n/a)",
+            "StatusForReplication": "(n/a)",
+            "ConstraintKeys": "CategoryID"
+          }
+        ],
+        "TableReferences": [
+          {
+            "ReferenceDescription": "Northwind.dbo.Products: FK_Products_Categories"
+          }
+        ],
+        "RowGuidCol": {
+          "Name": "No rowguidcol column defined."
+        },
+        "ExtendedProperties": []
+      },
+      "DataSource": "(local)",
+      "DatabaseName": "Northwind",
+      "Schema": "dbo",
+      "Name": "Categories",
+      "FullName": "dbo.Categories",
+      "Type": "table"
+    },
+    {
+      "Columns": [
+        {
+          "Name": "CustomerID",
+          "Type": "nchar",
+          "Computed": "no",
+          "Length": 10,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "CustomerTypeID",
+          "Type": "nchar",
+          "Computed": "no",
+          "Length": 20,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        }
+      ],
+      "Description": null,
+      "Identity": null,
+      "Indexes": [
+        {
+          "IndexName": "PK_CustomerCustomerDemo",
+          "IndexDescription": "nonclustered, unique, primary key located on PRIMARY",
+          "IndexKeys": "CustomerID, CustomerTypeID"
+        }
+      ],
+      "PrimaryKey": {
+        "ConstraintName": "PK_CustomerCustomerDemo",
+        "Key": [
+          "CustomerID",
+          "CustomerTypeID"
+        ]
+      },
+      "ForeignKeys": [
+        {
+          "References": "Northwind.dbo.CustomerDemographics",
+          "Child": null,
+          "ConstraintName": "FK_CustomerCustomerDemo",
+          "Key": [
+            "CustomerTypeID"
+          ]
+        },
+        {
+          "References": "Northwind.dbo.Customers",
+          "Child": null,
+          "ConstraintName": "FK_CustomerCustomerDemo_Customers",
+          "Key": [
+            "CustomerID"
+          ]
+        }
+      ],
+      "Uniques": [],
+      "Checks": [],
+      "Defaults": [],
+      "ImportBag": {
+        "ConstraintDetails": [
+          {
+            "ConstraintType": "FOREIGN KEY",
+            "ConstraintName": "FK_CustomerCustomerDemo",
+            "DeleteAction": "No Action",
+            "UpdateAction": "No Action",
+            "StatusEnabled": "Enabled",
+            "StatusForReplication": "Is_For_Replication",
+            "ConstraintKeys": "CustomerTypeID"
+          },
+          {
+            "ConstraintType": " ",
+            "ConstraintName": " ",
+            "DeleteAction": " ",
+            "UpdateAction": " ",
+            "StatusEnabled": " ",
+            "StatusForReplication": " ",
+            "ConstraintKeys": "REFERENCES Northwind.dbo.CustomerDemographics (CustomerTypeID)"
+          },
+          {
+            "ConstraintType": "FOREIGN KEY",
+            "ConstraintName": "FK_CustomerCustomerDemo_Customers",
+            "DeleteAction": "No Action",
+            "UpdateAction": "No Action",
+            "StatusEnabled": "Enabled",
+            "StatusForReplication": "Is_For_Replication",
+            "ConstraintKeys": "CustomerID"
+          },
+          {
+            "ConstraintType": " ",
+            "ConstraintName": " ",
+            "DeleteAction": " ",
+            "UpdateAction": " ",
+            "StatusEnabled": " ",
+            "StatusForReplication": " ",
+            "ConstraintKeys": "REFERENCES Northwind.dbo.Customers (CustomerID)"
+          },
+          {
+            "ConstraintType": "PRIMARY KEY (non-clustered)",
+            "ConstraintName": "PK_CustomerCustomerDemo",
+            "DeleteAction": "(n/a)",
+            "UpdateAction": "(n/a)",
+            "StatusEnabled": "(n/a)",
+            "StatusForReplication": "(n/a)",
+            "ConstraintKeys": "CustomerID, CustomerTypeID"
+          }
+        ],
+        "TableReferences": [],
+        "RowGuidCol": {
+          "Name": "No rowguidcol column defined."
+        },
+        "ExtendedProperties": []
+      },
+      "DataSource": "(local)",
+      "DatabaseName": "Northwind",
+      "Schema": "dbo",
+      "Name": "CustomerCustomerDemo",
+      "FullName": "dbo.CustomerCustomerDemo",
+      "Type": "table"
+    },
+    {
+      "Columns": [
+        {
+          "Name": "CustomerTypeID",
+          "Type": "nchar",
+          "Computed": "no",
+          "Length": 20,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "CustomerDesc",
+          "Type": "ntext",
+          "Computed": "no",
+          "Length": 16,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        }
+      ],
+      "Description": null,
+      "Identity": null,
+      "Indexes": [
+        {
+          "IndexName": "PK_CustomerDemographics",
+          "IndexDescription": "nonclustered, unique, primary key located on PRIMARY",
+          "IndexKeys": "CustomerTypeID"
+        }
+      ],
+      "PrimaryKey": {
+        "ConstraintName": "PK_CustomerDemographics",
+        "Key": [
+          "CustomerTypeID"
+        ]
+      },
+      "ForeignKeys": [],
+      "Uniques": [],
+      "Checks": [],
+      "Defaults": [],
+      "ImportBag": {
+        "ConstraintDetails": [
+          {
+            "ConstraintType": "PRIMARY KEY (non-clustered)",
+            "ConstraintName": "PK_CustomerDemographics",
+            "DeleteAction": "(n/a)",
+            "UpdateAction": "(n/a)",
+            "StatusEnabled": "(n/a)",
+            "StatusForReplication": "(n/a)",
+            "ConstraintKeys": "CustomerTypeID"
+          }
+        ],
+        "TableReferences": [
+          {
+            "ReferenceDescription": "Northwind.dbo.CustomerCustomerDemo: FK_CustomerCustomerDemo"
+          }
+        ],
+        "RowGuidCol": {
+          "Name": "No rowguidcol column defined."
+        },
+        "ExtendedProperties": []
+      },
+      "DataSource": "(local)",
+      "DatabaseName": "Northwind",
+      "Schema": "dbo",
+      "Name": "CustomerDemographics",
+      "FullName": "dbo.CustomerDemographics",
+      "Type": "table"
+    },
+    {
+      "Columns": [
+        {
+          "Name": "CustomerID",
+          "Type": "nchar",
+          "Computed": "no",
+          "Length": 10,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "CompanyName",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 80,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "ContactName",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 60,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "ContactTitle",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 60,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Address",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 120,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "City",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 30,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Region",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 30,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "PostalCode",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 20,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Country",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 30,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Phone",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 48,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Fax",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 48,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        }
+      ],
+      "Description": null,
+      "Identity": null,
+      "Indexes": [
+        {
+          "IndexName": "City",
+          "IndexDescription": "nonclustered located on PRIMARY",
+          "IndexKeys": "City"
+        },
+        {
+          "IndexName": "CompanyName",
+          "IndexDescription": "nonclustered located on PRIMARY",
+          "IndexKeys": "CompanyName"
+        },
+        {
+          "IndexName": "PK_Customers",
+          "IndexDescription": "clustered, unique, primary key located on PRIMARY",
+          "IndexKeys": "CustomerID"
+        },
+        {
+          "IndexName": "PostalCode",
+          "IndexDescription": "nonclustered located on PRIMARY",
+          "IndexKeys": "PostalCode"
+        },
+        {
+          "IndexName": "Region",
+          "IndexDescription": "nonclustered located on PRIMARY",
+          "IndexKeys": "Region"
+        }
+      ],
+      "PrimaryKey": {
+        "ConstraintName": "PK_Customers",
+        "Key": [
+          "CustomerID"
+        ]
+      },
+      "ForeignKeys": [],
+      "Uniques": [],
+      "Checks": [],
+      "Defaults": [],
+      "ImportBag": {
+        "ConstraintDetails": [
+          {
+            "ConstraintType": "PRIMARY KEY (clustered)",
+            "ConstraintName": "PK_Customers",
+            "DeleteAction": "(n/a)",
+            "UpdateAction": "(n/a)",
+            "StatusEnabled": "(n/a)",
+            "StatusForReplication": "(n/a)",
+            "ConstraintKeys": "CustomerID"
+          }
+        ],
+        "TableReferences": [
+          {
+            "ReferenceDescription": "Northwind.dbo.CustomerCustomerDemo: FK_CustomerCustomerDemo_Customers"
+          },
+          {
+            "ReferenceDescription": "Northwind.dbo.Orders: FK_Orders_Customers"
+          }
+        ],
+        "RowGuidCol": {
+          "Name": "No rowguidcol column defined."
+        },
+        "ExtendedProperties": []
+      },
+      "DataSource": "(local)",
+      "DatabaseName": "Northwind",
+      "Schema": "dbo",
+      "Name": "Customers",
+      "FullName": "dbo.Customers",
+      "Type": "table"
+    },
+    {
+      "Columns": [
+        {
+          "Name": "EmployeeID",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "LastName",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 40,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "FirstName",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 20,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Title",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 60,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "TitleOfCourtesy",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 50,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "BirthDate",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "HireDate",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Address",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 120,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "City",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 30,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Region",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 30,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "PostalCode",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 20,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Country",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 30,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "HomePhone",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 48,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Extension",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Photo",
+          "Type": "image",
+          "Computed": "no",
+          "Length": 16,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Notes",
+          "Type": "ntext",
+          "Computed": "no",
+          "Length": 16,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "ReportsTo",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "PhotoPath",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 510,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        }
+      ],
+      "Description": null,
+      "Identity": {
+        "Name": "EmployeeID",
+        "Seed": 1,
+        "Increment": 1
+      },
+      "Indexes": [
+        {
+          "IndexName": "LastName",
+          "IndexDescription": "nonclustered located on PRIMARY",
+          "IndexKeys": "LastName"
+        },
+        {
+          "IndexName": "PK_Employees",
+          "IndexDescription": "clustered, unique, primary key located on PRIMARY",
+          "IndexKeys": "EmployeeID"
+        },
+        {
+          "IndexName": "PostalCode",
+          "IndexDescription": "nonclustered located on PRIMARY",
+          "IndexKeys": "PostalCode"
+        }
+      ],
+      "PrimaryKey": {
+        "ConstraintName": "PK_Employees",
+        "Key": [
+          "EmployeeID"
+        ]
+      },
+      "ForeignKeys": [
+        {
+          "References": "Northwind.dbo.Employees",
+          "Child": null,
+          "ConstraintName": "FK_Employees_Employees",
+          "Key": [
+            "ReportsTo"
+          ]
+        }
+      ],
+      "Uniques": [],
+      "Checks": [
+        {
+          "Expression": null,
+          "ConstraintName": "CK_Birthdate",
+          "Key": [
+            "([BirthDate]\u003Cgetdate())"
+          ]
+        }
+      ],
+      "Defaults": [],
+      "ImportBag": {
+        "ConstraintDetails": [
+          {
+            "ConstraintType": "CHECK on column BirthDate",
+            "ConstraintName": "CK_Birthdate",
+            "DeleteAction": "(n/a)",
+            "UpdateAction": "(n/a)",
+            "StatusEnabled": "Enabled",
+            "StatusForReplication": "Is_For_Replication",
+            "ConstraintKeys": "([BirthDate]\u003Cgetdate())"
+          },
+          {
+            "ConstraintType": "FOREIGN KEY",
+            "ConstraintName": "FK_Employees_Employees",
+            "DeleteAction": "No Action",
+            "UpdateAction": "No Action",
+            "StatusEnabled": "Enabled",
+            "StatusForReplication": "Is_For_Replication",
+            "ConstraintKeys": "ReportsTo"
+          },
+          {
+            "ConstraintType": " ",
+            "ConstraintName": " ",
+            "DeleteAction": " ",
+            "UpdateAction": " ",
+            "StatusEnabled": " ",
+            "StatusForReplication": " ",
+            "ConstraintKeys": "REFERENCES Northwind.dbo.Employees (EmployeeID)"
+          },
+          {
+            "ConstraintType": "PRIMARY KEY (clustered)",
+            "ConstraintName": "PK_Employees",
+            "DeleteAction": "(n/a)",
+            "UpdateAction": "(n/a)",
+            "StatusEnabled": "(n/a)",
+            "StatusForReplication": "(n/a)",
+            "ConstraintKeys": "EmployeeID"
+          }
+        ],
+        "TableReferences": [
+          {
+            "ReferenceDescription": "Northwind.dbo.Employees: FK_Employees_Employees"
+          },
+          {
+            "ReferenceDescription": "Northwind.dbo.EmployeeTerritories: FK_EmployeeTerritories_Employees"
+          },
+          {
+            "ReferenceDescription": "Northwind.dbo.Orders: FK_Orders_Employees"
+          }
+        ],
+        "RowGuidCol": {
+          "Name": "No rowguidcol column defined."
+        },
+        "ExtendedProperties": []
+      },
+      "DataSource": "(local)",
+      "DatabaseName": "Northwind",
+      "Schema": "dbo",
+      "Name": "Employees",
+      "FullName": "dbo.Employees",
+      "Type": "table"
+    },
+    {
+      "Columns": [
+        {
+          "Name": "EmployeeID",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "TerritoryID",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 40,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        }
+      ],
+      "Description": null,
+      "Identity": null,
+      "Indexes": [
+        {
+          "IndexName": "PK_EmployeeTerritories",
+          "IndexDescription": "nonclustered, unique, primary key located on PRIMARY",
+          "IndexKeys": "EmployeeID, TerritoryID"
+        }
+      ],
+      "PrimaryKey": {
+        "ConstraintName": "PK_EmployeeTerritories",
+        "Key": [
+          "EmployeeID",
+          "TerritoryID"
+        ]
+      },
+      "ForeignKeys": [
+        {
+          "References": "Northwind.dbo.Employees",
+          "Child": null,
+          "ConstraintName": "FK_EmployeeTerritories_Employees",
+          "Key": [
+            "EmployeeID"
+          ]
+        },
+        {
+          "References": "Northwind.dbo.Territories",
+          "Child": null,
+          "ConstraintName": "FK_EmployeeTerritories_Territories",
+          "Key": [
+            "TerritoryID"
+          ]
+        }
+      ],
+      "Uniques": [],
+      "Checks": [],
+      "Defaults": [],
+      "ImportBag": {
+        "ConstraintDetails": [
+          {
+            "ConstraintType": "FOREIGN KEY",
+            "ConstraintName": "FK_EmployeeTerritories_Employees",
+            "DeleteAction": "No Action",
+            "UpdateAction": "No Action",
+            "StatusEnabled": "Enabled",
+            "StatusForReplication": "Is_For_Replication",
+            "ConstraintKeys": "EmployeeID"
+          },
+          {
+            "ConstraintType": " ",
+            "ConstraintName": " ",
+            "DeleteAction": " ",
+            "UpdateAction": " ",
+            "StatusEnabled": " ",
+            "StatusForReplication": " ",
+            "ConstraintKeys": "REFERENCES Northwind.dbo.Employees (EmployeeID)"
+          },
+          {
+            "ConstraintType": "FOREIGN KEY",
+            "ConstraintName": "FK_EmployeeTerritories_Territories",
+            "DeleteAction": "No Action",
+            "UpdateAction": "No Action",
+            "StatusEnabled": "Enabled",
+            "StatusForReplication": "Is_For_Replication",
+            "ConstraintKeys": "TerritoryID"
+          },
+          {
+            "ConstraintType": " ",
+            "ConstraintName": " ",
+            "DeleteAction": " ",
+            "UpdateAction": " ",
+            "StatusEnabled": " ",
+            "StatusForReplication": " ",
+            "ConstraintKeys": "REFERENCES Northwind.dbo.Territories (TerritoryID)"
+          },
+          {
+            "ConstraintType": "PRIMARY KEY (non-clustered)",
+            "ConstraintName": "PK_EmployeeTerritories",
+            "DeleteAction": "(n/a)",
+            "UpdateAction": "(n/a)",
+            "StatusEnabled": "(n/a)",
+            "StatusForReplication": "(n/a)",
+            "ConstraintKeys": "EmployeeID, TerritoryID"
+          }
+        ],
+        "TableReferences": [],
+        "RowGuidCol": {
+          "Name": "No rowguidcol column defined."
+        },
+        "ExtendedProperties": []
+      },
+      "DataSource": "(local)",
+      "DatabaseName": "Northwind",
+      "Schema": "dbo",
+      "Name": "EmployeeTerritories",
+      "FullName": "dbo.EmployeeTerritories",
+      "Type": "table"
+    },
+    {
+      "Columns": [
+        {
+          "Name": "OrderID",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "ProductID",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "UnitPrice",
+          "Type": "money",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 19,
+          "Scale": 4,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": "((0))",
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ComputedExpression": "((0))",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Quantity",
+          "Type": "smallint",
+          "Computed": "no",
+          "Length": 2,
+          "Prec": 5,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": "((1))",
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ComputedExpression": "((1))",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Discount",
+          "Type": "real",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 24,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": "((0))",
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ComputedExpression": "((0))",
+            "ExtendedProperties": []
+          }
+        }
+      ],
+      "Description": null,
+      "Identity": null,
+      "Indexes": [
+        {
+          "IndexName": "OrderID",
+          "IndexDescription": "nonclustered located on PRIMARY",
+          "IndexKeys": "OrderID"
+        },
+        {
+          "IndexName": "OrdersOrder_Details",
+          "IndexDescription": "nonclustered located on PRIMARY",
+          "IndexKeys": "OrderID"
+        },
+        {
+          "IndexName": "PK_Order_Details",
+          "IndexDescription": "clustered, unique, primary key located on PRIMARY",
+          "IndexKeys": "OrderID, ProductID"
+        },
+        {
+          "IndexName": "ProductID",
+          "IndexDescription": "nonclustered located on PRIMARY",
+          "IndexKeys": "ProductID"
+        },
+        {
+          "IndexName": "ProductsOrder_Details",
+          "IndexDescription": "nonclustered located on PRIMARY",
+          "IndexKeys": "ProductID"
+        }
+      ],
+      "PrimaryKey": {
+        "ConstraintName": "PK_Order_Details",
+        "Key": [
+          "OrderID",
+          "ProductID"
+        ]
+      },
+      "ForeignKeys": [
+        {
+          "References": "Northwind.dbo.Orders",
+          "Child": null,
+          "ConstraintName": "FK_Order_Details_Orders",
+          "Key": [
+            "OrderID"
+          ]
+        },
+        {
+          "References": "Northwind.dbo.Products",
+          "Child": null,
+          "ConstraintName": "FK_Order_Details_Products",
+          "Key": [
+            "ProductID"
+          ]
+        }
+      ],
+      "Uniques": [],
+      "Checks": [
+        {
+          "Expression": null,
+          "ConstraintName": "CK_Discount",
+          "Key": [
+            "([Discount]\u003E=(0) AND [Discount]\u003C=(1))"
+          ]
+        },
+        {
+          "Expression": null,
+          "ConstraintName": "CK_Quantity",
+          "Key": [
+            "([Quantity]\u003E(0))"
+          ]
+        },
+        {
+          "Expression": null,
+          "ConstraintName": "CK_UnitPrice",
+          "Key": [
+            "([UnitPrice]\u003E=(0))"
+          ]
+        }
+      ],
+      "Defaults": [
+        {
+          "Value": "((0))",
+          "ConstraintName": "DF_Order_Details_Discount",
+          "Key": [
+            "Discount"
+          ]
+        },
+        {
+          "Value": "((1))",
+          "ConstraintName": "DF_Order_Details_Quantity",
+          "Key": [
+            "Quantity"
+          ]
+        },
+        {
+          "Value": "((0))",
+          "ConstraintName": "DF_Order_Details_UnitPrice",
+          "Key": [
+            "UnitPrice"
+          ]
+        }
+      ],
+      "ImportBag": {
+        "ConstraintDetails": [
+          {
+            "ConstraintType": "CHECK on column Discount",
+            "ConstraintName": "CK_Discount",
+            "DeleteAction": "(n/a)",
+            "UpdateAction": "(n/a)",
+            "StatusEnabled": "Enabled",
+            "StatusForReplication": "Is_For_Replication",
+            "ConstraintKeys": "([Discount]\u003E=(0) AND [Discount]\u003C=(1))"
+          },
+          {
+            "ConstraintType": "CHECK on column Quantity",
+            "ConstraintName": "CK_Quantity",
+            "DeleteAction": "(n/a)",
+            "UpdateAction": "(n/a)",
+            "StatusEnabled": "Enabled",
+            "StatusForReplication": "Is_For_Replication",
+            "ConstraintKeys": "([Quantity]\u003E(0))"
+          },
+          {
+            "ConstraintType": "CHECK on column UnitPrice",
+            "ConstraintName": "CK_UnitPrice",
+            "DeleteAction": "(n/a)",
+            "UpdateAction": "(n/a)",
+            "StatusEnabled": "Enabled",
+            "StatusForReplication": "Is_For_Replication",
+            "ConstraintKeys": "([UnitPrice]\u003E=(0))"
+          },
+          {
+            "ConstraintType": "DEFAULT on column Discount",
+            "ConstraintName": "DF_Order_Details_Discount",
+            "DeleteAction": "(n/a)",
+            "UpdateAction": "(n/a)",
+            "StatusEnabled": "(n/a)",
+            "StatusForReplication": "(n/a)",
+            "ConstraintKeys": "((0))"
+          },
+          {
+            "ConstraintType": "DEFAULT on column Quantity",
+            "ConstraintName": "DF_Order_Details_Quantity",
+            "DeleteAction": "(n/a)",
+            "UpdateAction": "(n/a)",
+            "StatusEnabled": "(n/a)",
+            "StatusForReplication": "(n/a)",
+            "ConstraintKeys": "((1))"
+          },
+          {
+            "ConstraintType": "DEFAULT on column UnitPrice",
+            "ConstraintName": "DF_Order_Details_UnitPrice",
+            "DeleteAction": "(n/a)",
+            "UpdateAction": "(n/a)",
+            "StatusEnabled": "(n/a)",
+            "StatusForReplication": "(n/a)",
+            "ConstraintKeys": "((0))"
+          },
+          {
+            "ConstraintType": "FOREIGN KEY",
+            "ConstraintName": "FK_Order_Details_Orders",
+            "DeleteAction": "No Action",
+            "UpdateAction": "No Action",
+            "StatusEnabled": "Enabled",
+            "StatusForReplication": "Is_For_Replication",
+            "ConstraintKeys": "OrderID"
+          },
+          {
+            "ConstraintType": " ",
+            "ConstraintName": " ",
+            "DeleteAction": " ",
+            "UpdateAction": " ",
+            "StatusEnabled": " ",
+            "StatusForReplication": " ",
+            "ConstraintKeys": "REFERENCES Northwind.dbo.Orders (OrderID)"
+          },
+          {
+            "ConstraintType": "FOREIGN KEY",
+            "ConstraintName": "FK_Order_Details_Products",
+            "DeleteAction": "No Action",
+            "UpdateAction": "No Action",
+            "StatusEnabled": "Enabled",
+            "StatusForReplication": "Is_For_Replication",
+            "ConstraintKeys": "ProductID"
+          },
+          {
+            "ConstraintType": " ",
+            "ConstraintName": " ",
+            "DeleteAction": " ",
+            "UpdateAction": " ",
+            "StatusEnabled": " ",
+            "StatusForReplication": " ",
+            "ConstraintKeys": "REFERENCES Northwind.dbo.Products (ProductID)"
+          },
+          {
+            "ConstraintType": "PRIMARY KEY (clustered)",
+            "ConstraintName": "PK_Order_Details",
+            "DeleteAction": "(n/a)",
+            "UpdateAction": "(n/a)",
+            "StatusEnabled": "(n/a)",
+            "StatusForReplication": "(n/a)",
+            "ConstraintKeys": "OrderID, ProductID"
+          }
+        ],
+        "TableReferences": [],
+        "RowGuidCol": {
+          "Name": "No rowguidcol column defined."
+        },
+        "ExtendedProperties": []
+      },
+      "DataSource": "(local)",
+      "DatabaseName": "Northwind",
+      "Schema": "dbo",
+      "Name": "Order Details",
+      "FullName": "dbo.Order Details",
+      "Type": "table"
+    },
+    {
+      "Columns": [
+        {
+          "Name": "OrderID",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "CustomerID",
+          "Type": "nchar",
+          "Computed": "no",
+          "Length": 10,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "EmployeeID",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "OrderDate",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "RequiredDate",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "ShippedDate",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "ShipVia",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Freight",
+          "Type": "money",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 19,
+          "Scale": 4,
+          "Nullable": true,
+          "Collation": "",
+          "DefaultValue": "((0))",
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ComputedExpression": "((0))",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "ShipName",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 80,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "ShipAddress",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 120,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "ShipCity",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 30,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "ShipRegion",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 30,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "ShipPostalCode",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 20,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "ShipCountry",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 30,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        }
+      ],
+      "Description": null,
+      "Identity": {
+        "Name": "OrderID",
+        "Seed": 1,
+        "Increment": 1
+      },
+      "Indexes": [
+        {
+          "IndexName": "CustomerID",
+          "IndexDescription": "nonclustered located on PRIMARY",
+          "IndexKeys": "CustomerID"
+        },
+        {
+          "IndexName": "CustomersOrders",
+          "IndexDescription": "nonclustered located on PRIMARY",
+          "IndexKeys": "CustomerID"
+        },
+        {
+          "IndexName": "EmployeeID",
+          "IndexDescription": "nonclustered located on PRIMARY",
+          "IndexKeys": "EmployeeID"
+        },
+        {
+          "IndexName": "EmployeesOrders",
+          "IndexDescription": "nonclustered located on PRIMARY",
+          "IndexKeys": "EmployeeID"
+        },
+        {
+          "IndexName": "OrderDate",
+          "IndexDescription": "nonclustered located on PRIMARY",
+          "IndexKeys": "OrderDate"
+        },
+        {
+          "IndexName": "PK_Orders",
+          "IndexDescription": "clustered, unique, primary key located on PRIMARY",
+          "IndexKeys": "OrderID"
+        },
+        {
+          "IndexName": "ShippedDate",
+          "IndexDescription": "nonclustered located on PRIMARY",
+          "IndexKeys": "ShippedDate"
+        },
+        {
+          "IndexName": "ShippersOrders",
+          "IndexDescription": "nonclustered located on PRIMARY",
+          "IndexKeys": "ShipVia"
+        },
+        {
+          "IndexName": "ShipPostalCode",
+          "IndexDescription": "nonclustered located on PRIMARY",
+          "IndexKeys": "ShipPostalCode"
+        }
+      ],
+      "PrimaryKey": {
+        "ConstraintName": "PK_Orders",
+        "Key": [
+          "OrderID"
+        ]
+      },
+      "ForeignKeys": [
+        {
+          "References": "Northwind.dbo.Customers",
+          "Child": null,
+          "ConstraintName": "FK_Orders_Customers",
+          "Key": [
+            "CustomerID"
+          ]
+        },
+        {
+          "References": "Northwind.dbo.Employees",
+          "Child": null,
+          "ConstraintName": "FK_Orders_Employees",
+          "Key": [
+            "EmployeeID"
+          ]
+        },
+        {
+          "References": "Northwind.dbo.Shippers",
+          "Child": null,
+          "ConstraintName": "FK_Orders_Shippers",
+          "Key": [
+            "ShipVia"
+          ]
+        }
+      ],
+      "Uniques": [],
+      "Checks": [],
+      "Defaults": [
+        {
+          "Value": "((0))",
+          "ConstraintName": "DF_Orders_Freight",
+          "Key": [
+            "Freight"
+          ]
+        }
+      ],
+      "ImportBag": {
+        "ConstraintDetails": [
+          {
+            "ConstraintType": "DEFAULT on column Freight",
+            "ConstraintName": "DF_Orders_Freight",
+            "DeleteAction": "(n/a)",
+            "UpdateAction": "(n/a)",
+            "StatusEnabled": "(n/a)",
+            "StatusForReplication": "(n/a)",
+            "ConstraintKeys": "((0))"
+          },
+          {
+            "ConstraintType": "FOREIGN KEY",
+            "ConstraintName": "FK_Orders_Customers",
+            "DeleteAction": "No Action",
+            "UpdateAction": "No Action",
+            "StatusEnabled": "Enabled",
+            "StatusForReplication": "Is_For_Replication",
+            "ConstraintKeys": "CustomerID"
+          },
+          {
+            "ConstraintType": " ",
+            "ConstraintName": " ",
+            "DeleteAction": " ",
+            "UpdateAction": " ",
+            "StatusEnabled": " ",
+            "StatusForReplication": " ",
+            "ConstraintKeys": "REFERENCES Northwind.dbo.Customers (CustomerID)"
+          },
+          {
+            "ConstraintType": "FOREIGN KEY",
+            "ConstraintName": "FK_Orders_Employees",
+            "DeleteAction": "No Action",
+            "UpdateAction": "No Action",
+            "StatusEnabled": "Enabled",
+            "StatusForReplication": "Is_For_Replication",
+            "ConstraintKeys": "EmployeeID"
+          },
+          {
+            "ConstraintType": " ",
+            "ConstraintName": " ",
+            "DeleteAction": " ",
+            "UpdateAction": " ",
+            "StatusEnabled": " ",
+            "StatusForReplication": " ",
+            "ConstraintKeys": "REFERENCES Northwind.dbo.Employees (EmployeeID)"
+          },
+          {
+            "ConstraintType": "FOREIGN KEY",
+            "ConstraintName": "FK_Orders_Shippers",
+            "DeleteAction": "No Action",
+            "UpdateAction": "No Action",
+            "StatusEnabled": "Enabled",
+            "StatusForReplication": "Is_For_Replication",
+            "ConstraintKeys": "ShipVia"
+          },
+          {
+            "ConstraintType": " ",
+            "ConstraintName": " ",
+            "DeleteAction": " ",
+            "UpdateAction": " ",
+            "StatusEnabled": " ",
+            "StatusForReplication": " ",
+            "ConstraintKeys": "REFERENCES Northwind.dbo.Shippers (ShipperID)"
+          },
+          {
+            "ConstraintType": "PRIMARY KEY (clustered)",
+            "ConstraintName": "PK_Orders",
+            "DeleteAction": "(n/a)",
+            "UpdateAction": "(n/a)",
+            "StatusEnabled": "(n/a)",
+            "StatusForReplication": "(n/a)",
+            "ConstraintKeys": "OrderID"
+          }
+        ],
+        "TableReferences": [
+          {
+            "ReferenceDescription": "Northwind.dbo.Order Details: FK_Order_Details_Orders"
+          }
+        ],
+        "RowGuidCol": {
+          "Name": "No rowguidcol column defined."
+        },
+        "ExtendedProperties": []
+      },
+      "DataSource": "(local)",
+      "DatabaseName": "Northwind",
+      "Schema": "dbo",
+      "Name": "Orders",
+      "FullName": "dbo.Orders",
+      "Type": "table"
+    },
+    {
+      "Columns": [
+        {
+          "Name": "ProductID",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "ProductName",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 80,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": "Name of the product (test 0)",
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": [
+              {
+                "Name": "MS_Description",
+                "Value": "Name of the product (test 0)",
+                "Level0Type": null,
+                "Level0Name": null,
+                "Level1Type": null,
+                "Level1Name": null,
+                "Level2Type": null,
+                "Level2Name": null
+              }
+            ]
+          }
+        },
+        {
+          "Name": "SupplierID",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "CategoryID",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "QuantityPerUnit",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 40,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "UnitPrice",
+          "Type": "money",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 19,
+          "Scale": 4,
+          "Nullable": true,
+          "Collation": "",
+          "DefaultValue": "((0))",
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ComputedExpression": "((0))",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "UnitsInStock",
+          "Type": "smallint",
+          "Computed": "no",
+          "Length": 2,
+          "Prec": 5,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "",
+          "DefaultValue": "((0))",
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ComputedExpression": "((0))",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "UnitsOnOrder",
+          "Type": "smallint",
+          "Computed": "no",
+          "Length": 2,
+          "Prec": 5,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "",
+          "DefaultValue": "((0))",
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ComputedExpression": "((0))",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "ReorderLevel",
+          "Type": "smallint",
+          "Computed": "no",
+          "Length": 2,
+          "Prec": 5,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "",
+          "DefaultValue": "((0))",
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ComputedExpression": "((0))",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Discontinued",
+          "Type": "bit",
+          "Computed": "no",
+          "Length": 1,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": "((0))",
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ComputedExpression": "((0))",
+            "ExtendedProperties": []
+          }
+        }
+      ],
+      "Description": "Catalog of products (test 1)",
+      "Identity": {
+        "Name": "ProductID",
+        "Seed": 1,
+        "Increment": 1
+      },
+      "Indexes": [
+        {
+          "IndexName": "CategoriesProducts",
+          "IndexDescription": "nonclustered located on PRIMARY",
+          "IndexKeys": "CategoryID"
+        },
+        {
+          "IndexName": "CategoryID",
+          "IndexDescription": "nonclustered located on PRIMARY",
+          "IndexKeys": "CategoryID"
+        },
+        {
+          "IndexName": "PK_Products",
+          "IndexDescription": "clustered, unique, primary key located on PRIMARY",
+          "IndexKeys": "ProductID"
+        },
+        {
+          "IndexName": "ProductName",
+          "IndexDescription": "nonclustered located on PRIMARY",
+          "IndexKeys": "ProductName"
+        },
+        {
+          "IndexName": "SupplierID",
+          "IndexDescription": "nonclustered located on PRIMARY",
+          "IndexKeys": "SupplierID"
+        },
+        {
+          "IndexName": "SuppliersProducts",
+          "IndexDescription": "nonclustered located on PRIMARY",
+          "IndexKeys": "SupplierID"
+        }
+      ],
+      "PrimaryKey": {
+        "ConstraintName": "PK_Products",
+        "Key": [
+          "ProductID"
+        ]
+      },
+      "ForeignKeys": [
+        {
+          "References": "Northwind.dbo.Categories",
+          "Child": null,
+          "ConstraintName": "FK_Products_Categories",
+          "Key": [
+            "CategoryID"
+          ]
+        },
+        {
+          "References": "Northwind.dbo.Suppliers",
+          "Child": null,
+          "ConstraintName": "FK_Products_Suppliers",
+          "Key": [
+            "SupplierID"
+          ]
+        }
+      ],
+      "Uniques": [],
+      "Checks": [
+        {
+          "Expression": null,
+          "ConstraintName": "CK_Products_UnitPrice",
+          "Key": [
+            "([UnitPrice]\u003E=(0))"
+          ]
+        },
+        {
+          "Expression": null,
+          "ConstraintName": "CK_ReorderLevel",
+          "Key": [
+            "([ReorderLevel]\u003E=(0))"
+          ]
+        },
+        {
+          "Expression": null,
+          "ConstraintName": "CK_UnitsInStock",
+          "Key": [
+            "([UnitsInStock]\u003E=(0))"
+          ]
+        },
+        {
+          "Expression": null,
+          "ConstraintName": "CK_UnitsOnOrder",
+          "Key": [
+            "([UnitsOnOrder]\u003E=(0))"
+          ]
+        }
+      ],
+      "Defaults": [
+        {
+          "Value": "((0))",
+          "ConstraintName": "DF_Products_Discontinued",
+          "Key": [
+            "Discontinued"
+          ]
+        },
+        {
+          "Value": "((0))",
+          "ConstraintName": "DF_Products_ReorderLevel",
+          "Key": [
+            "ReorderLevel"
+          ]
+        },
+        {
+          "Value": "((0))",
+          "ConstraintName": "DF_Products_UnitPrice",
+          "Key": [
+            "UnitPrice"
+          ]
+        },
+        {
+          "Value": "((0))",
+          "ConstraintName": "DF_Products_UnitsInStock",
+          "Key": [
+            "UnitsInStock"
+          ]
+        },
+        {
+          "Value": "((0))",
+          "ConstraintName": "DF_Products_UnitsOnOrder",
+          "Key": [
+            "UnitsOnOrder"
+          ]
+        }
+      ],
+      "ImportBag": {
+        "ConstraintDetails": [
+          {
+            "ConstraintType": "CHECK on column UnitPrice",
+            "ConstraintName": "CK_Products_UnitPrice",
+            "DeleteAction": "(n/a)",
+            "UpdateAction": "(n/a)",
+            "StatusEnabled": "Enabled",
+            "StatusForReplication": "Is_For_Replication",
+            "ConstraintKeys": "([UnitPrice]\u003E=(0))"
+          },
+          {
+            "ConstraintType": "CHECK on column ReorderLevel",
+            "ConstraintName": "CK_ReorderLevel",
+            "DeleteAction": "(n/a)",
+            "UpdateAction": "(n/a)",
+            "StatusEnabled": "Enabled",
+            "StatusForReplication": "Is_For_Replication",
+            "ConstraintKeys": "([ReorderLevel]\u003E=(0))"
+          },
+          {
+            "ConstraintType": "CHECK on column UnitsInStock",
+            "ConstraintName": "CK_UnitsInStock",
+            "DeleteAction": "(n/a)",
+            "UpdateAction": "(n/a)",
+            "StatusEnabled": "Enabled",
+            "StatusForReplication": "Is_For_Replication",
+            "ConstraintKeys": "([UnitsInStock]\u003E=(0))"
+          },
+          {
+            "ConstraintType": "CHECK on column UnitsOnOrder",
+            "ConstraintName": "CK_UnitsOnOrder",
+            "DeleteAction": "(n/a)",
+            "UpdateAction": "(n/a)",
+            "StatusEnabled": "Enabled",
+            "StatusForReplication": "Is_For_Replication",
+            "ConstraintKeys": "([UnitsOnOrder]\u003E=(0))"
+          },
+          {
+            "ConstraintType": "DEFAULT on column Discontinued",
+            "ConstraintName": "DF_Products_Discontinued",
+            "DeleteAction": "(n/a)",
+            "UpdateAction": "(n/a)",
+            "StatusEnabled": "(n/a)",
+            "StatusForReplication": "(n/a)",
+            "ConstraintKeys": "((0))"
+          },
+          {
+            "ConstraintType": "DEFAULT on column ReorderLevel",
+            "ConstraintName": "DF_Products_ReorderLevel",
+            "DeleteAction": "(n/a)",
+            "UpdateAction": "(n/a)",
+            "StatusEnabled": "(n/a)",
+            "StatusForReplication": "(n/a)",
+            "ConstraintKeys": "((0))"
+          },
+          {
+            "ConstraintType": "DEFAULT on column UnitPrice",
+            "ConstraintName": "DF_Products_UnitPrice",
+            "DeleteAction": "(n/a)",
+            "UpdateAction": "(n/a)",
+            "StatusEnabled": "(n/a)",
+            "StatusForReplication": "(n/a)",
+            "ConstraintKeys": "((0))"
+          },
+          {
+            "ConstraintType": "DEFAULT on column UnitsInStock",
+            "ConstraintName": "DF_Products_UnitsInStock",
+            "DeleteAction": "(n/a)",
+            "UpdateAction": "(n/a)",
+            "StatusEnabled": "(n/a)",
+            "StatusForReplication": "(n/a)",
+            "ConstraintKeys": "((0))"
+          },
+          {
+            "ConstraintType": "DEFAULT on column UnitsOnOrder",
+            "ConstraintName": "DF_Products_UnitsOnOrder",
+            "DeleteAction": "(n/a)",
+            "UpdateAction": "(n/a)",
+            "StatusEnabled": "(n/a)",
+            "StatusForReplication": "(n/a)",
+            "ConstraintKeys": "((0))"
+          },
+          {
+            "ConstraintType": "FOREIGN KEY",
+            "ConstraintName": "FK_Products_Categories",
+            "DeleteAction": "No Action",
+            "UpdateAction": "No Action",
+            "StatusEnabled": "Enabled",
+            "StatusForReplication": "Is_For_Replication",
+            "ConstraintKeys": "CategoryID"
+          },
+          {
+            "ConstraintType": " ",
+            "ConstraintName": " ",
+            "DeleteAction": " ",
+            "UpdateAction": " ",
+            "StatusEnabled": " ",
+            "StatusForReplication": " ",
+            "ConstraintKeys": "REFERENCES Northwind.dbo.Categories (CategoryID)"
+          },
+          {
+            "ConstraintType": "FOREIGN KEY",
+            "ConstraintName": "FK_Products_Suppliers",
+            "DeleteAction": "No Action",
+            "UpdateAction": "No Action",
+            "StatusEnabled": "Enabled",
+            "StatusForReplication": "Is_For_Replication",
+            "ConstraintKeys": "SupplierID"
+          },
+          {
+            "ConstraintType": " ",
+            "ConstraintName": " ",
+            "DeleteAction": " ",
+            "UpdateAction": " ",
+            "StatusEnabled": " ",
+            "StatusForReplication": " ",
+            "ConstraintKeys": "REFERENCES Northwind.dbo.Suppliers (SupplierID)"
+          },
+          {
+            "ConstraintType": "PRIMARY KEY (clustered)",
+            "ConstraintName": "PK_Products",
+            "DeleteAction": "(n/a)",
+            "UpdateAction": "(n/a)",
+            "StatusEnabled": "(n/a)",
+            "StatusForReplication": "(n/a)",
+            "ConstraintKeys": "ProductID"
+          }
+        ],
+        "TableReferences": [
+          {
+            "ReferenceDescription": "Northwind.dbo.Order Details: FK_Order_Details_Products"
+          }
+        ],
+        "RowGuidCol": {
+          "Name": "No rowguidcol column defined."
+        },
+        "ExtendedProperties": [
+          {
+            "Name": "MS_Description",
+            "Value": "Catalog of products (test 1)",
+            "Level0Type": null,
+            "Level0Name": null,
+            "Level1Type": null,
+            "Level1Name": null,
+            "Level2Type": null,
+            "Level2Name": null
+          }
+        ]
+      },
+      "DataSource": "(local)",
+      "DatabaseName": "Northwind",
+      "Schema": "dbo",
+      "Name": "Products",
+      "FullName": "dbo.Products",
+      "Type": "table"
+    },
+    {
+      "Columns": [
+        {
+          "Name": "RegionID",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "RegionDescription",
+          "Type": "nchar",
+          "Computed": "no",
+          "Length": 100,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        }
+      ],
+      "Description": null,
+      "Identity": null,
+      "Indexes": [
+        {
+          "IndexName": "PK_Region",
+          "IndexDescription": "nonclustered, unique, primary key located on PRIMARY",
+          "IndexKeys": "RegionID"
+        }
+      ],
+      "PrimaryKey": {
+        "ConstraintName": "PK_Region",
+        "Key": [
+          "RegionID"
+        ]
+      },
+      "ForeignKeys": [],
+      "Uniques": [],
+      "Checks": [],
+      "Defaults": [],
+      "ImportBag": {
+        "ConstraintDetails": [
+          {
+            "ConstraintType": "PRIMARY KEY (non-clustered)",
+            "ConstraintName": "PK_Region",
+            "DeleteAction": "(n/a)",
+            "UpdateAction": "(n/a)",
+            "StatusEnabled": "(n/a)",
+            "StatusForReplication": "(n/a)",
+            "ConstraintKeys": "RegionID"
+          }
+        ],
+        "TableReferences": [
+          {
+            "ReferenceDescription": "Northwind.dbo.Territories: FK_Territories_Region"
+          }
+        ],
+        "RowGuidCol": {
+          "Name": "No rowguidcol column defined."
+        },
+        "ExtendedProperties": []
+      },
+      "DataSource": "(local)",
+      "DatabaseName": "Northwind",
+      "Schema": "dbo",
+      "Name": "Region",
+      "FullName": "dbo.Region",
+      "Type": "table"
+    },
+    {
+      "Columns": [
+        {
+          "Name": "ShipperID",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "CompanyName",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 80,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Phone",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 48,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        }
+      ],
+      "Description": null,
+      "Identity": {
+        "Name": "ShipperID",
+        "Seed": 1,
+        "Increment": 1
+      },
+      "Indexes": [
+        {
+          "IndexName": "PK_Shippers",
+          "IndexDescription": "clustered, unique, primary key located on PRIMARY",
+          "IndexKeys": "ShipperID"
+        }
+      ],
+      "PrimaryKey": {
+        "ConstraintName": "PK_Shippers",
+        "Key": [
+          "ShipperID"
+        ]
+      },
+      "ForeignKeys": [],
+      "Uniques": [],
+      "Checks": [],
+      "Defaults": [],
+      "ImportBag": {
+        "ConstraintDetails": [
+          {
+            "ConstraintType": "PRIMARY KEY (clustered)",
+            "ConstraintName": "PK_Shippers",
+            "DeleteAction": "(n/a)",
+            "UpdateAction": "(n/a)",
+            "StatusEnabled": "(n/a)",
+            "StatusForReplication": "(n/a)",
+            "ConstraintKeys": "ShipperID"
+          }
+        ],
+        "TableReferences": [
+          {
+            "ReferenceDescription": "Northwind.dbo.Orders: FK_Orders_Shippers"
+          }
+        ],
+        "RowGuidCol": {
+          "Name": "No rowguidcol column defined."
+        },
+        "ExtendedProperties": []
+      },
+      "DataSource": "(local)",
+      "DatabaseName": "Northwind",
+      "Schema": "dbo",
+      "Name": "Shippers",
+      "FullName": "dbo.Shippers",
+      "Type": "table"
+    },
+    {
+      "Columns": [
+        {
+          "Name": "SupplierID",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "CompanyName",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 80,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "ContactName",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 60,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "ContactTitle",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 60,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Address",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 120,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "City",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 30,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Region",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 30,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "PostalCode",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 20,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Country",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 30,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Phone",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 48,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Fax",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 48,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "HomePage",
+          "Type": "ntext",
+          "Computed": "no",
+          "Length": 16,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        }
+      ],
+      "Description": null,
+      "Identity": {
+        "Name": "SupplierID",
+        "Seed": 1,
+        "Increment": 1
+      },
+      "Indexes": [
+        {
+          "IndexName": "CompanyName",
+          "IndexDescription": "nonclustered located on PRIMARY",
+          "IndexKeys": "CompanyName"
+        },
+        {
+          "IndexName": "PK_Suppliers",
+          "IndexDescription": "clustered, unique, primary key located on PRIMARY",
+          "IndexKeys": "SupplierID"
+        },
+        {
+          "IndexName": "PostalCode",
+          "IndexDescription": "nonclustered located on PRIMARY",
+          "IndexKeys": "PostalCode"
+        }
+      ],
+      "PrimaryKey": {
+        "ConstraintName": "PK_Suppliers",
+        "Key": [
+          "SupplierID"
+        ]
+      },
+      "ForeignKeys": [],
+      "Uniques": [],
+      "Checks": [],
+      "Defaults": [],
+      "ImportBag": {
+        "ConstraintDetails": [
+          {
+            "ConstraintType": "PRIMARY KEY (clustered)",
+            "ConstraintName": "PK_Suppliers",
+            "DeleteAction": "(n/a)",
+            "UpdateAction": "(n/a)",
+            "StatusEnabled": "(n/a)",
+            "StatusForReplication": "(n/a)",
+            "ConstraintKeys": "SupplierID"
+          }
+        ],
+        "TableReferences": [
+          {
+            "ReferenceDescription": "Northwind.dbo.Products: FK_Products_Suppliers"
+          }
+        ],
+        "RowGuidCol": {
+          "Name": "No rowguidcol column defined."
+        },
+        "ExtendedProperties": []
+      },
+      "DataSource": "(local)",
+      "DatabaseName": "Northwind",
+      "Schema": "dbo",
+      "Name": "Suppliers",
+      "FullName": "dbo.Suppliers",
+      "Type": "table"
+    },
+    {
+      "Columns": [
+        {
+          "Name": "TerritoryID",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 40,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "TerritoryDescription",
+          "Type": "nchar",
+          "Computed": "no",
+          "Length": 100,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "RegionID",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        }
+      ],
+      "Description": null,
+      "Identity": null,
+      "Indexes": [
+        {
+          "IndexName": "PK_Territories",
+          "IndexDescription": "nonclustered, unique, primary key located on PRIMARY",
+          "IndexKeys": "TerritoryID"
+        }
+      ],
+      "PrimaryKey": {
+        "ConstraintName": "PK_Territories",
+        "Key": [
+          "TerritoryID"
+        ]
+      },
+      "ForeignKeys": [
+        {
+          "References": "Northwind.dbo.Region",
+          "Child": null,
+          "ConstraintName": "FK_Territories_Region",
+          "Key": [
+            "RegionID"
+          ]
+        }
+      ],
+      "Uniques": [],
+      "Checks": [],
+      "Defaults": [],
+      "ImportBag": {
+        "ConstraintDetails": [
+          {
+            "ConstraintType": "FOREIGN KEY",
+            "ConstraintName": "FK_Territories_Region",
+            "DeleteAction": "No Action",
+            "UpdateAction": "No Action",
+            "StatusEnabled": "Enabled",
+            "StatusForReplication": "Is_For_Replication",
+            "ConstraintKeys": "RegionID"
+          },
+          {
+            "ConstraintType": " ",
+            "ConstraintName": " ",
+            "DeleteAction": " ",
+            "UpdateAction": " ",
+            "StatusEnabled": " ",
+            "StatusForReplication": " ",
+            "ConstraintKeys": "REFERENCES Northwind.dbo.Region (RegionID)"
+          },
+          {
+            "ConstraintType": "PRIMARY KEY (non-clustered)",
+            "ConstraintName": "PK_Territories",
+            "DeleteAction": "(n/a)",
+            "UpdateAction": "(n/a)",
+            "StatusEnabled": "(n/a)",
+            "StatusForReplication": "(n/a)",
+            "ConstraintKeys": "TerritoryID"
+          }
+        ],
+        "TableReferences": [
+          {
+            "ReferenceDescription": "Northwind.dbo.EmployeeTerritories: FK_EmployeeTerritories_Territories"
+          }
+        ],
+        "RowGuidCol": {
+          "Name": "No rowguidcol column defined."
+        },
+        "ExtendedProperties": []
+      },
+      "DataSource": "(local)",
+      "DatabaseName": "Northwind",
+      "Schema": "dbo",
+      "Name": "Territories",
+      "FullName": "dbo.Territories",
+      "Type": "table"
+    }
+  ],
+  "Views": [
+    {
+      "Identity": null,
+      "ImportBag": {
+        "RowGuidCol": {
+          "Name": "No rowguidcol column defined."
+        },
+        "ExtendedProperties": []
+      },
+      "Columns": [
+        {
+          "Name": "ProductID",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "ProductName",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 80,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "SupplierID",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "CategoryID",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "QuantityPerUnit",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 40,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "UnitPrice",
+          "Type": "money",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 19,
+          "Scale": 4,
+          "Nullable": true,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "UnitsInStock",
+          "Type": "smallint",
+          "Computed": "no",
+          "Length": 2,
+          "Prec": 5,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "UnitsOnOrder",
+          "Type": "smallint",
+          "Computed": "no",
+          "Length": 2,
+          "Prec": 5,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "ReorderLevel",
+          "Type": "smallint",
+          "Computed": "no",
+          "Length": 2,
+          "Prec": 5,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Discontinued",
+          "Type": "bit",
+          "Computed": "no",
+          "Length": 1,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "CategoryName",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 30,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        }
+      ],
+      "Description": null,
+      "Indexes": [],
+      "DataSource": "(local)",
+      "DatabaseName": "Northwind",
+      "Schema": "dbo",
+      "Name": "Alphabetical list of products",
+      "FullName": "dbo.Alphabetical list of products",
+      "Type": "view"
+    },
+    {
+      "Identity": null,
+      "ImportBag": {
+        "RowGuidCol": {
+          "Name": "No rowguidcol column defined."
+        },
+        "ExtendedProperties": []
+      },
+      "Columns": [
+        {
+          "Name": "CategoryName",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 30,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "CategorySales",
+          "Type": "money",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 19,
+          "Scale": 4,
+          "Nullable": true,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        }
+      ],
+      "Description": null,
+      "Indexes": [],
+      "DataSource": "(local)",
+      "DatabaseName": "Northwind",
+      "Schema": "dbo",
+      "Name": "Category Sales for 1997",
+      "FullName": "dbo.Category Sales for 1997",
+      "Type": "view"
+    },
+    {
+      "Identity": {
+        "Name": "ProductID",
+        "Seed": 1,
+        "Increment": 1
+      },
+      "ImportBag": {
+        "RowGuidCol": {
+          "Name": "No rowguidcol column defined."
+        },
+        "ExtendedProperties": []
+      },
+      "Columns": [
+        {
+          "Name": "ProductID",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "ProductName",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 80,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        }
+      ],
+      "Description": null,
+      "Indexes": [],
+      "DataSource": "(local)",
+      "DatabaseName": "Northwind",
+      "Schema": "dbo",
+      "Name": "Current Product List",
+      "FullName": "dbo.Current Product List",
+      "Type": "view"
+    },
+    {
+      "Identity": null,
+      "ImportBag": {
+        "RowGuidCol": {
+          "Name": "No rowguidcol column defined."
+        },
+        "ExtendedProperties": []
+      },
+      "Columns": [
+        {
+          "Name": "City",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 30,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "CompanyName",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 80,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "ContactName",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 60,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Relationship",
+          "Type": "varchar",
+          "Computed": "no",
+          "Length": 9,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "no",
+            "FixedLenNullInSource": "no",
+            "ExtendedProperties": []
+          }
+        }
+      ],
+      "Description": null,
+      "Indexes": [],
+      "DataSource": "(local)",
+      "DatabaseName": "Northwind",
+      "Schema": "dbo",
+      "Name": "Customer and Suppliers by City",
+      "FullName": "dbo.Customer and Suppliers by City",
+      "Type": "view"
+    },
+    {
+      "Identity": null,
+      "ImportBag": {
+        "RowGuidCol": {
+          "Name": "No rowguidcol column defined."
+        },
+        "ExtendedProperties": []
+      },
+      "Columns": [
+        {
+          "Name": "ShipName",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 80,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "ShipAddress",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 120,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "ShipCity",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 30,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "ShipRegion",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 30,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "ShipPostalCode",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 20,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "ShipCountry",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 30,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "CustomerID",
+          "Type": "nchar",
+          "Computed": "no",
+          "Length": 10,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "CustomerName",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 80,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Address",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 120,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "City",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 30,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Region",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 30,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "PostalCode",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 20,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Country",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 30,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Salesperson",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 62,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "OrderID",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "OrderDate",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "RequiredDate",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "ShippedDate",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "ShipperName",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 80,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "ProductID",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "ProductName",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 80,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "UnitPrice",
+          "Type": "money",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 19,
+          "Scale": 4,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Quantity",
+          "Type": "smallint",
+          "Computed": "no",
+          "Length": 2,
+          "Prec": 5,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Discount",
+          "Type": "real",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 24,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "ExtendedPrice",
+          "Type": "money",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 19,
+          "Scale": 4,
+          "Nullable": true,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Freight",
+          "Type": "money",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 19,
+          "Scale": 4,
+          "Nullable": true,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        }
+      ],
+      "Description": null,
+      "Indexes": [],
+      "DataSource": "(local)",
+      "DatabaseName": "Northwind",
+      "Schema": "dbo",
+      "Name": "Invoices",
+      "FullName": "dbo.Invoices",
+      "Type": "view"
+    },
+    {
+      "Identity": null,
+      "ImportBag": {
+        "RowGuidCol": {
+          "Name": "No rowguidcol column defined."
+        },
+        "ExtendedProperties": []
+      },
+      "Columns": [
+        {
+          "Name": "OrderID",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "ProductID",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "ProductName",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 80,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "UnitPrice",
+          "Type": "money",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 19,
+          "Scale": 4,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Quantity",
+          "Type": "smallint",
+          "Computed": "no",
+          "Length": 2,
+          "Prec": 5,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Discount",
+          "Type": "real",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 24,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "ExtendedPrice",
+          "Type": "money",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 19,
+          "Scale": 4,
+          "Nullable": true,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        }
+      ],
+      "Description": null,
+      "Indexes": [],
+      "DataSource": "(local)",
+      "DatabaseName": "Northwind",
+      "Schema": "dbo",
+      "Name": "Order Details Extended",
+      "FullName": "dbo.Order Details Extended",
+      "Type": "view"
+    },
+    {
+      "Identity": null,
+      "ImportBag": {
+        "RowGuidCol": {
+          "Name": "No rowguidcol column defined."
+        },
+        "ExtendedProperties": []
+      },
+      "Columns": [
+        {
+          "Name": "OrderID",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Subtotal",
+          "Type": "money",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 19,
+          "Scale": 4,
+          "Nullable": true,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        }
+      ],
+      "Description": null,
+      "Indexes": [],
+      "DataSource": "(local)",
+      "DatabaseName": "Northwind",
+      "Schema": "dbo",
+      "Name": "Order Subtotals",
+      "FullName": "dbo.Order Subtotals",
+      "Type": "view"
+    },
+    {
+      "Identity": null,
+      "ImportBag": {
+        "RowGuidCol": {
+          "Name": "No rowguidcol column defined."
+        },
+        "ExtendedProperties": []
+      },
+      "Columns": [
+        {
+          "Name": "OrderID",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "CustomerID",
+          "Type": "nchar",
+          "Computed": "no",
+          "Length": 10,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "EmployeeID",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "OrderDate",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "RequiredDate",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "ShippedDate",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "ShipVia",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Freight",
+          "Type": "money",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 19,
+          "Scale": 4,
+          "Nullable": true,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "ShipName",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 80,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "ShipAddress",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 120,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "ShipCity",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 30,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "ShipRegion",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 30,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "ShipPostalCode",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 20,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "ShipCountry",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 30,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "CompanyName",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 80,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Address",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 120,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "City",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 30,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Region",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 30,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "PostalCode",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 20,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Country",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 30,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        }
+      ],
+      "Description": null,
+      "Indexes": [],
+      "DataSource": "(local)",
+      "DatabaseName": "Northwind",
+      "Schema": "dbo",
+      "Name": "Orders Qry",
+      "FullName": "dbo.Orders Qry",
+      "Type": "view"
+    },
+    {
+      "Identity": null,
+      "ImportBag": {
+        "RowGuidCol": {
+          "Name": "No rowguidcol column defined."
+        },
+        "ExtendedProperties": []
+      },
+      "Columns": [
+        {
+          "Name": "CategoryName",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 30,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "ProductName",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 80,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "ProductSales",
+          "Type": "money",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 19,
+          "Scale": 4,
+          "Nullable": true,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        }
+      ],
+      "Description": null,
+      "Indexes": [],
+      "DataSource": "(local)",
+      "DatabaseName": "Northwind",
+      "Schema": "dbo",
+      "Name": "Product Sales for 1997",
+      "FullName": "dbo.Product Sales for 1997",
+      "Type": "view"
+    },
+    {
+      "Identity": null,
+      "ImportBag": {
+        "RowGuidCol": {
+          "Name": "No rowguidcol column defined."
+        },
+        "ExtendedProperties": []
+      },
+      "Columns": [
+        {
+          "Name": "ProductName",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 80,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "UnitPrice",
+          "Type": "money",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 19,
+          "Scale": 4,
+          "Nullable": true,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        }
+      ],
+      "Description": null,
+      "Indexes": [],
+      "DataSource": "(local)",
+      "DatabaseName": "Northwind",
+      "Schema": "dbo",
+      "Name": "Products Above Average Price",
+      "FullName": "dbo.Products Above Average Price",
+      "Type": "view"
+    },
+    {
+      "Identity": null,
+      "ImportBag": {
+        "RowGuidCol": {
+          "Name": "No rowguidcol column defined."
+        },
+        "ExtendedProperties": []
+      },
+      "Columns": [
+        {
+          "Name": "CategoryName",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 30,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "ProductName",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 80,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "QuantityPerUnit",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 40,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "UnitsInStock",
+          "Type": "smallint",
+          "Computed": "no",
+          "Length": 2,
+          "Prec": 5,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Discontinued",
+          "Type": "bit",
+          "Computed": "no",
+          "Length": 1,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        }
+      ],
+      "Description": null,
+      "Indexes": [],
+      "DataSource": "(local)",
+      "DatabaseName": "Northwind",
+      "Schema": "dbo",
+      "Name": "Products by Category",
+      "FullName": "dbo.Products by Category",
+      "Type": "view"
+    },
+    {
+      "Identity": null,
+      "ImportBag": {
+        "RowGuidCol": {
+          "Name": "No rowguidcol column defined."
+        },
+        "ExtendedProperties": []
+      },
+      "Columns": [
+        {
+          "Name": "CustomerID",
+          "Type": "nchar",
+          "Computed": "no",
+          "Length": 10,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "CompanyName",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 80,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "City",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 30,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Country",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 30,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        }
+      ],
+      "Description": null,
+      "Indexes": [],
+      "DataSource": "(local)",
+      "DatabaseName": "Northwind",
+      "Schema": "dbo",
+      "Name": "Quarterly Orders",
+      "FullName": "dbo.Quarterly Orders",
+      "Type": "view"
+    },
+    {
+      "Identity": null,
+      "ImportBag": {
+        "RowGuidCol": {
+          "Name": "No rowguidcol column defined."
+        },
+        "ExtendedProperties": []
+      },
+      "Columns": [
+        {
+          "Name": "CategoryID",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "CategoryName",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 30,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "ProductName",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 80,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "ProductSales",
+          "Type": "money",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 19,
+          "Scale": 4,
+          "Nullable": true,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        }
+      ],
+      "Description": null,
+      "Indexes": [],
+      "DataSource": "(local)",
+      "DatabaseName": "Northwind",
+      "Schema": "dbo",
+      "Name": "Sales by Category",
+      "FullName": "dbo.Sales by Category",
+      "Type": "view"
+    },
+    {
+      "Identity": null,
+      "ImportBag": {
+        "RowGuidCol": {
+          "Name": "No rowguidcol column defined."
+        },
+        "ExtendedProperties": []
+      },
+      "Columns": [
+        {
+          "Name": "SaleAmount",
+          "Type": "money",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 19,
+          "Scale": 4,
+          "Nullable": true,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "OrderID",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "CompanyName",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 80,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "ShippedDate",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        }
+      ],
+      "Description": null,
+      "Indexes": [],
+      "DataSource": "(local)",
+      "DatabaseName": "Northwind",
+      "Schema": "dbo",
+      "Name": "Sales Totals by Amount",
+      "FullName": "dbo.Sales Totals by Amount",
+      "Type": "view"
+    },
+    {
+      "Identity": null,
+      "ImportBag": {
+        "RowGuidCol": {
+          "Name": "No rowguidcol column defined."
+        },
+        "ExtendedProperties": []
+      },
+      "Columns": [
+        {
+          "Name": "ShippedDate",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "OrderID",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Subtotal",
+          "Type": "money",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 19,
+          "Scale": 4,
+          "Nullable": true,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        }
+      ],
+      "Description": null,
+      "Indexes": [],
+      "DataSource": "(local)",
+      "DatabaseName": "Northwind",
+      "Schema": "dbo",
+      "Name": "Summary of Sales by Quarter",
+      "FullName": "dbo.Summary of Sales by Quarter",
+      "Type": "view"
+    },
+    {
+      "Identity": null,
+      "ImportBag": {
+        "RowGuidCol": {
+          "Name": "No rowguidcol column defined."
+        },
+        "ExtendedProperties": []
+      },
+      "Columns": [
+        {
+          "Name": "ShippedDate",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "OrderID",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Subtotal",
+          "Type": "money",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 19,
+          "Scale": 4,
+          "Nullable": true,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        }
+      ],
+      "Description": null,
+      "Indexes": [],
+      "DataSource": "(local)",
+      "DatabaseName": "Northwind",
+      "Schema": "dbo",
+      "Name": "Summary of Sales by Year",
+      "FullName": "dbo.Summary of Sales by Year",
+      "Type": "view"
+    }
+  ],
+  "ImportBag": {},
+  "ScalarFunctions": [],
+  "TableFunctions": [],
+  "StoredProcedures": [],
+  "Sequences": [],
+  "DatabaseValidators": []
+}

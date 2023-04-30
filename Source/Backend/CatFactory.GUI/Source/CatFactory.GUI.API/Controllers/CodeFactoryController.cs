@@ -75,7 +75,7 @@ namespace CatFactory.GUI.API.Controllers
         }
 
         [HttpGet("database/{databaseName}/table/{tableName}")]
-        [ProducesResponseType(200, Type = typeof(ISingleResponse<Table>))]
+        [ProducesResponseType(200, Type = typeof(ISingleResponse<TableDetailsModel>))]
         [ProducesResponseType(404)]
         [ProducesResponseType(500)]
         public async Task<IActionResult> GetTableAsync(string databaseName, string tableName)
@@ -85,7 +85,22 @@ namespace CatFactory.GUI.API.Controllers
             if (table == null)
                 return NotFound();
 
-            var response = new SingleResponse<Table>(table);
+            var model = new TableDetailsModel
+            {
+                FullName = table.FullName,
+                Schema = table.Schema,
+                Name = table.Name,
+                Identity = new IdentityDetailsModel(table.Identity),
+                Columns = table.Columns.Select(item => new ColumnItemModel(item)).ToList(),
+                PrimaryKey = new PrimaryKeyDetailsModel(table.PrimaryKey),
+                ForeignKeys = table.ForeignKeys?.Select(item => new ForeignKeyItemModel(item)).ToList(),
+                Uniques = table.Uniques?.Select(item => new UniqueItemModel(item)).ToList(),
+                Checks = table.Checks?.Select(item => new CheckItemModel(item)).ToList(),
+                Defaults = table.Defaults?.Select(item => new DefaultItemModel(item)).ToList(),
+                Indexes = table.Indexes?.Select(item => new IndexItemModel(item)).ToList()
+            };
+
+            var response = new SingleResponse<TableDetailsModel>(model);
 
             return response.ToOkResult();
         }

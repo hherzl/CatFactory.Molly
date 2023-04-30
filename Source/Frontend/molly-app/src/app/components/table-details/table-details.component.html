@@ -1,0 +1,182 @@
+<h1>Table Details</h1>
+
+<mat-spinner *ngIf="loading"></mat-spinner>
+
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>{{ response?.model?.fullName }}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <div>
+
+        </div>
+    </mat-card-content>
+</mat-card>
+
+<br>
+
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Identity</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <div>
+            <span>Name: <strong>{{ response?.model?.identity?.name }}</strong></span>
+            <br>
+            <span>Seed: <strong>{{ response?.model?.identity?.seed }}</strong></span>
+            <br>
+            <span>Increment: <strong>{{ response?.model?.identity?.increment }}</strong></span>
+        </div>
+    </mat-card-content>
+</mat-card>
+
+<br>
+
+<h2>Columns ({{ response?.model?.columns?.length }})</h2>
+<mat-divider></mat-divider>
+
+<table class="columns">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Length</th>
+            <th>Prec</th>
+            <th>Nullable</th>
+            <th>Collation</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of response?.model?.columns">
+            <td>{{ item.name }}</td>
+            <td>{{ item.type }}</td>
+            <td>{{ item.length }}</td>
+            <td>{{ item.prec }}</td>
+            <td>{{ item.nullable }}</td>
+            <td>{{ item.collation }}</td>
+        </tr>
+    </tbody>
+</table>
+
+<br>
+
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Primary Key</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <div>
+            <span>Constraint Name: <strong>{{ response?.model?.primaryKey?.constraintName }}</strong></span>
+            <br>
+            <span>Key: <strong>{{ response?.model?.primaryKey?.key }}</strong></span>
+        </div>
+    </mat-card-content>
+</mat-card>
+
+<br>
+
+<h2>Foreign Keys ({{ response?.model?.foreignKeys?.length }})</h2>
+<mat-divider></mat-divider>
+
+<table class="foreignKeys">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Key</th>
+            <th>References</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of response?.model?.foreignKeys">
+            <td>{{ item.name }}</td>
+            <td>{{ item.key }}</td>
+            <td>{{ item.references }}</td>
+        </tr>
+    </tbody>
+</table>
+
+<br>
+
+<h2>Uniques ({{ response?.model?.uniques?.length }})</h2>
+<mat-divider></mat-divider>
+
+<table class="uniques">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Key</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of response?.model?.uniques">
+            <td>{{ item.name }}</td>
+            <td>{{ item.key }}</td>
+        </tr>
+    </tbody>
+</table>
+
+<br>
+
+<h2>Checks ({{ response?.model?.checks?.length }})</h2>
+<mat-divider></mat-divider>
+
+<table class="checks">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Key</th>
+            <th>Expression</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of response?.model?.checks">
+            <td>{{ item.name }}</td>
+            <td>{{ item.key }}</td>
+            <td>{{ item.expression }}</td>
+        </tr>
+    </tbody>
+</table>
+
+<br>
+
+<h2>Defaults ({{ response?.model?.defaults?.length }})</h2>
+<mat-divider></mat-divider>
+
+<table class="defaults">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Key</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of response?.model?.defaults">
+            <td>{{ item.name }}</td>
+            <td>{{ item.key }}</td>
+            <td>{{ item.value }}</td>
+        </tr>
+    </tbody>
+</table>
+
+<br>
+
+<h2>Indexes ({{ response?.model?.indexes?.length }})</h2>
+<mat-divider></mat-divider>
+
+<table class="indexes">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Keys</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of response?.model?.indexes">
+            <td>{{ item.name }}</td>
+            <td>{{ item.description }}</td>
+            <td>{{ item.keys }}</td>
+        </tr>
+    </tbody>
+</table>

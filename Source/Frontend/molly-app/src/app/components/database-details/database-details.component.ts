@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Params } from '@angular/router';
+import { ActivatedRoute, Params, Router } from '@angular/router';
 import { SingleResponse } from 'src/app/services/common';
-import { DatabaseDetailsModel, MollyClientService } from 'src/app/services/molly-client.service';
+import { DatabaseDetailsModel, MollyClientService, TableItemModel } from 'src/app/services/molly-client.service';
 
 @Component({
   selector: 'app-database-details',
@@ -9,7 +9,7 @@ import { DatabaseDetailsModel, MollyClientService } from 'src/app/services/molly
   styleUrls: ['./database-details.component.css']
 })
 export class DatabaseDetailsComponent implements OnInit {
-  constructor(private activatedRoute: ActivatedRoute, private mollyClient: MollyClientService) {
+  constructor(private activatedRoute: ActivatedRoute, private router: Router, private mollyClient: MollyClientService) {
   }
 
   public loading!: boolean;
@@ -27,5 +27,9 @@ export class DatabaseDetailsComponent implements OnInit {
         this.response = result;
       });
     });
+  }
+
+  details(item: TableItemModel): void {
+    this.router.navigate([`database/${this.id}/table/${item.fullName}`]);
   }
 }

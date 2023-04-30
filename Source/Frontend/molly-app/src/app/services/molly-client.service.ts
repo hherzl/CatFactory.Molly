@@ -24,6 +24,11 @@ export class MollyClientService {
     return this.http.get<SingleResponse<DatabaseDetailsModel>>(url);
   }
 
+  public getTable(db: string, table: string): Observable<SingleResponse<TableDetailsModel>> {
+    const url = `${this.endpoint}/database/${db}/table/${table}`;
+    return this.http.get<SingleResponse<TableDetailsModel>>(url);
+  }
+
   public importDatabase(request: ImportDatabaseRequest): Observable<Response> {
     const url = `${this.endpoint}/import-database`;
     return this.http.post<Response>(url, request);
@@ -43,6 +48,7 @@ export class DatabaseItemModel {
 export class DatabaseDetailsModel {
   public name!: string;
   public dbms!: string;
+
   public tables!: TableItemModel[];
   public views!: ViewItemModel[];
   public databaseTypeMaps!: DatabaseTypeMap[];
@@ -89,4 +95,67 @@ export class ImportDatabaseRequest {
   public connectionString!: string;
   public importTables!: boolean;
   public importViews!: boolean;
+}
+
+export class TableDetailsModel {
+  public fullName!: string;
+  public schema!: string;
+  public name!: string;
+  public identity!: IdentityDetailsModel;
+  public columns!: ColumnItemModel[];
+  public primaryKey!: PrimaryKeyDetailsModel;
+  public foreignKeys!: ForeignKeyItemModel[];
+  public uniques!: UniqueItemModel[];
+  public checks!: CheckItemModel[];
+  public defaults!: DefaultItemModel[];
+  public indexes!: IndexItemModel[];
+}
+
+export class IdentityDetailsModel {
+  public name!: string;
+  public seed!: number;
+  public increment!: number;
+}
+
+export class ColumnItemModel {
+  public name!: string;
+  public type!: string;
+  public length!: number;
+  public prec!: number;
+  public nullable!: number;
+  public collation!: string;
+}
+
+export class PrimaryKeyDetailsModel {
+  public constraintName!: string;
+  public key!: string[];
+}
+
+export class ForeignKeyItemModel {
+  public name!: string;
+  public key!: string[];
+  public references!: string;
+}
+
+export class UniqueItemModel {
+  public name!: string;
+  public key!: string[];
+}
+
+export class CheckItemModel {
+  public name!: string;
+  public key!: string[];
+  public expression!: string;
+}
+
+export class DefaultItemModel {
+  public name!: string;
+  public key!: string[];
+  public value!: string;
+}
+
+export class IndexItemModel {
+  public name!: string;
+  public description!: string[];
+  public keys!: string;
 }

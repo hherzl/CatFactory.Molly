@@ -17,7 +17,6 @@ import { MatSortModule } from '@angular/material/sort';
 import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
 
-import { NavmenuComponent } from './navmenu/navmenu.component';
 import { HomeComponent } from './components/home/home.component';
 import { DatabaseListComponent } from './components/database-list/database-list.component';
 import { DatabaseDetailsComponent } from './components/database-details/database-details.component';
@@ -25,7 +24,6 @@ import { DatabaseDetailsComponent } from './components/database-details/database
 @NgModule({
   declarations: [
     AppComponent,
-    NavmenuComponent,
     HomeComponent,
     DatabaseListComponent,
     DatabaseDetailsComponent

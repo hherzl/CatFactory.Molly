@@ -21,13 +21,17 @@ export class DatabaseListComponent implements AfterViewInit {
   /** Columns displayed in the table. Columns IDs can be added, removed, or reordered. */
   displayedColumns = ['name', 'dbms', 'tablesCount', 'viewsCount'];
 
+  loading!: boolean;
   response!: ListResponse<DatabaseItemModel>;
 
   constructor(private router: Router, private mollyClient: MollyClientService) {
   }
 
   ngAfterViewInit(): void {
+    this.loading = true;
+
     this.mollyClient.getDatabases().subscribe(result => {
+      this.loading = false;
       this.response = result;
       this.dataSource = new DatabaseListDataSource(this.response.model);
 

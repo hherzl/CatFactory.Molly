@@ -20,7 +20,9 @@
           *ngIf="isHandset$ | async">
           <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
         </button>
-        <span>molly-app</span>
+        <span>
+          <mat-icon aria-hidden="false" aria-label="Description" fontIcon="description"></mat-icon>
+        </span>
       </mat-toolbar>
       <router-outlet></router-outlet>
     </mat-sidenav-content>

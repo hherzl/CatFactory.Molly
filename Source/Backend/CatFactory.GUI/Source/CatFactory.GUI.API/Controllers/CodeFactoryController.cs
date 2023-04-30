@@ -51,7 +51,7 @@ namespace CatFactory.GUI.API.Controllers
 
             var response = new ListResponse<DatabaseItemModel>(databases);
 
-            return Ok(response);
+            return response.ToOkResult();
         }
 
         [HttpGet("database/{id}")]
@@ -67,7 +67,7 @@ namespace CatFactory.GUI.API.Controllers
 
             var response = new SingleResponse<DatabaseDetailsModel>(database);
 
-            return Ok(response);
+            return response.ToOkResult();
         }
 
         [HttpGet("database/{databaseName}/table/{tableName}")]
@@ -83,7 +83,7 @@ namespace CatFactory.GUI.API.Controllers
 
             var response = new SingleResponse<Table>(table);
 
-            return Ok(response);
+            return response.ToOkResult();
         }
 
         [HttpGet("database/{databaseName}/view/{viewName}")]
@@ -99,7 +99,7 @@ namespace CatFactory.GUI.API.Controllers
 
             var response = new SingleResponse<View>(view);
 
-            return Ok(response);
+            return response.ToOkResult();
         }
 
         [HttpPost("edit-description")]
@@ -110,7 +110,7 @@ namespace CatFactory.GUI.API.Controllers
             var response = new Response();
 
             if (!request.HasDescription)
-                return Ok(response);
+                return response.ToOkResult();
 
             var database = await _codeFactoryService.GetDatabaseAsync(request.Database);
 
@@ -160,7 +160,7 @@ namespace CatFactory.GUI.API.Controllers
 
             response.Message = "The description was updated successfully";
 
-            return Ok(response);
+            return response.ToOkResult();
         }
     }
 }

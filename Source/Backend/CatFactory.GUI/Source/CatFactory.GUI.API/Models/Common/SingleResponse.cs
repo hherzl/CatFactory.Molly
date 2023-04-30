@@ -1,6 +1,6 @@
 ﻿namespace CatFactory.GUI.API.Models.Common
 {
-    public class SingleResponse<TModel> : ISingleResponse<TModel>
+    public class SingleResponse<TModel> : Response, ISingleResponse<TModel>
     {
         public SingleResponse()
         {
@@ -11,7 +11,6 @@
             Model = model;
         }
 
-        public string Message { get; set; }
         public TModel Model { get; set; }
     }
 }

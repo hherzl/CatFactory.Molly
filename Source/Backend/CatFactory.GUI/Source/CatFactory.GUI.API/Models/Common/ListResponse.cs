@@ -1,6 +1,6 @@
 ﻿namespace CatFactory.GUI.API.Models.Common
 {
-    public class ListResponse<TModel> : IListResponse<TModel>
+    public class ListResponse<TModel> : Response, IListResponse<TModel>
     {
         public ListResponse()
         {
@@ -11,7 +11,6 @@
             Model = model;
         }
 
-        public string Message { get; set; }
         public IEnumerable<TModel> Model { get; set; }
     }
 }

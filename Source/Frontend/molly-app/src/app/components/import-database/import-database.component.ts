@@ -19,10 +19,13 @@ export class ImportDatabaseComponent {
   });
 
   hasUnitNumber = false;
+  loading = false;
 
   constructor(private fb: FormBuilder, private router: Router, private dialog: MatDialog, private mollyClient: MollyClientService) { }
 
   importDatabase(): void {
+    this.loading = true;
+
     let request = new ImportDatabaseRequest();
 
     request.name = String(this.importDatabaseForm.get('name')?.value);
@@ -31,6 +34,7 @@ export class ImportDatabaseComponent {
     request.importViews = Boolean(this.importDatabaseForm.get('importViews')?.value);
 
     this.mollyClient.importDatabase(request).subscribe(result => {
+      this.loading = false;
       this.router.navigate(['database']);
     });
   }
@@ -43,7 +47,7 @@ export class ImportDatabaseComponent {
     this.dialog.open(ConfirmDialogComponent, {
       width: '500px',
       data: {
-        message: 'You\'ll import the database'
+        message: 'You\'ll import the database.'
       }
     }).afterClosed().subscribe(result => {
       if (result == true) {

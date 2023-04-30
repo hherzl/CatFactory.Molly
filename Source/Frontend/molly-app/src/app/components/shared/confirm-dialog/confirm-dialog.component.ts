@@ -15,12 +15,4 @@ export class ConfirmDialogData {
 export class ConfirmDialogComponent {
     constructor(@Inject(MAT_DIALOG_DATA) public data: ConfirmDialogData, public dialogRef: MatDialogRef<ConfirmDialogComponent>) {
     }
-
-    onNo(): void {
-        this.dialogRef.close(false);
-    }
-
-    onYes(): void {
-        this.dialogRef.close(true);
-    }
 }

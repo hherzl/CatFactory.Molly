@@ -22,6 +22,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatRadioModule } from '@angular/material/radio';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 import { ConfirmDialogComponent } from './components/shared/confirm-dialog/confirm-dialog.component';
 
@@ -58,6 +59,7 @@ import { ImportDatabaseComponent } from './components/import-database/import-dat
     MatInputModule,
     MatSelectModule,
     MatRadioModule,
+    MatProgressSpinnerModule,
     ReactiveFormsModule,
     MatCheckboxModule,
     MatDialogModule

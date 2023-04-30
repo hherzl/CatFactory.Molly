@@ -1,5 +1,7 @@
 <h1>Database Details</h1>
 
+<mat-spinner *ngIf="loading"></mat-spinner>
+
 <mat-card>
     <mat-card-header>
         <mat-card-title>{{ response?.model?.name }}</mat-card-title>

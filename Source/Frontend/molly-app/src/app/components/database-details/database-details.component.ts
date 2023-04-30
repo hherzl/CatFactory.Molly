@@ -12,16 +12,20 @@ export class DatabaseDetailsComponent implements OnInit {
   constructor(private activatedRoute: ActivatedRoute, private mollyClient: MollyClientService) {
   }
 
+  public loading!: boolean;
   private id!: string;
   public response!: SingleResponse<DatabaseDetailsModel>;
 
   ngOnInit(): void {
+    this.loading = true;
+
     this.activatedRoute.params.forEach((params: Params) => {
       this.id = params['id'];
-    });
 
-    this.mollyClient.getDatabase(this.id).subscribe(result => {
-      this.response = result;
-    })
+      this.mollyClient.getDatabase(this.id).subscribe(result => {
+        this.loading = false;
+        this.response = result;
+      });
+    });
   }
 }

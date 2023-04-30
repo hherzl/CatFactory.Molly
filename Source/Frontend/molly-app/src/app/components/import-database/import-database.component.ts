@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
+import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 import { ImportDatabaseRequest, MollyClientService } from 'src/app/services/molly-client.service';
+import { ConfirmDialogComponent } from '../shared/confirm-dialog/confirm-dialog.component';
 
 @Component({
   selector: 'app-import-database',
@@ -18,12 +20,9 @@ export class ImportDatabaseComponent {
 
   hasUnitNumber = false;
 
-  constructor(private fb: FormBuilder, private router: Router, private mollyClient: MollyClientService) { }
+  constructor(private fb: FormBuilder, private router: Router, private dialog: MatDialog, private mollyClient: MollyClientService) { }
 
-  onSubmit(): void {
-    if (!this.importDatabaseForm.valid)
-      return;
-
+  importDatabase(): void {
     let request = new ImportDatabaseRequest();
 
     request.name = String(this.importDatabaseForm.get('name')?.value);
@@ -33,6 +32,23 @@ export class ImportDatabaseComponent {
 
     this.mollyClient.importDatabase(request).subscribe(result => {
       this.router.navigate(['database']);
+    });
+  }
+
+  onSubmit(): void {
+    if (!this.importDatabaseForm.valid) {
+      return;
+    }
+
+    this.dialog.open(ConfirmDialogComponent, {
+      width: '500px',
+      data: {
+        message: 'You\'ll import the database'
+      }
+    }).afterClosed().subscribe(result => {
+      if (result == true) {
+        this.importDatabase();
+      }
     });
   }
 }

@@ -29,6 +29,11 @@ export class MollyClientService {
     return this.http.get<SingleResponse<TableDetailsModel>>(url);
   }
 
+  public getView(db: string, view: string): Observable<SingleResponse<ViewDetailsModel>> {
+    const url = `${this.endpoint}/database/${db}/view/${view}`;
+    return this.http.get<SingleResponse<ViewDetailsModel>>(url);
+  }
+
   public importDatabase(request: ImportDatabaseRequest): Observable<Response> {
     const url = `${this.endpoint}/import-database`;
     return this.http.post<Response>(url, request);
@@ -36,7 +41,6 @@ export class MollyClientService {
 }
 
 export class DatabaseItemModel {
-
   public name!: string;
   public dbms!: string;
   public tablesCount!: number;
@@ -48,7 +52,6 @@ export class DatabaseItemModel {
 export class DatabaseDetailsModel {
   public name!: string;
   public dbms!: string;
-
   public tables!: TableItemModel[];
   public views!: ViewItemModel[];
   public databaseTypeMaps!: DatabaseTypeMap[];
@@ -108,6 +111,15 @@ export class TableDetailsModel {
   public uniques!: UniqueItemModel[];
   public checks!: CheckItemModel[];
   public defaults!: DefaultItemModel[];
+  public indexes!: IndexItemModel[];
+}
+
+export class ViewDetailsModel {
+  public fullName!: string;
+  public schema!: string;
+  public name!: string;
+  public identity!: IdentityDetailsModel;
+  public columns!: ColumnItemModel[];
   public indexes!: IndexItemModel[];
 }
 

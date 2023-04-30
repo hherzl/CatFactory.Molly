@@ -31,6 +31,7 @@ import { DatabaseListComponent } from './components/database-list/database-list.
 import { DatabaseDetailsComponent } from './components/database-details/database-details.component';
 import { ImportDatabaseComponent } from './components/import-database/import-database.component';
 import { TableDetailsComponent } from './components/table-details/table-details.component';
+import { ViewDetailsComponent } from './components/view-details/view-details.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { TableDetailsComponent } from './components/table-details/table-details.
     DatabaseListComponent,
     DatabaseDetailsComponent,
     ImportDatabaseComponent,
-    TableDetailsComponent
+    TableDetailsComponent,
+    ViewDetailsComponent
   ],
   imports: [
     BrowserModule,

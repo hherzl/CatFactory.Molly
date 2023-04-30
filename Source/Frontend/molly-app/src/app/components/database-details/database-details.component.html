@@ -29,7 +29,7 @@
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let item of response?.model?.tables" (click)="details(item)">
+        <tr *ngFor="let item of response?.model?.tables" (click)="tableDetails(item)">
             <td>{{ item.schema }}</td>
             <td>{{ item.name }}</td>
             <td>{{ item.type }}</td>
@@ -55,7 +55,7 @@
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let item of response?.model?.views">
+        <tr *ngFor="let item of response?.model?.views" (click)="viewDetails(item)">
             <td>{{ item.schema }}</td>
             <td>{{ item.name }}</td>
             <td>{{ item.type }}</td>

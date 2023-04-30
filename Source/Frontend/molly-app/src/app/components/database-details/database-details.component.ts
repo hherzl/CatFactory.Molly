@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params, Router } from '@angular/router';
 import { SingleResponse } from 'src/app/services/common';
-import { DatabaseDetailsModel, MollyClientService, TableItemModel } from 'src/app/services/molly-client.service';
+import { DatabaseDetailsModel, MollyClientService, TableItemModel, ViewItemModel } from 'src/app/services/molly-client.service';
 
 @Component({
   selector: 'app-database-details',
@@ -29,7 +29,11 @@ export class DatabaseDetailsComponent implements OnInit {
     });
   }
 
-  details(item: TableItemModel): void {
+  tableDetails(item: TableItemModel): void {
     this.router.navigate([`database/${this.id}/table/${item.fullName}`]);
+  }
+
+  viewDetails(item: ViewItemModel): void {
+    this.router.navigate([`database/${this.id}/view/${item.fullName}`]);
   }
 }

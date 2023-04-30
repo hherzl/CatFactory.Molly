@@ -2,7 +2,6 @@
 using CatFactory.GUI.API.Models;
 using CatFactory.GUI.API.Models.Common;
 using CatFactory.GUI.API.Services;
-using CatFactory.ObjectRelationalMapping;
 using CatFactory.SqlServer;
 using CatFactory.SqlServer.Features;
 using Microsoft.AspNetCore.Mvc;
@@ -106,7 +105,7 @@ namespace CatFactory.GUI.API.Controllers
         }
 
         [HttpGet("database/{databaseName}/view/{viewName}")]
-        [ProducesResponseType(200, Type = typeof(ISingleResponse<View>))]
+        [ProducesResponseType(200, Type = typeof(ISingleResponse<ViewDetailsModel>))]
         [ProducesResponseType(404)]
         [ProducesResponseType(500)]
         public async Task<IActionResult> GetViewAsync(string databaseName, string viewName)
@@ -116,7 +115,17 @@ namespace CatFactory.GUI.API.Controllers
             if (view == null)
                 return NotFound();
 
-            var response = new SingleResponse<View>(view);
+            var model = new ViewDetailsModel
+            {
+                FullName = view.FullName,
+                Schema = view.Schema,
+                Name = view.Name,
+                Identity = new IdentityDetailsModel(view.Identity),
+                Columns = view.Columns.Select(item => new ColumnItemModel(item)).ToList(),
+                Indexes = view.Indexes?.Select(item => new IndexItemModel(item)).ToList()
+            };
+
+            var response = new SingleResponse<ViewDetailsModel>(model);
 
             return response.ToOkResult();
         }

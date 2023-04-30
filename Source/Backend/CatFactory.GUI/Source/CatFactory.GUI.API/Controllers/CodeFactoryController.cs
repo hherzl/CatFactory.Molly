@@ -22,7 +22,7 @@ namespace CatFactory.GUI.API.Controllers
         }
 
         [HttpPost("import-database")]
-        [ProducesResponseType(200)]
+        [ProducesResponseType(200, Type = typeof(IResponse))]
         [ProducesResponseType(500)]
         public async Task<IActionResult> ImportDatabaseAsync([FromBody] ImportDatabaseRequest request)
         {
@@ -33,13 +33,15 @@ namespace CatFactory.GUI.API.Controllers
 
             databaseFactory.DatabaseImportSettings.Name = request.Name;
 
+            var response = new Response();
+
             var database = await databaseFactory.ImportAsync();
 
             await _codeFactoryService.SerializeAsync(databaseFactory.DatabaseImportSettings);
 
             await _codeFactoryService.SerializeAsync(database);
 
-            return Ok();
+            return response.ToOkResult();
         }
 
         [HttpGet("database")]

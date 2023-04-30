@@ -23,10 +23,15 @@ export class MollyClientService {
     const url = `${this.endpoint}/database/${id}`;
     return this.http.get<SingleResponse<DatabaseDetailsModel>>(url);
   }
+
+  public importDatabase(request: ImportDatabaseRequest): Observable<Response> {
+    const url = `${this.endpoint}/import-database`;
+    return this.http.post<Response>(url, request);
+  }
 }
 
 export class DatabaseItemModel {
-  
+
   public name!: string;
   public dbms!: string;
   public tablesCount!: number;
@@ -77,4 +82,11 @@ export class DatabaseTypeMap {
   public parentDatabaseType!: string;
   public collation!: string;
   public importBag!: any;
+}
+
+export class ImportDatabaseRequest {
+  public name!: string;
+  public connectionString!: string;
+  public importTables!: boolean;
+  public importViews!: boolean;
 }

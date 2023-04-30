@@ -5,13 +5,13 @@ namespace CatFactory.GUI.API.Models
 {
     public static class Extensions
     {
-        public static IActionResult ToOkResult(this Response response)
+        public static IActionResult ToOkResult(this IResponse response)
             => new OkObjectResult(response);
 
-        public static IActionResult ToOkResult<TModel>(this ListResponse<TModel> response)
+        public static IActionResult ToOkResult<TModel>(this IListResponse<TModel> response)
             => new OkObjectResult(response);
 
-        public static IActionResult ToOkResult<TModel>(this SingleResponse<TModel> response)
+        public static IActionResult ToOkResult<TModel>(this ISingleResponse<TModel> response)
             => new OkObjectResult(response);
     }
 }

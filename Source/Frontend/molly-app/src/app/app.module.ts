@@ -16,17 +16,24 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 import { HomeComponent } from './components/home/home.component';
 import { DatabaseListComponent } from './components/database-list/database-list.component';
 import { DatabaseDetailsComponent } from './components/database-details/database-details.component';
+import { ImportDatabaseComponent } from './components/import-database/import-database.component';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
+import { MatRadioModule } from '@angular/material/radio';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     DatabaseListComponent,
-    DatabaseDetailsComponent
+    DatabaseDetailsComponent,
+    ImportDatabaseComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +50,12 @@ import { DatabaseDetailsComponent } from './components/database-details/database
     MatPaginatorModule,
     MatSortModule,
     MatCardModule,
-    MatDividerModule
+    MatDividerModule,
+    MatInputModule,
+    MatSelectModule,
+    MatRadioModule,
+    ReactiveFormsModule,
+    MatCheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]

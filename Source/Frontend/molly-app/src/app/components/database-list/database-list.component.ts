@@ -5,6 +5,7 @@ import { MatTable } from '@angular/material/table';
 import { DatabaseListDataSource } from './database-list-datasource';
 import { DatabaseItemModel, MollyClientService } from 'src/app/services/molly-client.service';
 import { ListResponse } from 'src/app/services/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-database-list',
@@ -18,11 +19,11 @@ export class DatabaseListComponent implements AfterViewInit {
   dataSource!: DatabaseListDataSource;
 
   /** Columns displayed in the table. Columns IDs can be added, removed, or reordered. */
-  displayedColumns = ['name', 'dbms', 'tablesCount'];
+  displayedColumns = ['name', 'dbms', 'tablesCount', 'viewsCount'];
 
   response!: ListResponse<DatabaseItemModel>;
 
-  constructor(private mollyClient: MollyClientService) {
+  constructor(private router: Router, private mollyClient: MollyClientService) {
   }
 
   ngAfterViewInit(): void {
@@ -34,5 +35,9 @@ export class DatabaseListComponent implements AfterViewInit {
       this.dataSource.paginator = this.paginator;
       this.table.dataSource = this.dataSource;
     });
+  }
+
+  details(item: DatabaseItemModel) {
+    this.router.navigate([`database/${item.name}`]);
   }
 }

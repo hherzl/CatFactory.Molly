@@ -69,7 +69,7 @@ export class DatabaseListDataSource extends DataSource<DatabaseItemModel> {
       const isAsc = this.sort?.direction === 'asc';
       switch (this.sort?.active) {
         case 'name': return compare(a.name, b.name, isAsc);
-        case 'id': return compare(+a.id, +b.id, isAsc);
+        case 'dbms': return compare(a.dbms, b.dbms, isAsc);
         default: return 0;
       }
     });

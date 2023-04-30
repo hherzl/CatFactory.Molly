@@ -1,0 +1,95 @@
+<h1>Database Details</h1>
+
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>{{ response?.model?.name }}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <div>
+            <span>Dbms: <strong>{{ response?.model?.dbms }}</strong></span>
+        </div>
+    </mat-card-content>
+</mat-card>
+<br>
+
+<h2>Tables ({{ response?.model?.tables?.length }})</h2>
+<mat-divider></mat-divider>
+
+<table class="tables">
+    <thead>
+        <tr>
+            <th>Schema</th>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Columns</th>
+            <th>Primary key</th>
+            <th>Identity</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of response?.model?.tables">
+            <td>{{ item.schema }}</td>
+            <td>{{ item.name }}</td>
+            <td>{{ item.type }}</td>
+            <td>{{ item.columnsCount }}</td>
+            <td>{{ item.primaryKey }}</td>
+            <td>{{ item.identity }}</td>
+        </tr>
+    </tbody>
+</table>
+<br>
+
+<h2>Views ({{ response?.model?.views?.length }})</h2>
+<mat-divider></mat-divider>
+
+<table class="views">
+    <thead>
+        <tr>
+            <th>Schema</th>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Columns</th>
+            <th>Identity</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of response?.model?.views">
+            <td>{{ item.schema }}</td>
+            <td>{{ item.name }}</td>
+            <td>{{ item.type }}</td>
+            <td>{{ item.columnsCount }}</td>
+            <td>{{ item.identity }}</td>
+        </tr>
+    </tbody>
+</table>
+<br>
+
+<h2>Database Type Maps ({{ response?.model?.databaseTypeMaps?.length }})</h2>
+<mat-divider></mat-divider>
+
+<table class="databaseTypeMaps">
+    <thead>
+        <tr>
+            <th>Database Type</th>
+            <th>Allows Length In Declaration</th>
+            <th>Clr Full Name Type</th>
+            <th>Clr Alias Type</th>
+            <th>Is User Defined</th>
+            <th>Parent Database Type</th>
+            <th>Collation</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of response?.model?.databaseTypeMaps">
+            <td>{{ item.databaseType }}</td>
+            <td>{{ item.allowsLengthInDeclaration }}</td>
+            <td>{{ item.clrFullNameType }}</td>
+            <td>{{ item.clrAliasType }}</td>
+            <td>{{ item.isUserDefined }}</td>
+            <td>{{ item.parentDatabaseType }}</td>
+            <td>{{ item.collation }}</td>
+        </tr>
+    </tbody>
+</table>
+
+<br>

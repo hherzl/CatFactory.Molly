@@ -9,6 +9,5 @@
         public int ColumnsCount { get; set; }
         public string PrimaryKey { get; set; }
         public string Identity { get; set; }
-        public string Details { get; } = "Details";
     }
 }

@@ -1,4 +1,5 @@
-﻿using CatFactory.GUI.API.Models;
+﻿using CatFactory.GUI.API.Filters;
+using CatFactory.GUI.API.Models;
 using CatFactory.GUI.API.Models.Common;
 using CatFactory.GUI.API.Services;
 using CatFactory.ObjectRelationalMapping;
@@ -10,6 +11,7 @@ namespace CatFactory.GUI.API.Controllers
 {
     [ApiController]
     [Route("api/v1")]
+    [TypeFilter(typeof(MollyExceptionFilter))]
     public class CodeFactoryController : ControllerBase
     {
         private readonly ILogger<CodeFactoryController> _logger;

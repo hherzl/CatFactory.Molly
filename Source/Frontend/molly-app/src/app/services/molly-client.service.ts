@@ -45,13 +45,13 @@ export class DatabaseItemModel {
   public dbms!: string;
   public tablesCount!: number;
   public viewsCount!: number;
-
-  public details!: string;
 }
 
 export class DatabaseDetailsModel {
   public name!: string;
   public dbms!: string;
+  public description!: string;
+
   public tables!: TableItemModel[];
   public views!: ViewItemModel[];
   public databaseTypeMaps!: DatabaseTypeMap[];
@@ -65,6 +65,7 @@ export class TableItemModel {
   public columnsCount!: number;
   public primaryKey!: string;
   public identity!: string;
+  public description!: string;
 }
 
 export class ViewItemModel {
@@ -74,6 +75,7 @@ export class ViewItemModel {
   public fullName!: string;
   public columnsCount!: number;
   public identity!: string;
+  public description!: string;
 }
 
 export class DatabaseTypeMap {
@@ -104,6 +106,7 @@ export class TableDetailsModel {
   public fullName!: string;
   public schema!: string;
   public name!: string;
+  public description!: string;
   public identity!: IdentityDetailsModel;
   public columns!: ColumnItemModel[];
   public primaryKey!: PrimaryKeyDetailsModel;
@@ -118,6 +121,7 @@ export class ViewDetailsModel {
   public fullName!: string;
   public schema!: string;
   public name!: string;
+  public description!: string;
   public identity!: IdentityDetailsModel;
   public columns!: ColumnItemModel[];
   public indexes!: IndexItemModel[];
@@ -136,6 +140,7 @@ export class ColumnItemModel {
   public prec!: number;
   public nullable!: number;
   public collation!: string;
+  public description!: string;
 }
 
 export class PrimaryKeyDetailsModel {

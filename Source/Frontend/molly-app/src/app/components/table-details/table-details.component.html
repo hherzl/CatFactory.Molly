@@ -7,9 +7,7 @@
         <mat-card-title>{{ response?.model?.fullName }}</mat-card-title>
     </mat-card-header>
     <mat-card-content>
-        <div>
-
-        </div>
+        <span>Description: <strong>{{ response?.model?.description }}</strong></span>
     </mat-card-content>
 </mat-card>
 
@@ -44,6 +42,7 @@
             <th>Prec</th>
             <th>Nullable</th>
             <th>Collation</th>
+            <th>Description</th>
         </tr>
     </thead>
     <tbody>
@@ -54,6 +53,7 @@
             <td>{{ item.prec }}</td>
             <td>{{ item.nullable }}</td>
             <td>{{ item.collation }}</td>
+            <td>{{ item.description }}</td>
         </tr>
     </tbody>
 </table>

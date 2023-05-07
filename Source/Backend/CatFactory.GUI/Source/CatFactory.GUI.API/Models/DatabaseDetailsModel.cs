@@ -6,6 +6,7 @@ namespace CatFactory.GUI.API.Models
     {
         public string Name { get; set; }
         public string Dbms { get; set; }
+        public string Description { get; set; }
 
         public IEnumerable<TableItemModel> Tables { get; set; }
         public IEnumerable<ViewItemModel> Views { get; set; }

@@ -46,7 +46,7 @@ namespace CatFactory.GUI.API.Services
             await File.WriteAllTextAsync(GetDatabaseImportSettingsFileName(dbImportSettings.Name), json, Encoding.Default);
         }
 
-        public async Task SerializeAsync(Database db)
+        public async Task SerializeAsync(SqlServerDatabase db)
         {
             if (!Directory.Exists(DatabasesDirectoryName))
                 Directory.CreateDirectory(DatabasesDirectoryName);
@@ -69,12 +69,12 @@ namespace CatFactory.GUI.API.Services
             {
                 var dbInJson = await File.ReadAllTextAsync(item, Encoding.Default);
 
-                var db = JsonSerializer.Deserialize<Database>(dbInJson);
+                var db = JsonSerializer.Deserialize<SqlServerDatabase>(dbInJson);
 
                 result.Add(new DatabaseItemModel
                 {
                     Name = db.Name,
-                    Dbms = "SQL Server",
+                    Dbms = db.Dbms,
                     TablesCount = db.Tables.Count,
                     ViewsCount = db.Views.Count
                 });
@@ -95,7 +95,7 @@ namespace CatFactory.GUI.API.Services
             return JsonSerializer.Deserialize<DatabaseImportSettings>(dbInJson);
         }
 
-        public async Task<Database> GetDatabaseAsync(string name)
+        public async Task<SqlServerDatabase> GetDatabaseAsync(string name)
         {
             var fileName = GetDatabaseFileName(name);
 
@@ -104,7 +104,7 @@ namespace CatFactory.GUI.API.Services
 
             var dbInJson = await File.ReadAllTextAsync(fileName, Encoding.Default);
 
-            return JsonSerializer.Deserialize<Database>(dbInJson);
+            return JsonSerializer.Deserialize<SqlServerDatabase>(dbInJson);
         }
 
         public async Task<Table> GetTableAsync(string databaseName, string tableName)
@@ -128,7 +128,8 @@ namespace CatFactory.GUI.API.Services
             return new DatabaseDetailsModel
             {
                 Name = db.Name,
-                Dbms = "SQL Server",
+                Dbms = db.Dbms,
+                Description = db.Description,
                 Tables = db.Tables.Select(item => new TableItemModel
                 {
                     Schema = item.Schema,
@@ -137,7 +138,8 @@ namespace CatFactory.GUI.API.Services
                     FullName = item.FullName,
                     ColumnsCount = item.Columns.Count,
                     PrimaryKey = item.PrimaryKey == null ? "" : string.Join(",", item.PrimaryKey.Key),
-                    Identity = item.Identity == null ? "" : item.Identity.Name
+                    Identity = item.Identity == null ? "" : item.Identity.Name,
+                    Description = item.Description
                 }).ToList(),
                 Views = db.Views.Select(item => new ViewItemModel
                 {
@@ -146,7 +148,8 @@ namespace CatFactory.GUI.API.Services
                     Type = item.Type,
                     FullName = item.FullName,
                     ColumnsCount = item.Columns.Count,
-                    Identity = item.Identity == null ? "" : item.Identity.Name
+                    Identity = item.Identity == null ? "" : item.Identity.Name,
+                    Description = item.Description
                 }).ToList(),
                 DatabaseTypeMaps = db.DatabaseTypeMaps
             };

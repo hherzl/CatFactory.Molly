@@ -1,4 +1,7 @@
 {
+  "ExtendedProperties": [],
+  "DefaultTypeMaps": [],
+  "Dbms": "SQL Server",
   "ServerName": "(local)",
   "Name": "WideWorldImporters",
   "Description": null,
@@ -11,7 +14,8 @@
       "Schema": "Sequences",
       "Name": "BuyingGroupID",
       "FullName": "Sequences.BuyingGroupID",
-      "Type": "SEQUENCE_OBJECT"
+      "Type": "SEQUENCE_OBJECT",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -19,7 +23,8 @@
       "Schema": "Sequences",
       "Name": "CityID",
       "FullName": "Sequences.CityID",
-      "Type": "SEQUENCE_OBJECT"
+      "Type": "SEQUENCE_OBJECT",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -27,7 +32,8 @@
       "Schema": "Sequences",
       "Name": "ColorID",
       "FullName": "Sequences.ColorID",
-      "Type": "SEQUENCE_OBJECT"
+      "Type": "SEQUENCE_OBJECT",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -35,7 +41,8 @@
       "Schema": "Sequences",
       "Name": "CountryID",
       "FullName": "Sequences.CountryID",
-      "Type": "SEQUENCE_OBJECT"
+      "Type": "SEQUENCE_OBJECT",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -43,7 +50,8 @@
       "Schema": "Sequences",
       "Name": "CustomerCategoryID",
       "FullName": "Sequences.CustomerCategoryID",
-      "Type": "SEQUENCE_OBJECT"
+      "Type": "SEQUENCE_OBJECT",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -51,7 +59,8 @@
       "Schema": "Sequences",
       "Name": "CustomerID",
       "FullName": "Sequences.CustomerID",
-      "Type": "SEQUENCE_OBJECT"
+      "Type": "SEQUENCE_OBJECT",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -59,7 +68,8 @@
       "Schema": "Sequences",
       "Name": "DeliveryMethodID",
       "FullName": "Sequences.DeliveryMethodID",
-      "Type": "SEQUENCE_OBJECT"
+      "Type": "SEQUENCE_OBJECT",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -67,7 +77,8 @@
       "Schema": "Sequences",
       "Name": "InvoiceID",
       "FullName": "Sequences.InvoiceID",
-      "Type": "SEQUENCE_OBJECT"
+      "Type": "SEQUENCE_OBJECT",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -75,7 +86,8 @@
       "Schema": "Sequences",
       "Name": "InvoiceLineID",
       "FullName": "Sequences.InvoiceLineID",
-      "Type": "SEQUENCE_OBJECT"
+      "Type": "SEQUENCE_OBJECT",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -83,7 +95,8 @@
       "Schema": "Sequences",
       "Name": "OrderID",
       "FullName": "Sequences.OrderID",
-      "Type": "SEQUENCE_OBJECT"
+      "Type": "SEQUENCE_OBJECT",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -91,7 +104,8 @@
       "Schema": "Sequences",
       "Name": "OrderLineID",
       "FullName": "Sequences.OrderLineID",
-      "Type": "SEQUENCE_OBJECT"
+      "Type": "SEQUENCE_OBJECT",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -99,7 +113,8 @@
       "Schema": "Sequences",
       "Name": "PackageTypeID",
       "FullName": "Sequences.PackageTypeID",
-      "Type": "SEQUENCE_OBJECT"
+      "Type": "SEQUENCE_OBJECT",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -107,7 +122,8 @@
       "Schema": "Sequences",
       "Name": "PaymentMethodID",
       "FullName": "Sequences.PaymentMethodID",
-      "Type": "SEQUENCE_OBJECT"
+      "Type": "SEQUENCE_OBJECT",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -115,7 +131,8 @@
       "Schema": "Sequences",
       "Name": "PersonID",
       "FullName": "Sequences.PersonID",
-      "Type": "SEQUENCE_OBJECT"
+      "Type": "SEQUENCE_OBJECT",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -123,7 +140,8 @@
       "Schema": "Sequences",
       "Name": "PurchaseOrderID",
       "FullName": "Sequences.PurchaseOrderID",
-      "Type": "SEQUENCE_OBJECT"
+      "Type": "SEQUENCE_OBJECT",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -131,7 +149,8 @@
       "Schema": "Sequences",
       "Name": "PurchaseOrderLineID",
       "FullName": "Sequences.PurchaseOrderLineID",
-      "Type": "SEQUENCE_OBJECT"
+      "Type": "SEQUENCE_OBJECT",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -139,7 +158,8 @@
       "Schema": "Sequences",
       "Name": "SpecialDealID",
       "FullName": "Sequences.SpecialDealID",
-      "Type": "SEQUENCE_OBJECT"
+      "Type": "SEQUENCE_OBJECT",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -147,7 +167,8 @@
       "Schema": "Sequences",
       "Name": "StateProvinceID",
       "FullName": "Sequences.StateProvinceID",
-      "Type": "SEQUENCE_OBJECT"
+      "Type": "SEQUENCE_OBJECT",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -155,7 +176,8 @@
       "Schema": "Sequences",
       "Name": "StockGroupID",
       "FullName": "Sequences.StockGroupID",
-      "Type": "SEQUENCE_OBJECT"
+      "Type": "SEQUENCE_OBJECT",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -163,7 +185,8 @@
       "Schema": "Sequences",
       "Name": "StockItemID",
       "FullName": "Sequences.StockItemID",
-      "Type": "SEQUENCE_OBJECT"
+      "Type": "SEQUENCE_OBJECT",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -171,7 +194,8 @@
       "Schema": "Sequences",
       "Name": "StockItemStockGroupID",
       "FullName": "Sequences.StockItemStockGroupID",
-      "Type": "SEQUENCE_OBJECT"
+      "Type": "SEQUENCE_OBJECT",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -179,7 +203,8 @@
       "Schema": "Sequences",
       "Name": "SupplierCategoryID",
       "FullName": "Sequences.SupplierCategoryID",
-      "Type": "SEQUENCE_OBJECT"
+      "Type": "SEQUENCE_OBJECT",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -187,7 +212,8 @@
       "Schema": "Sequences",
       "Name": "SupplierID",
       "FullName": "Sequences.SupplierID",
-      "Type": "SEQUENCE_OBJECT"
+      "Type": "SEQUENCE_OBJECT",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -195,7 +221,8 @@
       "Schema": "Sequences",
       "Name": "SystemParameterID",
       "FullName": "Sequences.SystemParameterID",
-      "Type": "SEQUENCE_OBJECT"
+      "Type": "SEQUENCE_OBJECT",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -203,7 +230,8 @@
       "Schema": "Sequences",
       "Name": "TransactionID",
       "FullName": "Sequences.TransactionID",
-      "Type": "SEQUENCE_OBJECT"
+      "Type": "SEQUENCE_OBJECT",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -211,7 +239,8 @@
       "Schema": "Sequences",
       "Name": "TransactionTypeID",
       "FullName": "Sequences.TransactionTypeID",
-      "Type": "SEQUENCE_OBJECT"
+      "Type": "SEQUENCE_OBJECT",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -219,7 +248,8 @@
       "Schema": "Application",
       "Name": "DetermineCustomerAccess",
       "FullName": "Application.DetermineCustomerAccess",
-      "Type": "SQL_INLINE_TABLE_VALUED_FUNCTION"
+      "Type": "SQL_INLINE_TABLE_VALUED_FUNCTION",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -227,7 +257,8 @@
       "Schema": "Website",
       "Name": "CalculateCustomerPrice",
       "FullName": "Website.CalculateCustomerPrice",
-      "Type": "SQL_SCALAR_FUNCTION"
+      "Type": "SQL_SCALAR_FUNCTION",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -235,7 +266,8 @@
       "Schema": "Application",
       "Name": "AddRoleMemberIfNonexistent",
       "FullName": "Application.AddRoleMemberIfNonexistent",
-      "Type": "SQL_STORED_PROCEDURE"
+      "Type": "SQL_STORED_PROCEDURE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -243,7 +275,8 @@
       "Schema": "Application",
       "Name": "Configuration_ApplyAuditing",
       "FullName": "Application.Configuration_ApplyAuditing",
-      "Type": "SQL_STORED_PROCEDURE"
+      "Type": "SQL_STORED_PROCEDURE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -251,7 +284,8 @@
       "Schema": "Application",
       "Name": "Configuration_ApplyColumnstoreIndexing",
       "FullName": "Application.Configuration_ApplyColumnstoreIndexing",
-      "Type": "SQL_STORED_PROCEDURE"
+      "Type": "SQL_STORED_PROCEDURE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -259,7 +293,8 @@
       "Schema": "Application",
       "Name": "Configuration_ApplyFullTextIndexing",
       "FullName": "Application.Configuration_ApplyFullTextIndexing",
-      "Type": "SQL_STORED_PROCEDURE"
+      "Type": "SQL_STORED_PROCEDURE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -267,7 +302,8 @@
       "Schema": "Application",
       "Name": "Configuration_ApplyPartitioning",
       "FullName": "Application.Configuration_ApplyPartitioning",
-      "Type": "SQL_STORED_PROCEDURE"
+      "Type": "SQL_STORED_PROCEDURE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -275,7 +311,8 @@
       "Schema": "Application",
       "Name": "Configuration_ApplyRowLevelSecurity",
       "FullName": "Application.Configuration_ApplyRowLevelSecurity",
-      "Type": "SQL_STORED_PROCEDURE"
+      "Type": "SQL_STORED_PROCEDURE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -283,7 +320,8 @@
       "Schema": "Application",
       "Name": "Configuration_ConfigureForEnterpriseEdition",
       "FullName": "Application.Configuration_ConfigureForEnterpriseEdition",
-      "Type": "SQL_STORED_PROCEDURE"
+      "Type": "SQL_STORED_PROCEDURE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -291,7 +329,8 @@
       "Schema": "Application",
       "Name": "Configuration_EnableInMemory",
       "FullName": "Application.Configuration_EnableInMemory",
-      "Type": "SQL_STORED_PROCEDURE"
+      "Type": "SQL_STORED_PROCEDURE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -299,7 +338,8 @@
       "Schema": "Application",
       "Name": "Configuration_RemoveAuditing",
       "FullName": "Application.Configuration_RemoveAuditing",
-      "Type": "SQL_STORED_PROCEDURE"
+      "Type": "SQL_STORED_PROCEDURE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -307,7 +347,8 @@
       "Schema": "Application",
       "Name": "Configuration_RemoveRowLevelSecurity",
       "FullName": "Application.Configuration_RemoveRowLevelSecurity",
-      "Type": "SQL_STORED_PROCEDURE"
+      "Type": "SQL_STORED_PROCEDURE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -315,7 +356,8 @@
       "Schema": "Application",
       "Name": "CreateRoleIfNonexistent",
       "FullName": "Application.CreateRoleIfNonexistent",
-      "Type": "SQL_STORED_PROCEDURE"
+      "Type": "SQL_STORED_PROCEDURE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -323,7 +365,8 @@
       "Schema": "DataLoadSimulation",
       "Name": "Configuration_ApplyDataLoadSimulationProcedures",
       "FullName": "DataLoadSimulation.Configuration_ApplyDataLoadSimulationProcedures",
-      "Type": "SQL_STORED_PROCEDURE"
+      "Type": "SQL_STORED_PROCEDURE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -331,7 +374,8 @@
       "Schema": "DataLoadSimulation",
       "Name": "Configuration_RemoveDataLoadSimulationProcedures",
       "FullName": "DataLoadSimulation.Configuration_RemoveDataLoadSimulationProcedures",
-      "Type": "SQL_STORED_PROCEDURE"
+      "Type": "SQL_STORED_PROCEDURE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -339,7 +383,8 @@
       "Schema": "DataLoadSimulation",
       "Name": "DeactivateTemporalTablesBeforeDataLoad",
       "FullName": "DataLoadSimulation.DeactivateTemporalTablesBeforeDataLoad",
-      "Type": "SQL_STORED_PROCEDURE"
+      "Type": "SQL_STORED_PROCEDURE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -347,7 +392,8 @@
       "Schema": "DataLoadSimulation",
       "Name": "PopulateDataToCurrentDate",
       "FullName": "DataLoadSimulation.PopulateDataToCurrentDate",
-      "Type": "SQL_STORED_PROCEDURE"
+      "Type": "SQL_STORED_PROCEDURE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -355,7 +401,8 @@
       "Schema": "DataLoadSimulation",
       "Name": "ReactivateTemporalTablesAfterDataLoad",
       "FullName": "DataLoadSimulation.ReactivateTemporalTablesAfterDataLoad",
-      "Type": "SQL_STORED_PROCEDURE"
+      "Type": "SQL_STORED_PROCEDURE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -363,7 +410,8 @@
       "Schema": "Integration",
       "Name": "GetCityUpdates",
       "FullName": "Integration.GetCityUpdates",
-      "Type": "SQL_STORED_PROCEDURE"
+      "Type": "SQL_STORED_PROCEDURE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -371,7 +419,8 @@
       "Schema": "Integration",
       "Name": "GetCustomerUpdates",
       "FullName": "Integration.GetCustomerUpdates",
-      "Type": "SQL_STORED_PROCEDURE"
+      "Type": "SQL_STORED_PROCEDURE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -379,7 +428,8 @@
       "Schema": "Integration",
       "Name": "GetEmployeeUpdates",
       "FullName": "Integration.GetEmployeeUpdates",
-      "Type": "SQL_STORED_PROCEDURE"
+      "Type": "SQL_STORED_PROCEDURE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -387,7 +437,8 @@
       "Schema": "Integration",
       "Name": "GetMovementUpdates",
       "FullName": "Integration.GetMovementUpdates",
-      "Type": "SQL_STORED_PROCEDURE"
+      "Type": "SQL_STORED_PROCEDURE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -395,7 +446,8 @@
       "Schema": "Integration",
       "Name": "GetOrderUpdates",
       "FullName": "Integration.GetOrderUpdates",
-      "Type": "SQL_STORED_PROCEDURE"
+      "Type": "SQL_STORED_PROCEDURE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -403,7 +455,8 @@
       "Schema": "Integration",
       "Name": "GetPaymentMethodUpdates",
       "FullName": "Integration.GetPaymentMethodUpdates",
-      "Type": "SQL_STORED_PROCEDURE"
+      "Type": "SQL_STORED_PROCEDURE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -411,7 +464,8 @@
       "Schema": "Integration",
       "Name": "GetPurchaseUpdates",
       "FullName": "Integration.GetPurchaseUpdates",
-      "Type": "SQL_STORED_PROCEDURE"
+      "Type": "SQL_STORED_PROCEDURE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -419,7 +473,8 @@
       "Schema": "Integration",
       "Name": "GetSaleUpdates",
       "FullName": "Integration.GetSaleUpdates",
-      "Type": "SQL_STORED_PROCEDURE"
+      "Type": "SQL_STORED_PROCEDURE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -427,7 +482,8 @@
       "Schema": "Integration",
       "Name": "GetStockHoldingUpdates",
       "FullName": "Integration.GetStockHoldingUpdates",
-      "Type": "SQL_STORED_PROCEDURE"
+      "Type": "SQL_STORED_PROCEDURE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -435,7 +491,8 @@
       "Schema": "Integration",
       "Name": "GetStockItemUpdates",
       "FullName": "Integration.GetStockItemUpdates",
-      "Type": "SQL_STORED_PROCEDURE"
+      "Type": "SQL_STORED_PROCEDURE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -443,7 +500,8 @@
       "Schema": "Integration",
       "Name": "GetSupplierUpdates",
       "FullName": "Integration.GetSupplierUpdates",
-      "Type": "SQL_STORED_PROCEDURE"
+      "Type": "SQL_STORED_PROCEDURE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -451,7 +509,8 @@
       "Schema": "Integration",
       "Name": "GetTransactionTypeUpdates",
       "FullName": "Integration.GetTransactionTypeUpdates",
-      "Type": "SQL_STORED_PROCEDURE"
+      "Type": "SQL_STORED_PROCEDURE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -459,7 +518,8 @@
       "Schema": "Integration",
       "Name": "GetTransactionUpdates",
       "FullName": "Integration.GetTransactionUpdates",
-      "Type": "SQL_STORED_PROCEDURE"
+      "Type": "SQL_STORED_PROCEDURE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -467,7 +527,8 @@
       "Schema": "Sequences",
       "Name": "ReseedAllSequences",
       "FullName": "Sequences.ReseedAllSequences",
-      "Type": "SQL_STORED_PROCEDURE"
+      "Type": "SQL_STORED_PROCEDURE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -475,7 +536,8 @@
       "Schema": "Sequences",
       "Name": "ReseedSequenceBeyondTableValues",
       "FullName": "Sequences.ReseedSequenceBeyondTableValues",
-      "Type": "SQL_STORED_PROCEDURE"
+      "Type": "SQL_STORED_PROCEDURE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -483,7 +545,8 @@
       "Schema": "Website",
       "Name": "ActivateWebsiteLogon",
       "FullName": "Website.ActivateWebsiteLogon",
-      "Type": "SQL_STORED_PROCEDURE"
+      "Type": "SQL_STORED_PROCEDURE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -491,7 +554,8 @@
       "Schema": "Website",
       "Name": "ChangePassword",
       "FullName": "Website.ChangePassword",
-      "Type": "SQL_STORED_PROCEDURE"
+      "Type": "SQL_STORED_PROCEDURE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -499,7 +563,8 @@
       "Schema": "Website",
       "Name": "InsertCustomerOrders",
       "FullName": "Website.InsertCustomerOrders",
-      "Type": "SQL_STORED_PROCEDURE"
+      "Type": "SQL_STORED_PROCEDURE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -507,7 +572,8 @@
       "Schema": "Website",
       "Name": "InvoiceCustomerOrders",
       "FullName": "Website.InvoiceCustomerOrders",
-      "Type": "SQL_STORED_PROCEDURE"
+      "Type": "SQL_STORED_PROCEDURE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -515,7 +581,8 @@
       "Schema": "Website",
       "Name": "RecordColdRoomTemperatures",
       "FullName": "Website.RecordColdRoomTemperatures",
-      "Type": "SQL_STORED_PROCEDURE"
+      "Type": "SQL_STORED_PROCEDURE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -523,7 +590,8 @@
       "Schema": "Website",
       "Name": "RecordVehicleTemperature",
       "FullName": "Website.RecordVehicleTemperature",
-      "Type": "SQL_STORED_PROCEDURE"
+      "Type": "SQL_STORED_PROCEDURE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -531,7 +599,8 @@
       "Schema": "Website",
       "Name": "SearchForCustomers",
       "FullName": "Website.SearchForCustomers",
-      "Type": "SQL_STORED_PROCEDURE"
+      "Type": "SQL_STORED_PROCEDURE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -539,7 +608,8 @@
       "Schema": "Website",
       "Name": "SearchForPeople",
       "FullName": "Website.SearchForPeople",
-      "Type": "SQL_STORED_PROCEDURE"
+      "Type": "SQL_STORED_PROCEDURE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -547,7 +617,8 @@
       "Schema": "Website",
       "Name": "SearchForStockItems",
       "FullName": "Website.SearchForStockItems",
-      "Type": "SQL_STORED_PROCEDURE"
+      "Type": "SQL_STORED_PROCEDURE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -555,7 +626,8 @@
       "Schema": "Website",
       "Name": "SearchForStockItemsByTags",
       "FullName": "Website.SearchForStockItemsByTags",
-      "Type": "SQL_STORED_PROCEDURE"
+      "Type": "SQL_STORED_PROCEDURE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -563,7 +635,8 @@
       "Schema": "Website",
       "Name": "SearchForSuppliers",
       "FullName": "Website.SearchForSuppliers",
-      "Type": "SQL_STORED_PROCEDURE"
+      "Type": "SQL_STORED_PROCEDURE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -571,7 +644,8 @@
       "Schema": "Application",
       "Name": "Cities",
       "FullName": "Application.Cities",
-      "Type": "USER_TABLE"
+      "Type": "USER_TABLE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -579,7 +653,8 @@
       "Schema": "Application",
       "Name": "Cities_Archive",
       "FullName": "Application.Cities_Archive",
-      "Type": "USER_TABLE"
+      "Type": "USER_TABLE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -587,7 +662,8 @@
       "Schema": "Application",
       "Name": "Countries",
       "FullName": "Application.Countries",
-      "Type": "USER_TABLE"
+      "Type": "USER_TABLE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -595,7 +671,8 @@
       "Schema": "Application",
       "Name": "Countries_Archive",
       "FullName": "Application.Countries_Archive",
-      "Type": "USER_TABLE"
+      "Type": "USER_TABLE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -603,7 +680,8 @@
       "Schema": "Application",
       "Name": "DeliveryMethods",
       "FullName": "Application.DeliveryMethods",
-      "Type": "USER_TABLE"
+      "Type": "USER_TABLE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -611,7 +689,8 @@
       "Schema": "Application",
       "Name": "DeliveryMethods_Archive",
       "FullName": "Application.DeliveryMethods_Archive",
-      "Type": "USER_TABLE"
+      "Type": "USER_TABLE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -619,7 +698,8 @@
       "Schema": "Application",
       "Name": "PaymentMethods",
       "FullName": "Application.PaymentMethods",
-      "Type": "USER_TABLE"
+      "Type": "USER_TABLE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -627,7 +707,8 @@
       "Schema": "Application",
       "Name": "PaymentMethods_Archive",
       "FullName": "Application.PaymentMethods_Archive",
-      "Type": "USER_TABLE"
+      "Type": "USER_TABLE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -635,7 +716,8 @@
       "Schema": "Application",
       "Name": "People",
       "FullName": "Application.People",
-      "Type": "USER_TABLE"
+      "Type": "USER_TABLE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -643,7 +725,8 @@
       "Schema": "Application",
       "Name": "People_Archive",
       "FullName": "Application.People_Archive",
-      "Type": "USER_TABLE"
+      "Type": "USER_TABLE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -651,7 +734,8 @@
       "Schema": "Application",
       "Name": "StateProvinces",
       "FullName": "Application.StateProvinces",
-      "Type": "USER_TABLE"
+      "Type": "USER_TABLE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -659,7 +743,8 @@
       "Schema": "Application",
       "Name": "StateProvinces_Archive",
       "FullName": "Application.StateProvinces_Archive",
-      "Type": "USER_TABLE"
+      "Type": "USER_TABLE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -667,7 +752,8 @@
       "Schema": "Application",
       "Name": "SystemParameters",
       "FullName": "Application.SystemParameters",
-      "Type": "USER_TABLE"
+      "Type": "USER_TABLE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -675,7 +761,8 @@
       "Schema": "Application",
       "Name": "TransactionTypes",
       "FullName": "Application.TransactionTypes",
-      "Type": "USER_TABLE"
+      "Type": "USER_TABLE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -683,7 +770,8 @@
       "Schema": "Application",
       "Name": "TransactionTypes_Archive",
       "FullName": "Application.TransactionTypes_Archive",
-      "Type": "USER_TABLE"
+      "Type": "USER_TABLE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -691,7 +779,8 @@
       "Schema": "Purchasing",
       "Name": "PurchaseOrderLines",
       "FullName": "Purchasing.PurchaseOrderLines",
-      "Type": "USER_TABLE"
+      "Type": "USER_TABLE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -699,7 +788,8 @@
       "Schema": "Purchasing",
       "Name": "PurchaseOrders",
       "FullName": "Purchasing.PurchaseOrders",
-      "Type": "USER_TABLE"
+      "Type": "USER_TABLE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -707,7 +797,8 @@
       "Schema": "Purchasing",
       "Name": "SupplierCategories",
       "FullName": "Purchasing.SupplierCategories",
-      "Type": "USER_TABLE"
+      "Type": "USER_TABLE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -715,7 +806,8 @@
       "Schema": "Purchasing",
       "Name": "SupplierCategories_Archive",
       "FullName": "Purchasing.SupplierCategories_Archive",
-      "Type": "USER_TABLE"
+      "Type": "USER_TABLE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -723,7 +815,8 @@
       "Schema": "Purchasing",
       "Name": "Suppliers",
       "FullName": "Purchasing.Suppliers",
-      "Type": "USER_TABLE"
+      "Type": "USER_TABLE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -731,7 +824,8 @@
       "Schema": "Purchasing",
       "Name": "Suppliers_Archive",
       "FullName": "Purchasing.Suppliers_Archive",
-      "Type": "USER_TABLE"
+      "Type": "USER_TABLE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -739,7 +833,8 @@
       "Schema": "Purchasing",
       "Name": "SupplierTransactions",
       "FullName": "Purchasing.SupplierTransactions",
-      "Type": "USER_TABLE"
+      "Type": "USER_TABLE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -747,7 +842,8 @@
       "Schema": "Sales",
       "Name": "BuyingGroups",
       "FullName": "Sales.BuyingGroups",
-      "Type": "USER_TABLE"
+      "Type": "USER_TABLE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -755,7 +851,8 @@
       "Schema": "Sales",
       "Name": "BuyingGroups_Archive",
       "FullName": "Sales.BuyingGroups_Archive",
-      "Type": "USER_TABLE"
+      "Type": "USER_TABLE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -763,7 +860,8 @@
       "Schema": "Sales",
       "Name": "CustomerCategories",
       "FullName": "Sales.CustomerCategories",
-      "Type": "USER_TABLE"
+      "Type": "USER_TABLE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -771,7 +869,8 @@
       "Schema": "Sales",
       "Name": "CustomerCategories_Archive",
       "FullName": "Sales.CustomerCategories_Archive",
-      "Type": "USER_TABLE"
+      "Type": "USER_TABLE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -779,7 +878,8 @@
       "Schema": "Sales",
       "Name": "Customers",
       "FullName": "Sales.Customers",
-      "Type": "USER_TABLE"
+      "Type": "USER_TABLE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -787,7 +887,8 @@
       "Schema": "Sales",
       "Name": "Customers_Archive",
       "FullName": "Sales.Customers_Archive",
-      "Type": "USER_TABLE"
+      "Type": "USER_TABLE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -795,7 +896,8 @@
       "Schema": "Sales",
       "Name": "CustomerTransactions",
       "FullName": "Sales.CustomerTransactions",
-      "Type": "USER_TABLE"
+      "Type": "USER_TABLE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -803,7 +905,8 @@
       "Schema": "Sales",
       "Name": "InvoiceLines",
       "FullName": "Sales.InvoiceLines",
-      "Type": "USER_TABLE"
+      "Type": "USER_TABLE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -811,7 +914,8 @@
       "Schema": "Sales",
       "Name": "Invoices",
       "FullName": "Sales.Invoices",
-      "Type": "USER_TABLE"
+      "Type": "USER_TABLE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -819,7 +923,8 @@
       "Schema": "Sales",
       "Name": "OrderLines",
       "FullName": "Sales.OrderLines",
-      "Type": "USER_TABLE"
+      "Type": "USER_TABLE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -827,7 +932,8 @@
       "Schema": "Sales",
       "Name": "Orders",
       "FullName": "Sales.Orders",
-      "Type": "USER_TABLE"
+      "Type": "USER_TABLE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -835,7 +941,8 @@
       "Schema": "Sales",
       "Name": "SpecialDeals",
       "FullName": "Sales.SpecialDeals",
-      "Type": "USER_TABLE"
+      "Type": "USER_TABLE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -843,7 +950,8 @@
       "Schema": "Warehouse",
       "Name": "ColdRoomTemperatures",
       "FullName": "Warehouse.ColdRoomTemperatures",
-      "Type": "USER_TABLE"
+      "Type": "USER_TABLE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -851,7 +959,8 @@
       "Schema": "Warehouse",
       "Name": "ColdRoomTemperatures_Archive",
       "FullName": "Warehouse.ColdRoomTemperatures_Archive",
-      "Type": "USER_TABLE"
+      "Type": "USER_TABLE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -859,7 +968,8 @@
       "Schema": "Warehouse",
       "Name": "Colors",
       "FullName": "Warehouse.Colors",
-      "Type": "USER_TABLE"
+      "Type": "USER_TABLE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -867,7 +977,8 @@
       "Schema": "Warehouse",
       "Name": "Colors_Archive",
       "FullName": "Warehouse.Colors_Archive",
-      "Type": "USER_TABLE"
+      "Type": "USER_TABLE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -875,7 +986,8 @@
       "Schema": "Warehouse",
       "Name": "PackageTypes",
       "FullName": "Warehouse.PackageTypes",
-      "Type": "USER_TABLE"
+      "Type": "USER_TABLE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -883,7 +995,8 @@
       "Schema": "Warehouse",
       "Name": "PackageTypes_Archive",
       "FullName": "Warehouse.PackageTypes_Archive",
-      "Type": "USER_TABLE"
+      "Type": "USER_TABLE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -891,7 +1004,8 @@
       "Schema": "Warehouse",
       "Name": "StockGroups",
       "FullName": "Warehouse.StockGroups",
-      "Type": "USER_TABLE"
+      "Type": "USER_TABLE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -899,7 +1013,8 @@
       "Schema": "Warehouse",
       "Name": "StockGroups_Archive",
       "FullName": "Warehouse.StockGroups_Archive",
-      "Type": "USER_TABLE"
+      "Type": "USER_TABLE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -907,7 +1022,8 @@
       "Schema": "Warehouse",
       "Name": "StockItemHoldings",
       "FullName": "Warehouse.StockItemHoldings",
-      "Type": "USER_TABLE"
+      "Type": "USER_TABLE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -915,7 +1031,8 @@
       "Schema": "Warehouse",
       "Name": "StockItems",
       "FullName": "Warehouse.StockItems",
-      "Type": "USER_TABLE"
+      "Type": "USER_TABLE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -923,7 +1040,8 @@
       "Schema": "Warehouse",
       "Name": "StockItems_Archive",
       "FullName": "Warehouse.StockItems_Archive",
-      "Type": "USER_TABLE"
+      "Type": "USER_TABLE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -931,7 +1049,8 @@
       "Schema": "Warehouse",
       "Name": "StockItemStockGroups",
       "FullName": "Warehouse.StockItemStockGroups",
-      "Type": "USER_TABLE"
+      "Type": "USER_TABLE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -939,7 +1058,8 @@
       "Schema": "Warehouse",
       "Name": "StockItemTransactions",
       "FullName": "Warehouse.StockItemTransactions",
-      "Type": "USER_TABLE"
+      "Type": "USER_TABLE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -947,7 +1067,8 @@
       "Schema": "Warehouse",
       "Name": "VehicleTemperatures",
       "FullName": "Warehouse.VehicleTemperatures",
-      "Type": "USER_TABLE"
+      "Type": "USER_TABLE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -955,7 +1076,8 @@
       "Schema": "Website",
       "Name": "Customers",
       "FullName": "Website.Customers",
-      "Type": "VIEW"
+      "Type": "VIEW",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -963,7 +1085,8 @@
       "Schema": "Website",
       "Name": "Suppliers",
       "FullName": "Website.Suppliers",
-      "Type": "VIEW"
+      "Type": "VIEW",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -971,7 +1094,8 @@
       "Schema": "Website",
       "Name": "VehicleTemperatures",
       "FullName": "Website.VehicleTemperatures",
-      "Type": "VIEW"
+      "Type": "VIEW",
+      "Description": null
     }
   ],
   "DatabaseTypeMaps": [
@@ -1613,7 +1737,6 @@
           }
         }
       ],
-      "Description": null,
       "Identity": null,
       "Indexes": [
         {
@@ -1749,7 +1872,8 @@
       "Schema": "Application",
       "Name": "Cities",
       "FullName": "Application.Cities",
-      "Type": "table"
+      "Type": "table",
+      "Description": null
     },
     {
       "Columns": [
@@ -1890,7 +2014,6 @@
           }
         }
       ],
-      "Description": null,
       "Identity": null,
       "Indexes": [
         {
@@ -1917,7 +2040,8 @@
       "Schema": "Application",
       "Name": "Cities_Archive",
       "FullName": "Application.Cities_Archive",
-      "Type": "table"
+      "Type": "table",
+      "Description": null
     },
     {
       "Columns": [
@@ -2161,7 +2285,6 @@
           }
         }
       ],
-      "Description": null,
       "Identity": null,
       "Indexes": [
         {
@@ -2292,7 +2415,8 @@
       "Schema": "Application",
       "Name": "Countries",
       "FullName": "Application.Countries",
-      "Type": "table"
+      "Type": "table",
+      "Description": null
     },
     {
       "Columns": [
@@ -2535,7 +2659,6 @@
           }
         }
       ],
-      "Description": null,
       "Identity": null,
       "Indexes": [
         {
@@ -2562,7 +2685,8 @@
       "Schema": "Application",
       "Name": "Countries_Archive",
       "FullName": "Application.Countries_Archive",
-      "Type": "table"
+      "Type": "table",
+      "Description": null
     },
     {
       "Columns": [
@@ -2653,7 +2777,6 @@
           }
         }
       ],
-      "Description": null,
       "Identity": null,
       "Indexes": [
         {
@@ -2773,7 +2896,8 @@
       "Schema": "Application",
       "Name": "DeliveryMethods",
       "FullName": "Application.DeliveryMethods",
-      "Type": "table"
+      "Type": "table",
+      "Description": null
     },
     {
       "Columns": [
@@ -2863,7 +2987,6 @@
           }
         }
       ],
-      "Description": null,
       "Identity": null,
       "Indexes": [
         {
@@ -2890,7 +3013,8 @@
       "Schema": "Application",
       "Name": "DeliveryMethods_Archive",
       "FullName": "Application.DeliveryMethods_Archive",
-      "Type": "table"
+      "Type": "table",
+      "Description": null
     },
     {
       "Columns": [
@@ -2981,7 +3105,6 @@
           }
         }
       ],
-      "Description": null,
       "Identity": null,
       "Indexes": [
         {
@@ -3095,7 +3218,8 @@
       "Schema": "Application",
       "Name": "PaymentMethods",
       "FullName": "Application.PaymentMethods",
-      "Type": "table"
+      "Type": "table",
+      "Description": null
     },
     {
       "Columns": [
@@ -3185,7 +3309,6 @@
           }
         }
       ],
-      "Description": null,
       "Identity": null,
       "Indexes": [
         {
@@ -3212,7 +3335,8 @@
       "Schema": "Application",
       "Name": "PaymentMethods_Archive",
       "FullName": "Application.PaymentMethods_Archive",
-      "Type": "table"
+      "Type": "table",
+      "Description": null
     },
     {
       "Columns": [
@@ -3575,7 +3699,6 @@
           }
         }
       ],
-      "Description": null,
       "Identity": null,
       "Indexes": [
         {
@@ -3805,7 +3928,8 @@
       "Schema": "Application",
       "Name": "People",
       "FullName": "Application.People",
-      "Type": "table"
+      "Type": "table",
+      "Description": null
     },
     {
       "Columns": [
@@ -4167,7 +4291,6 @@
           }
         }
       ],
-      "Description": null,
       "Identity": null,
       "Indexes": [
         {
@@ -4194,7 +4317,8 @@
       "Schema": "Application",
       "Name": "People_Archive",
       "FullName": "Application.People_Archive",
-      "Type": "table"
+      "Type": "table",
+      "Description": null
     },
     {
       "Columns": [
@@ -4370,7 +4494,6 @@
           }
         }
       ],
-      "Description": null,
       "Identity": null,
       "Indexes": [
         {
@@ -4517,7 +4640,8 @@
       "Schema": "Application",
       "Name": "StateProvinces",
       "FullName": "Application.StateProvinces",
-      "Type": "table"
+      "Type": "table",
+      "Description": null
     },
     {
       "Columns": [
@@ -4692,7 +4816,6 @@
           }
         }
       ],
-      "Description": null,
       "Identity": null,
       "Indexes": [
         {
@@ -4719,7 +4842,8 @@
       "Schema": "Application",
       "Name": "StateProvinces_Archive",
       "FullName": "Application.StateProvinces_Archive",
-      "Type": "table"
+      "Type": "table",
+      "Description": null
     },
     {
       "Columns": [
@@ -4947,7 +5071,6 @@
           }
         }
       ],
-      "Description": null,
       "Identity": null,
       "Indexes": [
         {
@@ -5111,7 +5234,8 @@
       "Schema": "Application",
       "Name": "SystemParameters",
       "FullName": "Application.SystemParameters",
-      "Type": "table"
+      "Type": "table",
+      "Description": null
     },
     {
       "Columns": [
@@ -5202,7 +5326,6 @@
           }
         }
       ],
-      "Description": null,
       "Identity": null,
       "Indexes": [
         {
@@ -5319,7 +5442,8 @@
       "Schema": "Application",
       "Name": "TransactionTypes",
       "FullName": "Application.TransactionTypes",
-      "Type": "table"
+      "Type": "table",
+      "Description": null
     },
     {
       "Columns": [
@@ -5409,7 +5533,6 @@
           }
         }
       ],
-      "Description": null,
       "Identity": null,
       "Indexes": [
         {
@@ -5436,7 +5559,8 @@
       "Schema": "Application",
       "Name": "TransactionTypes_Archive",
       "FullName": "Application.TransactionTypes_Archive",
-      "Type": "table"
+      "Type": "table",
+      "Description": null
     },
     {
       "Columns": [
@@ -5647,7 +5771,6 @@
           }
         }
       ],
-      "Description": null,
       "Identity": null,
       "Indexes": [
         {
@@ -5847,7 +5970,8 @@
       "Schema": "Purchasing",
       "Name": "PurchaseOrderLines",
       "FullName": "Purchasing.PurchaseOrderLines",
-      "Type": "table"
+      "Type": "table",
+      "Description": null
     },
     {
       "Columns": [
@@ -6058,7 +6182,6 @@
           }
         }
       ],
-      "Description": null,
       "Identity": null,
       "Indexes": [
         {
@@ -6263,7 +6386,8 @@
       "Schema": "Purchasing",
       "Name": "PurchaseOrders",
       "FullName": "Purchasing.PurchaseOrders",
-      "Type": "table"
+      "Type": "table",
+      "Description": null
     },
     {
       "Columns": [
@@ -6354,7 +6478,6 @@
           }
         }
       ],
-      "Description": null,
       "Identity": null,
       "Indexes": [
         {
@@ -6465,7 +6588,8 @@
       "Schema": "Purchasing",
       "Name": "SupplierCategories",
       "FullName": "Purchasing.SupplierCategories",
-      "Type": "table"
+      "Type": "table",
+      "Description": null
     },
     {
       "Columns": [
@@ -6555,7 +6679,6 @@
           }
         }
       ],
-      "Description": null,
       "Identity": null,
       "Indexes": [
         {
@@ -6582,7 +6705,8 @@
       "Schema": "Purchasing",
       "Name": "SupplierCategories_Archive",
       "FullName": "Purchasing.SupplierCategories_Archive",
-      "Type": "table"
+      "Type": "table",
+      "Description": null
     },
     {
       "Columns": [
@@ -7081,7 +7205,6 @@
           }
         }
       ],
-      "Description": null,
       "Identity": null,
       "Indexes": [
         {
@@ -7387,7 +7510,8 @@
       "Schema": "Purchasing",
       "Name": "Suppliers",
       "FullName": "Purchasing.Suppliers",
-      "Type": "table"
+      "Type": "table",
+      "Description": null
     },
     {
       "Columns": [
@@ -7885,7 +8009,6 @@
           }
         }
       ],
-      "Description": null,
       "Identity": null,
       "Indexes": [
         {
@@ -7912,7 +8035,8 @@
       "Schema": "Purchasing",
       "Name": "Suppliers_Archive",
       "FullName": "Purchasing.Suppliers_Archive",
-      "Type": "table"
+      "Type": "table",
+      "Description": null
     },
     {
       "Columns": [
@@ -8174,7 +8298,6 @@
           }
         }
       ],
-      "Description": null,
       "Identity": null,
       "Indexes": [
         {
@@ -8410,7 +8533,8 @@
       "Schema": "Purchasing",
       "Name": "SupplierTransactions",
       "FullName": "Purchasing.SupplierTransactions",
-      "Type": "table"
+      "Type": "table",
+      "Description": null
     },
     {
       "Columns": [
@@ -8501,7 +8625,6 @@
           }
         }
       ],
-      "Description": null,
       "Identity": null,
       "Indexes": [
         {
@@ -8615,7 +8738,8 @@
       "Schema": "Sales",
       "Name": "BuyingGroups",
       "FullName": "Sales.BuyingGroups",
-      "Type": "table"
+      "Type": "table",
+      "Description": null
     },
     {
       "Columns": [
@@ -8705,7 +8829,6 @@
           }
         }
       ],
-      "Description": null,
       "Identity": null,
       "Indexes": [
         {
@@ -8732,7 +8855,8 @@
       "Schema": "Sales",
       "Name": "BuyingGroups_Archive",
       "FullName": "Sales.BuyingGroups_Archive",
-      "Type": "table"
+      "Type": "table",
+      "Description": null
     },
     {
       "Columns": [
@@ -8823,7 +8947,6 @@
           }
         }
       ],
-      "Description": null,
       "Identity": null,
       "Indexes": [
         {
@@ -8937,7 +9060,8 @@
       "Schema": "Sales",
       "Name": "CustomerCategories",
       "FullName": "Sales.CustomerCategories",
-      "Type": "table"
+      "Type": "table",
+      "Description": null
     },
     {
       "Columns": [
@@ -9027,7 +9151,6 @@
           }
         }
       ],
-      "Description": null,
       "Identity": null,
       "Indexes": [
         {
@@ -9054,7 +9177,8 @@
       "Schema": "Sales",
       "Name": "CustomerCategories_Archive",
       "FullName": "Sales.CustomerCategories_Archive",
-      "Type": "table"
+      "Type": "table",
+      "Description": null
     },
     {
       "Columns": [
@@ -9587,7 +9711,6 @@
           }
         }
       ],
-      "Description": null,
       "Identity": null,
       "Indexes": [
         {
@@ -9964,7 +10087,8 @@
       "Schema": "Sales",
       "Name": "Customers",
       "FullName": "Sales.Customers",
-      "Type": "table"
+      "Type": "table",
+      "Description": null
     },
     {
       "Columns": [
@@ -10496,7 +10620,6 @@
           }
         }
       ],
-      "Description": null,
       "Identity": null,
       "Indexes": [
         {
@@ -10523,7 +10646,8 @@
       "Schema": "Sales",
       "Name": "Customers_Archive",
       "FullName": "Sales.Customers_Archive",
-      "Type": "table"
+      "Type": "table",
+      "Description": null
     },
     {
       "Columns": [
@@ -10768,7 +10892,6 @@
           }
         }
       ],
-      "Description": null,
       "Identity": null,
       "Indexes": [
         {
@@ -11004,7 +11127,8 @@
       "Schema": "Sales",
       "Name": "CustomerTransactions",
       "FullName": "Sales.CustomerTransactions",
-      "Type": "table"
+      "Type": "table",
+      "Description": null
     },
     {
       "Columns": [
@@ -11232,7 +11356,6 @@
           }
         }
       ],
-      "Description": null,
       "Identity": null,
       "Indexes": [
         {
@@ -11432,7 +11555,8 @@
       "Schema": "Sales",
       "Name": "InvoiceLines",
       "FullName": "Sales.InvoiceLines",
-      "Type": "table"
+      "Type": "table",
+      "Description": null
     },
     {
       "Columns": [
@@ -11864,7 +11988,6 @@
           }
         }
       ],
-      "Description": null,
       "Identity": null,
       "Indexes": [
         {
@@ -12246,7 +12369,8 @@
       "Schema": "Sales",
       "Name": "Invoices",
       "FullName": "Sales.Invoices",
-      "Type": "table"
+      "Type": "table",
+      "Description": null
     },
     {
       "Columns": [
@@ -12457,7 +12581,6 @@
           }
         }
       ],
-      "Description": null,
       "Identity": null,
       "Indexes": [
         {
@@ -12667,7 +12790,8 @@
       "Schema": "Sales",
       "Name": "OrderLines",
       "FullName": "Sales.OrderLines",
-      "Type": "table"
+      "Type": "table",
+      "Description": null
     },
     {
       "Columns": [
@@ -12946,7 +13070,6 @@
           }
         }
       ],
-      "Description": null,
       "Identity": null,
       "Indexes": [
         {
@@ -13208,7 +13331,8 @@
       "Schema": "Sales",
       "Name": "Orders",
       "FullName": "Sales.Orders",
-      "Type": "table"
+      "Type": "table",
+      "Description": null
     },
     {
       "Columns": [
@@ -13453,7 +13577,6 @@
           }
         }
       ],
-      "Description": null,
       "Identity": null,
       "Indexes": [
         {
@@ -13743,7 +13866,8 @@
       "Schema": "Sales",
       "Name": "SpecialDeals",
       "FullName": "Sales.SpecialDeals",
-      "Type": "table"
+      "Type": "table",
+      "Description": null
     },
     {
       "Columns": [
@@ -13850,7 +13974,6 @@
           }
         }
       ],
-      "Description": null,
       "Identity": {
         "Name": "ColdRoomTemperatureID",
         "Seed": 1,
@@ -13901,7 +14024,8 @@
       "Schema": "Warehouse",
       "Name": "ColdRoomTemperatures",
       "FullName": "Warehouse.ColdRoomTemperatures",
-      "Type": "table"
+      "Type": "table",
+      "Description": null
     },
     {
       "Columns": [
@@ -14008,7 +14132,6 @@
           }
         }
       ],
-      "Description": null,
       "Identity": null,
       "Indexes": [
         {
@@ -14035,7 +14158,8 @@
       "Schema": "Warehouse",
       "Name": "ColdRoomTemperatures_Archive",
       "FullName": "Warehouse.ColdRoomTemperatures_Archive",
-      "Type": "table"
+      "Type": "table",
+      "Description": null
     },
     {
       "Columns": [
@@ -14126,7 +14250,6 @@
           }
         }
       ],
-      "Description": null,
       "Identity": null,
       "Indexes": [
         {
@@ -14237,7 +14360,8 @@
       "Schema": "Warehouse",
       "Name": "Colors",
       "FullName": "Warehouse.Colors",
-      "Type": "table"
+      "Type": "table",
+      "Description": null
     },
     {
       "Columns": [
@@ -14327,7 +14451,6 @@
           }
         }
       ],
-      "Description": null,
       "Identity": null,
       "Indexes": [
         {
@@ -14354,7 +14477,8 @@
       "Schema": "Warehouse",
       "Name": "Colors_Archive",
       "FullName": "Warehouse.Colors_Archive",
-      "Type": "table"
+      "Type": "table",
+      "Description": null
     },
     {
       "Columns": [
@@ -14445,7 +14569,6 @@
           }
         }
       ],
-      "Description": null,
       "Identity": null,
       "Indexes": [
         {
@@ -14568,7 +14691,8 @@
       "Schema": "Warehouse",
       "Name": "PackageTypes",
       "FullName": "Warehouse.PackageTypes",
-      "Type": "table"
+      "Type": "table",
+      "Description": null
     },
     {
       "Columns": [
@@ -14658,7 +14782,6 @@
           }
         }
       ],
-      "Description": null,
       "Identity": null,
       "Indexes": [
         {
@@ -14685,7 +14808,8 @@
       "Schema": "Warehouse",
       "Name": "PackageTypes_Archive",
       "FullName": "Warehouse.PackageTypes_Archive",
-      "Type": "table"
+      "Type": "table",
+      "Description": null
     },
     {
       "Columns": [
@@ -14776,7 +14900,6 @@
           }
         }
       ],
-      "Description": null,
       "Identity": null,
       "Indexes": [
         {
@@ -14890,7 +15013,8 @@
       "Schema": "Warehouse",
       "Name": "StockGroups",
       "FullName": "Warehouse.StockGroups",
-      "Type": "table"
+      "Type": "table",
+      "Description": null
     },
     {
       "Columns": [
@@ -14980,7 +15104,6 @@
           }
         }
       ],
-      "Description": null,
       "Identity": null,
       "Indexes": [
         {
@@ -15007,7 +15130,8 @@
       "Schema": "Warehouse",
       "Name": "StockGroups_Archive",
       "FullName": "Warehouse.StockGroups_Archive",
-      "Type": "table"
+      "Type": "table",
+      "Description": null
     },
     {
       "Columns": [
@@ -15166,7 +15290,6 @@
           }
         }
       ],
-      "Description": null,
       "Identity": null,
       "Indexes": [
         {
@@ -15278,7 +15401,8 @@
       "Schema": "Warehouse",
       "Name": "StockItemHoldings",
       "FullName": "Warehouse.StockItemHoldings",
-      "Type": "table"
+      "Type": "table",
+      "Description": null
     },
     {
       "Columns": [
@@ -15709,7 +15833,6 @@
           }
         }
       ],
-      "Description": null,
       "Identity": null,
       "Indexes": [
         {
@@ -15962,7 +16085,8 @@
       "Schema": "Warehouse",
       "Name": "StockItems",
       "FullName": "Warehouse.StockItems",
-      "Type": "table"
+      "Type": "table",
+      "Description": null
     },
     {
       "Columns": [
@@ -16392,7 +16516,6 @@
           }
         }
       ],
-      "Description": null,
       "Identity": null,
       "Indexes": [
         {
@@ -16419,7 +16542,8 @@
       "Schema": "Warehouse",
       "Name": "StockItems_Archive",
       "FullName": "Warehouse.StockItems_Archive",
-      "Type": "table"
+      "Type": "table",
+      "Description": null
     },
     {
       "Columns": [
@@ -16511,7 +16635,6 @@
           }
         }
       ],
-      "Description": null,
       "Identity": null,
       "Indexes": [
         {
@@ -16708,7 +16831,8 @@
       "Schema": "Warehouse",
       "Name": "StockItemStockGroups",
       "FullName": "Warehouse.StockItemStockGroups",
-      "Type": "table"
+      "Type": "table",
+      "Description": null
     },
     {
       "Columns": [
@@ -16902,7 +17026,6 @@
           }
         }
       ],
-      "Description": null,
       "Identity": null,
       "Indexes": [
         {
@@ -17195,7 +17318,8 @@
       "Schema": "Warehouse",
       "Name": "StockItemTransactions",
       "FullName": "Warehouse.StockItemTransactions",
-      "Type": "table"
+      "Type": "table",
+      "Description": null
     },
     {
       "Columns": [
@@ -17336,7 +17460,6 @@
           }
         }
       ],
-      "Description": null,
       "Identity": {
         "Name": "VehicleTemperatureID",
         "Seed": 1,
@@ -17382,7 +17505,8 @@
       "Schema": "Warehouse",
       "Name": "VehicleTemperatures",
       "FullName": "Warehouse.VehicleTemperatures",
-      "Type": "table"
+      "Type": "table",
+      "Description": null
     }
   ],
   "Views": [
@@ -17634,14 +17758,14 @@
           }
         }
       ],
-      "Description": null,
       "Indexes": [],
       "DataSource": "(local)",
       "DatabaseName": "WideWorldImporters",
       "Schema": "Website",
       "Name": "Customers",
       "FullName": "Website.Customers",
-      "Type": "view"
+      "Type": "view",
+      "Description": null
     },
     {
       "Identity": null,
@@ -17857,14 +17981,14 @@
           }
         }
       ],
-      "Description": null,
       "Indexes": [],
       "DataSource": "(local)",
       "DatabaseName": "WideWorldImporters",
       "Schema": "Website",
       "Name": "Suppliers",
       "FullName": "Website.Suppliers",
-      "Type": "view"
+      "Type": "view",
+      "Description": null
     },
     {
       "Identity": {
@@ -17982,20 +18106,22 @@
           }
         }
       ],
-      "Description": null,
       "Indexes": [],
       "DataSource": "(local)",
       "DatabaseName": "WideWorldImporters",
       "Schema": "Website",
       "Name": "VehicleTemperatures",
       "FullName": "Website.VehicleTemperatures",
-      "Type": "view"
+      "Type": "view",
+      "Description": null
     }
   ],
-  "ImportBag": {},
   "ScalarFunctions": [],
   "TableFunctions": [],
   "StoredProcedures": [],
   "Sequences": [],
+  "ImportBag": {
+    "ExtendedProperties": []
+  },
   "DatabaseValidators": []
 }

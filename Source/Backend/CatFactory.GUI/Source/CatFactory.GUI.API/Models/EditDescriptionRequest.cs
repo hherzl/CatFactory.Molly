@@ -1,4 +1,4 @@
-﻿using CatFactory.SqlServer.Features;
+﻿using CatFactory.SqlServer;
 
 namespace CatFactory.GUI.API.Models
 {
@@ -18,10 +18,10 @@ namespace CatFactory.GUI.API.Models
             => Description.Replace("'", "\'").Trim();
 
         public bool IsTable
-            => Type == SqlServerDatabaseFactoryExtensions.TABLE;
+            => Type == SqlServerToken.TABLE;
 
         public bool IsView
-            => Type == SqlServerDatabaseFactoryExtensions.VIEW;
+            => Type == SqlServerToken.VIEW;
 
         public bool IsColumn
             => !string.IsNullOrEmpty(Column);

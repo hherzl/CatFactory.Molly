@@ -16,6 +16,7 @@ namespace CatFactory.GUI.API.Models
             Prec = column.Prec;
             Nullable = column.Nullable;
             Collation = column.Collation;
+            Description = column.Description;
         }
 
         public string Name { get; set; }
@@ -24,5 +25,6 @@ namespace CatFactory.GUI.API.Models
         public short Prec { get; set; }
         public bool Nullable { get; set; }
         public string Collation { get; set; }
+        public string Description { get; set; }
     }
 }

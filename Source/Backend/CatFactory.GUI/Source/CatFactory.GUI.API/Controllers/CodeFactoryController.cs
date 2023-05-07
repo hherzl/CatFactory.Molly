@@ -3,7 +3,7 @@ using CatFactory.GUI.API.Models;
 using CatFactory.GUI.API.Models.Common;
 using CatFactory.GUI.API.Services;
 using CatFactory.SqlServer;
-using CatFactory.SqlServer.Features;
+using CatFactory.SqlServer.DatabaseObjectModel.Queries;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CatFactory.GUI.API.Controllers
@@ -27,16 +27,17 @@ namespace CatFactory.GUI.API.Controllers
         [ProducesResponseType(500)]
         public async Task<IActionResult> ImportDatabaseAsync([FromBody] ImportDatabaseRequest request)
         {
-            var databaseFactory = new SqlServerDatabaseFactory
-            {
-                DatabaseImportSettings = DatabaseImportSettings.Create(request.ConnectionString, request.ImportTables, request.ImportViews, Tokens.MS_DESCRIPTION)
-            };
+            var databaseFactory = new SqlServerDatabaseFactory(
+                DatabaseImportSettings.Create(request.Name, request.ConnectionString, request.ImportTables, request.ImportViews, SqlServerToken.MS_DESCRIPTION)
+            );
 
             databaseFactory.DatabaseImportSettings.Name = request.Name;
 
             var response = new Response();
 
-            var database = await databaseFactory.ImportAsync();
+            var database = (SqlServerDatabase)await databaseFactory.ImportAsync();
+
+            database.SyncMsDescription();
 
             await _codeFactoryService.SerializeAsync(databaseFactory.DatabaseImportSettings);
 
@@ -89,6 +90,7 @@ namespace CatFactory.GUI.API.Controllers
                 FullName = table.FullName,
                 Schema = table.Schema,
                 Name = table.Name,
+                Description = table.Description,
                 Identity = new IdentityDetailsModel(table.Identity),
                 Columns = table.Columns.Select(item => new ColumnItemModel(item)).ToList(),
                 PrimaryKey = new PrimaryKeyDetailsModel(table.PrimaryKey),
@@ -120,6 +122,7 @@ namespace CatFactory.GUI.API.Controllers
                 FullName = view.FullName,
                 Schema = view.Schema,
                 Name = view.Name,
+                Description = view.Description,
                 Identity = new IdentityDetailsModel(view.Identity),
                 Columns = view.Columns.Select(item => new ColumnItemModel(item)).ToList(),
                 Indexes = view.Indexes?.Select(item => new IndexItemModel(item)).ToList()
@@ -142,10 +145,9 @@ namespace CatFactory.GUI.API.Controllers
 
             var database = await _codeFactoryService.GetDatabaseAsync(request.Database);
 
-            var databaseFactory = new SqlServerDatabaseFactory
-            {
-                DatabaseImportSettings = await _codeFactoryService.GetDatabaseImportSettingsAsync(request.Database)
-            };
+            var databaseFactory = new SqlServerDatabaseFactory(await _codeFactoryService.GetDatabaseImportSettingsAsync(request.Database));
+
+            var connection = databaseFactory.GetConnection();
 
             if (request.IsTable)
             {
@@ -153,11 +155,15 @@ namespace CatFactory.GUI.API.Controllers
 
                 if (request.IsColumn)
                 {
-                    databaseFactory.AddOrUpdateExtendedProperty(table, table[request.Column], Tokens.MS_DESCRIPTION, request.FixedDescription);
+                    await connection.DropExtendedPropertyIfExistsAsync(table, table[request.Column], SqlServerToken.MS_DESCRIPTION);
+
+                    await connection.AddExtendedPropertyAsync(table, table[request.Column], SqlServerToken.MS_DESCRIPTION, request.FixedDescription);
                 }
                 else
                 {
-                    databaseFactory.AddOrUpdateExtendedProperty(table, Tokens.MS_DESCRIPTION, request.FixedDescription);
+                    await connection.DropExtendedPropertyIfExistsAsync(table, SqlServerToken.MS_DESCRIPTION);
+
+                    await connection.AddExtendedPropertyAsync(table, SqlServerToken.MS_DESCRIPTION, request.FixedDescription);
 
                     table.Description = request.Description;
                 }
@@ -168,18 +174,24 @@ namespace CatFactory.GUI.API.Controllers
 
                 if (request.IsColumn)
                 {
-                    databaseFactory.AddOrUpdateExtendedProperty(view, view[request.Column], Tokens.MS_DESCRIPTION, request.FixedDescription);
+                    await connection.DropExtendedPropertyIfExistsAsync(view, view[request.Column], SqlServerToken.MS_DESCRIPTION);
+
+                    await connection.AddExtendedPropertyAsync(view, view[request.Column], SqlServerToken.MS_DESCRIPTION, request.FixedDescription);
                 }
                 else
                 {
-                    databaseFactory.AddOrUpdateExtendedProperty(view, Tokens.MS_DESCRIPTION, request.FixedDescription);
+                    await connection.DropExtendedPropertyIfExistsAsync(view, SqlServerToken.MS_DESCRIPTION);
+
+                    await connection.AddExtendedPropertyAsync(view, SqlServerToken.MS_DESCRIPTION, request.FixedDescription);
 
                     view.Description = request.Description;
                 }
             }
             else
             {
-                databaseFactory.AddOrUpdateExtendedProperty(database, Tokens.MS_DESCRIPTION, request.FixedDescription);
+                await connection.DropExtendedPropertyIfExistsAsync(SqlServerToken.MS_DESCRIPTION);
+
+                await connection.AddExtendedPropertyAsync(SqlServerToken.MS_DESCRIPTION, request.FixedDescription);
             }
 
             await _codeFactoryService.SerializeAsync(databaseFactory.DatabaseImportSettings);

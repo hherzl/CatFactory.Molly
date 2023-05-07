@@ -1,4 +1,7 @@
 {
+  "ExtendedProperties": [],
+  "DefaultTypeMaps": [],
+  "Dbms": "SQL Server",
   "ServerName": "(local)",
   "Name": "RothschildHouse",
   "Description": null,
@@ -11,7 +14,8 @@
       "Schema": "dbo",
       "Name": "fn_diagramobjects",
       "FullName": "dbo.fn_diagramobjects",
-      "Type": "SQL_SCALAR_FUNCTION"
+      "Type": "SQL_SCALAR_FUNCTION",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -19,7 +23,8 @@
       "Schema": "dbo",
       "Name": "sp_alterdiagram",
       "FullName": "dbo.sp_alterdiagram",
-      "Type": "SQL_STORED_PROCEDURE"
+      "Type": "SQL_STORED_PROCEDURE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -27,7 +32,8 @@
       "Schema": "dbo",
       "Name": "sp_creatediagram",
       "FullName": "dbo.sp_creatediagram",
-      "Type": "SQL_STORED_PROCEDURE"
+      "Type": "SQL_STORED_PROCEDURE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -35,7 +41,8 @@
       "Schema": "dbo",
       "Name": "sp_dropdiagram",
       "FullName": "dbo.sp_dropdiagram",
-      "Type": "SQL_STORED_PROCEDURE"
+      "Type": "SQL_STORED_PROCEDURE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -43,7 +50,8 @@
       "Schema": "dbo",
       "Name": "sp_helpdiagramdefinition",
       "FullName": "dbo.sp_helpdiagramdefinition",
-      "Type": "SQL_STORED_PROCEDURE"
+      "Type": "SQL_STORED_PROCEDURE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -51,7 +59,8 @@
       "Schema": "dbo",
       "Name": "sp_helpdiagrams",
       "FullName": "dbo.sp_helpdiagrams",
-      "Type": "SQL_STORED_PROCEDURE"
+      "Type": "SQL_STORED_PROCEDURE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -59,7 +68,8 @@
       "Schema": "dbo",
       "Name": "sp_renamediagram",
       "FullName": "dbo.sp_renamediagram",
-      "Type": "SQL_STORED_PROCEDURE"
+      "Type": "SQL_STORED_PROCEDURE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -67,7 +77,8 @@
       "Schema": "dbo",
       "Name": "sp_upgraddiagrams",
       "FullName": "dbo.sp_upgraddiagrams",
-      "Type": "SQL_STORED_PROCEDURE"
+      "Type": "SQL_STORED_PROCEDURE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -75,7 +86,8 @@
       "Schema": "dbo",
       "Name": "Bank",
       "FullName": "dbo.Bank",
-      "Type": "USER_TABLE"
+      "Type": "USER_TABLE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -83,7 +95,8 @@
       "Schema": "dbo",
       "Name": "Card",
       "FullName": "dbo.Card",
-      "Type": "USER_TABLE"
+      "Type": "USER_TABLE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -91,7 +104,8 @@
       "Schema": "dbo",
       "Name": "ClientApplication",
       "FullName": "dbo.ClientApplication",
-      "Type": "USER_TABLE"
+      "Type": "USER_TABLE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -99,7 +113,8 @@
       "Schema": "dbo",
       "Name": "Company",
       "FullName": "dbo.Company",
-      "Type": "USER_TABLE"
+      "Type": "USER_TABLE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -107,7 +122,8 @@
       "Schema": "dbo",
       "Name": "Currency",
       "FullName": "dbo.Currency",
-      "Type": "USER_TABLE"
+      "Type": "USER_TABLE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -115,7 +131,8 @@
       "Schema": "dbo",
       "Name": "Customer",
       "FullName": "dbo.Customer",
-      "Type": "USER_TABLE"
+      "Type": "USER_TABLE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -123,7 +140,8 @@
       "Schema": "dbo",
       "Name": "EnumDescription",
       "FullName": "dbo.EnumDescription",
-      "Type": "USER_TABLE"
+      "Type": "USER_TABLE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -131,7 +149,8 @@
       "Schema": "dbo",
       "Name": "PaymentTransaction",
       "FullName": "dbo.PaymentTransaction",
-      "Type": "USER_TABLE"
+      "Type": "USER_TABLE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -139,7 +158,8 @@
       "Schema": "dbo",
       "Name": "PaymentTransactionLog",
       "FullName": "dbo.PaymentTransactionLog",
-      "Type": "USER_TABLE"
+      "Type": "USER_TABLE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -147,7 +167,8 @@
       "Schema": "dbo",
       "Name": "Person",
       "FullName": "dbo.Person",
-      "Type": "USER_TABLE"
+      "Type": "USER_TABLE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -155,7 +176,8 @@
       "Schema": "dbo",
       "Name": "sysdiagrams",
       "FullName": "dbo.sysdiagrams",
-      "Type": "USER_TABLE"
+      "Type": "USER_TABLE",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -163,7 +185,8 @@
       "Schema": "dbo",
       "Name": "VCardType",
       "FullName": "dbo.VCardType",
-      "Type": "VIEW"
+      "Type": "VIEW",
+      "Description": null
     },
     {
       "DataSource": "(local)",
@@ -171,7 +194,8 @@
       "Schema": "dbo",
       "Name": "VPaymentTransactionStatus",
       "FullName": "dbo.VPaymentTransactionStatus",
-      "Type": "VIEW"
+      "Type": "VIEW",
+      "Description": null
     }
   ],
   "DatabaseTypeMaps": [
@@ -812,7 +836,6 @@
           }
         }
       ],
-      "Description": null,
       "Identity": {
         "Name": "Id",
         "Seed": 1,
@@ -858,7 +881,8 @@
       "Schema": "dbo",
       "Name": "Bank",
       "FullName": "dbo.Bank",
-      "Type": "table"
+      "Type": "table",
+      "Description": null
     },
     {
       "Columns": [
@@ -1084,7 +1108,6 @@
           }
         }
       ],
-      "Description": null,
       "Identity": null,
       "Indexes": [
         {
@@ -1130,7 +1153,8 @@
       "Schema": "dbo",
       "Name": "Card",
       "FullName": "dbo.Card",
-      "Type": "table"
+      "Type": "table",
+      "Description": null
     },
     {
       "Columns": [
@@ -1288,7 +1312,6 @@
           }
         }
       ],
-      "Description": null,
       "Identity": null,
       "Indexes": [
         {
@@ -1355,7 +1378,8 @@
       "Schema": "dbo",
       "Name": "ClientApplication",
       "FullName": "dbo.ClientApplication",
-      "Type": "table"
+      "Type": "table",
+      "Description": null
     },
     {
       "Columns": [
@@ -1496,7 +1520,6 @@
           }
         }
       ],
-      "Description": null,
       "Identity": {
         "Name": "Id",
         "Seed": 1,
@@ -1546,7 +1569,8 @@
       "Schema": "dbo",
       "Name": "Company",
       "FullName": "dbo.Company",
-      "Type": "table"
+      "Type": "table",
+      "Description": null
     },
     {
       "Columns": [
@@ -1721,7 +1745,6 @@
           }
         }
       ],
-      "Description": null,
       "Identity": {
         "Name": "Id",
         "Seed": 1,
@@ -1771,7 +1794,8 @@
       "Schema": "dbo",
       "Name": "Currency",
       "FullName": "dbo.Currency",
-      "Type": "table"
+      "Type": "table",
+      "Description": null
     },
     {
       "Columns": [
@@ -2031,7 +2055,6 @@
           }
         }
       ],
-      "Description": null,
       "Identity": null,
       "Indexes": [
         {
@@ -2130,7 +2153,8 @@
       "Schema": "dbo",
       "Name": "Customer",
       "FullName": "dbo.Customer",
-      "Type": "table"
+      "Type": "table",
+      "Description": null
     },
     {
       "Columns": [
@@ -2305,7 +2329,6 @@
           }
         }
       ],
-      "Description": null,
       "Identity": {
         "Name": "Id",
         "Seed": 1,
@@ -2351,7 +2374,8 @@
       "Schema": "dbo",
       "Name": "EnumDescription",
       "FullName": "dbo.EnumDescription",
-      "Type": "table"
+      "Type": "table",
+      "Description": null
     },
     {
       "Columns": [
@@ -2679,7 +2703,6 @@
           }
         }
       ],
-      "Description": null,
       "Identity": {
         "Name": "Id",
         "Seed": 1,
@@ -2855,7 +2878,8 @@
       "Schema": "dbo",
       "Name": "PaymentTransaction",
       "FullName": "dbo.PaymentTransaction",
-      "Type": "table"
+      "Type": "table",
+      "Description": null
     },
     {
       "Columns": [
@@ -3081,7 +3105,6 @@
           }
         }
       ],
-      "Description": null,
       "Identity": {
         "Name": "Id",
         "Seed": 1,
@@ -3154,7 +3177,8 @@
       "Schema": "dbo",
       "Name": "PaymentTransactionLog",
       "FullName": "dbo.PaymentTransactionLog",
-      "Type": "table"
+      "Type": "table",
+      "Description": null
     },
     {
       "Columns": [
@@ -3380,7 +3404,6 @@
           }
         }
       ],
-      "Description": null,
       "Identity": {
         "Name": "Id",
         "Seed": 1,
@@ -3430,7 +3453,8 @@
       "Schema": "dbo",
       "Name": "Person",
       "FullName": "dbo.Person",
-      "Type": "table"
+      "Type": "table",
+      "Description": null
     },
     {
       "Columns": [
@@ -3520,7 +3544,6 @@
           }
         }
       ],
-      "Description": null,
       "Identity": {
         "Name": "diagram_id",
         "Seed": 1,
@@ -3588,7 +3611,8 @@
       "Schema": "dbo",
       "Name": "sysdiagrams",
       "FullName": "dbo.sysdiagrams",
-      "Type": "table"
+      "Type": "table",
+      "Description": null
     }
   ],
   "Views": [
@@ -3636,14 +3660,14 @@
           }
         }
       ],
-      "Description": null,
       "Indexes": [],
       "DataSource": "(local)",
       "DatabaseName": "RothschildHouse",
       "Schema": "dbo",
       "Name": "VCardType",
       "FullName": "dbo.VCardType",
-      "Type": "view"
+      "Type": "view",
+      "Description": null
     },
     {
       "Identity": null,
@@ -3689,20 +3713,22 @@
           }
         }
       ],
-      "Description": null,
       "Indexes": [],
       "DataSource": "(local)",
       "DatabaseName": "RothschildHouse",
       "Schema": "dbo",
       "Name": "VPaymentTransactionStatus",
       "FullName": "dbo.VPaymentTransactionStatus",
-      "Type": "view"
+      "Type": "view",
+      "Description": null
     }
   ],
-  "ImportBag": {},
   "ScalarFunctions": [],
   "TableFunctions": [],
   "StoredProcedures": [],
   "Sequences": [],
+  "ImportBag": {
+    "ExtendedProperties": []
+  },
   "DatabaseValidators": []
 }

@@ -8,5 +8,6 @@
         public string FullName { get; set; }
         public int ColumnsCount { get; set; }
         public string Identity { get; set; }
+        public string Description { get; set; }
     }
 }

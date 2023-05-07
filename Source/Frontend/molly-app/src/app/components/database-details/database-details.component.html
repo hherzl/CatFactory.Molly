@@ -2,19 +2,21 @@
 
 <mat-spinner *ngIf="loading"></mat-spinner>
 
-<mat-card>
-    <mat-card-header>
-        <mat-card-title>{{ response?.model?.name }}</mat-card-title>
-    </mat-card-header>
-    <mat-card-content>
-        <p>
-            <span>Dbms: <strong>{{ response?.model?.dbms }}</strong></span>
-        </p>
-        <p>
-            <span>Description: <strong>{{ response?.model?.description }}</strong></span>
-        </p>
-    </mat-card-content>
-</mat-card>
+<div class="details-div">
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title>{{ response?.model?.name }}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <p>
+                <span>Dbms: <strong>{{ response?.model?.dbms }}</strong></span>
+            </p>
+            <p>
+                <span>Description: <strong>{{ response?.model?.description }}</strong></span>
+            </p>
+        </mat-card-content>
+    </mat-card>
+</div>
 <br>
 
 <h2>Tables ({{ response?.model?.tables?.length }})</h2>

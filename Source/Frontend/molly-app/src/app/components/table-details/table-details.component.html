@@ -2,31 +2,35 @@
 
 <mat-spinner *ngIf="loading"></mat-spinner>
 
-<mat-card>
-    <mat-card-header>
-        <mat-card-title>{{ response?.model?.fullName }}</mat-card-title>
-    </mat-card-header>
-    <mat-card-content>
-        <span>Description: <strong>{{ response?.model?.description }}</strong></span>
-    </mat-card-content>
-</mat-card>
+<div class="details-div">
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title>{{ response?.model?.fullName }}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <span>Description: <strong>{{ response?.model?.description }}</strong></span>
+        </mat-card-content>
+    </mat-card>
+</div>
 
 <br>
 
-<mat-card>
-    <mat-card-header>
-        <mat-card-title>Identity</mat-card-title>
-    </mat-card-header>
-    <mat-card-content>
-        <div>
-            <span>Name: <strong>{{ response?.model?.identity?.name }}</strong></span>
-            <br>
-            <span>Seed: <strong>{{ response?.model?.identity?.seed }}</strong></span>
-            <br>
-            <span>Increment: <strong>{{ response?.model?.identity?.increment }}</strong></span>
-        </div>
-    </mat-card-content>
-</mat-card>
+<div class="identity-div">
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title>Identity</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <div>
+                <span>Name: <strong>{{ response?.model?.identity?.name }}</strong></span>
+                <br>
+                <span>Seed: <strong>{{ response?.model?.identity?.seed }}</strong></span>
+                <br>
+                <span>Increment: <strong>{{ response?.model?.identity?.increment }}</strong></span>
+            </div>
+        </mat-card-content>
+    </mat-card>
+</div>
 
 <br>
 
@@ -60,18 +64,20 @@
 
 <br>
 
-<mat-card>
-    <mat-card-header>
-        <mat-card-title>Primary Key</mat-card-title>
-    </mat-card-header>
-    <mat-card-content>
-        <div>
-            <span>Constraint Name: <strong>{{ response?.model?.primaryKey?.constraintName }}</strong></span>
-            <br>
-            <span>Key: <strong>{{ response?.model?.primaryKey?.key }}</strong></span>
-        </div>
-    </mat-card-content>
-</mat-card>
+<div class="primary-key-div">
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title>Primary Key</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <div>
+                <span>Constraint Name: <strong>{{ response?.model?.primaryKey?.constraintName }}</strong></span>
+                <br>
+                <span>Key: <strong>{{ response?.model?.primaryKey?.key }}</strong></span>
+            </div>
+        </mat-card-content>
+    </mat-card>
+</div>
 
 <br>
 

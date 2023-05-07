@@ -138,7 +138,7 @@ namespace CatFactory.GUI.API.Services
                     FullName = item.FullName,
                     ColumnsCount = item.Columns.Count,
                     PrimaryKey = item.PrimaryKey == null ? "" : string.Join(",", item.PrimaryKey.Key),
-                    Identity = item.Identity == null ? "" : item.Identity.Name,
+                    Identity = item.Identity == null ? "" : $"{item.Identity.Name}({item.Identity.Seed}, {item.Identity.Increment})",
                     Description = item.Description
                 }).ToList(),
                 Views = db.Views.Select(item => new ViewItemModel

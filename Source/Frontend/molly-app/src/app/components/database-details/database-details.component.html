@@ -20,31 +20,17 @@
 <h2>Tables ({{ response?.model?.tables?.length }})</h2>
 <mat-divider></mat-divider>
 
-<table class="tables">
-    <thead>
-        <tr>
-            <th>Schema</th>
-            <th>Name</th>
-            <th>Type</th>
-            <th>Columns</th>
-            <th>Primary key</th>
-            <th>Identity</th>
-            <th>Description</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr *ngFor="let item of response?.model?.tables" (click)="tableDetails(item)">
-            <td>{{ item.schema }}</td>
-            <td>{{ item.name }}</td>
-            <td>{{ item.type }}</td>
-            <td>{{ item.columnsCount }}</td>
-            <td>{{ item.primaryKey }}</td>
-            <td>{{ item.identity }}</td>
-            <td>{{ item.description }}</td>
-        </tr>
-    </tbody>
-</table>
-<br>
+<mat-list>
+    <mat-list-item *ngFor="let item of response?.model?.tables">
+        <mat-icon matListItemIcon>table</mat-icon>
+        <h3 matListItemTitle (click)="tableDetails(item)">{{ item.fullName }}</h3>
+        <span matListItemLine>Columns: {{ item.columnsCount }}</span>
+        <span matListItemLine>Primary key: <strong>{{ item.primaryKey }}</strong></span>
+        <span matListItemLine>Identity: <strong>{{ item.identity }}</strong></span>
+        <span>Description: <strong>{{ item.description }}</strong></span>
+        <hr>
+    </mat-list-item>
+</mat-list>
 
 <h2>Views ({{ response?.model?.views?.length }})</h2>
 <mat-divider></mat-divider>

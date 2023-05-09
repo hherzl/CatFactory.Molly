@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute, Params, Router } from '@angular/router';
 import { SingleResponse } from 'src/app/services/common';
 import { DatabaseDetailsModel, MollyClientService, TableItemModel, ViewItemModel } from 'src/app/services/molly-client.service';
+import { EditDescriptionDialogComponent } from '../edit-description-dialog/edit-description-dialog.component';
 
 @Component({
   selector: 'app-database-details',
@@ -9,7 +11,7 @@ import { DatabaseDetailsModel, MollyClientService, TableItemModel, ViewItemModel
   styleUrls: ['./database-details.component.css']
 })
 export class DatabaseDetailsComponent implements OnInit {
-  constructor(private activatedRoute: ActivatedRoute, private router: Router, private mollyClient: MollyClientService) {
+  constructor(private activatedRoute: ActivatedRoute, private router: Router, public dialog: MatDialog, private mollyClient: MollyClientService) {
   }
 
   public loading!: boolean;
@@ -27,6 +29,21 @@ export class DatabaseDetailsComponent implements OnInit {
         this.response = result;
       });
     });
+  }
+
+  editDescription(): void {
+    this.dialog
+      .open(EditDescriptionDialogComponent, {
+        width: '500px',
+        data: {
+          databaseName: this.response?.model?.name,
+          description: this.response?.model?.description
+        }
+      })
+      .afterClosed()
+      .subscribe(result => {
+        this.response.model.description = result?.description;
+      });
   }
 
   tableDetails(item: TableItemModel): void {

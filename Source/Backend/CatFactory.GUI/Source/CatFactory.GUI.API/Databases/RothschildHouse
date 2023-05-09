@@ -4,7 +4,7 @@
   "Dbms": "SQL Server",
   "ServerName": "(local)",
   "Name": "RothschildHouse",
-  "Description": null,
+  "Description": "Db desc 7",
   "DefaultSchema": "dbo",
   "SupportTransactions": true,
   "DbObjects": [
@@ -882,7 +882,7 @@
       "Name": "Bank",
       "FullName": "dbo.Bank",
       "Type": "table",
-      "Description": null
+      "Description": "test"
     },
     {
       "Columns": [

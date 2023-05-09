@@ -33,8 +33,6 @@ namespace CatFactory.GUI.API.Controllers
 
             databaseFactory.DatabaseImportSettings.Name = request.Name;
 
-            var response = new Response();
-
             var database = (SqlServerDatabase)await databaseFactory.ImportAsync();
 
             database.SyncMsDescription();
@@ -42,6 +40,8 @@ namespace CatFactory.GUI.API.Controllers
             await _codeFactoryService.SerializeAsync(databaseFactory.DatabaseImportSettings);
 
             await _codeFactoryService.SerializeAsync(database);
+
+            var response = new Response("The database was imported successfully");
 
             return response.ToOkResult();
         }
@@ -133,72 +133,93 @@ namespace CatFactory.GUI.API.Controllers
             return response.ToOkResult();
         }
 
-        [HttpPost("edit-description")]
+        [HttpPut("database/{databaseName}/update-description")]
         [ProducesResponseType(200, Type = typeof(IResponse))]
+        [ProducesResponseType(400)]
         [ProducesResponseType(500)]
-        public async Task<IActionResult> EditDescriptionAsync([FromBody] EditDescriptionRequest request)
+        public async Task<IActionResult> UpdateDatabaseDescriptionAsync(string databaseName, [FromBody] UpdateDescriptionRequest request)
         {
-            var response = new Response();
+            _logger?.LogDebug($"'{nameof(UpdateDatabaseDescriptionAsync)}' has been invoked");
 
-            if (!request.HasDescription)
-                return response.ToOkResult();
+            var databaseImportSettings = await _codeFactoryService.GetDatabaseImportSettingsAsync(databaseName);
+            using var connection = databaseImportSettings.GetConnection();
 
-            var database = await _codeFactoryService.GetDatabaseAsync(request.Database);
+            _logger?.LogInformation($"Updating description for '{databaseName}' database...");
 
-            var databaseFactory = new SqlServerDatabaseFactory(await _codeFactoryService.GetDatabaseImportSettingsAsync(request.Database));
+            await connection.DropExtendedPropertyIfExistsAsync(SqlServerToken.MS_DESCRIPTION);
 
-            var connection = databaseFactory.GetConnection();
+            await connection.AddExtendedPropertyAsync(SqlServerToken.MS_DESCRIPTION, request.FixedDescription);
 
-            if (request.IsTable)
-            {
-                var table = database.FindTable(request.Table);
+            _logger?.LogInformation($"The description for '{databaseName}' database was successfully...");
 
-                if (request.IsColumn)
-                {
-                    await connection.DropExtendedPropertyIfExistsAsync(table, table[request.Column], SqlServerToken.MS_DESCRIPTION);
+            var database = await _codeFactoryService.GetDatabaseAsync(databaseName);
 
-                    await connection.AddExtendedPropertyAsync(table, table[request.Column], SqlServerToken.MS_DESCRIPTION, request.FixedDescription);
-                }
-                else
-                {
-                    await connection.DropExtendedPropertyIfExistsAsync(table, SqlServerToken.MS_DESCRIPTION);
-
-                    await connection.AddExtendedPropertyAsync(table, SqlServerToken.MS_DESCRIPTION, request.FixedDescription);
-
-                    table.Description = request.Description;
-                }
-            }
-            else if (request.IsView)
-            {
-                var view = database.FindView(request.View);
-
-                if (request.IsColumn)
-                {
-                    await connection.DropExtendedPropertyIfExistsAsync(view, view[request.Column], SqlServerToken.MS_DESCRIPTION);
-
-                    await connection.AddExtendedPropertyAsync(view, view[request.Column], SqlServerToken.MS_DESCRIPTION, request.FixedDescription);
-                }
-                else
-                {
-                    await connection.DropExtendedPropertyIfExistsAsync(view, SqlServerToken.MS_DESCRIPTION);
-
-                    await connection.AddExtendedPropertyAsync(view, SqlServerToken.MS_DESCRIPTION, request.FixedDescription);
-
-                    view.Description = request.Description;
-                }
-            }
-            else
-            {
-                await connection.DropExtendedPropertyIfExistsAsync(SqlServerToken.MS_DESCRIPTION);
-
-                await connection.AddExtendedPropertyAsync(SqlServerToken.MS_DESCRIPTION, request.FixedDescription);
-            }
-
-            await _codeFactoryService.SerializeAsync(databaseFactory.DatabaseImportSettings);
+            database.Description = request.FixedDescription;
 
             await _codeFactoryService.SerializeAsync(database);
 
-            response.Message = "The description was updated successfully";
+            _logger?.LogInformation($"The local changes for '{databaseName}' database were saved successfully");
+
+            var response = new Response("The description was updated successfully");
+
+            return response.ToOkResult();
+        }
+
+        [HttpPut("database/{databaseName}/table/{tableName}/update-description")]
+        [ProducesResponseType(200, Type = typeof(IResponse))]
+        [ProducesResponseType(400)]
+        [ProducesResponseType(500)]
+        public async Task<IActionResult> UpdateTableDescriptionAsync(string databaseName, string tableName, [FromBody] UpdateDescriptionRequest request)
+        {
+            _logger?.LogDebug($"'{nameof(UpdateTableDescriptionAsync)}' has been invoked");
+
+            var databaseImportSettings = await _codeFactoryService.GetDatabaseImportSettingsAsync(databaseName);
+            using var connection = databaseImportSettings.GetConnection();
+
+            var database = await _codeFactoryService.GetDatabaseAsync(databaseName);
+            var table = database.FindTable(tableName);
+
+            await connection.DropExtendedPropertyIfExistsAsync(table, SqlServerToken.MS_DESCRIPTION);
+
+            await connection.AddOrUpdateExtendedPropertyAsync(table, SqlServerToken.MS_DESCRIPTION, request.FixedDescription);
+
+            table.Description = request.FixedDescription;
+
+            await _codeFactoryService.SerializeAsync(database);
+
+            _logger?.LogInformation($"The local changes for '{databaseName}' database were saved successfully");
+
+            var response = new Response("The description was updated successfully");
+
+            return response.ToOkResult();
+        }
+
+        [HttpPut("database/{databaseName}/table/{tableName}/column/{columnName}/update-description")]
+        [ProducesResponseType(200, Type = typeof(IResponse))]
+        [ProducesResponseType(400)]
+        [ProducesResponseType(500)]
+        public async Task<IActionResult> UpdateTableColumnDescriptionAsync(string databaseName, string tableName, string columnName, [FromBody] UpdateDescriptionRequest request)
+        {
+            _logger?.LogDebug($"'{nameof(UpdateTableColumnDescriptionAsync)}' has been invoked");
+
+            var databaseImportSettings = await _codeFactoryService.GetDatabaseImportSettingsAsync(databaseName);
+            using var connection = databaseImportSettings.GetConnection();
+
+            var database = await _codeFactoryService.GetDatabaseAsync(databaseName);
+            var table = database.FindTable(tableName);
+            var column = table[columnName];
+
+            await connection.DropExtendedPropertyIfExistsAsync(table, column, SqlServerToken.MS_DESCRIPTION);
+
+            await connection.AddOrUpdateExtendedPropertyAsync(table, column, SqlServerToken.MS_DESCRIPTION, request.FixedDescription);
+
+            column.Description = request.FixedDescription;
+
+            await _codeFactoryService.SerializeAsync(database);
+
+            _logger?.LogInformation($"The local changes for '{databaseName}' database were saved successfully");
+
+            var response = new Response("The description was updated successfully");
 
             return response.ToOkResult();
         }

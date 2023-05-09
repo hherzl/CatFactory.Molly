@@ -23,6 +23,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatSnackBarModule } from '@angular/material/snack-bar'
 
 import { ConfirmDialogComponent } from './components/shared/confirm-dialog/confirm-dialog.component';
 
@@ -32,6 +33,7 @@ import { DatabaseDetailsComponent } from './components/database-details/database
 import { ImportDatabaseComponent } from './components/import-database/import-database.component';
 import { TableDetailsComponent } from './components/table-details/table-details.component';
 import { ViewDetailsComponent } from './components/view-details/view-details.component';
+import { EditDescriptionDialogComponent } from './components/edit-description-dialog/edit-description-dialog.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +44,8 @@ import { ViewDetailsComponent } from './components/view-details/view-details.com
     DatabaseDetailsComponent,
     ImportDatabaseComponent,
     TableDetailsComponent,
-    ViewDetailsComponent
+    ViewDetailsComponent,
+    EditDescriptionDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -64,6 +67,7 @@ import { ViewDetailsComponent } from './components/view-details/view-details.com
     MatSelectModule,
     MatRadioModule,
     MatProgressSpinnerModule,
+    MatSnackBarModule,
     ReactiveFormsModule,
     MatCheckboxModule,
     MatDialogModule

@@ -13,6 +13,9 @@
             </p>
             <p>
                 <span>Description: <strong>{{ response?.model?.description }}</strong></span>
+                <button mat-icon-button (click)="editDescription()" aria-label="Edit description">
+                    <mat-icon>edit</mat-icon>
+                </button>
             </p>
         </mat-card-content>
     </mat-card>

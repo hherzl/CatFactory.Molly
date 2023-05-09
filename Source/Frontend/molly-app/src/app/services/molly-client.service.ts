@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { ListResponse, SingleResponse } from './common';
+import { ListResponse, Response, SingleResponse } from './common';
 
 @Injectable({
   providedIn: 'root'
@@ -37,6 +37,21 @@ export class MollyClientService {
   public importDatabase(request: ImportDatabaseRequest): Observable<Response> {
     const url = `${this.endpoint}/import-database`;
     return this.http.post<Response>(url, request);
+  }
+
+  public updateDatabaseDescription(databaseName: string, request: UpdateDescriptionRequest): Observable<Response> {
+    const url = `${this.endpoint}/database/${databaseName}/update-description`;
+    return this.http.put<Response>(url, request);
+  }
+
+  public updateTableDescription(databaseName: string, tableName: string, request: UpdateDescriptionRequest): Observable<Response> {
+    const url = `${this.endpoint}/database/${databaseName}/table/${tableName}/update-description`;
+    return this.http.put<Response>(url, request);
+  }
+
+  public updateTableColumnTableDescription(databaseName: string, tableName: string, columnName: string, request: UpdateDescriptionRequest): Observable<Response> {
+    const url = `${this.endpoint}/database/${databaseName}/table/${tableName}/column/${columnName}/update-description`;
+    return this.http.put<Response>(url, request);
   }
 }
 
@@ -175,4 +190,12 @@ export class IndexItemModel {
   public name!: string;
   public description!: string[];
   public keys!: string;
+}
+
+export class UpdateDescriptionRequest {
+  public description!: string;
+}
+
+export class UpdateDescriptionResponse extends Response {
+  
 }

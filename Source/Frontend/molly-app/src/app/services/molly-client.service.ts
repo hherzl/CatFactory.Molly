@@ -11,7 +11,7 @@ export class MollyClientService {
   private endpoint: string;
 
   constructor(private http: HttpClient) {
-    this.endpoint = 'https://localhost:7440/api/v1';
+    this.endpoint = 'https://localhost:5200/api/v1';
   }
 
   public getDatabases(): Observable<ListResponse<DatabaseItemModel>> {

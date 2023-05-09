@@ -1,0 +1,3756 @@
+{
+  "ExtendedProperties": [],
+  "DefaultTypeMaps": [],
+  "Dbms": "SQL Server",
+  "ServerName": "(local)",
+  "Name": "RothschildHouse",
+  "Description": "Db desc 7",
+  "DefaultSchema": "dbo",
+  "SupportTransactions": true,
+  "DbObjects": [
+    {
+      "DataSource": "(local)",
+      "DatabaseName": "RothschildHouse",
+      "Schema": "dbo",
+      "Name": "fn_diagramobjects",
+      "FullName": "dbo.fn_diagramobjects",
+      "Type": "SQL_SCALAR_FUNCTION",
+      "Description": null
+    },
+    {
+      "DataSource": "(local)",
+      "DatabaseName": "RothschildHouse",
+      "Schema": "dbo",
+      "Name": "sp_alterdiagram",
+      "FullName": "dbo.sp_alterdiagram",
+      "Type": "SQL_STORED_PROCEDURE",
+      "Description": null
+    },
+    {
+      "DataSource": "(local)",
+      "DatabaseName": "RothschildHouse",
+      "Schema": "dbo",
+      "Name": "sp_creatediagram",
+      "FullName": "dbo.sp_creatediagram",
+      "Type": "SQL_STORED_PROCEDURE",
+      "Description": null
+    },
+    {
+      "DataSource": "(local)",
+      "DatabaseName": "RothschildHouse",
+      "Schema": "dbo",
+      "Name": "sp_dropdiagram",
+      "FullName": "dbo.sp_dropdiagram",
+      "Type": "SQL_STORED_PROCEDURE",
+      "Description": null
+    },
+    {
+      "DataSource": "(local)",
+      "DatabaseName": "RothschildHouse",
+      "Schema": "dbo",
+      "Name": "sp_helpdiagramdefinition",
+      "FullName": "dbo.sp_helpdiagramdefinition",
+      "Type": "SQL_STORED_PROCEDURE",
+      "Description": null
+    },
+    {
+      "DataSource": "(local)",
+      "DatabaseName": "RothschildHouse",
+      "Schema": "dbo",
+      "Name": "sp_helpdiagrams",
+      "FullName": "dbo.sp_helpdiagrams",
+      "Type": "SQL_STORED_PROCEDURE",
+      "Description": null
+    },
+    {
+      "DataSource": "(local)",
+      "DatabaseName": "RothschildHouse",
+      "Schema": "dbo",
+      "Name": "sp_renamediagram",
+      "FullName": "dbo.sp_renamediagram",
+      "Type": "SQL_STORED_PROCEDURE",
+      "Description": null
+    },
+    {
+      "DataSource": "(local)",
+      "DatabaseName": "RothschildHouse",
+      "Schema": "dbo",
+      "Name": "sp_upgraddiagrams",
+      "FullName": "dbo.sp_upgraddiagrams",
+      "Type": "SQL_STORED_PROCEDURE",
+      "Description": null
+    },
+    {
+      "DataSource": "(local)",
+      "DatabaseName": "RothschildHouse",
+      "Schema": "dbo",
+      "Name": "Bank",
+      "FullName": "dbo.Bank",
+      "Type": "USER_TABLE",
+      "Description": null
+    },
+    {
+      "DataSource": "(local)",
+      "DatabaseName": "RothschildHouse",
+      "Schema": "dbo",
+      "Name": "Card",
+      "FullName": "dbo.Card",
+      "Type": "USER_TABLE",
+      "Description": null
+    },
+    {
+      "DataSource": "(local)",
+      "DatabaseName": "RothschildHouse",
+      "Schema": "dbo",
+      "Name": "ClientApplication",
+      "FullName": "dbo.ClientApplication",
+      "Type": "USER_TABLE",
+      "Description": null
+    },
+    {
+      "DataSource": "(local)",
+      "DatabaseName": "RothschildHouse",
+      "Schema": "dbo",
+      "Name": "Company",
+      "FullName": "dbo.Company",
+      "Type": "USER_TABLE",
+      "Description": null
+    },
+    {
+      "DataSource": "(local)",
+      "DatabaseName": "RothschildHouse",
+      "Schema": "dbo",
+      "Name": "Currency",
+      "FullName": "dbo.Currency",
+      "Type": "USER_TABLE",
+      "Description": null
+    },
+    {
+      "DataSource": "(local)",
+      "DatabaseName": "RothschildHouse",
+      "Schema": "dbo",
+      "Name": "Customer",
+      "FullName": "dbo.Customer",
+      "Type": "USER_TABLE",
+      "Description": null
+    },
+    {
+      "DataSource": "(local)",
+      "DatabaseName": "RothschildHouse",
+      "Schema": "dbo",
+      "Name": "EnumDescription",
+      "FullName": "dbo.EnumDescription",
+      "Type": "USER_TABLE",
+      "Description": null
+    },
+    {
+      "DataSource": "(local)",
+      "DatabaseName": "RothschildHouse",
+      "Schema": "dbo",
+      "Name": "PaymentTransaction",
+      "FullName": "dbo.PaymentTransaction",
+      "Type": "USER_TABLE",
+      "Description": null
+    },
+    {
+      "DataSource": "(local)",
+      "DatabaseName": "RothschildHouse",
+      "Schema": "dbo",
+      "Name": "PaymentTransactionLog",
+      "FullName": "dbo.PaymentTransactionLog",
+      "Type": "USER_TABLE",
+      "Description": null
+    },
+    {
+      "DataSource": "(local)",
+      "DatabaseName": "RothschildHouse",
+      "Schema": "dbo",
+      "Name": "Person",
+      "FullName": "dbo.Person",
+      "Type": "USER_TABLE",
+      "Description": null
+    },
+    {
+      "DataSource": "(local)",
+      "DatabaseName": "RothschildHouse",
+      "Schema": "dbo",
+      "Name": "sysdiagrams",
+      "FullName": "dbo.sysdiagrams",
+      "Type": "USER_TABLE",
+      "Description": null
+    },
+    {
+      "DataSource": "(local)",
+      "DatabaseName": "RothschildHouse",
+      "Schema": "dbo",
+      "Name": "VCardType",
+      "FullName": "dbo.VCardType",
+      "Type": "VIEW",
+      "Description": null
+    },
+    {
+      "DataSource": "(local)",
+      "DatabaseName": "RothschildHouse",
+      "Schema": "dbo",
+      "Name": "VPaymentTransactionStatus",
+      "FullName": "dbo.VPaymentTransactionStatus",
+      "Type": "VIEW",
+      "Description": null
+    }
+  ],
+  "DatabaseTypeMaps": [
+    {
+      "DatabaseType": "bigint",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.Int64",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "long",
+      "HasClrAliasType": true,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 12,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null,
+      "ImportBag": {}
+    },
+    {
+      "DatabaseType": "binary",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.Byte[]",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "byte[]",
+      "HasClrAliasType": true,
+      "AllowClrNullable": false,
+      "DbTypeEnum": 1,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null,
+      "ImportBag": {}
+    },
+    {
+      "DatabaseType": "bit",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.Boolean",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "bool",
+      "HasClrAliasType": true,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 3,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null,
+      "ImportBag": {}
+    },
+    {
+      "DatabaseType": "char",
+      "AllowsLengthInDeclaration": true,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.String",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "string",
+      "HasClrAliasType": true,
+      "AllowClrNullable": false,
+      "DbTypeEnum": 16,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null,
+      "ImportBag": {}
+    },
+    {
+      "DatabaseType": "date",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.DateTime",
+      "HasClrFullNameType": true,
+      "ClrAliasType": null,
+      "HasClrAliasType": false,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 5,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null,
+      "ImportBag": {}
+    },
+    {
+      "DatabaseType": "datetime",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.DateTime",
+      "HasClrFullNameType": true,
+      "ClrAliasType": null,
+      "HasClrAliasType": false,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 6,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null,
+      "ImportBag": {}
+    },
+    {
+      "DatabaseType": "datetime2",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.DateTime",
+      "HasClrFullNameType": true,
+      "ClrAliasType": null,
+      "HasClrAliasType": false,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 26,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null,
+      "ImportBag": {}
+    },
+    {
+      "DatabaseType": "datetimeoffset",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.DateTimeOffset",
+      "HasClrFullNameType": true,
+      "ClrAliasType": null,
+      "HasClrAliasType": false,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 27,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null,
+      "ImportBag": {}
+    },
+    {
+      "DatabaseType": "decimal",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": true,
+      "AllowsScaleInDeclaration": true,
+      "ClrFullNameType": "System.Decimal",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "decimal",
+      "HasClrAliasType": true,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 7,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null,
+      "ImportBag": {}
+    },
+    {
+      "DatabaseType": "float",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": true,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.Double",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "double",
+      "HasClrAliasType": true,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 8,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null,
+      "ImportBag": {}
+    },
+    {
+      "DatabaseType": "image",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.Byte[]",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "byte[]",
+      "HasClrAliasType": true,
+      "AllowClrNullable": false,
+      "DbTypeEnum": 1,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null,
+      "ImportBag": {}
+    },
+    {
+      "DatabaseType": "int",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.Int32",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "int",
+      "HasClrAliasType": true,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 11,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null,
+      "ImportBag": {}
+    },
+    {
+      "DatabaseType": "money",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.Decimal",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "decimal",
+      "HasClrAliasType": true,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 7,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null,
+      "ImportBag": {}
+    },
+    {
+      "DatabaseType": "nchar",
+      "AllowsLengthInDeclaration": true,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.String",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "string",
+      "HasClrAliasType": true,
+      "AllowClrNullable": false,
+      "DbTypeEnum": 23,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null,
+      "ImportBag": {}
+    },
+    {
+      "DatabaseType": "ntext",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.String",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "string",
+      "HasClrAliasType": true,
+      "AllowClrNullable": false,
+      "DbTypeEnum": 16,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null,
+      "ImportBag": {}
+    },
+    {
+      "DatabaseType": "numeric",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": true,
+      "AllowsScaleInDeclaration": true,
+      "ClrFullNameType": "System.Decimal",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "decimal",
+      "HasClrAliasType": true,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 7,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null,
+      "ImportBag": {}
+    },
+    {
+      "DatabaseType": "nvarchar",
+      "AllowsLengthInDeclaration": true,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.String",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "string",
+      "HasClrAliasType": true,
+      "AllowClrNullable": false,
+      "DbTypeEnum": 16,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null,
+      "ImportBag": {}
+    },
+    {
+      "DatabaseType": "real",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.Single",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "float",
+      "HasClrAliasType": true,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 15,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null,
+      "ImportBag": {}
+    },
+    {
+      "DatabaseType": "rowversion",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.Byte[]",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "byte[]",
+      "HasClrAliasType": true,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 1,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null,
+      "ImportBag": {}
+    },
+    {
+      "DatabaseType": "smalldatetime",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.DateTime",
+      "HasClrFullNameType": true,
+      "ClrAliasType": null,
+      "HasClrAliasType": false,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 6,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null,
+      "ImportBag": {}
+    },
+    {
+      "DatabaseType": "smallint",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.Int16",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "short",
+      "HasClrAliasType": true,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 10,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null,
+      "ImportBag": {}
+    },
+    {
+      "DatabaseType": "smallmoney",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.Decimal",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "decimal",
+      "HasClrAliasType": true,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 7,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null,
+      "ImportBag": {}
+    },
+    {
+      "DatabaseType": "sql_variant",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.Object",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "object",
+      "HasClrAliasType": true,
+      "AllowClrNullable": false,
+      "DbTypeEnum": 13,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null,
+      "ImportBag": {}
+    },
+    {
+      "DatabaseType": "text",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.String",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "string",
+      "HasClrAliasType": true,
+      "AllowClrNullable": false,
+      "DbTypeEnum": 16,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null,
+      "ImportBag": {}
+    },
+    {
+      "DatabaseType": "time",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.TimeSpan",
+      "HasClrFullNameType": true,
+      "ClrAliasType": null,
+      "HasClrAliasType": false,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 17,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null,
+      "ImportBag": {}
+    },
+    {
+      "DatabaseType": "timestamp",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.Byte[]",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "byte[]",
+      "HasClrAliasType": true,
+      "AllowClrNullable": false,
+      "DbTypeEnum": 1,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null,
+      "ImportBag": {}
+    },
+    {
+      "DatabaseType": "tinyint",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.Byte",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "byte",
+      "HasClrAliasType": true,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 2,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null,
+      "ImportBag": {}
+    },
+    {
+      "DatabaseType": "uniqueidentifier",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.Guid",
+      "HasClrFullNameType": true,
+      "ClrAliasType": null,
+      "HasClrAliasType": false,
+      "AllowClrNullable": true,
+      "DbTypeEnum": 9,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null,
+      "ImportBag": {}
+    },
+    {
+      "DatabaseType": "varbinary",
+      "AllowsLengthInDeclaration": true,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.Byte[]",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "byte[]",
+      "HasClrAliasType": true,
+      "AllowClrNullable": false,
+      "DbTypeEnum": 1,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null,
+      "ImportBag": {}
+    },
+    {
+      "DatabaseType": "varchar",
+      "AllowsLengthInDeclaration": true,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": "System.String",
+      "HasClrFullNameType": true,
+      "ClrAliasType": "string",
+      "HasClrAliasType": true,
+      "AllowClrNullable": false,
+      "DbTypeEnum": 16,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null,
+      "ImportBag": {}
+    },
+    {
+      "DatabaseType": "xml",
+      "AllowsLengthInDeclaration": false,
+      "AllowsPrecInDeclaration": false,
+      "AllowsScaleInDeclaration": false,
+      "ClrFullNameType": null,
+      "HasClrFullNameType": false,
+      "ClrAliasType": null,
+      "HasClrAliasType": false,
+      "AllowClrNullable": false,
+      "DbTypeEnum": 25,
+      "IsUserDefined": false,
+      "ParentDatabaseType": null,
+      "Collation": null,
+      "ImportBag": {}
+    }
+  ],
+  "Tables": [
+    {
+      "Columns": [
+        {
+          "Name": "Id",
+          "Type": "smallint",
+          "Computed": "no",
+          "Length": 2,
+          "Prec": 5,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Name",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 200,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Active",
+          "Type": "bit",
+          "Computed": "no",
+          "Length": 1,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "CreationUser",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 100,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "CreationDateTime",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "LastUpdateUser",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 100,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "LastUpdateDateTime",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Version",
+          "Type": "timestamp",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        }
+      ],
+      "Identity": {
+        "Name": "Id",
+        "Seed": 1,
+        "Increment": 1
+      },
+      "Indexes": [
+        {
+          "IndexName": "PK_dbo_Bank",
+          "IndexDescription": "clustered, unique, primary key located on PRIMARY",
+          "IndexKeys": "Id"
+        }
+      ],
+      "PrimaryKey": {
+        "ConstraintName": "PK_dbo_Bank",
+        "Key": [
+          "Id"
+        ]
+      },
+      "ForeignKeys": [],
+      "Uniques": [],
+      "Checks": [],
+      "Defaults": [],
+      "ImportBag": {
+        "ConstraintDetails": [
+          {
+            "ConstraintType": "PRIMARY KEY (clustered)",
+            "ConstraintName": "PK_dbo_Bank",
+            "DeleteAction": "(n/a)",
+            "UpdateAction": "(n/a)",
+            "StatusEnabled": "(n/a)",
+            "StatusForReplication": "(n/a)",
+            "ConstraintKeys": "Id"
+          }
+        ],
+        "TableReferences": [],
+        "RowGuidCol": {
+          "Name": "No rowguidcol column defined."
+        },
+        "ExtendedProperties": [
+          {
+            "Name": "MS_Description",
+            "Value": "test",
+            "Level0Type": null,
+            "Level0Name": null,
+            "Level1Type": null,
+            "Level1Name": null,
+            "Level2Type": null,
+            "Level2Name": null
+          }
+        ]
+      },
+      "DataSource": "(local)",
+      "DatabaseName": "RothschildHouse",
+      "Schema": "dbo",
+      "Name": "Bank",
+      "FullName": "dbo.Bank",
+      "Type": "table",
+      "Description": "test"
+    },
+    {
+      "Columns": [
+        {
+          "Name": "Id",
+          "Type": "uniqueidentifier",
+          "Computed": "no",
+          "Length": 16,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "CardTypeId",
+          "Type": "smallint",
+          "Computed": "no",
+          "Length": 2,
+          "Prec": 5,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "IssuingNetwork",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 50,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "CardholderName",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 200,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "CardNumber",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 40,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "ExpirationDate",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 12,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Cvv",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Active",
+          "Type": "bit",
+          "Computed": "no",
+          "Length": 1,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "CreationUser",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 100,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "CreationDateTime",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "LastUpdateUser",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 100,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "LastUpdateDateTime",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Version",
+          "Type": "timestamp",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        }
+      ],
+      "Identity": null,
+      "Indexes": [
+        {
+          "IndexName": "PK_dbo_Card",
+          "IndexDescription": "clustered, unique, primary key located on PRIMARY",
+          "IndexKeys": "Id"
+        }
+      ],
+      "PrimaryKey": {
+        "ConstraintName": "PK_dbo_Card",
+        "Key": [
+          "Id"
+        ]
+      },
+      "ForeignKeys": [],
+      "Uniques": [],
+      "Checks": [],
+      "Defaults": [],
+      "ImportBag": {
+        "ConstraintDetails": [
+          {
+            "ConstraintType": "PRIMARY KEY (clustered)",
+            "ConstraintName": "PK_dbo_Card",
+            "DeleteAction": "(n/a)",
+            "UpdateAction": "(n/a)",
+            "StatusEnabled": "(n/a)",
+            "StatusForReplication": "(n/a)",
+            "ConstraintKeys": "Id"
+          }
+        ],
+        "TableReferences": [
+          {
+            "ReferenceDescription": "RothschildHouse.dbo.PaymentTransaction: FK_dbo_PaymentTransaction_CardId_dbo_Card"
+          }
+        ],
+        "RowGuidCol": {
+          "Name": "No rowguidcol column defined."
+        },
+        "ExtendedProperties": []
+      },
+      "DataSource": "(local)",
+      "DatabaseName": "RothschildHouse",
+      "Schema": "dbo",
+      "Name": "Card",
+      "FullName": "dbo.Card",
+      "Type": "table",
+      "Description": null
+    },
+    {
+      "Columns": [
+        {
+          "Name": "Id",
+          "Type": "uniqueidentifier",
+          "Computed": "no",
+          "Length": 16,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Name",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 200,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Url",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 400,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Active",
+          "Type": "bit",
+          "Computed": "no",
+          "Length": 1,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "CreationUser",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 100,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "CreationDateTime",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "LastUpdateUser",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 100,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "LastUpdateDateTime",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Version",
+          "Type": "timestamp",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        }
+      ],
+      "Identity": null,
+      "Indexes": [
+        {
+          "IndexName": "PK_dbo_ClientApplication",
+          "IndexDescription": "clustered, unique, primary key located on PRIMARY",
+          "IndexKeys": "Id"
+        },
+        {
+          "IndexName": "UQ_dbo_ClientApplication_Name",
+          "IndexDescription": "nonclustered, unique, unique key located on PRIMARY",
+          "IndexKeys": "Name"
+        }
+      ],
+      "PrimaryKey": {
+        "ConstraintName": "PK_dbo_ClientApplication",
+        "Key": [
+          "Id"
+        ]
+      },
+      "ForeignKeys": [],
+      "Uniques": [
+        {
+          "ConstraintName": "UQ_dbo_ClientApplication_Name",
+          "Key": [
+            "Name"
+          ]
+        }
+      ],
+      "Checks": [],
+      "Defaults": [],
+      "ImportBag": {
+        "ConstraintDetails": [
+          {
+            "ConstraintType": "PRIMARY KEY (clustered)",
+            "ConstraintName": "PK_dbo_ClientApplication",
+            "DeleteAction": "(n/a)",
+            "UpdateAction": "(n/a)",
+            "StatusEnabled": "(n/a)",
+            "StatusForReplication": "(n/a)",
+            "ConstraintKeys": "Id"
+          },
+          {
+            "ConstraintType": "UNIQUE (non-clustered)",
+            "ConstraintName": "UQ_dbo_ClientApplication_Name",
+            "DeleteAction": "(n/a)",
+            "UpdateAction": "(n/a)",
+            "StatusEnabled": "(n/a)",
+            "StatusForReplication": "(n/a)",
+            "ConstraintKeys": "Name"
+          }
+        ],
+        "TableReferences": [
+          {
+            "ReferenceDescription": "RothschildHouse.dbo.PaymentTransaction: FK_dbo_PaymentTransaction_ClientApplicationId_dbo_ClientApplication"
+          }
+        ],
+        "RowGuidCol": {
+          "Name": "No rowguidcol column defined."
+        },
+        "ExtendedProperties": []
+      },
+      "DataSource": "(local)",
+      "DatabaseName": "RothschildHouse",
+      "Schema": "dbo",
+      "Name": "ClientApplication",
+      "FullName": "dbo.ClientApplication",
+      "Type": "table",
+      "Description": null
+    },
+    {
+      "Columns": [
+        {
+          "Name": "Id",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Name",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 200,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Active",
+          "Type": "bit",
+          "Computed": "no",
+          "Length": 1,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "CreationUser",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 100,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "CreationDateTime",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "LastUpdateUser",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 100,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "LastUpdateDateTime",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Version",
+          "Type": "timestamp",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        }
+      ],
+      "Identity": {
+        "Name": "Id",
+        "Seed": 1,
+        "Increment": 1
+      },
+      "Indexes": [
+        {
+          "IndexName": "PK_dbo_Company",
+          "IndexDescription": "clustered, unique, primary key located on PRIMARY",
+          "IndexKeys": "Id"
+        }
+      ],
+      "PrimaryKey": {
+        "ConstraintName": "PK_dbo_Company",
+        "Key": [
+          "Id"
+        ]
+      },
+      "ForeignKeys": [],
+      "Uniques": [],
+      "Checks": [],
+      "Defaults": [],
+      "ImportBag": {
+        "ConstraintDetails": [
+          {
+            "ConstraintType": "PRIMARY KEY (clustered)",
+            "ConstraintName": "PK_dbo_Company",
+            "DeleteAction": "(n/a)",
+            "UpdateAction": "(n/a)",
+            "StatusEnabled": "(n/a)",
+            "StatusForReplication": "(n/a)",
+            "ConstraintKeys": "Id"
+          }
+        ],
+        "TableReferences": [
+          {
+            "ReferenceDescription": "RothschildHouse.dbo.Customer: FK_dbo_Customer_CompanyId_dbo_Company"
+          }
+        ],
+        "RowGuidCol": {
+          "Name": "No rowguidcol column defined."
+        },
+        "ExtendedProperties": []
+      },
+      "DataSource": "(local)",
+      "DatabaseName": "RothschildHouse",
+      "Schema": "dbo",
+      "Name": "Company",
+      "FullName": "dbo.Company",
+      "Type": "table",
+      "Description": null
+    },
+    {
+      "Columns": [
+        {
+          "Name": "Id",
+          "Type": "smallint",
+          "Computed": "no",
+          "Length": 2,
+          "Prec": 5,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Name",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 100,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Code",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 10,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Rate",
+          "Type": "decimal",
+          "Computed": "no",
+          "Length": 9,
+          "Prec": 18,
+          "Scale": 4,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Active",
+          "Type": "bit",
+          "Computed": "no",
+          "Length": 1,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "CreationUser",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 100,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "CreationDateTime",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "LastUpdateUser",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 100,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "LastUpdateDateTime",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Version",
+          "Type": "timestamp",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        }
+      ],
+      "Identity": {
+        "Name": "Id",
+        "Seed": 1,
+        "Increment": 1
+      },
+      "Indexes": [
+        {
+          "IndexName": "PK_dbo_Currency",
+          "IndexDescription": "clustered, unique, primary key located on PRIMARY",
+          "IndexKeys": "Id"
+        }
+      ],
+      "PrimaryKey": {
+        "ConstraintName": "PK_dbo_Currency",
+        "Key": [
+          "Id"
+        ]
+      },
+      "ForeignKeys": [],
+      "Uniques": [],
+      "Checks": [],
+      "Defaults": [],
+      "ImportBag": {
+        "ConstraintDetails": [
+          {
+            "ConstraintType": "PRIMARY KEY (clustered)",
+            "ConstraintName": "PK_dbo_Currency",
+            "DeleteAction": "(n/a)",
+            "UpdateAction": "(n/a)",
+            "StatusEnabled": "(n/a)",
+            "StatusForReplication": "(n/a)",
+            "ConstraintKeys": "Id"
+          }
+        ],
+        "TableReferences": [
+          {
+            "ReferenceDescription": "RothschildHouse.dbo.PaymentTransaction: FK_dbo_PaymentTransaction_CurrencyId_dbo_Currency"
+          }
+        ],
+        "RowGuidCol": {
+          "Name": "No rowguidcol column defined."
+        },
+        "ExtendedProperties": []
+      },
+      "DataSource": "(local)",
+      "DatabaseName": "RothschildHouse",
+      "Schema": "dbo",
+      "Name": "Currency",
+      "FullName": "dbo.Currency",
+      "Type": "table",
+      "Description": null
+    },
+    {
+      "Columns": [
+        {
+          "Name": "Id",
+          "Type": "uniqueidentifier",
+          "Computed": "no",
+          "Length": 16,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "PersonId",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "CompanyId",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "CountryId",
+          "Type": "smallint",
+          "Computed": "no",
+          "Length": 2,
+          "Prec": 5,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "AddressLine1",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 200,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "AddressLine2",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 200,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Phone",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 50,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Email",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 200,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "UCommerceGuid",
+          "Type": "uniqueidentifier",
+          "Computed": "no",
+          "Length": 16,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Active",
+          "Type": "bit",
+          "Computed": "no",
+          "Length": 1,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "CreationUser",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 100,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "CreationDateTime",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "LastUpdateUser",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 100,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "LastUpdateDateTime",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Version",
+          "Type": "timestamp",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        }
+      ],
+      "Identity": null,
+      "Indexes": [
+        {
+          "IndexName": "PK_dbo_Customer",
+          "IndexDescription": "clustered, unique, primary key located on PRIMARY",
+          "IndexKeys": "Id"
+        }
+      ],
+      "PrimaryKey": {
+        "ConstraintName": "PK_dbo_Customer",
+        "Key": [
+          "Id"
+        ]
+      },
+      "ForeignKeys": [
+        {
+          "References": "RothschildHouse.dbo.Company",
+          "Child": null,
+          "ConstraintName": "FK_dbo_Customer_CompanyId_dbo_Company",
+          "Key": [
+            "CompanyId"
+          ]
+        },
+        {
+          "References": "RothschildHouse.dbo.Person",
+          "Child": null,
+          "ConstraintName": "FK_dbo_Customer_PersonId_dbo_Person",
+          "Key": [
+            "PersonId"
+          ]
+        }
+      ],
+      "Uniques": [],
+      "Checks": [],
+      "Defaults": [],
+      "ImportBag": {
+        "ConstraintDetails": [
+          {
+            "ConstraintType": "FOREIGN KEY",
+            "ConstraintName": "FK_dbo_Customer_CompanyId_dbo_Company",
+            "DeleteAction": "No Action",
+            "UpdateAction": "No Action",
+            "StatusEnabled": "Enabled",
+            "StatusForReplication": "Is_For_Replication",
+            "ConstraintKeys": "CompanyId"
+          },
+          {
+            "ConstraintType": " ",
+            "ConstraintName": " ",
+            "DeleteAction": " ",
+            "UpdateAction": " ",
+            "StatusEnabled": " ",
+            "StatusForReplication": " ",
+            "ConstraintKeys": "REFERENCES RothschildHouse.dbo.Company (Id)"
+          },
+          {
+            "ConstraintType": "FOREIGN KEY",
+            "ConstraintName": "FK_dbo_Customer_PersonId_dbo_Person",
+            "DeleteAction": "No Action",
+            "UpdateAction": "No Action",
+            "StatusEnabled": "Enabled",
+            "StatusForReplication": "Is_For_Replication",
+            "ConstraintKeys": "PersonId"
+          },
+          {
+            "ConstraintType": " ",
+            "ConstraintName": " ",
+            "DeleteAction": " ",
+            "UpdateAction": " ",
+            "StatusEnabled": " ",
+            "StatusForReplication": " ",
+            "ConstraintKeys": "REFERENCES RothschildHouse.dbo.Person (Id)"
+          },
+          {
+            "ConstraintType": "PRIMARY KEY (clustered)",
+            "ConstraintName": "PK_dbo_Customer",
+            "DeleteAction": "(n/a)",
+            "UpdateAction": "(n/a)",
+            "StatusEnabled": "(n/a)",
+            "StatusForReplication": "(n/a)",
+            "ConstraintKeys": "Id"
+          }
+        ],
+        "TableReferences": [
+          {
+            "ReferenceDescription": "RothschildHouse.dbo.PaymentTransaction: FK_dbo_PaymentTransaction_CustomerId_dbo_Customer"
+          }
+        ],
+        "RowGuidCol": {
+          "Name": "No rowguidcol column defined."
+        },
+        "ExtendedProperties": []
+      },
+      "DataSource": "(local)",
+      "DatabaseName": "RothschildHouse",
+      "Schema": "dbo",
+      "Name": "Customer",
+      "FullName": "dbo.Customer",
+      "Type": "table",
+      "Description": null
+    },
+    {
+      "Columns": [
+        {
+          "Name": "Id",
+          "Type": "smallint",
+          "Computed": "no",
+          "Length": 2,
+          "Prec": 5,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Type",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 1022,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Value",
+          "Type": "bigint",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 19,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Description",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 400,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Active",
+          "Type": "bit",
+          "Computed": "no",
+          "Length": 1,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "CreationUser",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 100,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "CreationDateTime",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "LastUpdateUser",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 100,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "LastUpdateDateTime",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Version",
+          "Type": "timestamp",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        }
+      ],
+      "Identity": {
+        "Name": "Id",
+        "Seed": 1,
+        "Increment": 1
+      },
+      "Indexes": [
+        {
+          "IndexName": "PK_dbo_EnumDescription",
+          "IndexDescription": "clustered, unique, primary key located on PRIMARY",
+          "IndexKeys": "Id"
+        }
+      ],
+      "PrimaryKey": {
+        "ConstraintName": "PK_dbo_EnumDescription",
+        "Key": [
+          "Id"
+        ]
+      },
+      "ForeignKeys": [],
+      "Uniques": [],
+      "Checks": [],
+      "Defaults": [],
+      "ImportBag": {
+        "ConstraintDetails": [
+          {
+            "ConstraintType": "PRIMARY KEY (clustered)",
+            "ConstraintName": "PK_dbo_EnumDescription",
+            "DeleteAction": "(n/a)",
+            "UpdateAction": "(n/a)",
+            "StatusEnabled": "(n/a)",
+            "StatusForReplication": "(n/a)",
+            "ConstraintKeys": "Id"
+          }
+        ],
+        "TableReferences": [],
+        "RowGuidCol": {
+          "Name": "No rowguidcol column defined."
+        },
+        "ExtendedProperties": []
+      },
+      "DataSource": "(local)",
+      "DatabaseName": "RothschildHouse",
+      "Schema": "dbo",
+      "Name": "EnumDescription",
+      "FullName": "dbo.EnumDescription",
+      "Type": "table",
+      "Description": null
+    },
+    {
+      "Columns": [
+        {
+          "Name": "Id",
+          "Type": "bigint",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 19,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Guid",
+          "Type": "uniqueidentifier",
+          "Computed": "no",
+          "Length": 16,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "ClientFullClassName",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 400,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "PaymentTransactionStatusId",
+          "Type": "smallint",
+          "Computed": "no",
+          "Length": 2,
+          "Prec": 5,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "ClientApplicationId",
+          "Type": "uniqueidentifier",
+          "Computed": "no",
+          "Length": 16,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "CustomerId",
+          "Type": "uniqueidentifier",
+          "Computed": "no",
+          "Length": 16,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "StoreId",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "CardId",
+          "Type": "uniqueidentifier",
+          "Computed": "no",
+          "Length": 16,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Amount",
+          "Type": "decimal",
+          "Computed": "no",
+          "Length": 9,
+          "Prec": 12,
+          "Scale": 4,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "CurrencyId",
+          "Type": "smallint",
+          "Computed": "no",
+          "Length": 2,
+          "Prec": 5,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "CurrencyRate",
+          "Type": "decimal",
+          "Computed": "no",
+          "Length": 9,
+          "Prec": 18,
+          "Scale": 4,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "PaymentTransactionDateTime",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Notes",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": -1,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Active",
+          "Type": "bit",
+          "Computed": "no",
+          "Length": 1,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "CreationUser",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 100,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "CreationDateTime",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "LastUpdateUser",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 100,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "LastUpdateDateTime",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Version",
+          "Type": "timestamp",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        }
+      ],
+      "Identity": {
+        "Name": "Id",
+        "Seed": 1,
+        "Increment": 1
+      },
+      "Indexes": [
+        {
+          "IndexName": "PK_dbo_PaymentTransaction",
+          "IndexDescription": "clustered, unique, primary key located on PRIMARY",
+          "IndexKeys": "Id"
+        },
+        {
+          "IndexName": "UQ_dbo_PaymentTransaction_Guid",
+          "IndexDescription": "nonclustered, unique, unique key located on PRIMARY",
+          "IndexKeys": "Guid"
+        }
+      ],
+      "PrimaryKey": {
+        "ConstraintName": "PK_dbo_PaymentTransaction",
+        "Key": [
+          "Id"
+        ]
+      },
+      "ForeignKeys": [
+        {
+          "References": "RothschildHouse.dbo.Card",
+          "Child": null,
+          "ConstraintName": "FK_dbo_PaymentTransaction_CardId_dbo_Card",
+          "Key": [
+            "CardId"
+          ]
+        },
+        {
+          "References": "RothschildHouse.dbo.ClientApplication",
+          "Child": null,
+          "ConstraintName": "FK_dbo_PaymentTransaction_ClientApplicationId_dbo_ClientApplication",
+          "Key": [
+            "ClientApplicationId"
+          ]
+        },
+        {
+          "References": "RothschildHouse.dbo.Currency",
+          "Child": null,
+          "ConstraintName": "FK_dbo_PaymentTransaction_CurrencyId_dbo_Currency",
+          "Key": [
+            "CurrencyId"
+          ]
+        },
+        {
+          "References": "RothschildHouse.dbo.Customer",
+          "Child": null,
+          "ConstraintName": "FK_dbo_PaymentTransaction_CustomerId_dbo_Customer",
+          "Key": [
+            "CustomerId"
+          ]
+        }
+      ],
+      "Uniques": [
+        {
+          "ConstraintName": "UQ_dbo_PaymentTransaction_Guid",
+          "Key": [
+            "Guid"
+          ]
+        }
+      ],
+      "Checks": [],
+      "Defaults": [],
+      "ImportBag": {
+        "ConstraintDetails": [
+          {
+            "ConstraintType": "FOREIGN KEY",
+            "ConstraintName": "FK_dbo_PaymentTransaction_CardId_dbo_Card",
+            "DeleteAction": "No Action",
+            "UpdateAction": "No Action",
+            "StatusEnabled": "Enabled",
+            "StatusForReplication": "Is_For_Replication",
+            "ConstraintKeys": "CardId"
+          },
+          {
+            "ConstraintType": " ",
+            "ConstraintName": " ",
+            "DeleteAction": " ",
+            "UpdateAction": " ",
+            "StatusEnabled": " ",
+            "StatusForReplication": " ",
+            "ConstraintKeys": "REFERENCES RothschildHouse.dbo.Card (Id)"
+          },
+          {
+            "ConstraintType": "FOREIGN KEY",
+            "ConstraintName": "FK_dbo_PaymentTransaction_ClientApplicationId_dbo_ClientApplication",
+            "DeleteAction": "No Action",
+            "UpdateAction": "No Action",
+            "StatusEnabled": "Enabled",
+            "StatusForReplication": "Is_For_Replication",
+            "ConstraintKeys": "ClientApplicationId"
+          },
+          {
+            "ConstraintType": " ",
+            "ConstraintName": " ",
+            "DeleteAction": " ",
+            "UpdateAction": " ",
+            "StatusEnabled": " ",
+            "StatusForReplication": " ",
+            "ConstraintKeys": "REFERENCES RothschildHouse.dbo.ClientApplication (Id)"
+          },
+          {
+            "ConstraintType": "FOREIGN KEY",
+            "ConstraintName": "FK_dbo_PaymentTransaction_CurrencyId_dbo_Currency",
+            "DeleteAction": "No Action",
+            "UpdateAction": "No Action",
+            "StatusEnabled": "Enabled",
+            "StatusForReplication": "Is_For_Replication",
+            "ConstraintKeys": "CurrencyId"
+          },
+          {
+            "ConstraintType": " ",
+            "ConstraintName": " ",
+            "DeleteAction": " ",
+            "UpdateAction": " ",
+            "StatusEnabled": " ",
+            "StatusForReplication": " ",
+            "ConstraintKeys": "REFERENCES RothschildHouse.dbo.Currency (Id)"
+          },
+          {
+            "ConstraintType": "FOREIGN KEY",
+            "ConstraintName": "FK_dbo_PaymentTransaction_CustomerId_dbo_Customer",
+            "DeleteAction": "No Action",
+            "UpdateAction": "No Action",
+            "StatusEnabled": "Enabled",
+            "StatusForReplication": "Is_For_Replication",
+            "ConstraintKeys": "CustomerId"
+          },
+          {
+            "ConstraintType": " ",
+            "ConstraintName": " ",
+            "DeleteAction": " ",
+            "UpdateAction": " ",
+            "StatusEnabled": " ",
+            "StatusForReplication": " ",
+            "ConstraintKeys": "REFERENCES RothschildHouse.dbo.Customer (Id)"
+          },
+          {
+            "ConstraintType": "PRIMARY KEY (clustered)",
+            "ConstraintName": "PK_dbo_PaymentTransaction",
+            "DeleteAction": "(n/a)",
+            "UpdateAction": "(n/a)",
+            "StatusEnabled": "(n/a)",
+            "StatusForReplication": "(n/a)",
+            "ConstraintKeys": "Id"
+          },
+          {
+            "ConstraintType": "UNIQUE (non-clustered)",
+            "ConstraintName": "UQ_dbo_PaymentTransaction_Guid",
+            "DeleteAction": "(n/a)",
+            "UpdateAction": "(n/a)",
+            "StatusEnabled": "(n/a)",
+            "StatusForReplication": "(n/a)",
+            "ConstraintKeys": "Guid"
+          }
+        ],
+        "TableReferences": [
+          {
+            "ReferenceDescription": "RothschildHouse.dbo.PaymentTransactionLog: FK_dbo_PaymentTransactionLog_PaymentTransactionId_dbo_PaymentTransaction"
+          }
+        ],
+        "RowGuidCol": {
+          "Name": "No rowguidcol column defined."
+        },
+        "ExtendedProperties": []
+      },
+      "DataSource": "(local)",
+      "DatabaseName": "RothschildHouse",
+      "Schema": "dbo",
+      "Name": "PaymentTransaction",
+      "FullName": "dbo.PaymentTransaction",
+      "Type": "table",
+      "Description": null
+    },
+    {
+      "Columns": [
+        {
+          "Name": "Id",
+          "Type": "bigint",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 19,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "PaymentTransactionId",
+          "Type": "bigint",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 19,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "PaymentTransactionStatusId",
+          "Type": "smallint",
+          "Computed": "no",
+          "Length": 2,
+          "Prec": 5,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "LogType",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 50,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "ContentType",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 200,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Content",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": -1,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Notes",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": -1,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Active",
+          "Type": "bit",
+          "Computed": "no",
+          "Length": 1,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "CreationUser",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 100,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "CreationDateTime",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "LastUpdateUser",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 100,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "LastUpdateDateTime",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Version",
+          "Type": "timestamp",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        }
+      ],
+      "Identity": {
+        "Name": "Id",
+        "Seed": 1,
+        "Increment": 1
+      },
+      "Indexes": [
+        {
+          "IndexName": "PK_dbo_PaymentTransactionLog",
+          "IndexDescription": "clustered, unique, primary key located on PRIMARY",
+          "IndexKeys": "Id"
+        }
+      ],
+      "PrimaryKey": {
+        "ConstraintName": "PK_dbo_PaymentTransactionLog",
+        "Key": [
+          "Id"
+        ]
+      },
+      "ForeignKeys": [
+        {
+          "References": "RothschildHouse.dbo.PaymentTransaction",
+          "Child": null,
+          "ConstraintName": "FK_dbo_PaymentTransactionLog_PaymentTransactionId_dbo_PaymentTransaction",
+          "Key": [
+            "PaymentTransactionId"
+          ]
+        }
+      ],
+      "Uniques": [],
+      "Checks": [],
+      "Defaults": [],
+      "ImportBag": {
+        "ConstraintDetails": [
+          {
+            "ConstraintType": "FOREIGN KEY",
+            "ConstraintName": "FK_dbo_PaymentTransactionLog_PaymentTransactionId_dbo_PaymentTransaction",
+            "DeleteAction": "No Action",
+            "UpdateAction": "No Action",
+            "StatusEnabled": "Enabled",
+            "StatusForReplication": "Is_For_Replication",
+            "ConstraintKeys": "PaymentTransactionId"
+          },
+          {
+            "ConstraintType": " ",
+            "ConstraintName": " ",
+            "DeleteAction": " ",
+            "UpdateAction": " ",
+            "StatusEnabled": " ",
+            "StatusForReplication": " ",
+            "ConstraintKeys": "REFERENCES RothschildHouse.dbo.PaymentTransaction (Id)"
+          },
+          {
+            "ConstraintType": "PRIMARY KEY (clustered)",
+            "ConstraintName": "PK_dbo_PaymentTransactionLog",
+            "DeleteAction": "(n/a)",
+            "UpdateAction": "(n/a)",
+            "StatusEnabled": "(n/a)",
+            "StatusForReplication": "(n/a)",
+            "ConstraintKeys": "Id"
+          }
+        ],
+        "TableReferences": [],
+        "RowGuidCol": {
+          "Name": "No rowguidcol column defined."
+        },
+        "ExtendedProperties": []
+      },
+      "DataSource": "(local)",
+      "DatabaseName": "RothschildHouse",
+      "Schema": "dbo",
+      "Name": "PaymentTransactionLog",
+      "FullName": "dbo.PaymentTransactionLog",
+      "Type": "table",
+      "Description": null
+    },
+    {
+      "Columns": [
+        {
+          "Name": "Id",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "GivenName",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 50,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "MiddleName",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 50,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "FamilyName",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 50,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "FullName",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 150,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "BirthDate",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Gender",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 2,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Active",
+          "Type": "bit",
+          "Computed": "no",
+          "Length": 1,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "CreationUser",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 100,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "CreationDateTime",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "LastUpdateUser",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 100,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "LastUpdateDateTime",
+          "Type": "datetime",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Version",
+          "Type": "timestamp",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        }
+      ],
+      "Identity": {
+        "Name": "Id",
+        "Seed": 1,
+        "Increment": 1
+      },
+      "Indexes": [
+        {
+          "IndexName": "PK_dbo_Person",
+          "IndexDescription": "clustered, unique, primary key located on PRIMARY",
+          "IndexKeys": "Id"
+        }
+      ],
+      "PrimaryKey": {
+        "ConstraintName": "PK_dbo_Person",
+        "Key": [
+          "Id"
+        ]
+      },
+      "ForeignKeys": [],
+      "Uniques": [],
+      "Checks": [],
+      "Defaults": [],
+      "ImportBag": {
+        "ConstraintDetails": [
+          {
+            "ConstraintType": "PRIMARY KEY (clustered)",
+            "ConstraintName": "PK_dbo_Person",
+            "DeleteAction": "(n/a)",
+            "UpdateAction": "(n/a)",
+            "StatusEnabled": "(n/a)",
+            "StatusForReplication": "(n/a)",
+            "ConstraintKeys": "Id"
+          }
+        ],
+        "TableReferences": [
+          {
+            "ReferenceDescription": "RothschildHouse.dbo.Customer: FK_dbo_Customer_PersonId_dbo_Person"
+          }
+        ],
+        "RowGuidCol": {
+          "Name": "No rowguidcol column defined."
+        },
+        "ExtendedProperties": []
+      },
+      "DataSource": "(local)",
+      "DatabaseName": "RothschildHouse",
+      "Schema": "dbo",
+      "Name": "Person",
+      "FullName": "dbo.Person",
+      "Type": "table",
+      "Description": null
+    },
+    {
+      "Columns": [
+        {
+          "Name": "name",
+          "Type": "sysname",
+          "Computed": "no",
+          "Length": 256,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "principal_id",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "diagram_id",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "version",
+          "Type": "int",
+          "Computed": "no",
+          "Length": 4,
+          "Prec": 10,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "definition",
+          "Type": "varbinary",
+          "Computed": "no",
+          "Length": -1,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": true,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "no",
+            "FixedLenNullInSource": "yes",
+            "ExtendedProperties": []
+          }
+        }
+      ],
+      "Identity": {
+        "Name": "diagram_id",
+        "Seed": 1,
+        "Increment": 1
+      },
+      "Indexes": [
+        {
+          "IndexName": "PK__sysdiagr__C2B05B619EBB89C1",
+          "IndexDescription": "clustered, unique, primary key located on PRIMARY",
+          "IndexKeys": "diagram_id"
+        },
+        {
+          "IndexName": "UK_principal_name",
+          "IndexDescription": "nonclustered, unique, unique key located on PRIMARY",
+          "IndexKeys": "principal_id, name"
+        }
+      ],
+      "PrimaryKey": {
+        "ConstraintName": "PK__sysdiagr__C2B05B619EBB89C1",
+        "Key": [
+          "diagram_id"
+        ]
+      },
+      "ForeignKeys": [],
+      "Uniques": [
+        {
+          "ConstraintName": "UK_principal_name",
+          "Key": [
+            "principal_id",
+            "name"
+          ]
+        }
+      ],
+      "Checks": [],
+      "Defaults": [],
+      "ImportBag": {
+        "ConstraintDetails": [
+          {
+            "ConstraintType": "PRIMARY KEY (clustered)",
+            "ConstraintName": "PK__sysdiagr__C2B05B619EBB89C1",
+            "DeleteAction": "(n/a)",
+            "UpdateAction": "(n/a)",
+            "StatusEnabled": "(n/a)",
+            "StatusForReplication": "(n/a)",
+            "ConstraintKeys": "diagram_id"
+          },
+          {
+            "ConstraintType": "UNIQUE (non-clustered)",
+            "ConstraintName": "UK_principal_name",
+            "DeleteAction": "(n/a)",
+            "UpdateAction": "(n/a)",
+            "StatusEnabled": "(n/a)",
+            "StatusForReplication": "(n/a)",
+            "ConstraintKeys": "principal_id, name"
+          }
+        ],
+        "TableReferences": [],
+        "RowGuidCol": {
+          "Name": "No rowguidcol column defined."
+        },
+        "ExtendedProperties": []
+      },
+      "DataSource": "(local)",
+      "DatabaseName": "RothschildHouse",
+      "Schema": "dbo",
+      "Name": "sysdiagrams",
+      "FullName": "dbo.sysdiagrams",
+      "Type": "table",
+      "Description": null
+    }
+  ],
+  "Views": [
+    {
+      "Identity": null,
+      "ImportBag": {
+        "RowGuidCol": {
+          "Name": "No rowguidcol column defined."
+        },
+        "ExtendedProperties": []
+      },
+      "Columns": [
+        {
+          "Name": "Id",
+          "Type": "bigint",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 19,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Name",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 400,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        }
+      ],
+      "Indexes": [],
+      "DataSource": "(local)",
+      "DatabaseName": "RothschildHouse",
+      "Schema": "dbo",
+      "Name": "VCardType",
+      "FullName": "dbo.VCardType",
+      "Type": "view",
+      "Description": null
+    },
+    {
+      "Identity": null,
+      "ImportBag": {
+        "RowGuidCol": {
+          "Name": "No rowguidcol column defined."
+        },
+        "ExtendedProperties": []
+      },
+      "Columns": [
+        {
+          "Name": "Id",
+          "Type": "bigint",
+          "Computed": "no",
+          "Length": 8,
+          "Prec": 19,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        },
+        {
+          "Name": "Name",
+          "Type": "nvarchar",
+          "Computed": "no",
+          "Length": 400,
+          "Prec": 0,
+          "Scale": 0,
+          "Nullable": false,
+          "Collation": "SQL_Latin1_General_CP1_CI_AS",
+          "DefaultValue": null,
+          "Description": null,
+          "ImportBag": {
+            "TrimTrailingBlanks": "(n/a)",
+            "FixedLenNullInSource": "(n/a)",
+            "ExtendedProperties": []
+          }
+        }
+      ],
+      "Indexes": [],
+      "DataSource": "(local)",
+      "DatabaseName": "RothschildHouse",
+      "Schema": "dbo",
+      "Name": "VPaymentTransactionStatus",
+      "FullName": "dbo.VPaymentTransactionStatus",
+      "Type": "view",
+      "Description": null
+    }
+  ],
+  "ScalarFunctions": [],
+  "TableFunctions": [],
+  "StoredProcedures": [],
+  "Sequences": [],
+  "ImportBag": {
+    "ExtendedProperties": [
+      {
+        "Name": "MS_Description",
+        "Value": "Db desc 7",
+        "Level0Type": null,
+        "Level0Name": null,
+        "Level1Type": null,
+        "Level1Name": null,
+        "Level2Type": null,
+        "Level2Name": null
+      }
+    ]
+  },
+  "DatabaseValidators": []
+}

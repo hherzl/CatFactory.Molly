@@ -53,12 +53,7 @@ namespace CatFactory.Molly.API.Controllers
         {
             var databases = await _codeFactoryService.GetDatabasesAsync();
 
-            var response = new ListResponse<DatabaseItemModel>();
-
-            foreach (var item in databases)
-            {
-                response.Model.Add(new DatabaseItemModel(item.Name, item.Dbms, item.Tables.Count, item.Views.Count));
-            }
+            var response = new ListResponse<DatabaseItemModel>(databases.Select(item => new DatabaseItemModel(item.Name, item.Dbms, item.Tables.Count, item.Views.Count)).ToList());
 
             return response.ToOkResult();
         }
@@ -110,9 +105,7 @@ namespace CatFactory.Molly.API.Controllers
             if (view == null)
                 return NotFound();
 
-            var model = new ViewDetailsModel(view);
-
-            var response = new SingleResponse<ViewDetailsModel>(model);
+            var response = new SingleResponse<ViewDetailsModel>(new ViewDetailsModel(view));
 
             return response.ToOkResult();
         }

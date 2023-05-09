@@ -2,6 +2,6 @@
 {
     public interface IListResponse<TModel> : IResponse
     {
-        IEnumerable<TModel> Model { get; set; }
+        List<TModel> Model { get; set; }
     }
 }

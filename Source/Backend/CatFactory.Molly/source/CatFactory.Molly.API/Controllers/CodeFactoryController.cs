@@ -53,7 +53,12 @@ namespace CatFactory.Molly.API.Controllers
         {
             var databases = await _codeFactoryService.GetDatabasesAsync();
 
-            var response = new ListResponse<DatabaseItemModel>(databases);
+            var response = new ListResponse<DatabaseItemModel>();
+
+            foreach (var item in databases)
+            {
+                response.Model.Add(new DatabaseItemModel(item.Name, item.Dbms, item.Tables.Count, item.Views.Count));
+            }
 
             return response.ToOkResult();
         }
@@ -64,12 +69,14 @@ namespace CatFactory.Molly.API.Controllers
         [ProducesResponseType(500)]
         public async Task<IActionResult> GetDatabaseAsync(string id)
         {
-            var database = await _codeFactoryService.GetDatabaseDetailsAsync(id);
+            var database = await _codeFactoryService.GetDatabaseAsync(id);
 
             if (database == null)
                 return NotFound();
 
-            var response = new SingleResponse<DatabaseDetailsModel>(database);
+            var model = new DatabaseDetailsModel(database);
+
+            var response = new SingleResponse<DatabaseDetailsModel>(model);
 
             return response.ToOkResult();
         }
@@ -85,21 +92,7 @@ namespace CatFactory.Molly.API.Controllers
             if (table == null)
                 return NotFound();
 
-            var model = new TableDetailsModel
-            {
-                FullName = table.FullName,
-                Schema = table.Schema,
-                Name = table.Name,
-                Description = table.Description,
-                Identity = new IdentityDetailsModel(table.Identity),
-                Columns = table.Columns.Select(item => new ColumnItemModel(item)).ToList(),
-                PrimaryKey = new PrimaryKeyDetailsModel(table.PrimaryKey),
-                ForeignKeys = table.ForeignKeys?.Select(item => new ForeignKeyItemModel(item)).ToList(),
-                Uniques = table.Uniques?.Select(item => new UniqueItemModel(item)).ToList(),
-                Checks = table.Checks?.Select(item => new CheckItemModel(item)).ToList(),
-                Defaults = table.Defaults?.Select(item => new DefaultItemModel(item)).ToList(),
-                Indexes = table.Indexes?.Select(item => new IndexItemModel(item)).ToList()
-            };
+            var model = new TableDetailsModel(table);
 
             var response = new SingleResponse<TableDetailsModel>(model);
 
@@ -117,16 +110,7 @@ namespace CatFactory.Molly.API.Controllers
             if (view == null)
                 return NotFound();
 
-            var model = new ViewDetailsModel
-            {
-                FullName = view.FullName,
-                Schema = view.Schema,
-                Name = view.Name,
-                Description = view.Description,
-                Identity = new IdentityDetailsModel(view.Identity),
-                Columns = view.Columns.Select(item => new ColumnItemModel(item)).ToList(),
-                Indexes = view.Indexes?.Select(item => new IndexItemModel(item)).ToList()
-            };
+            var model = new ViewDetailsModel(view);
 
             var response = new SingleResponse<ViewDetailsModel>(model);
 

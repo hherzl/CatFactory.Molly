@@ -1,6 +1,6 @@
-﻿using System.Text;
+﻿using System.Collections.ObjectModel;
+using System.Text;
 using System.Text.Json;
-using CatFactory.Molly.API.Models;
 using CatFactory.ObjectRelationalMapping;
 using CatFactory.SqlServer;
 
@@ -56,14 +56,14 @@ namespace CatFactory.Molly.API.Services
             await File.WriteAllTextAsync(GetDatabaseFileName(db.Name), json, Encoding.Default);
         }
 
-        public async Task<IEnumerable<DatabaseItemModel>> GetDatabasesAsync()
+        public async Task<ICollection<Database>> GetDatabasesAsync()
         {
             if (!Directory.Exists(DatabasesDirectoryName))
                 Directory.CreateDirectory(DatabasesDirectoryName);
 
             var files = Directory.GetFiles(DatabasesDirectoryName);
 
-            var result = new List<DatabaseItemModel>();
+            var result = new Collection<Database>();
 
             foreach (var item in files)
             {
@@ -71,13 +71,7 @@ namespace CatFactory.Molly.API.Services
 
                 var db = JsonSerializer.Deserialize<SqlServerDatabase>(dbInJson);
 
-                result.Add(new DatabaseItemModel
-                {
-                    Name = db.Name,
-                    Dbms = db.Dbms,
-                    TablesCount = db.Tables.Count,
-                    ViewsCount = db.Views.Count
-                });
+                result.Add(db);
             }
 
             return result;
@@ -119,40 +113,6 @@ namespace CatFactory.Molly.API.Services
             var db = await GetDatabaseAsync(databaseName);
 
             return db.FindView(viewName);
-        }
-
-        public async Task<DatabaseDetailsModel> GetDatabaseDetailsAsync(string name)
-        {
-            var db = await GetDatabaseAsync(name);
-
-            return new DatabaseDetailsModel
-            {
-                Name = db.Name,
-                Dbms = db.Dbms,
-                Description = db.Description,
-                Tables = db.Tables.Select(item => new TableItemModel
-                {
-                    Schema = item.Schema,
-                    Name = item.Name,
-                    Type = item.Type,
-                    FullName = item.FullName,
-                    ColumnsCount = item.Columns.Count,
-                    PrimaryKey = item.PrimaryKey == null ? "" : string.Join(",", item.PrimaryKey.Key),
-                    Identity = item.Identity == null ? "" : $"{item.Identity.Name}({item.Identity.Seed}, {item.Identity.Increment})",
-                    Description = item.Description
-                }).ToList(),
-                Views = db.Views.Select(item => new ViewItemModel
-                {
-                    Schema = item.Schema,
-                    Name = item.Name,
-                    Type = item.Type,
-                    FullName = item.FullName,
-                    ColumnsCount = item.Columns.Count,
-                    Identity = item.Identity == null ? "" : item.Identity.Name,
-                    Description = item.Description
-                }).ToList(),
-                DatabaseTypeMaps = db.DatabaseTypeMaps
-            };
         }
     }
 }

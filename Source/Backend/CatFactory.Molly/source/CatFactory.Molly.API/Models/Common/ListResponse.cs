@@ -8,9 +8,9 @@
 
         public ListResponse(IEnumerable<TModel> model)
         {
-            Model = model;
+            Model = new List<TModel>(model);
         }
 
-        public IEnumerable<TModel> Model { get; set; }
+        public List<TModel> Model { get; set; }
     }
 }

@@ -4,24 +4,29 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 import { UpdateDescriptionRequest, MollyClientService } from 'src/app/services/molly-client.service';
 
 @Component({
-  selector: 'app-edit-description-dialog',
-  templateUrl: './edit-description-dialog.component.html',
-  styleUrls: ['./edit-description-dialog.component.css']
+  selector: 'app-edit-database-description-dialog',
+  templateUrl: './edit-database-description-dialog.component.html',
+  styleUrls: ['./edit-database-description-dialog.component.css']
 })
-export class EditDescriptionDialogComponent {
+export class EditDatabaseDescriptionDialogComponent {
   @ViewChild('description', { static: true }) descriptionElement: ElementRef;
   description: string = '';
 
-  constructor(public dialogRef: MatDialogRef<EditDescriptionDialogComponent>, @Inject(MAT_DIALOG_DATA) public data: EditDescriptionDialogData, private snackBar: MatSnackBar, descriptionElement: ElementRef, private mollyClient: MollyClientService) {
+  constructor(
+    public dialogRef: MatDialogRef<EditDatabaseDescriptionDialogComponent>,
+    @Inject(MAT_DIALOG_DATA) public data: EditDatabaseDescriptionDialogData,
+    private snackBar: MatSnackBar,
+    descriptionElement: ElementRef,
+    private mollyClient: MollyClientService) {
     this.descriptionElement = descriptionElement;
     this.dialogRef.disableClose = true;
   }
 
-  close(): void {
+  cancel(): void {
     this.dialogRef.close({ description: this.data?.description });
   }
 
-  updateDescription(): void {
+  save(): void {
     let request = new UpdateDescriptionRequest();
     request.description = this.descriptionElement.nativeElement.value;
 
@@ -38,7 +43,8 @@ export class EditDescriptionDialogComponent {
   }
 }
 
-export class EditDescriptionDialogData {
+export class EditDatabaseDescriptionDialogData {
+  public title!: string;
   public databaseName!: string;
   public description!: string;
 }

@@ -3,7 +3,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute, Params, Router } from '@angular/router';
 import { SingleResponse } from 'src/app/services/common';
 import { DatabaseDetailsModel, MollyClientService, TableItemModel, ViewItemModel } from 'src/app/services/molly-client.service';
-import { EditDescriptionDialogComponent } from '../edit-description-dialog/edit-description-dialog.component';
+import { EditDatabaseDescriptionDialogComponent } from '../edit-database-description-dialog/edit-database-description-dialog.component';
 
 @Component({
   selector: 'app-database-details',
@@ -33,11 +33,13 @@ export class DatabaseDetailsComponent implements OnInit {
 
   editDescription(): void {
     this.dialog
-      .open(EditDescriptionDialogComponent, {
+      .open(EditDatabaseDescriptionDialogComponent, {
         width: '500px',
         data: {
+          title: 'Edit Database Description',
           databaseName: this.response?.model?.name,
-          description: this.response?.model?.description
+          description: this.response?.model?.description,
+          isDatabase: true
         }
       })
       .afterClosed()

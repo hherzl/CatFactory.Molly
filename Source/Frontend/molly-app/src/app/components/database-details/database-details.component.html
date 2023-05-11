@@ -8,15 +8,12 @@
             <mat-card-title>{{ response?.model?.name }}</mat-card-title>
         </mat-card-header>
         <mat-card-content>
-            <p>
-                <span>Dbms: <strong>{{ response?.model?.dbms }}</strong></span>
-            </p>
-            <p>
-                <span>Description: <strong>{{ response?.model?.description }}</strong></span>
-                <button mat-icon-button (click)="editDescription()" aria-label="Edit description">
-                    <mat-icon>edit</mat-icon>
-                </button>
-            </p>
+            <span>Dbms: <strong>{{ response?.model?.dbms }}</strong></span>
+            <br>
+            <span>Description: <strong>{{ response?.model?.description }}</strong></span>
+            <button mat-icon-button (click)="editDescription()" aria-label="Edit description">
+                <mat-icon>edit</mat-icon>
+            </button>
         </mat-card-content>
     </mat-card>
 </div>

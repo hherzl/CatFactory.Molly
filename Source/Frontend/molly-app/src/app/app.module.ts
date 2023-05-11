@@ -33,7 +33,7 @@ import { DatabaseDetailsComponent } from './components/database-details/database
 import { ImportDatabaseComponent } from './components/import-database/import-database.component';
 import { TableDetailsComponent } from './components/table-details/table-details.component';
 import { ViewDetailsComponent } from './components/view-details/view-details.component';
-import { EditDescriptionDialogComponent } from './components/edit-description-dialog/edit-description-dialog.component';
+import { EditDatabaseDescriptionDialogComponent } from './components/edit-database-description-dialog/edit-database-description-dialog.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +45,7 @@ import { EditDescriptionDialogComponent } from './components/edit-description-di
     ImportDatabaseComponent,
     TableDetailsComponent,
     ViewDetailsComponent,
-    EditDescriptionDialogComponent
+    EditDatabaseDescriptionDialogComponent
   ],
   imports: [
     BrowserModule,

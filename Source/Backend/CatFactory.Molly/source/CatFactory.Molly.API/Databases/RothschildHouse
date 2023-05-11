@@ -4,7 +4,7 @@
   "Dbms": "SQL Server",
   "ServerName": "(local)",
   "Name": "RothschildHouse",
-  "Description": "Db desc 7",
+  "Description": "Db desc 8",
   "DefaultSchema": "dbo",
   "SupportTransactions": true,
   "DbObjects": [

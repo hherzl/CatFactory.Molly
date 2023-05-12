@@ -27139,7 +27139,7 @@
       "Name": "vEmployee",
       "FullName": "HumanResources.vEmployee",
       "Type": "view",
-      "Description": "Employee names and addresses."
+      "Description": "Primary key (test 0)"
     },
     {
       "Identity": null,

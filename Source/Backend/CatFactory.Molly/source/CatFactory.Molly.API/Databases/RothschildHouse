@@ -3646,7 +3646,7 @@
           "Nullable": false,
           "Collation": "",
           "DefaultValue": null,
-          "Description": null,
+          "Description": "Primary key (test 2)",
           "ImportBag": {
             "TrimTrailingBlanks": "(n/a)",
             "FixedLenNullInSource": "(n/a)",

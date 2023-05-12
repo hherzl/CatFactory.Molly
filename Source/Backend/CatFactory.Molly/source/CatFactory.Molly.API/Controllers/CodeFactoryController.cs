@@ -229,5 +229,35 @@ namespace CatFactory.Molly.API.Controllers
 
             return response.ToOkResult();
         }
+
+        [HttpPut("database/{databaseName}/view/{viewName}/column/{columnName}/update-description")]
+        [ProducesResponseType(200, Type = typeof(IResponse))]
+        [ProducesResponseType(400)]
+        [ProducesResponseType(500)]
+        public async Task<IActionResult> UpdateViewColumnDescriptionAsync(string databaseName, string viewName, string columnName, [FromBody] UpdateDescriptionRequest request)
+        {
+            _logger?.LogDebug($"'{nameof(UpdateViewColumnDescriptionAsync)}' has been invoked");
+
+            var databaseImportSettings = await _codeFactoryService.GetDatabaseImportSettingsAsync(databaseName);
+            using var connection = databaseImportSettings.GetConnection();
+
+            var database = await _codeFactoryService.GetDatabaseAsync(databaseName);
+            var view = database.FindView(viewName);
+            var column = view[columnName];
+
+            await connection.DropExtendedPropertyIfExistsAsync(view, column, SqlServerToken.MS_DESCRIPTION);
+
+            await connection.AddOrUpdateExtendedPropertyAsync(view, column, SqlServerToken.MS_DESCRIPTION, request.FixedDescription);
+
+            column.Description = request.FixedDescription;
+
+            await _codeFactoryService.SerializeAsync(database);
+
+            _logger?.LogInformation($"The local changes for '{databaseName}' database were saved successfully");
+
+            var response = new Response("The description was updated successfully");
+
+            return response.ToOkResult();
+        }
     }
 }

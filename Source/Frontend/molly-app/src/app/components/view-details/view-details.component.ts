@@ -2,8 +2,9 @@ import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute, Params, Router } from '@angular/router';
 import { SingleResponse } from 'src/app/services/common';
-import { MollyClientService, ViewDetailsModel } from 'src/app/services/molly-client.service';
+import { ColumnItemModel, MollyClientService, ViewDetailsModel } from 'src/app/services/molly-client.service';
 import { EditViewDescriptionDialogComponent } from '../edit-view-description-dialog/edit-view-description-dialog.component';
+import { EditViewColumnDescriptionDialogComponent } from '../edit-view-column-description-dialog/edit-view-column-description-dialog.component';
 
 @Component({
   selector: 'app-view-details',
@@ -33,7 +34,7 @@ export class ViewDetailsComponent {
     });
   }
 
-  editDescription(): void {
+  editViewDescription(): void {
     this.dialog
       .open(EditViewDescriptionDialogComponent, {
         width: '500px',
@@ -47,6 +48,24 @@ export class ViewDetailsComponent {
       .afterClosed()
       .subscribe(result => {
         this.response.model.description = result?.description;
+      });
+  }
+
+  editColumnDescription(item: ColumnItemModel): void {
+    this.dialog
+      .open(EditViewColumnDescriptionDialogComponent, {
+        width: '500px',
+        data: {
+          title: 'Edit View Column Description',
+          databaseName: this.db,
+          viewName: this?.response?.model?.fullName,
+          columnName: item.name,
+          description: item.description
+        }
+      })
+      .afterClosed()
+      .subscribe(result => {
+        item.description = result?.description;
       });
   }
 }

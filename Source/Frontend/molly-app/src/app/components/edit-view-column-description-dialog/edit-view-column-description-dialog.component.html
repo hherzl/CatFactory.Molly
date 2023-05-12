@@ -1,0 +1,11 @@
+<h1 mat-dialog-title>{{ data?.title }}</h1>
+<div mat-dialog-content>
+    <mat-form-field class="description">
+        <mat-label>Description</mat-label>
+        <input type="text" matInput #description value="{{ data?.description }}">
+    </mat-form-field>
+</div>
+<div mat-dialog-actions>
+    <button mat-button (click)="cancel()" cdkFocusInitial>Cancel</button>
+    <button mat-raised-button color="primary" (click)="save()">Save</button>
+</div>

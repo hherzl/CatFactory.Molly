@@ -38,13 +38,5 @@ namespace CatFactory.Molly.API.Models
         public List<CheckItemModel> Checks { get; set; }
         public List<DefaultItemModel> Defaults { get; set; }
         public List<IndexItemModel> Indexes { get; set; }
-
-        public List<ColumnDescriptionItemModel> ColumnDescriptions { get; set; }
-    }
-
-    public class ColumnDescriptionItemModel
-    {
-        public string Column { get; set; }
-        public string Description { get; set; }
     }
 }

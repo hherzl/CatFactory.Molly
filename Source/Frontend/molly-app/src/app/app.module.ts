@@ -37,6 +37,7 @@ import { EditDatabaseDescriptionDialogComponent } from './components/edit-databa
 import { EditTableDescriptionDialogComponent } from './components/edit-table-description-dialog/edit-table-description-dialog.component';
 import { EditViewDescriptionDialogComponent } from './components/edit-view-description-dialog/edit-view-description-dialog.component';
 import { EditTableColumnDescriptionDialogComponent } from './components/edit-table-column-description-dialog/edit-table-column-description-dialog.component';
+import { EditViewColumnDescriptionDialogComponent } from './components/edit-view-column-description-dialog/edit-view-column-description-dialog.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import { EditTableColumnDescriptionDialogComponent } from './components/edit-tab
     EditDatabaseDescriptionDialogComponent,
     EditTableDescriptionDialogComponent,
     EditViewDescriptionDialogComponent,
-    EditTableColumnDescriptionDialogComponent
+    EditTableColumnDescriptionDialogComponent,
+    EditViewColumnDescriptionDialogComponent
   ],
   imports: [
     BrowserModule,

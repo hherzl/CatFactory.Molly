@@ -3678,7 +3678,7 @@
       "Name": "VCardType",
       "FullName": "dbo.VCardType",
       "Type": "view",
-      "Description": null
+      "Description": "test 1"
     },
     {
       "Identity": null,

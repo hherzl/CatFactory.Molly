@@ -53,6 +53,11 @@ export class MollyClientService {
     const url = `${this.endpoint}/database/${databaseName}/table/${tableName}/column/${columnName}/update-description`;
     return this.http.put<Response>(url, request);
   }
+
+  public updateViewDescription(databaseName: string, viewName: string, request: UpdateDescriptionRequest): Observable<Response> {
+    const url = `${this.endpoint}/database/${databaseName}/view/${viewName}/update-description`;
+    return this.http.put<Response>(url, request);
+  }
 }
 
 export class DatabaseItemModel {
@@ -194,8 +199,4 @@ export class IndexItemModel {
 
 export class UpdateDescriptionRequest {
   public description!: string;
-}
-
-export class UpdateDescriptionResponse extends Response {
-  
 }

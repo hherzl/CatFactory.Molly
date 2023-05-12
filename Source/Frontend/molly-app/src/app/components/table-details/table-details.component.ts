@@ -41,8 +41,7 @@ export class TableDetailsComponent {
           title: 'Edit Table Description',
           databaseName: this.db,
           tableName: this?.response?.model?.fullName,
-          description: this.response?.model?.description,
-          isDatabase: true
+          description: this.response?.model?.description
         }
       })
       .afterClosed()

@@ -1,4 +1,6 @@
-﻿namespace CatFactory.Molly.API.Models
+﻿using CatFactory.ObjectRelationalMapping;
+
+namespace CatFactory.Molly.API.Models
 {
     public class DatabaseItemModel
     {
@@ -6,12 +8,12 @@
         {
         }
 
-        public DatabaseItemModel(string name, string dbms, int tablesCount, int viewsCount)
+        public DatabaseItemModel(Database database)
         {
-            Name = name;
-            Dbms = dbms;
-            TablesCount = tablesCount;
-            ViewsCount = viewsCount;
+            Name = database.Name;
+            Dbms = database.Dbms;
+            TablesCount = database.Tables.Count;
+            ViewsCount = database.Views.Count;
         }
 
         public string Name { get; set; }

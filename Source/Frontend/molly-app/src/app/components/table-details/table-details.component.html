@@ -9,6 +9,9 @@
         </mat-card-header>
         <mat-card-content>
             <span>Description: <strong>{{ response?.model?.description }}</strong></span>
+            <button mat-icon-button (click)="editDescription()" aria-label="Edit description">
+                <mat-icon>edit</mat-icon>
+            </button>
         </mat-card-content>
     </mat-card>
 </div>

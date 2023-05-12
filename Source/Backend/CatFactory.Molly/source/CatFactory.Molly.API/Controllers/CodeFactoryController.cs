@@ -53,7 +53,7 @@ namespace CatFactory.Molly.API.Controllers
         {
             var databases = await _codeFactoryService.GetDatabasesAsync();
 
-            var response = new ListResponse<DatabaseItemModel>(databases.Select(item => new DatabaseItemModel(item.Name, item.Dbms, item.Tables.Count, item.Views.Count)).ToList());
+            var response = new ListResponse<DatabaseItemModel>(databases.Select(item => new DatabaseItemModel(item)).ToList());
 
             return response.ToOkResult();
         }

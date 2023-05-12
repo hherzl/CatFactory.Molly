@@ -893,7 +893,7 @@
       "Name": "Bank",
       "FullName": "dbo.Bank",
       "Type": "table",
-      "Description": "test"
+      "Description": "test 1"
     },
     {
       "Columns": [

@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute, Params, Router } from '@angular/router';
 import { SingleResponse } from 'src/app/services/common';
 import { MollyClientService, TableDetailsModel } from 'src/app/services/molly-client.service';
+import { EditTableDescriptionDialogComponent } from '../edit-table-description-dialog/edit-table-description-dialog.component';
 
 @Component({
   selector: 'app-table-details',
@@ -9,7 +11,7 @@ import { MollyClientService, TableDetailsModel } from 'src/app/services/molly-cl
   styleUrls: ['./table-details.component.css']
 })
 export class TableDetailsComponent {
-  constructor(private activatedRoute: ActivatedRoute, private router: Router, private mollyClient: MollyClientService) {
+  constructor(private activatedRoute: ActivatedRoute, private router: Router, public dialog: MatDialog, private mollyClient: MollyClientService) {
   }
 
   public loading!: boolean;
@@ -29,5 +31,23 @@ export class TableDetailsComponent {
         this.response = result;
       });
     });
+  }
+
+  editDescription(): void {
+    this.dialog
+      .open(EditTableDescriptionDialogComponent, {
+        width: '500px',
+        data: {
+          title: 'Edit Table Description',
+          databaseName: this.db,
+          tableName: this?.response?.model?.fullName,
+          description: this.response?.model?.description,
+          isDatabase: true
+        }
+      })
+      .afterClosed()
+      .subscribe(result => {
+        this.response.model.description = result?.description;
+      });
   }
 }

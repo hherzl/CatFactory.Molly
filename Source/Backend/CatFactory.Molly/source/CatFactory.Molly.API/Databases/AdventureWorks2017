@@ -2691,7 +2691,7 @@
           "Nullable": false,
           "Collation": "SQL_Latin1_General_CP1_CI_AS",
           "DefaultValue": null,
-          "Description": "Network login.",
+          "Description": "Network login. (test 1)",
           "ImportBag": {
             "TrimTrailingBlanks": "(n/a)",
             "FixedLenNullInSource": "(n/a)",

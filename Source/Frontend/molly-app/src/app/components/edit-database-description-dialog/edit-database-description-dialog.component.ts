@@ -28,13 +28,14 @@ export class EditDatabaseDescriptionDialogComponent {
 
   save(): void {
     let request = new UpdateDescriptionRequest();
+    request.databaseName = this.data?.databaseName;
     request.description = this.descriptionElement.nativeElement.value;
 
     if (request.description.length == 0) {
       return;
     }
 
-    this.mollyClient.updateDatabaseDescription(this.data?.databaseName, request).subscribe(result => {
+    this.mollyClient.updateDatabaseDescription(request).subscribe(result => {
       this.snackBar.open(result.message, 'Edit description', {
         duration: 3000
       });

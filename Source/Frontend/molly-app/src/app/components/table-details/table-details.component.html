@@ -9,7 +9,7 @@
         </mat-card-header>
         <mat-card-content>
             <span>Description: <strong>{{ response?.model?.description }}</strong></span>
-            <button mat-icon-button (click)="editDescription()" aria-label="Edit description">
+            <button mat-icon-button (click)="editTableDescription()" aria-label="Edit description">
                 <mat-icon>edit</mat-icon>
             </button>
         </mat-card-content>
@@ -49,7 +49,6 @@
             <th>Prec</th>
             <th>Nullable</th>
             <th>Collation</th>
-            <th>Description</th>
         </tr>
     </thead>
     <tbody>
@@ -60,7 +59,31 @@
             <td>{{ item.prec }}</td>
             <td>{{ item.nullable }}</td>
             <td>{{ item.collation }}</td>
-            <td>{{ item.description }}</td>
+        </tr>
+    </tbody>
+</table>
+
+<br>
+
+<h3>Descriptions</h3>
+<mat-divider></mat-divider>
+
+<table class="columns">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of response?.model?.columns">
+            <td>{{ item.name }}</td>
+            <td>
+                {{ item.description }}
+                <button mat-icon-button (click)="editColumnDescription(item)" aria-label="Edit description">
+                    <mat-icon>edit</mat-icon>
+                </button>
+            </td>
         </tr>
     </tbody>
 </table>

@@ -28,13 +28,15 @@ export class EditViewDescriptionDialogComponent {
 
   save(): void {
     let request = new UpdateDescriptionRequest();
+    request.databaseName = this.data?.databaseName;
+    request.viewName = this.data?.viewName;
     request.description = this.descriptionElement.nativeElement.value;
 
     if (request.description.length == 0) {
       return;
     }
 
-    this.mollyClient.updateViewDescription(this.data?.databaseName, this.data?.viewName, request).subscribe(result => {
+    this.mollyClient.updateViewDescription(request).subscribe(result => {
       this.snackBar.open(result.message, 'Edit description', {
         duration: 3000
       });

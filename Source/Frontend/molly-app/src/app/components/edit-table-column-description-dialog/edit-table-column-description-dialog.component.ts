@@ -4,17 +4,17 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 import { MollyClientService, UpdateDescriptionRequest } from 'src/app/services/molly-client.service';
 
 @Component({
-  selector: 'app-edit-table-description-dialog',
-  templateUrl: './edit-table-description-dialog.component.html',
-  styleUrls: ['./edit-table-description-dialog.component.css']
+  selector: 'app-edit-table-column-description-dialog',
+  templateUrl: './edit-table-column-description-dialog.component.html',
+  styleUrls: ['./edit-table-column-description-dialog.component.css']
 })
-export class EditTableDescriptionDialogComponent {
+export class EditTableColumnDescriptionDialogComponent {
   @ViewChild('description', { static: true }) descriptionElement: ElementRef;
   description: string = '';
 
   constructor(
-    public dialogRef: MatDialogRef<EditTableDescriptionDialogComponent>,
-    @Inject(MAT_DIALOG_DATA) public data: EditTableDescriptionDialogData,
+    public dialogRef: MatDialogRef<EditTableColumnDescriptionDialogComponent>,
+    @Inject(MAT_DIALOG_DATA) public data: EditTableColumnDescriptionDialogData,
     private snackBar: MatSnackBar,
     descriptionElement: ElementRef,
     private mollyClient: MollyClientService) {
@@ -30,13 +30,14 @@ export class EditTableDescriptionDialogComponent {
     let request = new UpdateDescriptionRequest();
     request.databaseName = this.data?.databaseName;
     request.tableName = this.data?.tableName;
+    request.columnName = this.data?.columnName;
     request.description = this.descriptionElement.nativeElement.value;
 
     if (request.description.length == 0) {
       return;
     }
 
-    this.mollyClient.updateTableDescription(request).subscribe(result => {
+    this.mollyClient.updateTableColumnDescription(request).subscribe(result => {
       this.snackBar.open(result.message, 'Edit description', {
         duration: 3000
       });
@@ -45,9 +46,10 @@ export class EditTableDescriptionDialogComponent {
   }
 }
 
-export class EditTableDescriptionDialogData {
+export class EditTableColumnDescriptionDialogData {
   public title!: string;
   public databaseName!: string;
   public tableName!: string;
+  public columnName!: string;
   public description!: string;
 }

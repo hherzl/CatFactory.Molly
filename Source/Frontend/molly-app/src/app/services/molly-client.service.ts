@@ -39,23 +39,23 @@ export class MollyClientService {
     return this.http.post<Response>(url, request);
   }
 
-  public updateDatabaseDescription(databaseName: string, request: UpdateDescriptionRequest): Observable<Response> {
-    const url = `${this.endpoint}/database/${databaseName}/update-description`;
+  public updateDatabaseDescription(request: UpdateDescriptionRequest): Observable<Response> {
+    const url = `${this.endpoint}/database/${request.databaseName}/update-description`;
     return this.http.put<Response>(url, request);
   }
 
-  public updateTableDescription(databaseName: string, tableName: string, request: UpdateDescriptionRequest): Observable<Response> {
-    const url = `${this.endpoint}/database/${databaseName}/table/${tableName}/update-description`;
+  public updateTableDescription(request: UpdateDescriptionRequest): Observable<Response> {
+    const url = `${this.endpoint}/database/${request.databaseName}/table/${request.tableName}/update-description`;
     return this.http.put<Response>(url, request);
   }
 
-  public updateTableColumnTableDescription(databaseName: string, tableName: string, columnName: string, request: UpdateDescriptionRequest): Observable<Response> {
-    const url = `${this.endpoint}/database/${databaseName}/table/${tableName}/column/${columnName}/update-description`;
+  public updateTableColumnDescription(request: UpdateDescriptionRequest): Observable<Response> {
+    const url = `${this.endpoint}/database/${request.databaseName}/table/${request.tableName}/column/${request.columnName}/update-description`;
     return this.http.put<Response>(url, request);
   }
 
-  public updateViewDescription(databaseName: string, viewName: string, request: UpdateDescriptionRequest): Observable<Response> {
-    const url = `${this.endpoint}/database/${databaseName}/view/${viewName}/update-description`;
+  public updateViewDescription(request: UpdateDescriptionRequest): Observable<Response> {
+    const url = `${this.endpoint}/database/${request.databaseName}/view/${request.viewName}/update-description`;
     return this.http.put<Response>(url, request);
   }
 }
@@ -198,5 +198,9 @@ export class IndexItemModel {
 }
 
 export class UpdateDescriptionRequest {
+  public databaseName!: string;
+  public tableName!: string;
+  public viewName!: string;
+  public columnName!: string;
   public description!: string;
 }

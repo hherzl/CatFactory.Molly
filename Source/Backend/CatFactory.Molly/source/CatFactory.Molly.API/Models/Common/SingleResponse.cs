@@ -1,6 +1,8 @@
-﻿namespace CatFactory.Molly.API.Models.Common
+﻿using CatFactory.Molly.API.Models.Common.Contracts;
+
+namespace CatFactory.Molly.API.Models.Common
 {
-    public class SingleResponse<TModel> : Response, ISingleResponse<TModel>
+    public record SingleResponse<TModel> : Response, ISingleResponse<TModel>
     {
         public SingleResponse()
         {

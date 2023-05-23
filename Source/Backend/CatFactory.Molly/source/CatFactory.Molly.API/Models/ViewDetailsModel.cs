@@ -2,7 +2,7 @@
 
 namespace CatFactory.Molly.API.Models
 {
-    public class ViewDetailsModel
+    public record ViewDetailsModel
     {
         public ViewDetailsModel()
         {

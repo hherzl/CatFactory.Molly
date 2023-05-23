@@ -2,7 +2,7 @@
 
 namespace CatFactory.Molly.API.Models
 {
-    public class ImportDatabaseRequest : IValidatableObject
+    public record ImportDatabaseRequest : IValidatableObject
     {
         public string Name { get; set; }
         public string ConnectionString { get; set; }

@@ -2,7 +2,7 @@
 
 namespace CatFactory.Molly.API.Models
 {
-    public class PrimaryKeyDetailsModel
+    public record PrimaryKeyDetailsModel
     {
         public PrimaryKeyDetailsModel()
         {

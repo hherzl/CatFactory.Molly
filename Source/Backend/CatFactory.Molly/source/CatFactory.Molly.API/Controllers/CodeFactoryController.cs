@@ -1,6 +1,7 @@
 ﻿using CatFactory.Molly.API.Filters;
 using CatFactory.Molly.API.Models;
 using CatFactory.Molly.API.Models.Common;
+using CatFactory.Molly.API.Models.Common.Contracts;
 using CatFactory.Molly.API.Services;
 using CatFactory.SqlServer;
 using CatFactory.SqlServer.DatabaseObjectModel.Queries;

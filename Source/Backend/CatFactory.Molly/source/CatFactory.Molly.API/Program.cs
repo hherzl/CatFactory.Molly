@@ -16,7 +16,12 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("molly", builder =>
     {
-        builder.AllowAnyMethod().AllowAnyHeader().AllowCredentials().WithOrigins("http://localhost:5201", "https://localhost:5201");
+        builder
+            .AllowAnyMethod()
+            .AllowAnyHeader()
+            .AllowCredentials()
+            .WithOrigins("http://localhost:5201", "https://localhost:5201")
+            ;
     });
 });
 

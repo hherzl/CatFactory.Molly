@@ -2,7 +2,7 @@
 
 namespace CatFactory.Molly.API.Models
 {
-    public class ViewItemModel
+    public record ViewItemModel
     {
         public ViewItemModel()
         {
@@ -18,6 +18,7 @@ namespace CatFactory.Molly.API.Models
             Identity = view.Identity == null ? "" : $"{view.Identity.Name}({view.Identity.Seed}, {view.Identity.Increment})";
             Description = view.Description;
         }
+
         public string Schema { get; set; }
         public string Name { get; set; }
         public string Type { get; set; }

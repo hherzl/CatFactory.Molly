@@ -2,7 +2,7 @@
 
 namespace CatFactory.Molly.API.Models
 {
-    public class ForeignKeyItemModel
+    public record ForeignKeyItemModel
     {
         public ForeignKeyItemModel()
         {

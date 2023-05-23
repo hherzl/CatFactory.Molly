@@ -2,7 +2,7 @@
 
 namespace CatFactory.Molly.API.Models
 {
-    public class TableItemModel
+    public record TableItemModel
     {
         public TableItemModel()
         {

@@ -1,4 +1,4 @@
-﻿using CatFactory.Molly.API.Models.Common;
+﻿using CatFactory.Molly.API.Models.Common.Contracts;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CatFactory.Molly.API.Models

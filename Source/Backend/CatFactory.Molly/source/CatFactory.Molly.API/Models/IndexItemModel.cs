@@ -1,6 +1,6 @@
 ﻿namespace CatFactory.Molly.API.Models
 {
-    public class IndexItemModel
+    public record IndexItemModel
     {
         public IndexItemModel(ObjectRelationalMapping.Index index)
         {

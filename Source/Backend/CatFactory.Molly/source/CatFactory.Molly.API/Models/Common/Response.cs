@@ -1,6 +1,8 @@
-﻿namespace CatFactory.Molly.API.Models.Common
+﻿using CatFactory.Molly.API.Models.Common.Contracts;
+
+namespace CatFactory.Molly.API.Models.Common
 {
-    public class Response : IResponse
+    public record Response : IResponse
     {
         public Response()
         {

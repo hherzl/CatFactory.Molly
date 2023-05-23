@@ -1,4 +1,4 @@
-﻿namespace CatFactory.Molly.API.Models.Common
+﻿namespace CatFactory.Molly.API.Models.Common.Contracts
 {
     public interface IResponse
     {

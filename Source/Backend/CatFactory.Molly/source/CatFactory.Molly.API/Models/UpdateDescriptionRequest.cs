@@ -2,7 +2,7 @@
 
 namespace CatFactory.Molly.API.Models
 {
-    public class UpdateDescriptionRequest : IValidatableObject
+    public record UpdateDescriptionRequest : IValidatableObject
     {
         public string Description { get; set; }
 

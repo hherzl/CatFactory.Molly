@@ -133,22 +133,30 @@
 <h2>Foreign Keys ({{ response?.model?.foreignKeys?.length }})</h2>
 <mat-divider></mat-divider>
 
-<table class="foreignKeys">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Key</th>
-            <th>References</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr *ngFor="let item of response?.model?.foreignKeys">
-            <td>{{ item.name }}</td>
-            <td>{{ item.key }}</td>
-            <td>{{ item.references }}</td>
-        </tr>
-    </tbody>
-</table>
+<div class="mat-elevation-z8">
+    <table mat-table [dataSource]="foreignKeysDataSource" class="full-width-table" aria-label="Checks">
+        <!-- Name Column -->
+        <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef>Name</th>
+            <td mat-cell *matCellDef="let row">{{row.name}}</td>
+        </ng-container>
+
+        <!-- Key Column -->
+        <ng-container matColumnDef="key">
+            <th mat-header-cell *matHeaderCellDef>Key</th>
+            <td mat-cell *matCellDef="let row">{{row.key}}</td>
+        </ng-container>
+
+        <!-- References Column -->
+        <ng-container matColumnDef="references">
+            <th mat-header-cell *matHeaderCellDef>References</th>
+            <td mat-cell *matCellDef="let row">{{row.references}}</td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="foreignKeyColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: foreignKeyColumns;"></tr>
+    </table>
+</div>
 
 <br>
 
@@ -176,7 +184,7 @@
 <mat-divider></mat-divider>
 
 <div class="mat-elevation-z8">
-    <table mat-table [dataSource]="checkConstraintsDataSource" class="full-width-table" aria-label="Check constraints">
+    <table mat-table [dataSource]="checksDataSource" class="full-width-table" aria-label="Checks">
         <!-- Name Column -->
         <ng-container matColumnDef="name">
             <th mat-header-cell *matHeaderCellDef>Name</th>
@@ -195,27 +203,10 @@
             <td mat-cell *matCellDef="let row">{{row.expression}}</td>
         </ng-container>
 
-        <tr mat-header-row *matHeaderRowDef="checkConstraintsColumns"></tr>
-        <tr mat-row *matRowDef="let row; columns: checkConstraintsColumns;"></tr>
+        <tr mat-header-row *matHeaderRowDef="checkColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: checkColumns;"></tr>
     </table>
 </div>
-
-<!-- <table class="checks">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Key</th>
-            <th>Expression</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr *ngFor="let item of response?.model?.checks">
-            <td>{{ item.name }}</td>
-            <td>{{ item.key }}</td>
-            <td>{{ item.expression }}</td>
-        </tr>
-    </tbody>
-</table> -->
 
 <br>
 

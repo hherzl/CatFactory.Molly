@@ -175,7 +175,32 @@
 <h2>Checks ({{ response?.model?.checks?.length }})</h2>
 <mat-divider></mat-divider>
 
-<table class="checks">
+<div class="mat-elevation-z8">
+    <table mat-table [dataSource]="checkConstraintsDataSource" class="full-width-table" aria-label="Check constraints">
+        <!-- Name Column -->
+        <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef>Name</th>
+            <td mat-cell *matCellDef="let row">{{row.name}}</td>
+        </ng-container>
+
+        <!-- Key Column -->
+        <ng-container matColumnDef="key">
+            <th mat-header-cell *matHeaderCellDef>Key</th>
+            <td mat-cell *matCellDef="let row">{{row.key}}</td>
+        </ng-container>
+
+        <!-- Expression Column -->
+        <ng-container matColumnDef="expression">
+            <th mat-header-cell *matHeaderCellDef>Expression</th>
+            <td mat-cell *matCellDef="let row">{{row.expression}}</td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="checkConstraintsColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: checkConstraintsColumns;"></tr>
+    </table>
+</div>
+
+<!-- <table class="checks">
     <thead>
         <tr>
             <th>Name</th>
@@ -190,7 +215,7 @@
             <td>{{ item.expression }}</td>
         </tr>
     </tbody>
-</table>
+</table> -->
 
 <br>
 

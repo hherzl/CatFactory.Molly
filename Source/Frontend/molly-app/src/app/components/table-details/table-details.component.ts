@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute, Params, Router } from '@angular/router';
 import { SingleResponse } from 'src/app/services/common';
-import { ColumnItemModel, MollyClientService, TableDetailsModel } from 'src/app/services/molly-client.service';
+import { CheckItemModel, ColumnItemModel, MollyClientService, TableDetailsModel } from 'src/app/services/molly-client.service';
 import { EditTableDescriptionDialogComponent } from '../edit-table-description-dialog/edit-table-description-dialog.component';
 import { EditTableColumnDescriptionDialogComponent } from '../edit-table-column-description-dialog/edit-table-column-description-dialog.component';
 import { MatTableDataSource } from '@angular/material/table';
@@ -18,8 +18,10 @@ export class TableDetailsComponent {
 
   displayedTableColumns = ['name', 'type', 'length', 'prec', 'nullable', 'collation'];
   descriptionColumns = ['name', 'description'];
+  checkConstraintsColumns = ['name', 'key', 'expression'];
 
   columnsDataSource!: MatTableDataSource<ColumnItemModel>;
+  checkConstraintsDataSource!: MatTableDataSource<CheckItemModel>;
 
   public loading!: boolean;
   private db!: string;
@@ -37,6 +39,7 @@ export class TableDetailsComponent {
         this.loading = false;
         this.response = result;
         this.columnsDataSource = new MatTableDataSource<ColumnItemModel>(this.response?.model?.columns);
+        this.checkConstraintsDataSource = new MatTableDataSource<CheckItemModel>(this.response?.model?.checks);
       });
     });
   }

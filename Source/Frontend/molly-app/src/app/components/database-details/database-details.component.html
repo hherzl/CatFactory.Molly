@@ -52,29 +52,51 @@
 <h2>Database Type Maps ({{ response?.model?.databaseTypeMaps?.length }})</h2>
 <mat-divider></mat-divider>
 
-<table class="databaseTypeMaps">
-    <thead>
-        <tr>
-            <th>Database Type</th>
-            <th>Allows Length In Declaration</th>
-            <th>Clr Full Name Type</th>
-            <th>Clr Alias Type</th>
-            <th>Is User Defined</th>
-            <th>Parent Database Type</th>
-            <th>Collation</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr *ngFor="let item of response?.model?.databaseTypeMaps">
-            <td>{{ item.databaseType }}</td>
-            <td>{{ item.allowsLengthInDeclaration }}</td>
-            <td>{{ item.clrFullNameType }}</td>
-            <td>{{ item.clrAliasType }}</td>
-            <td>{{ item.isUserDefined }}</td>
-            <td>{{ item.parentDatabaseType }}</td>
-            <td>{{ item.collation }}</td>
-        </tr>
-    </tbody>
-</table>
+<div class="mat-elevation-z8">
+    <table mat-table [dataSource]="databaseTypeMapsDataSource" class="full-width-table" aria-label="Database Type Maps">
+        <!-- DatabaseType Column -->
+        <ng-container matColumnDef="databaseType">
+            <th mat-header-cell *matHeaderCellDef>Database Type</th>
+            <td mat-cell *matCellDef="let row">{{row.databaseType}}</td>
+        </ng-container>
 
-<br>
+        <!-- AllowsLengthInDeclaration Column -->
+        <ng-container matColumnDef="allowsLengthInDeclaration">
+            <th mat-header-cell *matHeaderCellDef>Allows Length In Declaration</th>
+            <td mat-cell *matCellDef="let row">{{row.allowsLengthInDeclaration ? 'Yes' : 'No'}}</td>
+        </ng-container>
+
+        <!-- ClrFullNameType Column -->
+        <ng-container matColumnDef="clrFullNameType">
+            <th mat-header-cell *matHeaderCellDef>CLR Full Name Type</th>
+            <td mat-cell *matCellDef="let row">{{row.clrFullNameType}}</td>
+        </ng-container>
+
+        <!-- ClrAliasType Column -->
+        <ng-container matColumnDef="clrAliasType">
+            <th mat-header-cell *matHeaderCellDef>CLR Alias Type</th>
+            <td mat-cell *matCellDef="let row">{{row.clrAliasType}}</td>
+        </ng-container>
+
+        <!-- IsUserDefined Column -->
+        <ng-container matColumnDef="isUserDefined">
+            <th mat-header-cell *matHeaderCellDef>Is User Defined</th>
+            <td mat-cell *matCellDef="let row">{{row.isUserDefined}}</td>
+        </ng-container>
+
+        <!-- ParentDatabaseType Column -->
+        <ng-container matColumnDef="parentDatabaseType">
+            <th mat-header-cell *matHeaderCellDef>Parent Database Type</th>
+            <td mat-cell *matCellDef="let row">{{row.parentDatabaseType}}</td>
+        </ng-container>
+
+        <!-- Collation Column -->
+        <ng-container matColumnDef="collation">
+            <th mat-header-cell *matHeaderCellDef>Collation</th>
+            <td mat-cell *matCellDef="let row">{{row.collation}}</td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="databaseTypeMapColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: databaseTypeMapColumns;"></tr>
+    </table>
+</div>

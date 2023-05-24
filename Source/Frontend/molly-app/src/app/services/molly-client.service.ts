@@ -79,7 +79,7 @@ export class DatabaseDetailsModel {
 
   public tables!: TableItemModel[];
   public views!: ViewItemModel[];
-  public databaseTypeMaps!: DatabaseTypeMap[];
+  public databaseTypeMaps!: DatabaseTypeMapItemModel[];
 }
 
 export class TableItemModel {
@@ -103,7 +103,7 @@ export class ViewItemModel {
   public description!: string;
 }
 
-export class DatabaseTypeMap {
+export class DatabaseTypeMapItemModel {
   public databaseType!: string;
   public allowsLengthInDeclaration!: boolean;
   public allowsPrecInDeclaration!: boolean;

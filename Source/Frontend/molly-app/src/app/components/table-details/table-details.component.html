@@ -134,7 +134,7 @@
 <mat-divider></mat-divider>
 
 <div class="mat-elevation-z8">
-    <table mat-table [dataSource]="foreignKeysDataSource" class="full-width-table" aria-label="Checks">
+    <table mat-table [dataSource]="foreignKeysDataSource" class="full-width-table" aria-label="Foreign keys">
         <!-- Name Column -->
         <ng-container matColumnDef="name">
             <th mat-header-cell *matHeaderCellDef>Name</th>
@@ -163,20 +163,24 @@
 <h2>Uniques ({{ response?.model?.uniques?.length }})</h2>
 <mat-divider></mat-divider>
 
-<table class="uniques">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Key</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr *ngFor="let item of response?.model?.uniques">
-            <td>{{ item.name }}</td>
-            <td>{{ item.key }}</td>
-        </tr>
-    </tbody>
-</table>
+<div class="mat-elevation-z8">
+    <table mat-table [dataSource]="uniquesDataSource" class="full-width-table" aria-label="Uniques">
+        <!-- Name Column -->
+        <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef>Name</th>
+            <td mat-cell *matCellDef="let row">{{row.name}}</td>
+        </ng-container>
+
+        <!-- Key Column -->
+        <ng-container matColumnDef="key">
+            <th mat-header-cell *matHeaderCellDef>Key</th>
+            <td mat-cell *matCellDef="let row">{{row.key}}</td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="uniqueColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: uniqueColumns;"></tr>
+    </table>
+</div>
 
 <br>
 
@@ -213,41 +217,57 @@
 <h2>Defaults ({{ response?.model?.defaults?.length }})</h2>
 <mat-divider></mat-divider>
 
-<table class="defaults">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Key</th>
-            <th>Value</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr *ngFor="let item of response?.model?.defaults">
-            <td>{{ item.name }}</td>
-            <td>{{ item.key }}</td>
-            <td>{{ item.value }}</td>
-        </tr>
-    </tbody>
-</table>
+<div class="mat-elevation-z8">
+    <table mat-table [dataSource]="defaultsDataSource" class="full-width-table" aria-label="Defaults">
+        <!-- Name Column -->
+        <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef>Name</th>
+            <td mat-cell *matCellDef="let row">{{row.name}}</td>
+        </ng-container>
+
+        <!-- Key Column -->
+        <ng-container matColumnDef="key">
+            <th mat-header-cell *matHeaderCellDef>Key</th>
+            <td mat-cell *matCellDef="let row">{{row.key}}</td>
+        </ng-container>
+
+        <!-- Value Column -->
+        <ng-container matColumnDef="value">
+            <th mat-header-cell *matHeaderCellDef>Value</th>
+            <td mat-cell *matCellDef="let row">{{row.value}}</td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="defaultColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: defaultColumns;"></tr>
+    </table>
+</div>
 
 <br>
 
 <h2>Indexes ({{ response?.model?.indexes?.length }})</h2>
 <mat-divider></mat-divider>
 
-<table class="indexes">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Description</th>
-            <th>Keys</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr *ngFor="let item of response?.model?.indexes">
-            <td>{{ item.name }}</td>
-            <td>{{ item.description }}</td>
-            <td>{{ item.keys }}</td>
-        </tr>
-    </tbody>
-</table>
+<div class="mat-elevation-z8">
+    <table mat-table [dataSource]="indexesDataSource" class="full-width-table" aria-label="Indexes">
+        <!-- Name Column -->
+        <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef>Name</th>
+            <td mat-cell *matCellDef="let row">{{row.name}}</td>
+        </ng-container>
+
+        <!-- Description Column -->
+        <ng-container matColumnDef="description">
+            <th mat-header-cell *matHeaderCellDef>Description</th>
+            <td mat-cell *matCellDef="let row">{{row.description}}</td>
+        </ng-container>
+
+        <!-- Keys Column -->
+        <ng-container matColumnDef="keys">
+            <th mat-header-cell *matHeaderCellDef>Keys</th>
+            <td mat-cell *matCellDef="let row">{{row.keys}}</td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="indexColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: indexColumns;"></tr>
+    </table>
+</div>

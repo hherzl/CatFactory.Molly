@@ -40,53 +40,76 @@
 <h2>Columns ({{ response?.model?.columns?.length }})</h2>
 <mat-divider></mat-divider>
 
-<table class="columns">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Type</th>
-            <th>Length</th>
-            <th>Prec</th>
-            <th>Nullable</th>
-            <th>Collation</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr *ngFor="let item of response?.model?.columns">
-            <td>{{ item.name }}</td>
-            <td>{{ item.type }}</td>
-            <td>{{ item.length }}</td>
-            <td>{{ item.prec }}</td>
-            <td>{{ item.nullable }}</td>
-            <td>{{ item.collation }}</td>
-        </tr>
-    </tbody>
-</table>
+<div class="mat-elevation-z8">
+    <table mat-table [dataSource]="columnsDataSource" class="full-width-table" aria-label="Columns">
+        <!-- Name Column -->
+        <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef>Name</th>
+            <td mat-cell *matCellDef="let row">{{row.name}}</td>
+        </ng-container>
+
+        <!-- Type Column -->
+        <ng-container matColumnDef="type">
+            <th mat-header-cell *matHeaderCellDef>Type</th>
+            <td mat-cell *matCellDef="let row">{{row.type}}</td>
+        </ng-container>
+
+        <!-- Length Column -->
+        <ng-container matColumnDef="length">
+            <th mat-header-cell *matHeaderCellDef>Length</th>
+            <td mat-cell *matCellDef="let row">{{row.length}}</td>
+        </ng-container>
+
+        <!-- Prec Column -->
+        <ng-container matColumnDef="prec">
+            <th mat-header-cell *matHeaderCellDef>Prec</th>
+            <td mat-cell *matCellDef="let row">{{row.prec}}</td>
+        </ng-container>
+
+        <!-- Nullable Column -->
+        <ng-container matColumnDef="nullable">
+            <th mat-header-cell *matHeaderCellDef>Nullable</th>
+            <td mat-cell *matCellDef="let row">{{row.nullable ? 'yes' : 'no'}}</td>
+        </ng-container>
+
+        <!-- Collation Column -->
+        <ng-container matColumnDef="collation">
+            <th mat-header-cell *matHeaderCellDef>Collation</th>
+            <td mat-cell *matCellDef="let row">{{row.collation}}</td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedTableColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedTableColumns;"></tr>
+    </table>
+</div>
 
 <br>
 
 <h3>Descriptions</h3>
-<mat-divider></mat-divider>
 
-<table class="columns">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Description</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr *ngFor="let item of response?.model?.columns">
-            <td>{{ item.name }}</td>
-            <td>
-                {{ item.description }}
-                <button mat-icon-button (click)="editColumnDescription(item)" aria-label="Edit description">
+<div class="mat-elevation-z8">
+    <table mat-table [dataSource]="columnsDataSource" class="full-width-table" aria-label="Descriptions">
+        <!-- Name Column -->
+        <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef>Name</th>
+            <td mat-cell *matCellDef="let row">{{row.name}}</td>
+        </ng-container>
+
+        <!-- Description Column -->
+        <ng-container matColumnDef="description">
+            <th mat-header-cell *matHeaderCellDef>Description</th>
+            <td mat-cell *matCellDef="let row">
+                <button mat-icon-button (click)="editColumnDescription(row)" aria-label="Edit description">
                     <mat-icon>edit</mat-icon>
                 </button>
+                {{ row.description }}
             </td>
-        </tr>
-    </tbody>
-</table>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="descriptionColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: descriptionColumns;"></tr>
+    </table>
+</div>
 
 <br>
 

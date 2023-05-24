@@ -5,6 +5,7 @@ import { SingleResponse } from 'src/app/services/common';
 import { ColumnItemModel, MollyClientService, TableDetailsModel } from 'src/app/services/molly-client.service';
 import { EditTableDescriptionDialogComponent } from '../edit-table-description-dialog/edit-table-description-dialog.component';
 import { EditTableColumnDescriptionDialogComponent } from '../edit-table-column-description-dialog/edit-table-column-description-dialog.component';
+import { MatTableDataSource } from '@angular/material/table';
 
 @Component({
   selector: 'app-table-details',
@@ -14,6 +15,11 @@ import { EditTableColumnDescriptionDialogComponent } from '../edit-table-column-
 export class TableDetailsComponent {
   constructor(private activatedRoute: ActivatedRoute, private router: Router, public dialog: MatDialog, private mollyClient: MollyClientService) {
   }
+
+  displayedTableColumns = ['name', 'type', 'length', 'prec', 'nullable', 'collation'];
+  descriptionColumns = ['name', 'description'];
+
+  columnsDataSource!: MatTableDataSource<ColumnItemModel>;
 
   public loading!: boolean;
   private db!: string;
@@ -30,6 +36,7 @@ export class TableDetailsComponent {
       this.mollyClient.getTable(this.db, this.table).subscribe(result => {
         this.loading = false;
         this.response = result;
+        this.columnsDataSource = new MatTableDataSource<ColumnItemModel>(this.response?.model?.columns);
       });
     });
   }

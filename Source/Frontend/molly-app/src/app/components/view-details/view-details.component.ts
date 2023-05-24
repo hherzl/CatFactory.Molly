@@ -2,9 +2,10 @@ import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute, Params, Router } from '@angular/router';
 import { SingleResponse } from 'src/app/services/common';
-import { ColumnItemModel, MollyClientService, ViewDetailsModel } from 'src/app/services/molly-client.service';
+import { ColumnItemModel, IndexItemModel, MollyClientService, ViewDetailsModel } from 'src/app/services/molly-client.service';
 import { EditViewDescriptionDialogComponent } from '../edit-view-description-dialog/edit-view-description-dialog.component';
 import { EditViewColumnDescriptionDialogComponent } from '../edit-view-column-description-dialog/edit-view-column-description-dialog.component';
+import { MatTableDataSource } from '@angular/material/table';
 
 @Component({
   selector: 'app-view-details',
@@ -14,6 +15,13 @@ import { EditViewColumnDescriptionDialogComponent } from '../edit-view-column-de
 export class ViewDetailsComponent {
   constructor(private activatedRoute: ActivatedRoute, private router: Router, public dialog: MatDialog, private mollyClient: MollyClientService) {
   }
+
+  viewColumns = ['name', 'type', 'length', 'prec', 'nullable', 'collation'];
+  descriptionColumns = ['name', 'description'];
+  indexColumns = ['name', 'description', 'keys'];
+
+  viewColumnsDataSource!: MatTableDataSource<ColumnItemModel>;
+  indexesDataSource!: MatTableDataSource<IndexItemModel>;
 
   public loading!: boolean;
   private db!: string;
@@ -30,6 +38,8 @@ export class ViewDetailsComponent {
       this.mollyClient.getView(this.db, this.view).subscribe(result => {
         this.loading = false;
         this.response = result;
+        this.viewColumnsDataSource = new MatTableDataSource<ColumnItemModel>(this.response?.model?.columns);
+        this.indexesDataSource = new MatTableDataSource<IndexItemModel>(this.response?.model?.indexes);
       });
     });
   }

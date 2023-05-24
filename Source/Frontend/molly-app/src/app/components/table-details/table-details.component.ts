@@ -16,7 +16,7 @@ export class TableDetailsComponent {
   constructor(private activatedRoute: ActivatedRoute, private router: Router, public dialog: MatDialog, private mollyClient: MollyClientService) {
   }
 
-  displayedTableColumns = ['name', 'type', 'length', 'prec', 'nullable', 'collation'];
+  tableColumns = ['name', 'type', 'length', 'prec', 'nullable', 'collation'];
   descriptionColumns = ['name', 'description'];
   foreignKeyColumns = ['name', 'key', 'references'];
   uniqueColumns = ['name', 'key'];
@@ -24,7 +24,7 @@ export class TableDetailsComponent {
   defaultColumns = ['name', 'key', 'value'];
   indexColumns = ['name', 'description', 'keys'];
 
-  columnsDataSource!: MatTableDataSource<ColumnItemModel>;
+  tableColumnsDataSource!: MatTableDataSource<ColumnItemModel>;
   foreignKeysDataSource!: MatTableDataSource<ForeignKeyItemModel>;
   uniquesDataSource!: MatTableDataSource<UniqueItemModel>;
   checksDataSource!: MatTableDataSource<CheckItemModel>;
@@ -46,7 +46,7 @@ export class TableDetailsComponent {
       this.mollyClient.getTable(this.db, this.table).subscribe(result => {
         this.loading = false;
         this.response = result;
-        this.columnsDataSource = new MatTableDataSource<ColumnItemModel>(this.response?.model?.columns);
+        this.tableColumnsDataSource = new MatTableDataSource<ColumnItemModel>(this.response?.model?.columns);
         this.foreignKeysDataSource = new MatTableDataSource<ForeignKeyItemModel>(this.response?.model?.foreignKeys);
         this.uniquesDataSource = new MatTableDataSource<UniqueItemModel>(this.response?.model?.uniques);
         this.checksDataSource = new MatTableDataSource<CheckItemModel>(this.response?.model?.checks);

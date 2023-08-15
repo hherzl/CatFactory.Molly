@@ -1,7 +1,6 @@
-﻿namespace CatFactory.Molly.API.Models.Common.Contracts
+﻿namespace CatFactory.Molly.API.Models.Common.Contracts;
+
+public interface IListResponse<TModel> : IResponse
 {
-    public interface IListResponse<TModel> : IResponse
-    {
-        List<TModel> Model { get; set; }
-    }
+    List<TModel> Model { get; set; }
 }

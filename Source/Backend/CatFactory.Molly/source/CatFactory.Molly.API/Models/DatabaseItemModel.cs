@@ -1,24 +1,23 @@
 ﻿using CatFactory.ObjectRelationalMapping;
 
-namespace CatFactory.Molly.API.Models
+namespace CatFactory.Molly.API.Models;
+
+public record DatabaseItemModel
 {
-    public record DatabaseItemModel
+    public DatabaseItemModel()
     {
-        public DatabaseItemModel()
-        {
-        }
-
-        public DatabaseItemModel(Database database)
-        {
-            Name = database.Name;
-            Dbms = database.Dbms;
-            TablesCount = database.Tables.Count;
-            ViewsCount = database.Views.Count;
-        }
-
-        public string Name { get; set; }
-        public string Dbms { get; set; }
-        public int TablesCount { get; set; }
-        public int ViewsCount { get; set; }
     }
+
+    public DatabaseItemModel(Database database)
+    {
+        Name = database.Name;
+        Dbms = database.Dbms;
+        TablesCount = database.Tables.Count;
+        ViewsCount = database.Views.Count;
+    }
+
+    public string Name { get; set; }
+    public string Dbms { get; set; }
+    public int TablesCount { get; set; }
+    public int ViewsCount { get; set; }
 }

@@ -1,7 +1,6 @@
-﻿namespace CatFactory.Molly.API.Models.Common.Contracts
+﻿namespace CatFactory.Molly.API.Models.Common.Contracts;
+
+public interface IResponse
 {
-    public interface IResponse
-    {
-        string Message { get; set; }
-    }
+    string Message { get; set; }
 }

@@ -1,25 +1,24 @@
 ﻿using CatFactory.ObjectRelationalMapping;
 
-namespace CatFactory.Molly.API.Models
+namespace CatFactory.Molly.API.Models;
+
+public record IdentityDetailsModel
 {
-    public record IdentityDetailsModel
+    public IdentityDetailsModel()
     {
-        public IdentityDetailsModel()
-        {
-        }
-
-        public IdentityDetailsModel(Identity identity)
-        {
-            if (identity == null)
-                return;
-
-            Name = identity.Name;
-            Seed = identity.Seed;
-            Increment = identity.Increment;
-        }
-
-        public string Name { get; set; }
-        public int Seed { get; set; }
-        public int Increment { get; set; }
     }
+
+    public IdentityDetailsModel(Identity identity)
+    {
+        if (identity == null)
+            return;
+
+        Name = identity.Name;
+        Seed = identity.Seed;
+        Increment = identity.Increment;
+    }
+
+    public string Name { get; set; }
+    public int Seed { get; set; }
+    public int Increment { get; set; }
 }
